@@ -1,0 +1,955 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp26.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:04:22 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - dhp26</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("dhp1.1.html","dhp1.3.html","dhp1.5.html","dhp1.6.html","dhp1.13.html","dhp1.15.html","dhp1.17.html","dhp1.19.html","dhp2.21.html","dhp2.25.html","dhp2.26.html","dhp2.27.html","dhp2.28.html","dhp2.29.html","dhp2.31.html","dhp3.33.html","dhp3.35.html","dhp3.36.html","dhp3.37.html","dhp3.38.html","dhp3.40.html","dhp3.42.html","dhp3.43.html","dhp4.44.html","dhp4.46.html","dhp4.47.html","dhp4.48.html","dhp4.50.html","dhp4.51.html","dhp4.54.html","dhp4.58.html","dhp5.60.html","dhp5.61.html","dhp5.62.html","dhp5.63.html","dhp5.64.html","dhp5.66.html","dhp5.71.html","dhp5.75.html","dhp6.76.html","dhp6.78.html","dhp6.80.html","dhp6.81.html","dhp6.85.html","dhp7.92.html","dhp8.102.html","dhp8.111.html","dhp8.113.html","dhp9.118.html","dhp9.121.html","dhp9.126.html","dhp9.127.html","dhp10.129.html","dhp10.130.html","dhp10.145.html","dhp11.146.html","dhp11.147.html","dhp11.151.html","dhp11.153.html","dhp11.155.html","dhp12.1.html","dhp12.2.html","dhp12.3.html","dhp12.4.html","dhp12.5.html","dhp12.6.html","dhp12.7.html","dhp12.8.html","dhp13.1.html","dhp13.2.html","dhp13.3.html","dhp13.4.html","dhp13.5.html","dhp13.6.html","dhp13.7.html","dhp13.8.html","dhp13.9.html","dhp13.10.html","dhp13.11.html","dhp14.1.html","dhp14.2.html","dhp14.3.html","dhp14.4.html","dhp14.5.html","dhp14.6.html","dhp14.7.html","dhp15.1.html","dhp15.2.html","dhp15.3.html","dhp15.4.html","dhp15.5.html","dhp15.6.html","dhp15.7.html","dhp15.8.html","dhp15.9.html","dhp15.10.html","dhp16.1.html","dhp16.2.html","dhp16.3.html","dhp16.4.html","dhp16.5.html","dhp16.6.html","dhp16.7.html","dhp17.1.html","dhp17.2.html","dhp17.3.html","dhp17.4.html","dhp17.5.html","dhp18.1.html","dhp18.2.html","dhp18.3.html","dhp18.4.html","dhp18.5.html","dhp18.6.html","dhp18.7.html","dhp18.8.html","dhp19.1.html","dhp19.2.html","dhp20.1.html","dhp20.2.html","dhp20.3.html","dhp20.4.html","dhp20.5.html","dhp21.1.html","dhp21.2.html","dhp21.3.html","dhp21.4.html","dhp21.5.html","dhp22.1.html","dhp23.1.html","dhp23.2.html","dhp24.1.html","dhp24.2.html","dhp24.3.html","dhp24.4.html","dhp24.5.html","dhp24.6.html","dhp24.7.html","dhp24.8.html","dhp25.1.html","dhp25.2.html","dhp25.3.html","dhp25.4.html","dhp25.5.html","dhp25.6.html","dhp25.7.html","dhp25.8.html","dhp25.9.html","dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="dhp26" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_19.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central"><!-- INICIO DO TEXTO -->
+
+<script type="text/javascript" src="../expando.js"></script>
+
+
+
+<p class=Tit1 align=center style='text-align:center'>26. <i> Brahmanavagga </i> </Tit1>
+<p class=Tit2 align=center style='text-align:center'> O Brâmane </Tit2>
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+
+
+
+<p class=Normal>&nbsp;</p>
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-383.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Brâmane, empenhe-se e destrua a torrente,<br>
+deixe de lado os prazeres dos sentidos,<br>
+tendo compreendido a cessação do condicionado,<br>
+realize <i>nibbana</i>. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 383</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N1">Nota 1</a>]  <a name=R1></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-384.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Quando o brâmane alcança o ápice<br>
+dos dois caminhos, <br>
+ele realiza a verdade<br>
+e todos grilhões desaparecem.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 384  
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N2">Nota 2</a>]  <a name=R2></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-385.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Em quem não há esta nem a outra margem,<br>
+tampouco ambas,<br>
+sem temores e livre dos grilhões,<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 385</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N3">Nota 3</a>]  <a name=R3></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-386.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Meditando, isolado, livre de contaminações,<br>
+com a tarefa feita, livre das impurezas,<br>
+tendo realizado o objetivo supremo,<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 386</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N4">Nota 4</a>]  <a name=R4></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-387.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> O sol brilha durante o dia,<br>
+a lua ilumina a noite,<br>
+o rei brilha na sua armadura,<br>
+o brâmane brilha nos <i>jhanas</i>.<br>
+Mas durante todo o dia e à noite também<br>
+resplandecente brilha o Buda.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 387</p>
+</td>
+</tr>
+</table>
+
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-388.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Removendo o mal ele é chamado brâmane,<br>
+com a conduta serena ele é chamado <i>samana</i>,<br>
+tendo removido todas as contaminações ele é chamado <i>pabbajita</i>.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 388</p>
+</td>
+</tr>
+</table>
+
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N5">Nota 5</a>]  <a name=R5></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-389.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Não acerte um brâmane,<br>
+nem que por isso ele reaja.<br>
+Vergonha quem acerta um brâmane,<br>
+mais vergonha quem se deixa tomar pela raiva.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 389</p>
+</td>
+</tr>
+</table>
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-390.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> A mente que se afasta do que é querido<br>
+é de grande benefício para um brâmane.<br>
+O tanto que cessa a intenção de causar o dano, <br>
+na mesma medida <i>dukkha</i> cessa.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 390</p>
+</td>
+</tr>
+</table>
+
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-391.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Quem não pratica o  mal <br>
+através do corpo, linguagem ou mente,<br>
+contido dessas três formas,<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 391</p>
+</td>
+</tr>
+</table>
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-392.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Tal como o sacerdote brâmane reverencia o fogo,<br>
+da mesma forma deve ser reverenciado<br>
+aquele de quem se aprende o Dhamma<br>
+ensinado pelo Perfeitamente Iluminado.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 392</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-393.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Não pelo ascetismo, linhagem,<br>
+ou nascimento, alguém se torna um brâmane.<br>
+Mas naquele em que está presente a verdade e o Dhamma,<br>
+ele é puro, é um brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 393</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N6">Nota 6</a>]  <a name=R6></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-394.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Para que serve esse cabelo emaranhado?<br>
+Para que serve esse manto de pele de antílope?<br>
+No seu íntimo há o emaranhado das paixões,<br>
+somente no exterior você se mostra purificado.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 394</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N7">Nota 7</a>]  <a name=R7></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-395.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Vestindo um manto feito de trapos,<br>
+o corpo com veias expostas,<br>
+só na floresta, cultivando os <i>jhanas</i>,<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 395</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N8">Nota 8</a>]  <a name=R8></a></p>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-396.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Eu não digo que alguém seja um brâmane<br>
+devido à sua origem e linhagem.<br>
+Se os impedimentos ainda nele se ocultam,<br>
+ele é apenas um dos que diz ‘Senhor.’<br>
+Mas aquele que está desimpedido e não tem mais apego:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 396</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-397.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Rompendo todos os grilhões,<br>
+não mais abalado pela raiva,<br>
+superando todos os vínculos, emancipado:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 397</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-398.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Cortando todas as amarras e correias,<br>
+bem como o cabresto e a embocadura,<br>
+cuja trave foi removida, iluminado:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 398</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N9">Nota 9</a>]  <a name=R9></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-399.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Agüentando sem o menor indício de ressentimento,<br>
+o abuso, a violência e também o cativeiro,<br>
+cujo poder e força verdadeira é a paciência:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 399</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-400.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Não se incendeia com a raiva,<br>
+obediente, virtuoso e modesto,<br>
+domesticado, suportando o seu último corpo:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 400</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-401.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Como a chuva nas folhas do lótus,<br>
+ou uma semente de mostarda na ponta duma agulha,<br>
+de modo algum se apega aos prazeres sensuais:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 401</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-402.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Nesta mesma vida realizando por si mesmo<br>
+o fim de todo o sofrimento,<br>
+deitando o fardo e se emancipando:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 402</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N10">Nota 10</a>]  <a name=R10></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-403.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Com profundo entendimento, sábio,<br>
+hábil na distinção entre o caminho e o descaminho,<br>
+tendo alcançado o objetivo supremo:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 403</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N11">Nota 11</a>]  <a name=R11></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-404.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Reservado em relação aos chefes de família<br>
+e da mesma forma em relação aos contemplativos,<br>
+perambulando sem morada fixa e com poucas necessidades:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 404</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-405.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Renunciando à violência contra todos os seres vivos,<br>
+fracos ou fortes,<br>
+que não mata ou faz com que outros matem:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 405</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-406.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Amigável entre os hostis,<br>
+pacífico entre os violentos,<br>
+desapegado entre os apegados:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 406</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-407.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Cobiça e raiva, presunção e desprezo,<br>
+se despegaram igual à semente de mostarda <br>
+da ponta duma agulha:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 407</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-408.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Empregando linguagem gentil,<br>
+instrutiva, verdadeira,<br>
+sem ofender a ninguém:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 408</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-409.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> No mundo nunca toma nada<br>
+que não tenha sido dado, quer seja longo ou curto,<br>
+grande ou pequeno, bom ou ruim:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 409</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-410.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Não deseja mais nada<br>
+quer seja deste mundo ou do próximo,<br>
+livre do desejo e emancipado:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 410</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-411.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Não possui mais apegos,<br>
+nem perplexidades, pois sabe,<br>
+tendo mergulhado no Imortal:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 411</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-412.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Neste mundo transcendendo todos os vínculos<br>
+tanto com os méritos como com os deméritos,<br>
+livre do sofrimento, imaculado e puro:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 412</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-413.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Imaculado como a lua,<br>
+puro, sereno e imperturbado,<br> 
+tendo destruído o desejo por ser/existir:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 413</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N12">Nota 12</a>]  <a name=R12></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-414.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Superando esse <i>samsara</i> lodoso,<br>
+perigoso, enganador,<br>
+meditando com os <i>jhanas</i>, cruzando para a outra margem,<br>
+imperturbável, sem perplexidade,<br>
+realizando <i>nibbana</i> através do desapego:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 414</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-415.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Abandonando os prazeres sensuais<br>
+renunciando à vida em família, perambulando como um eremita,<br>
+destruindo ambos o desejo pelos prazeres dos sentidos <br>
+e pela continuada existência:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 415</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-416.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Abandonando o desejo<br>
+renunciando à vida em família, perambulando como um eremita,<br>
+destruindo ambos o desejo <br>
+e a continuada existência:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 416</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-417.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Abandonando todos os vínculos humanos,<br>
+e transcendendo todos os vínculos celestiais,<br>
+desapegando-se de todos os vínculos:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 417</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-418.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Abandonando o deleite e o descontentamento,<br>
+arrefecido e sem apegos,<br>
+o herói que transcendeu todo o mundo:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 418</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-419.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Conhecendo de todos os modos <br>
+a morte e o renascimento dos seres,<br>
+desapegado, abençoado, iluminado:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 419</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-420.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Cujo destino não é do conhecimento<br>
+de devas e humanos,<br>
+um arahant com as impurezas destruídas:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 420</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-421.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Sem apego por absolutamente nada,<br>
+do passado, presente e futuro,<br>
+desimpedido e sem se agarrar a nada:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 421</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-422.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> O líder do rebanho, o perfeito herói,<br>
+o grande sábio, o conquistador,<br>
+imperturbável, imaculado, iluminado:<br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 422</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-423.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Conhecendo as suas vidas passadas,<br>
+vendo os mundos paradisíacos e os mundos inferiores,<br>
+chegando ao fim dos nascimentos,<br>
+um sábio com perfeito conhecimento supra-humano,<br>
+completo em todos aspectos: <br>
+esse é o verdadeiro brâmane.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 423</p>
+</td>
+</tr>
+</table>
+
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal><b>Notas:</b> </p>
+
+<p class=Normal><a name=N1></a> <b>[Nota 1 - Verso 383]</b> <i>Sota chinda</i> - "destrua a torrente" sendo que a torrente representa os desejos pelos prazeres dos sentidos.</p> 
+
+<p class=Normal>Originalmente o termo "brâmane" era empregado para pessoas com elevada estatura espiritual - homens santos; na época do Buda os brâmanes haviam se convertido numa casta de sacerdotes privilegiados que conquistavam o seu status com base no nascimento e não com base em alguma genuína santidade interior. Nos seus discursos o Buda identificou o arahant como sendo o verdadeiro brâmane pois ele merece esse título por conta da purificação da mente com a completa eliminação de toda cobiça, raiva e delusão, independente da sua linhagem familiar. [<a href="#R1">Retorna</a>]</p>
+
+<p class=Normal><a name=N2></a><b> [Nota 2 - Verso 384] </b> O ápice dos dois caminhos representa o cultivo de <a href="../glossario.html#samadhi"><i>samadhi</i></a> - concentração e <a href="../glossario.html#vipassana"><i>vipassana</i></a> - insight.<br>
+
+Os grilhões - <a href="../glossario.html#samyojana"><i>samyojana</i></a> - aprisionam a mente ao ciclo de renascimentos - <i>samsara</i>. [<a href="#R2">Retorna</a>]</p>
+
+<p class=Normal><a name=N3></a> <b>[Nota 3 - Verso 385] </b> Esta margem e a outra margem representam respectivamente as seis bases internas e as seis bases externas - veja <a href="../glossario.html#ayatna"><i>ayatana</i></a> no glossário. <br>
+Tampouco ambas representa não fabricar nada como "eu" ou "meu", veja o <a href="../sutta/MN109.html#T13">Mahapunnama Sutta</a>. <br> 
+Livre dos grilhões, veja <a href="../glossario.html#samyojana"><i>samyojana</i></a> no glossário.  [<a href="#R3">Retorna</a>]</p>
+
+<p class=Normal><a name=N4></a><b> [Nota 4 - Verso 386]</b> Livre de contaminações - <a href="../glossario.html#kilesa"><i>kilesa</i></a>. Livre das impurezas - <a href="../glossario.html#asava"><i>asava</i></a> [<a href="#R4">Retorna</a>]</p>
+
+<p class=Normal><a name=N5></a><b> [Nota 5 - Verso 388]</b> Brâmane, <i>samana</i>, <i>pabbajita</i>: essas são as categorias dos religiosos na época do Buda. Eles se dedicavam a diversos tipos de práticas religiosas. Aqui o Buda explica quem é o verdadeiro brâmane, <i>samana</i> e <i>pabbajita</i>. [<a href="#R5">Retorna</a>]</p>
+
+<p class=Normal><a name=N6></a><b> [Nota 6 - Verso 393] </b> A verdade neste caso se refere às Quatro Nobres Verdades. O Dhamma se refere aos quatro caminhos supramundanos, os seus frutos e <i>nibbana</i>, veja <a href="../glossario.html#ariya_pugala"><i>ariya-puggala</i></a> no glossário. [<a href="#R6">Retorna</a>]</p>
+
+<p class=Normal><a name=N7></a><b> [Nota 7 - Verso 394]</b> Na época do Buda esse tipo de prática ascética como o cabelo emaranhado e vestir-se com peles de animais eram considerados sinais de santidade. [<a href="#R7">Retorna</a>]</p>
+
+<p class=Normal><a name=N8></a><b> [Nota 8 - Verso 395] </b> O corpo com veias expostas devido ao ascetismo e magreza. [<a href="#R8">Retorna</a>]</p>
+
+<p class=Normal><a name=N9></a><b> [Nota 9 - Verso 393] </b> Amarras (raiva), correias (desejo), cabresto (idéias incorretas), embocadura (tendências latentes), trave (ignorância). [<a href="#R9">Retorna</a>]</p>
+
+<p class=Normal><a name=N10></a><b> [Nota 10 - Verso 402] </b> O fardo são os agregados - <a href="../glossario.html#khandha"><i>khandha</i></a>. A emancipação de todas as contaminações - <a href="../glossario.html#kilesa"><i>kilesa</i></a>. [<a href="#R10">Retorna</a>]</p>
+
+<p class=Normal><a name=N11></a><b> [Nota 11 - Verso 403] </b> Que conhece o caminho para os mundos inferiores, para os mundos paradisíacos e para <i>nibbana</i>. [<a href="#R11">Retorna</a>]</p>
+
+<p class=Normal><a name=N12></a><b> [Nota 12 - Verso 413] </b> Imperturbado pelas contaminações - <a href="../glossario.html#kilesa"><i>kilesa</i></a>. [<a href="#R12">Retorna</a>]</p>
+
+
+
+
+<br>
+<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+
+
+
+<p class=Normal>&nbsp;</p>
+<p class=Normal>&nbsp;</p>
+
+<!-- Counter/Statistics -->
+<script language="JavaScript"
+src="../../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
+</script>
+<script language="javascript">geovisit();</script>
+<noscript><img src="../../visit.webhosting.yahoo.com/visit07cc.html?time"
+alt="setstats" border="0" width="1" height="1"></noscript>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42601555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- FIM DO TEXTO -->
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado: 26 Setembro 2015           </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp26.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:05:45 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

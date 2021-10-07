@@ -1,0 +1,579 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp18.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:01:28 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - dhp18</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("dhp1.1.html","dhp1.3.html","dhp1.5.html","dhp1.6.html","dhp1.13.html","dhp1.15.html","dhp1.17.html","dhp1.19.html","dhp2.21.html","dhp2.25.html","dhp2.26.html","dhp2.27.html","dhp2.28.html","dhp2.29.html","dhp2.31.html","dhp3.33.html","dhp3.35.html","dhp3.36.html","dhp3.37.html","dhp3.38.html","dhp3.40.html","dhp3.42.html","dhp3.43.html","dhp4.44.html","dhp4.46.html","dhp4.47.html","dhp4.48.html","dhp4.50.html","dhp4.51.html","dhp4.54.html","dhp4.58.html","dhp5.60.html","dhp5.61.html","dhp5.62.html","dhp5.63.html","dhp5.64.html","dhp5.66.html","dhp5.71.html","dhp5.75.html","dhp6.76.html","dhp6.78.html","dhp6.80.html","dhp6.81.html","dhp6.85.html","dhp7.92.html","dhp8.102.html","dhp8.111.html","dhp8.113.html","dhp9.118.html","dhp9.121.html","dhp9.126.html","dhp9.127.html","dhp10.129.html","dhp10.130.html","dhp10.145.html","dhp11.146.html","dhp11.147.html","dhp11.151.html","dhp11.153.html","dhp11.155.html","dhp12.1.html","dhp12.2.html","dhp12.3.html","dhp12.4.html","dhp12.5.html","dhp12.6.html","dhp12.7.html","dhp12.8.html","dhp13.1.html","dhp13.2.html","dhp13.3.html","dhp13.4.html","dhp13.5.html","dhp13.6.html","dhp13.7.html","dhp13.8.html","dhp13.9.html","dhp13.10.html","dhp13.11.html","dhp14.1.html","dhp14.2.html","dhp14.3.html","dhp14.4.html","dhp14.5.html","dhp14.6.html","dhp14.7.html","dhp15.1.html","dhp15.2.html","dhp15.3.html","dhp15.4.html","dhp15.5.html","dhp15.6.html","dhp15.7.html","dhp15.8.html","dhp15.9.html","dhp15.10.html","dhp16.1.html","dhp16.2.html","dhp16.3.html","dhp16.4.html","dhp16.5.html","dhp16.6.html","dhp16.7.html","dhp17.1.html","dhp17.2.html","dhp17.3.html","dhp17.4.html","dhp17.5.html","dhp18.1.html","dhp18.2.html","dhp18.3.html","dhp18.4.html","dhp18.5.html","dhp18.6.html","dhp18.7.html","dhp18.8.html","dhp19.1.html","dhp19.2.html","dhp20.1.html","dhp20.2.html","dhp20.3.html","dhp20.4.html","dhp20.5.html","dhp21.1.html","dhp21.2.html","dhp21.3.html","dhp21.4.html","dhp21.5.html","dhp22.1.html","dhp23.1.html","dhp23.2.html","dhp24.1.html","dhp24.2.html","dhp24.3.html","dhp24.4.html","dhp24.5.html","dhp24.6.html","dhp24.7.html","dhp24.8.html","dhp25.1.html","dhp25.2.html","dhp25.3.html","dhp25.4.html","dhp25.5.html","dhp25.6.html","dhp25.7.html","dhp25.8.html","dhp25.9.html","dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="dhp18" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_44.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central"><!-- INICIO DO TEXTO -->
+
+<script type="text/javascript" src="../expando.js"></script>
+
+
+
+<p class=Tit1 align=center style='text-align:center'>18. <i> Malavagga </i> </Tit1>
+<p class=Tit2 align=center style='text-align:center'> Impurezas </Tit2>
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+
+
+<p class=Normal>&nbsp;</p>
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-235.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Você agora está como uma folha murcha.<br>
+Os mensageiros da morte o aguardam.<br>
+Estando no limiar da sua partida,<br>
+sem ter feito provisões para a jornada. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 235</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-236.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Seja uma ilha para você mesmo,<br>
+esforçe-se com rapidez e torne-se sábio,<br>
+livre de impurezas e desapaixonado<br>
+você irá para o plano celestial dos nobres.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 236  
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N1">Nota 1</a>]  <a name=R1></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-237.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> A sua vida agora chegou ao fim,<br>
+você está a caminho do senhor da morte.<br>
+Ao longo do caminho não há descanso<br>
+provisões tampouco você dispõem.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 237</p>
+</td>
+</tr>
+</table>
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-238.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Seja uma ilha para você mesmo,<br>
+esforçe-se com rapidez e torne-se sábio,<br>
+livre de impurezas e desapaixonado<br>
+você não retornará para o nascimento e morte.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 238</p>
+</td>
+</tr>
+</table>
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-239.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Gradualmente, pouco a pouco,<br>
+momento a momento, o sábio<br>
+remove as suas impurezas,<br>
+tal como um prateiro remove as impurezas da prata.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 239</p>
+</td>
+</tr>
+</table>
+
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-240.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Tal como a ferrugem originada do ferro<br>
+devora ela mesma o ferro,<br>
+assim também as próprias ações <br>
+conduzem a um destino ruim.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 240</p>
+</td>
+</tr>
+</table>
+
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-241.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> A não repetição é a impureza das escrituras,<br>
+o desleixo a impureza do lar,<br>
+o desalinho a impureza da beleza,<br>
+a negligência a impureza de quem quer ter controle.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 241</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N2">Nota 2</a>]  <a name=R2></a></p>
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-242.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> A conduta ruim é a impureza no homem,<br>
+a avareza a impureza no doador,<br>
+as impurezas são de fato ruins,<br>
+neste mundo ou no próximo. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 242</p>
+</td>
+</tr>
+</table>
+
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-243.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Pior de todas impurezas<br>
+é a ignorância, a pior de todas.<br>
+Abandonem essa impureza e assim<br>
+livrem-se das impurezas, bhikkhus!
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 243</p>
+</td>
+</tr>
+</table>
+
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-244.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+
+<p class=Normal style='margin-left:1.0in'> Fácil é  a vida de um desavergonhado,<br>
+impudente como um corvo,<br>
+maledicente, presunçoso, <br>
+arrogante e corrompido. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 244</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-245.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> Mas difícil é a vida de quem é modesto<br>
+sempre em busca da purificação.<br>
+Desapegado, humilde,<br>
+vivendo imaculado e com discernimento. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 245</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-246.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> Quem no mundo destrói a vida,<br>
+diz palavras falsas,<br>
+toma aquilo que não é dado livremente,<br>
+comete adultério, <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 246</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-247.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> ou tem o vício de bebidas embriagantes:<br>
+quem com abandono tem esse comportamento<br>
+extirpa a sua própria raiz<br>
+neste mesmo mundo. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 247</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-248.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> Portanto amigo lembre-se disto:<br>
+as ações ruins são difíceis de conter,<br>
+não permita que a cobiça e a raiva<br>
+o arrastem para o sofrimento prolongado.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 248</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-249.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> As pessoas dão com base na fé,<br>
+com claridade e serena confiança.<br>
+Descontente com as oferendas,<br>
+com a comida e bebida recebidas dos outros,<br>
+ele não irá desfrutar da concentração<br>
+durante o dia nem à noite.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 249</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N3">Nota 3</a>]  <a name=R3></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-250.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> Mas quem extirpou, desenraizou,<br>
+destruiu o descontentamento da mente,<br>
+de fato irá desfrutar da concentração<br>
+durante o dia e à noite.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 250</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-251.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> Não há fogo igual à paixão,<br>
+nem agarramento igual à raiva,<br>
+sem igual é a rede da delusão,<br>
+nenhum rio igual ao desejo.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 251</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N4">Nota 4</a>]  <a name=R4></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-252.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> Fáceis de serem vistos são os defeitos dos outros,<br>
+difíceis mesmo de ver são os nossos;<br>
+os defeitos dos outros são revelados<br>
+como no ato de separar a casca do grão,<br>
+mas os seus próprios defeitos você esconde<br>
+como o trapaceiro esconde a jogada perdida.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 252</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-253.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+
+<p class=Normal style='margin-left:1.0in'> Quem sempre busca defeitos nos outros,<br>
+constantemente criticando,<br>
+as suas impurezas se incrementam,<br>
+estando distante da destruição das impurezas.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 253</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N5">Nota 5</a>]  <a name=R5></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-254.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> No céu não há nenhum caminho,<br>
+nenhum contemplativo do lado de fora,<br>
+as massas se deleitam com a proliferação,<br>
+os Tathagatas estão livres da proliferação.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 254</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N6">Nota 6</a>]  <a name=R6></a></p>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-255.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+
+<p class=Normal style='margin-left:1.0in'> No céu não há nenhum caminho,<br>
+nenhum contemplativo do lado de fora,<br>
+aquilo que é condicionado não é eterno,<br>
+não há vacilação nos Budas.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 255</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N7">Nota 7</a>]  <a name=R7></a></p>
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dhp19.html">19. <i> Dhammatthavagga </i></a></p>
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal><b>Notas:</b> </p>
+
+<p class=Normal><a name=N1></a> <b>[Nota 1 - Verso 236]</b> 
+<i>Ariyabhumi</i> - o plano celestial dos nobres são as moradas puras. As moradas puras são os cinco mundos superiores do <a href="../caminho_liberdade/mundos.html">reino da matéria sutil</a>: <i>Akanittha deva, Sudassi deva, Sudassa deva, Atappa deva, Aviha deva</i>. Aqueles que não retornam, ou <i>anagamis</i>, renascem nesses mundos. [<a href="#R1">Retorna</a>]</p>
+
+<p class=Normal><a name=N2></a><b> [Nota 2 - Verso 241] </b> Não-repetição significa a falta de memorização que conduz ao esquecimento, quer seja de ensinamentos religiosos ou científicos. [<a href="#R2">Retorna</a>]</p>
+
+<p class=Normal><a name=N3></a> <b>[Nota 3 - Verso 249] </b> <i>Samadhi</i> - concentração que corresponde aos quatro <i>jhanas</i>. [<a href="#R3">Retorna</a>]</p>
+
+<p class=Normal><a name=N4></a><b> [Nota 4 - Verso 251]</b> <i>Ragasamo, dosasamo, mohasamam, tanhasama</i>: as impurezas da mente são comparadas a vários tipos de calamidades. A paixão é comparada ao fogo, a um incêndio. A raiva é algo que agarra. A ignorância ou delusão a uma rede. O desejo à correnteza furiosa de um rio. Essas comparações em termos físicos ajudam a entender as impurezas da mente. [<a href="#R4">Retorna</a>]</p>
+
+<p class=Normal><a name=N5></a><b> [Nota 5 - Verso 253]</b> A destruição das impurezas corresponde ao fruto do estado de arahant. [<a href="#R5">Retorna</a>]</p>
+
+<p class=Normal><a name=N6></a><b> [Nota 6 - Verso 254] </b> No céu não é possível discernir pegadas, do mesmo modo, do lado de fora, ou seja, fora da revelação do Buda não são encontrados contemplativos que tenham realizado os quatro caminhos e os seus frutos. Proliferação, veja <a href="../glossario.html#papanca"><i>papañca</i></a> no glossário. [<a href="#R6">Retorna</a>]</p>
+
+<p class=Normal><a name=N7></a><b> [Nota 7 - Verso 255] </b><i> Sankhara</i>: condicionado, fabricado - qualquer coisa formada ou criada por condições.<br> <i>Iñjita</i> - vacilação, significa que não há nenhum tipo de impedimento como por exemplo o desejo, presunção, etc. através do qual os Budas poderiam considerar os <i>sankharas</i> como eternos. </p>
+
+
+
+
+<br>
+<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dhp19.html"> 19. <i> Dhammatthavagga </i></a></p>
+
+
+
+
+<p class=Normal>&nbsp;</p>
+<p class=Normal>&nbsp;</p>
+
+<!-- Counter/Statistics -->
+<script language="JavaScript"
+src="../../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
+</script>
+<script language="javascript">geovisit();</script>
+<noscript><img src="../../visit.webhosting.yahoo.com/visit07cc.html?time"
+alt="setstats" border="0" width="1" height="1"></noscript>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42601555-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- FIM DO TEXTO -->
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  18 Outubro 2014          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp18.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:01:42 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

@@ -1,0 +1,3209 @@
+<!-- DEFINE PARAMETROS -->
+
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/caminho_liberdade/buda.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:03 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - buda</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="buda" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_52.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+
+<p class=Tit1 align=center style='text-align:center'>Uma Descrição da Vida do Buda</span></p>
+
+<p class=Tit2 align=center style='text-align:center'>Leituras do Cânone em Pali</span></p>
+
+<br>
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Esta é uma descrição da vida
+do Buda baseada em trechos de suttas do Cânone em Pali.<span
+='mso-spacerun:yes'>   </span>Nesta breve antologia você irá encontrar
+material suficiente para ter pelo menos uma idéia da extensão dos ensinamentos
+do Buda e da trajetória envolvente da sua vida extraordinária.</span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:PT-BR'>Para
+relatos mais detalhados da vida do Buda, por favor veja estas duas excelentes
+antologias: <i ='mso-bidi-font-:normal'>The Splendour
+of Enlightenment: A Life of the Buddha</i> (dois volumes), compilado por Phra
+Khantipalo (Bangkok: Mahamakut Rajavidyalaya Press, 1976), e <i
+='mso-bidi-font-:normal'>The Life of the Buddha</i> por Bhikkhu
+Ñanamoli (Kandy: Buddhist Publication Society, 1992). </span></p>
+
+<br>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;De fato, o </span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Abençoado é um arahant,
+perfeitamente iluminado, consumado no verdadeiro conhecimento e conduta,
+bem-aventurado, conhecedor dos mundos, um líder insuperável de pessoas preparadas
+para serem treinadas, mestre de devas e humanos, desperto, sublime</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'>.&quot; </span></p>
+
+<p class=Normal><i>"Itipi so bhagava araham, sammasambuddho, vijjacaranasampanno, sugato, lokavidu, anuttaro 
+purisadammasarathi, sattha devamanussanam, buddho, bhagava."</i></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANXI.12.html#buda">AN XI.12</a>] </span><span lang=PT-BR
+='mso-ansi-language:PT-BR'></span></p>
+
+<hr size=1 width="100%" align=center>
+
+
+<p class=Tit2><span lang=PT-BR ='mso-ansi-language:PT-BR'>Conteúdo:</span></p>
+
+<ul ='margin-top:0in' type=disc>
+ <li class=Normal ='margin-top:5.0pt;margin-bottom:5.0pt;mso-list:l2 level1 lfo3;
+     tab-stops:list .5in'><a name=R1></a><span lang=PT-BR ='
+     mso-ansi-language:PT-BR'><a href="#Bodisattha">O
+     Bodisatva (que será Buda)</a></span></li>
+ <li class=Normal ='margin-top:5.0pt;margin-bottom:5.0pt;mso-list:l2 level1 lfo3;
+     tab-stops:list .5in'><a name=R2></a><span lang=PT-BR ='
+     mso-ansi-language:PT-BR'><a href="#Despértar">A iluminação</a> </span></li>
+ <li class=Normal ='margin-top:5.0pt;margin-bottom:5.0pt;mso-list:l2 level1 lfo3;
+     tab-stops:list .5in'><a name=R3></a><span lang=PT-BR ='
+     mso-ansi-language:PT-BR'><a href="#Apos">Após a iluminação</a> </span></li>
+ <li class=Normal ='margin-top:5.0pt;margin-bottom:5.0pt;mso-list:l2 level1 lfo3;
+     tab-stops:list .5in'><a name=R4></a><span lang=PT-BR ='
+     mso-ansi-language:PT-BR'><a href="#Quarenta">Quarenta
+     e cinco anos de ensinamentos</a></span></li>
+ <li class=Normal ='margin-top:5.0pt;margin-bottom:5.0pt;mso-list:l2 level1 lfo3;
+     tab-stops:list .5in'><a name=R5></a><span lang=PT-BR ='
+     mso-ansi-language:PT-BR'><a href="#Ultimos">Os
+     últimos dias do Buda</a></span></li>
+ <li class=Normal ='margin-top:5.0pt;margin-bottom:5.0pt;mso-list:l2 level1 lfo3;
+     tab-stops:list .5in'><a name=R6></a><span lang=PT-BR ='
+     mso-ansi-language:PT-BR'><a href="#Post">Post
+     Scriptum: Os muitos nomes do Buda</a></span><span lang=PT-BR
+     ='mso-ansi-language:PT-BR'> </span></li>
+</ul>
+
+<hr size=1 width="100%" align=center>
+<br>
+
+<p class=Tit2><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>O Bodisatva (que será Buda)<span
+='mso-spacerun:yes'>    </span></span><span ='
+color:blue'><a href="#R1"><span ='text-decoration:none;text-underline:
+none'>
+
+</span></a></span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'></span> <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="../img/tup.gif"></span></a>
+<a name=Top></a>
+</p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Asita, o
+vidente, visita o príncipe recém nascido</b></span></p>
+
+<p class=Normal>  <span lang=PT-BR ='mso-ansi-language:
+PT-BR'>[Data: -80 EB] </span></p>
+
+<p class=Normal><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Asita, o vidente, na sua meditação do meio dia,<br>
+viu os devas do Grupo dos Trinta<br>
+&nbsp;&nbsp;&nbsp; - exultantes, estáticos - <br>
+vestidos com puro branco, honrando a<span ='mso-spacerun:yes'>
+</span>Indra,<br>
+segurando estandartes, aplaudindo desordenadamente,<br>
+e vendo os devas assim felizes e contentes,<br>
+ao saudá-los, ele disse:</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Por
+que a comunidade dos devas<br>
+&nbsp;&nbsp;&nbsp; está tão desordenadamente exaltada?<br>
+Por que vocês estão segurando estandartes<br>
+e acenando com eles ao redor?<br>
+Mesmo após a guerra com os Asuras<br>
+&nbsp;&nbsp;&nbsp; - quando a vitória foi dos devas,<br>
+&nbsp;&nbsp;&nbsp; os Asuras derrotados - <br>
+mesmo então não havia uma excitação como essa.<br>
+Vendo qual maravilha<br>
+os devas estão tão felizes?<br>
+&nbsp;&nbsp;&nbsp; Vocês gritam,<br>
+&nbsp;&nbsp;&nbsp; cantam,<br>
+&nbsp;&nbsp;&nbsp; tocam música,<br>
+&nbsp;&nbsp;&nbsp; batem palmas,<br>
+&nbsp;&nbsp;&nbsp; dançam.<br>
+Então eu pergunto a vocês que vivem no topo do<span ='mso-spacerun:yes'>
+</span>Monte Meru.<br>
+Por favor dissipem a minha dúvida logo, estimados senhores.” </span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:PT-BR'>“O
+Bodisatva, a jóia mais preciosa,<br>
+&nbsp;&nbsp;&nbsp; inigualável,<br>
+nasceu para o bem estar e felicidade<br>
+&nbsp;&nbsp;&nbsp; no mundo humano,<br>
+em uma cidade na região dos<span ='mso-spacerun:yes'>  </span>Sakyas,<br>
+&nbsp;&nbsp;&nbsp; Lumbini.<br>
+É por isso que estamos todos desordenadamente exaltados.<br>
+Ele, o supremo de todos os seres,<br>
+a pessoa suprema,<br>
+um touro entre os homens, o primeiro entre todas as pessoas,<br>
+colocará em movimento a Roda [do Dhamma]<br>
+no bosque<span ='mso-spacerun:yes'>  </span>com o nome dos videntes,<br>
+como um leão forte, rugindo,<br>
+o conquistador de bestas.” </span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ouvindo
+essas palavras,<br>
+Asita rapidamente descendeu [do paraíso]<br>
+e se dirigiu à residência de Suddhodana.<br>
+Lá, tomando um assento, ele disse aos Sakyas:<br>
+&nbsp;&nbsp;&nbsp; “Onde está o príncipe?<br>
+&nbsp;&nbsp;&nbsp; Eu, também, quero vê-lo.”<br>
+Os Sakyas então mostraram<br>
+para o vidente chamado Asita<br>
+&nbsp;&nbsp;&nbsp; o seu filho, o príncipe,<br>
+&nbsp;&nbsp;&nbsp; como ouro brilhante,<br>
+polido pelo mais hábil ourives<br>
+na boca da fornalha,<br>
+resplandecendo em glória, imaculado na cor.<br>
+Vendo o príncipe resplandecendo como uma chama,<br>
+puro como um cometa <br>
+cruzando os céus<br>
+&nbsp;&nbsp;&nbsp; - o sol incandescente,<br>
+&nbsp;&nbsp;&nbsp; livre das nuvens do outono - <br>
+exultante, pleno com êxtase abundante.<br>
+Os devas seguravam no céu<br>
+um guarda sol com muitos raios<br>
+e mil circulos.<br>
+Pequenas vassouras com cabos de ouro<br>
+ondulavam para cima e para baixo,<br>
+porém aqueles que seguravam as vassouras e o guarda sol<br>
+&nbsp;&nbsp;&nbsp; não podiam ser vistos.<br>
+O vidente com o cabelo opaco<br>
+denominado Esplendor Escuro,<br>
+vendo o menino, como um ornamento de ouro<br>
+sobre o cobertor de lã vermelho,<br>
+um guarda sol branco cobrindo a cabeça,<br>
+o recebeu, feliz e contente.<br>
+E ao receber o touro dos<span ='mso-spacerun:yes'>  </span>Sakyas,<br>
+saudosamente, o mestre dos mantras e sinais<br>
+exclamou com a mente confiante:<br>
+&nbsp;&nbsp;&nbsp; “Este é insuperável,<br>
+&nbsp;&nbsp;&nbsp; o mais elevado da raça bípede.”<br>
+Então, prevendo a sua iminente partida,<br>
+ele, deprimido, verteu lágrimas.<br>
+Vendo-o chorar,<br>
+os Sakyas perguntaram:<br>
+&nbsp;&nbsp;&nbsp; “Mas com certeza não haverá<br>
+&nbsp;&nbsp;&nbsp; perigo para o príncipe?”<br>
+Vendo a preocupação dos Sakyas<br>
+ele respondeu, “Eu prevejo para o príncipe<br>
+&nbsp;&nbsp;&nbsp; nenhum dano.<br>
+Nem haverá para ele qualquer perigo.<br>
+Ele não é inferior: tenham certeza.<br>
+&nbsp;&nbsp;&nbsp; Este príncipe alcançará<br>
+&nbsp;&nbsp;&nbsp; o máximo despertar por seu próprio mérito.<br>
+Ele, vendo a máxima pureza,<br>
+colocará em movimento a Roda do Dhamma<br>
+por compaixão pelo bem estar de muitos.<br>
+A sua vida santa se espalhará em muitas direções.<br>
+&nbsp;&nbsp;&nbsp; Mas quanto a mim<br>
+minha vida aqui não tem mais resíduo;<br>
+minha morte ocorrerá antes.<br>
+&nbsp;&nbsp;&nbsp; Eu não ouvirei<br>
+o Dhamma deste aqui com a tarefa inigualável.<br>
+Essa é a razão porque estou golpeado,<br>
+&nbsp;&nbsp;&nbsp; atormentado e triste.” </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[</span><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'><a href="../sutta/SnpIII11.html">Snp III.11</a></span><span
+='mso-bidi-Arial'>] </span><span
+='Arial'></span></p>
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O jovem
+príncipe se desencanta com a sua vida luxuosa</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“
+Bhikkhus, Eu vivi em refinamento, o maior refinamento, refinamento total. Meu
+pai mandou construir no nosso palácio lagos com flores de lótus: um onde
+floresciam lótus<span ='mso-spacerun:yes'>  </span>vermelhas, outro onde
+floresciam lótus brancas, outro onde floresciam lótus azuis, tudo em meu
+beneficio. Eu não usava outro sândalo que não fosse de Benares. Meu turbante
+era de Benares, como era minha túnica, minha roupa de baixo e minha capa. Uma
+sombrinha branca era mantida sobre mim durante o dia e noite para proteger-me
+do frio, calor, poeira, sujeira e orvalho.</span></p>
+
+
+<p class=Normal><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“
+Eu tinha três palácios: um para a estação fria, um para a estação quente e um
+para a estação das chuvas. Durante os quatro meses da estação das chuvas eu era
+entretido no<span ='mso-spacerun:yes'>  </span>palácio para a estação das
+chuvas por menestréis e não havia nenhum homem entre eles, e eu não saia nunca
+do palácio.. Enquanto que os serviçais, trabalhadores e empregados nas casas de
+outras pessoas eram alimentados com sopa de lentilhas e arroz quebrado, na casa
+do meu pai os serviçais, trabalhadores e empregados eram alimentados com trigo,
+arroz e carne.</span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“
+Apesar de ter sido favorecido com essa boa sorte, com tal total refinamento, o
+pensamento me ocorreu: ‘Quando uma pessoa sem instrução, uma pessoa comum,
+sujeita ao envelhecimento, que não superou o envelhecimento, vê um outro que
+está envelhecido, ela fica horrorizada, repelida e enojada, sem se dar conta,
+de que ela também está sujeita ao envelhecimento, que não superou o
+envelhecimento. Se eu – que estou sujeito ao envelhecimento, que não superei o
+envelhecimento – ficasse horrorizado, repelido e enojado vendo uma pessoa que
+é velha, isso não seria digno.’ Notando isso, a [típica] embriaguez de um jovem
+com a juventude desapareceu completamente.</span></p>
+
+
+<p class=Normal><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“
+Apesar de ter sido favorecido com essa boa sorte, com tal total refinamento, o
+pensamento me ocorreu: ‘Quando uma pessoa sem instrução, uma pessoa comum,
+sujeita a enfermidade, que não superou a enfermidade, vê um outro que está
+enfermo, ela fica horrorizada, repelida e enojada, sem se dar conta,<span
+='mso-spacerun:yes'>  </span>de que ela também esta sujeita à enfermidade,
+que não superou a enfermidade. Se eu – que estou sujeito à enfermidade, que não
+superei a enfermidade – ficasse horrorizado, repelido e enojado vendo uma
+pessoa que está enferma, isso não seria digno.’ Notando isso, a [típica]
+embriaguez de um jovem com a juventude desapareceu completamente.</span></p>
+
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+Arial'>“ Apesar de ter sido favorecido com essa boa sorte,
+com tal total refinamento, o pensamento me ocorreu: ‘Quando uma pessoa sem
+instrução, uma pessoa comum, sujeita à morte, que não superou a morte, vê um
+outro que está morto, ela fica horrorizada, repelida e enojada, sem se dar
+conta,<span ='mso-spacerun:yes'>  </span>de que ela também esta sujeita à morte,
+que não superou a morte. Se eu – que estou sujeito à morte, que não superei a
+morte – ficasse horrorizado, repelido e enojado vendo uma pessoa<span
+='mso-spacerun:yes'>  </span>morta, isso não seria digno.’ Notando isso, a
+[típica] embriaguez de um jovem com a juventude desapareceu completamente.</span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[</span><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'><a href="../sutta/ANIII.39.html">AN III.39</a></span><span
+='mso-bidi-Arial'>]</span><span
+='Arial'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Aos 29
+anos de idade, o jovem príncipe segue a vida santa</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>[Data: -51 EB] </span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>&quot;Antes da minha iluminação
+quando eu ainda era um Bodisatva não iluminado, eu pensei: 'A vida em família é
+confinada, um caminho empoeirado. A vida santa é como o ar livre. Não é fácil
+viver em casa e praticar a vida santa completamente perfeita, totalmente pura,
+como uma concha polida. E se eu raspasse o meu cabelo e barba, vestisse os
+mantos de cor ocre e seguisse a vida santa?' </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Mais
+tarde, ainda jovem, um homem jovem com o cabelo negro, dotado com as bênçãos da
+juventude, na flor da juventude, embora minha mãe e meu pai desejassem outra
+coisa e chorassem com o rosto coberto de lágrimas, eu raspei meu cabelo e
+barba, vesti o manto de cor ocre e deixei a vida em família e segui a vida
+santa.&quot;</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/MN36.html">MN 36</a>]</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Passantes
+notam o seu brilho sereno e atenção plena</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='Arial'>Ao
+seguir a vida santa,<br>
+&nbsp;&nbsp;&nbsp; ele evitou as ações ruins e prejudiciais com o corpo.<br>
+&nbsp;&nbsp;&nbsp; Abandonando a linguagem ruim e prejudicial,<br>
+&nbsp;&nbsp;&nbsp; ele purificou o seu modo de vida.<br>
+Então ele, o Buda, foi para Rajagaha,<br>
+a fortaleza dos Magadhas na montanha,<br>
+&nbsp;&nbsp;&nbsp; para esmolar alimentos,<br>
+dotado com todas as marcas de um grande homem.<br>
+O rei Bimbisara, em pé no seu palácio, o viu,<br>
+e ao vê-lo, com as marcas consumadas,<br>
+disse: &quot;Vejam aquele, senhores.<br>
+Que formoso, majestoso, puro!<br>
+Como é perfeito o seu comportamento!<br>
+Plenamente atento, com os olhos baixos,<br>
+olhando somente a uma pequena distância à sua frente<br>
+como alguém que não é de uma linhagem inferior:<br>
+Enviem os mensageiros reais imediatamente<br>
+para ver aonde irá esse bhikkhu.&quot; </span></p>
+
+
+<p class=Normal 'margin-left:.5in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Eles – os mensageiros enviados - <br>
+o seguiram.<br>
+&nbsp;&nbsp;&nbsp; &quot;Aonde irá este bhikkhu?<br>
+&nbsp;&nbsp;&nbsp; Onde será que ele habita?&quot;<br>
+Conforme ele ia de casa em casa - <br>
+bem contido, com as suas portas dos meios dos sentidos guardadas,<br>
+&nbsp;&nbsp;&nbsp; plenamente atento, alerta - <br>
+a sua tigela se encheu rapidamente.<br>
+Então ele, o sábio, tendo esmolado comida,<br>
+deixou a cidade, dirigindo-se ao Monte Pandava.<br>
+&nbsp;&nbsp;&nbsp; &quot;Aquele deve ser o lugar que ele habita.&quot;<br>
+Vendo-o ir para aquele lugar,<br>
+três mensageiros se sentaram<br>
+enquanto que um retornou para contar ao rei.<br>
+&quot;Aquele bhikkhu, majestade,<br>
+no flanco do Pandava,<br>
+senta como um tigre, um touro,<br>
+um leão em uma fenda na montanha.&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[<a href="../sutta/SnpIII1.html">Snp
+III.1</a>]</span><span ='Arial'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Um rei
+deseja saber: &quot;Por que você seguiu a vida santa?&quot;</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Ouvindo
+as palavras do mensageiro,<br>
+o nobre rei guerreiro<br>
+imediatamente foi com a carruagem real,<br>
+para o Monte Pandava.<br>
+Indo até onde a carruagem permitia,<br>
+ele desceu e continuou a pé,<br>
+ao chegar ele sentou<br>
+e ambos se cumprimentaram.<br>
+Quando a conversa cortês e amigável havia terminado,<br>
+ele disse:<br>
+&quot;Você é jovem, vigoroso,<br>
+na flor da juventude<br>
+dotado com a estatura e a cor <br>
+&nbsp;&nbsp;&nbsp; de um nobre guerreiro.<br>
+O seu aspecto seria glorioso<br>
+&nbsp;&nbsp;&nbsp; à frente de um exército<br>
+&nbsp;&nbsp;&nbsp; dotado com um batalhão de elefantes.<br>
+Eu lhe ofereço riqueza: desfrute dela.<br>
+Eu pergunto o seu nascimento: me diga.&quot; </span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Direto
+em frente, sua majestade,<br>
+na base do Himalaia,<br>
+há um país consumado<br>
+em energia e riqueza,<br>
+habitado pelos Kosalas:<br>
+&nbsp;&nbsp;&nbsp; Do sol por clã,<br>
+&nbsp;&nbsp;&nbsp; Sakya por nascimento.<br>
+Dessa linhagem eu segui a vida santa,<br>
+mas não em busca de prazeres sensuais.<br>
+Vendo o perigo nos prazeres sensuais<br>
+- e a renúncia como o descanso - <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Eu me esforço.<br>
+&nbsp;&nbsp;&nbsp; É com isso que meu coração se delicia.&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/SnpIII1.html">Snp III.1</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O
+Bodisatva em pouco tempo supera as realizações dos seus mestres</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;Tendo seguido a vida santa em busca do que é benéfico, buscando o
+insuperável estado de paz sublime procurei por Alara Kalama e lhe disse: 'Amigo
+Kalama, quero viver a vida santa neste Dhamma e Disciplina.' Alara Kalama
+respondeu, ‘O Venerável pode ficar aqui, meu amigo. Este Dhamma é tal que uma pessoa
+sábia pode em pouco tempo entrar e permanecer nele, compreendendo por si mesmo
+através do conhecimento direto a doutrina do seu mestre.' Em breve aprendi
+aquele Dhamma. No que diz respeito à mera recitação e repetição dos seus
+ensinamentos, eu falava com conhecimento e segurança e reivindicava, ‘Eu sei e
+vejo’ – e havia outros que assim também diziam.<span ='mso-spacerun:yes'>
+</span></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'Não é somente pela mera fé que<span ='mso-spacerun:yes'>
+</span>Alara Kalama declara, &quot;Tendo compreendido por mim mesmo com o
+conhecimento direto, eu entro e permaneço neste Dhamma.” Com certeza Alara
+Kalama permanece conhecendo e vendo este Dhamma.' Então fui até Alara Kalama e
+perguntei: ‘Amigo Kalama, de que forma, tendo compreendido por você mesmo com
+conhecimento direto, você declara que entra e permanece nesse Dhamma?' Em
+resposta, ele declarou a esfera do nada. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'Não somente<span ='mso-spacerun:yes'>  </span>Alara Kalama tem
+fé, energia, atenção plena, concentração e sabedoria. Eu, também, tenho fé,
+energia, atenção plena, concentração e sabedoria. E se eu me esforçasse para
+realizar por mim mesmo o Dhamma no qual Alara Kalama declara entrar e
+permanecer, tendo compreendido por ele mesmo através do conhecimento direto?' </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Assim
+em pouco tempo eu entrei e permaneci naquele Dhamma, tendo compreendido por mim
+mesmo com o conhecimento direto.<span ='mso-spacerun:yes'>  </span>Eu fui
+até Alara Kalama e perguntei, 'Amigo Kalama, é dessa forma que você declara que
+entra e permanece neste<span ='mso-spacerun:yes'>  </span>Dhamma, tendo
+compreendido por você mesmo através do conhecimento direto?' – ‘Essa é a forma,
+amigo.' – ‘É dessa forma, amigo, que eu também entro e permaneço nesse Dhamma,
+tendo compreendido por mim mesmo com o conhecimento direto.' – ‘É um ganho para
+nós, meu amigo, um grande ganho para nós, que tenhamos um tal venerável como
+companheiro na vida santa. Portanto, o Dhamma no qual eu declaro que entro e
+permaneço, tendo compreendido por mim mesmo com o conhecimento direto, é o
+Dhamma no qual você declara entrar e permanecer, tendo compreendido por você
+mesmo com o conhecimento direto. E o Dhamma no qual você declara entrar e
+permanecer, tendo compreendido por você mesmo com o conhecimento direto, é o
+Dhamma no qual eu declaro que entro e permaneço, tendo compreendido por mim
+mesmo com o conhecimento direto. Portanto, você conhece o Dhamma que eu conheço
+e eu conheço o Dhamma que você conhece. Como eu sou, assim é você; como você é,
+assim eu sou. Venha amigo, vamos agora liderar esta comunidade juntos.' </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Dessa
+forma Alara Kalama, meu mestre, colocou-me, seu pupilo, no mesmo nível que ele
+e me concedeu a maior honra possível. Porém, o pensamento me ocorreu, ‘Este
+Dhamma não conduz ao desencantamento, ao desapego, à cessação, à paz, ao
+conhecimento direto, à iluminação, a Nibbana<i ='mso-bidi-font-:normal'>,</i>
+mas somente ao reaparecimento na esfera do nada.’ Dessa forma, não estando
+satisfeito com esse Dhamma, eu parti. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Ainda
+em busca, bhikkhus, do que é benéfico, buscando o insuperável estado de paz
+sublime procurei por Uddaka Ramaputta e ao chegar, eu lhe disse: 'Amigo Uddaka,
+quero viver a vida santa neste Dhamma e Disciplina.'<span
+='mso-spacerun:yes'>  </span>Uddaka Ramaputta respondeu, ‘O Venerável pode
+ficar aqui, meu amigo. Este Dhamma é tal que uma pessoa sábia pode em pouco
+tempo entrar e permanecer nele, compreendendo por si mesmo através do
+conhecimento direto a doutrina do seu mestre.' Em breve aprendi aquele Dhamma.
+No que diz respeito à mera recitação e repetição dos seus ensinamentos, eu
+falava com conhecimento e segurança e reivindicava, ‘Eu sei e vejo’ – e havia
+outros que assim também diziam. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'Não foi somente pela mera fé que<span ='mso-spacerun:yes'>
+</span>Rama declarava, &quot;Tendo compreendido por mim mesmo através do
+conhecimento direto, eu entro e permaneço neste Dhamma.” Com certeza Rama
+permanecia conhecendo e vendo este Dhamma.' Então fui até Uddaka Ramaputta e
+perguntei: ‘Amigo, de que forma Rama, tendo compreendido por ele mesmo através
+do conhecimento direto, declarou que entrou e permaneceu nesse Dhamma?' Em
+resposta, Uddaka Ramaputta declarou a esfera da nem percepção, nem não
+percepção.<span ='mso-spacerun:yes'>  </span></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'Não somente Rama tinha fé, energia, atenção plena, concentração e
+sabedoria. Eu, também, tenho fé, energia, atenção plena, concentração e
+sabedoria. E se eu me esforçasse para realizar por mim mesmo o Dhamma no qual
+Rama, tendo compreendido por ele mesmo através do conhecimento direto, declarou
+que entrou e permaneceu?' </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Assim,
+em pouco tempo eu entrei e permaneci naquele Dhamma, tendo compreendido por mim
+mesmo com o conhecimento direto.<span ='mso-spacerun:yes'>  </span>Então
+eu fui até Uddaka Ramaputta e perguntei, 'Amigo, é dessa forma que Rama
+declarou que entrou e permaneceu neste<span ='mso-spacerun:yes'>
+</span>Dhamma, tendo compreendido por ele mesmo através do conhecimento
+direto?' – ‘Essa é a forma, amigo.' – ‘É dessa forma, amigo, que eu também
+entro e permaneço nesse Dhamma, tendo compreendido por mim mesmo com o
+conhecimento direto.' – ‘É um ganho para nós, meu amigo, um grande ganho para
+nós, que tenhamos um tal venerável como companheiro na vida santa. Portanto, o
+Dhamma no qual Rama declarou que entrou e permaneceu, tendo compreendido por
+ele mesmo com o conhecimento direto, é o Dhamma no qual você entra e permanece,
+tendo compreendido por você mesmo com o conhecimento direto. E o Dhamma que
+você entra e permanece tendo compreendido por você mesmo com o conhecimento
+direto, é o Dhamma no qual Rama declarou que entrou e permaneceu, tendo
+compreendido por ele mesmo com o conhecimento direto. Portanto, você conhece o
+Dhamma que Rama conhecia e Rama conhecia o Dhamma que você conhece. Como Rama
+era, assim é você; como você é, assim era Rama. Venha amigo, agora lidere esta
+comunidade.' </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Dessa
+forma, Uddaka Ramaputta, meu companheiro na vida santa, colocou-me na posição
+de mestre e me concedeu a maior honra possível. Porém, o pensamento me ocorreu,
+‘Este Dhamma não conduz ao desencantamento, ao desapego, à cessação, à paz, ao
+conhecimento direto, à iluminação, a Nibbana<i ='mso-bidi-font-:normal'>,</i>
+mas somente ao reaparecimento na esfera da nem percepção, nem não percepção.’
+Dessa forma, não estando satisfeito com esse Dhamma, eu parti. </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[<a href="../sutta/MN26.html">MN 26</a>]</span><span
+='Arial'> </span></p>
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+pratica austeridades extremas na floresta</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei:<span ='mso-spacerun:yes'>  </span>'E se eu, com os dentes cerrados
+e pressionando minha língua contra o céu da boca, abatesse, forçasse e
+subjugasse minha mente com a minha mente.' Dessa forma, com os dentes cerrados
+e pressionando minha língua contra o céu da boca, abati, forcei e subjuguei
+minha mente com a minha mente. Enquanto eu fazia isso o suor emanava das minhas
+axilas.<span ='mso-spacerun:yes'>  </span>Tal como um homem forte agarra
+um homem mais fraco pela cabeça ou pelos ombros e o abate, o força e o subjuga,
+da mesma forma com os dentes cerrados e pressionando minha língua contra o céu
+da boca, abati, forcei e subjuguei minha mente com a minha mente e o suor
+emanava das minhas axilas. Mas embora uma energia incansável houvesse sido
+estimulada em mim e uma persistente atenção plena houvesse se estabelecido, meu
+corpo estava agitado e inquieto porque eu estava exausto devido ao doloroso
+esforço. Porém, a sensação de dor que surgiu em mim não invadiu a minha mente e
+permaneceu.</span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'></span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'E se eu praticasse a meditação sem respirar.' Assim eu parei a
+inspiração e a expiração através do meu nariz e boca. Ao fazer isso, houve um
+forte rugido de ventos saindo pelos ouvidos. Tal como o forte rugido dos ventos
+que saem do fole de um ferreiro, da mesma forma, quando parei a inspiração e a
+expiração através do meu nariz e boca houve um forte rugido de ventos saindo
+pelos ouvidos. Mas embora uma energia incansável houvesse sido estimulada em
+mim e uma persistente atenção plena houvesse se estabelecido, meu corpo estava
+agitado e inquieto porque eu estava exausto devido ao doloroso esforço. Porém,
+a sensação de dor que surgiu em mim não invadiu a minha mente e permaneceu. </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><a name=R9></a><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>&quot;Eu pensei: 'E se eu praticasse mais a meditação sem respirar.'
+Assim eu parei a inspiração e a expiração através do nariz, boca e ouvidos. Ao
+fazer isso, ventos violentos retalharam a minha cabeça. Tal como se um homem
+forte estivesse retalhando a minha cabeça com uma espada afiada, da mesma
+forma, quando parei a inspiração e a expiração através do nariz, boca e ouvidos
+ventos violentos retalharam a minha cabeça. Mas, embora uma energia incansável
+houvesse sido estimulada em mim e uma persistente atenção plena houvesse se
+estabelecido, meu corpo estava agitado e inquieto porque eu estava exausto
+devido ao doloroso esforço. Porém, a sensação de dor que surgiu em mim não
+invadiu a minha mente e permaneceu.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'E se eu praticasse mais a meditação sem respirar.' Assim eu parei a
+inspiração e a expiração através do nariz, boca e ouvidos. Ao fazer isso, dores
+violentas surgiram na minha cabeça. Tal como se um homem forte estivesse
+apertando em volta da minha cabeça uma tira de couro resistente, da mesma
+forma, quando parei a inspiração e a expiração através do nariz, boca e ouvidos
+dores violentas surgiram na minha cabeça. Mas embora uma energia incansável
+houvesse sido estimulada em mim e uma persistente atenção plena houvesse se
+estabelecido, meu corpo estava agitado e inquieto porque eu estava exausto
+devido ao doloroso esforço. Porém, a sensação de dor que surgiu em mim não
+invadiu a minha mente e permaneceu.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'E se eu praticasse mais a meditação sem respirar.' Assim eu parei a
+inspiração e a expiração através do nariz, boca e ouvidos. Ao fazer isso,
+forças violentas retalharam a cavidade do meu estômago. Tal como se um
+açougueiro ou seu aprendiz estivessem retalhando a cavidade do estômago de um
+boi com uma faca afiada, da mesma forma, quando parei a inspiração e a
+expiração através do nariz, boca e ouvidos, forças violentas retalharam a
+cavidade do meu estômago. Mas embora uma energia incansável houvesse sido
+estimulada em mim e uma persistente atenção plena houvesse se estabelecido, meu
+corpo estava agitado e inquieto porque eu estava exausto devido ao doloroso
+esforço. Porém, a sensação de dor que surgiu em mim não invadiu a minha mente e
+permaneceu.</span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'E se eu praticasse mais a meditação sem respirar.' Assim eu parei a
+inspiração e a expiração através do nariz, boca e ouvidos. Ao fazer isso, houve
+uma queimação violenta no meu corpo. Tal como se dois homens fortes agarrassem
+um homem mais fraco pelos braços o assassem sobre uma cova com brasas em
+chamas, da mesma forma, quando parei a inspiração e a expiração através do
+nariz, boca e ouvidos, houve uma queimação violenta no meu corpo. Mas embora
+uma energia incansável houvesse sido estimulada em mim e uma persistente atenção
+plena houvesse se estabelecido, meu corpo estava agitado e inquieto porque eu
+estava exausto devido ao doloroso esforço. Porém, a sensação de dor que surgiu
+em mim não invadiu a minha mente e permaneceu. </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Agora
+quando os devas me viram, alguns disseram, 'Gotama o contemplativo está morto.'
+Outros devas disseram, 'Ele não está morto, ele está morrendo.' E outros
+disseram, 'Ele não está morto, nem morrendo; ele é um arahant, pois é assim
+como praticam os arahants.'</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'><span
+='mso-spacerun:yes'> </span></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'E se eu praticasse cortando completamente a alimentação.' Então os
+devas vieram até mim e disseram, 'Estimado senhor, por favor não utilize a
+prática do corte completo da alimentação. Se você assim o fizer, nós
+infundiremos alimento divino através dos seus poros e você sobreviverá com
+isso.' Eu pensei, 'Se eu afirmar estar em jejum completo enquanto esses devas
+estiverem infundindo alimento divino através dos meus poros, eu estarei
+mentindo.' Assim eu os dispensei, dizendo, 'Não é necessário.'</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'E se eu comesse somente um pouco de comida de cada vez, uma mão cheia
+de cada vez, seja de sopa de feijão ou de sopa de lentilha, ou de sopa de
+legumes, ou sopa de ervilhas.' Assim, eu comia muito pouco, uma mão cheia de
+cada vez, seja de sopa de feijão ou de sopa de lentilha, ou de sopa de legumes,
+ou de sopa de ervilhas. Enquanto eu fazia isso meu corpo ficou extremamente
+emaciado. Por comer tão pouco, os meus membros ficaram como os segmentos
+articulados de uma videira ou bambu. Por comer tão pouco, as minhas costas
+ficaram como a corcova de um camelo. Por comer tão pouco, as projeções da minha
+espinha pareciam contas de um cordão. Por comer tão pouco, as minhas costelas
+se projetavam para a frente tão frágeis como as traves de um celeiro destelhado.
+Por comer tão pouco, o brilho dos meus olhos se afundou dentro da cavidade do
+olho, parecendo com o brilho d´água no fundo de um poço profundo. Por comer tão
+pouco, o meu escalpo enrugou e encolheu como uma abóbora verde, amarga, enruga
+e encolhe com o vento e o sol. Por comer tão pouco, a pele da minha barriga se
+uniu à minha espinha; portanto se eu tocasse a minha barriga encontrava a minha
+espinha e se tocasse a minha espinha encontrava a pele da minha barriga. Por
+comer tão pouco, se eu tentasse aliviar meu corpo esfregando meus membros com
+as mãos, os pelos, com as raízes apodrecidas, caíam do corpo à medida que eu os
+esfregava</span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>. </span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'><span
+='mso-spacerun:yes'> </span></span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Agora,
+quando as pessoas me viam, algumas diziam: 'O contemplativo Gotama é negro.
+Outras pessoas diziam, 'O contemplativo Gotama não é negro, ele é marrom.'
+Outros diziam, 'O contemplativo Gotama não é negro nem marrom, ele tem a pele
+dourada.’ Tanto havia se deteriorado a complexão pura e brilhante da minha
+pele, por comer tão pouco. </span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='Arial'>&quot;Eu
+pensei: 'Todos os contemplativos ou brâmanes que no passado experimentaram
+sensações dolorosas, torturantes e penetrantes devido ao esforço, isto é o
+máximo, não existe nada além disso. Todos os contemplativos ou brâmanes que no
+futuro experimentarão sensações dolorosas, torturantes e penetrantes devido ao
+esforço, isto é o máximo, não existe nada além disso. E todos os contemplativos
+ou brâmanes que no presente experimentam sensações dolorosas, torturantes e
+penetrantes devido ao esforço, isto é o máximo, não existe nada além disso.
+Mas, através desta prática de austeridades atormentadoras eu não alcancei
+nenhum estado supra-humano,<span ='mso-spacerun:yes'>  </span>nenhuma
+distinção em conhecimento e visão digna dos nobres. Poderia haver um outro
+caminho para a iluminação?&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[<a href="../sutta/MN36.html">MN 36</a>]</span><span
+='Arial'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+confronta o medo e o terror de frente</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Eu
+habitei<span ='mso-spacerun:yes'>  </span>naqueles lugares que inspiram o
+pavor, lugares horripilantes como os santuários em jardins, santuários nas
+florestas e santuários nas árvores. E enquanto lá estava, um animal selvagem
+veio até a mim ou um pavão quebrou um galho, ou o vento murmurou nas folhas. Eu
+pensei: ‘E agora se esse for o medo e o terror vindo?’ eu pensei: ‘Porque
+permaneço sempre esperando o medo e o terror? E se eu subjugasse esse medo e
+terror mantendo a mesma postura em que eu me encontrar quando ele vier me
+encontrar?”</span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'> </span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>“Enquanto eu caminhava, o medo e terror vieram me encontrar; eu nem
+fiquei parado, nem sentei, nem deitei até que tivesse subjugado aquele medo e
+terror. Enquanto estava em pé, o medo e o terror vieram me encontrar; eu nem
+andei, nem sentei nem deitei até que tivesse subjugado aquele medo e terror.
+Enquanto estava sentado, o medo e o terror vieram me encontrar; eu nem andei,
+nem fiquei em pé, nem deitei até que tivesse subjugado aquele medo e terror.
+Enquanto estava deitado, o medo e o terror vieram me encontrar; eu nem andei,
+nem fiquei em pé, nem sentei até que tivesse subjugado aquele medo e terror.” </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+Arial'>[<a href="../sutta/MN4.html">MN 4</a>]</span><span
+='Arial'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Mara, a
+personificação do mal, lhe faz uma visita</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>“Da mesma forma, bhikkhus, Mara, o Senhor do Mal,<span
+='mso-spacerun:yes'>  </span>está continuamente e constantemente,
+esperando ao seu lado, pensando, ‘Talvez eu tenha uma oportunidade através do
+olho … do ouvido … do nariz … da língua … do corpo. Talvez eu tenha uma
+oportunidade através da mente.’ Portanto, bhikkhus, permaneçam com as portas
+dos meios dos sentidos bem guardadas.</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>[<a href="../sutta/SNXXXV.240.html">SN
+XXXV.240</a>]</span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'> </span></p>
+
+
+<p class=Normal><span lang=PT-BR ='Arial'>Estando <br>
+&nbsp;&nbsp;&nbsp; próximo ao rio Nerañjara,<br>
+&nbsp;&nbsp;&nbsp; esforçando-me em meditação,<br>
+&nbsp;&nbsp;&nbsp; para conquistar a segurança contra o cativeiro, </span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Namuci
+<a name=T1></a>veio,<br>
+&nbsp;&nbsp;&nbsp; falando palavras com compaixão:<br ='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br ='mso-special-character:line-break'>
+<![endif]></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+Arial'>”Você está emaciado, parece doente,<br>
+&nbsp;&nbsp;&nbsp; você está próximo<br>
+&nbsp;&nbsp;&nbsp; da morte.<br>
+A morte <br>
+tem mil partes suas<br>
+e apenas uma fração sua<br>
+está viva.<br>
+Viva, bom senhor! <br>
+A vida é melhor.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Vivo,<br>
+&nbsp;&nbsp;&nbsp; você pode fazer<br>
+&nbsp;&nbsp;&nbsp; atos meritórios.<br>
+Vivendo em celibato,<br>
+realizando o sacrifício do fogo,<br>
+muito mérito é realizado.<br>
+&nbsp;&nbsp;&nbsp; Qual benefício lhe trará o esforço?<br>
+É difícil de seguir<br>
+- o caminho do esforço - <br>
+difícil de realizar, difícil<br>
+de manter.” </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Mara
+disse esses versos<br>
+na presença do Abençoado.<br>
+E para aquele Mara, que disse aquilo,<br>
+o Abençoado respondeu o seguinte: </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Companheiro
+dos negligentes,<br>
+&nbsp;&nbsp;&nbsp; Diabólico,<br>
+porque você veio até aqui?<br>
+Aqueles que precisam de mérito:<br>
+esses são aqueles<br>
+a quem Mara deve se dirigir. </span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Eu
+tenho fé,<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; energia,<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; sabedoria.<br>
+Estando decidido pelo esforço,<br>
+porque você me pede que <br>
+&nbsp;&nbsp;&nbsp; eu viva?<br>
+Este vento poderia secar<br>
+&nbsp;&nbsp;&nbsp; até mesmo as águas de rios.<br>
+Por que, estando decidido,<br>
+meu sangue não deveria secar?<br>
+Na medida em que meu sangue seca<br>
+bílis e fleuma secam.<br>
+Na medida em que a carne é consumida,<br>
+a mente se torna mais tranqüila;<br>
+atenção plena, sabedoria,<br>
+concentração se <br>
+&nbsp;&nbsp;&nbsp; firmam.<br>
+Permanecendo dessa forma,<br>
+alcançando a sensação máxima,<br>
+<a name=T2></a>a mente não tem interesse <br>
+nos desejos sensuais.<br>
+&nbsp;&nbsp;&nbsp; Veja:<br>
+&nbsp;&nbsp;&nbsp; a pureza <br>
+&nbsp;&nbsp;&nbsp; de um ser! </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Sensualidade
+é o seu primeiro exército.<br>
+O<span ='mso-spacerun:yes'>  </span>segundo é chamado Descontentamento.<br>
+O<span ='mso-spacerun:yes'>  </span>terceiro é Fome e Sede.<br>
+O quarto é chamado Desejo.<br>
+O quinto é Preguiça e Torpor.<br>
+O sexto é chamado Medo.<br>
+O sétimo é Dúvida.<br>
+Hipocrisia e Teimosia, o oitavo.<br>
+Ganhos, Honrarias, Fama e<span ='mso-spacerun:yes'>  </span>Status<br>
+&nbsp;&nbsp;&nbsp; obtidos<span ='mso-spacerun:yes'>  </span>de forma
+incorreta,<br>
+e qualquer um que se vanglorie<br>
+e menospreze outros. </span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Esse,
+Namuci, é o seu exército<br>
+a força de ataque do Negro.<br>
+<a name=T3></a>Um covarde e preguiçoso não pode vencê-lo,<br>
+porém quem o derrota<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; conquista a felicidade.</p>
+
+<p class=Normal ='margin-left:.5in'><i><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>Eu </span></i><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>carrego a erva <i>muñja</i>? <br>
+<a name=T4></a>Eu cuspo na minha vida.<br>
+Morte na batalha seria melhor <br>
+&nbsp;&nbsp;&nbsp; do que, se derrotado,<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; eu sobrevivesse. </span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Alguns
+brâmanes e contemplativos,<br>
+&nbsp;&nbsp;&nbsp; não são vistos aqui se esforçando,<br>
+tão imersos eles estão no mundo.<br>
+Eles não conhecem o caminho <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;trilhado por aqueles com a conduta perfeita. </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Vendo
+o exército que me cerca <br>
+&nbsp;&nbsp;&nbsp; pronto para a luta <br>
+com Mara montado no seu elefante,<br>
+eu vou para a luta<br>
+de modo que ele não me mova<br>
+&nbsp;&nbsp;&nbsp; da <br>
+&nbsp;&nbsp;&nbsp; minha posição.<br>
+Esse seu exército,<br>
+que o mundo com os seus devas<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; é incapaz de subjugar,</span><br>
+
+Eu
+esmagarei com a sabedoria, <br>
+igual a uma cerâmica que não foi cozida, por uma pedra. </span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Tendo
+domesticado a mente,<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; a atenção plena bem estabelecida,<br>
+eu irei, de reino em reino,<br>
+treinando muitos discípulos.<br>
+Diligentes e energéticos<br>
+na prática dos meus ensinamentos, <br>
+os ensinamentos daqueles desprovidos de desejos sensuais,<br>
+&nbsp;&nbsp;&nbsp;<span ='mso-spacerun:yes'>  </span>eles irão</span><br>
+
+aonde, tendo ido,<br>
+&nbsp;&nbsp;&nbsp;<span ='mso-spacerun:yes'>  </span>não há sofrimento.”</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><i><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>Mara:</span></i><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'> </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Por
+sete anos, segui de perto<br>
+os passos do Abençoado,<br>
+mas não tive uma oportunidade<br>
+para derrotar esse plenamente atento <br>
+&nbsp;&nbsp;&nbsp; Perfeitamente Iluminado.<br>
+Um corvo sobrevoa uma pedra <br>
+com a cor da gordura<br>
+&nbsp;&nbsp;&nbsp; - ‘Talvez tenha encontrado<br>
+&nbsp;&nbsp;&nbsp; algo tenro ali.<br>
+&nbsp;&nbsp;&nbsp; Talvez seja algo para comer’ - </p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Mas
+não encontrando nada comestível,<br>
+o corvo vai embora.<br>
+Igual ao corvo e a pedra,<br>
+Eu deixo Gotama, desalentado.”</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span></p>
+
+
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Tomado
+pela tristeza,<br>
+o alaúde caiu do seu braço.<br>
+E aquele espírito deprimido,<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;exatamente ali<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span ='mso-spacerun:yes'>
+</span>desapareceu. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>[<a
+href="../sutta/SnpIII2.html">Snp III.2</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+abandona as suas austeridades</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='Arial'>&quot;Eu
+refleti: 'Eu me recordo que quando meu pai, o Sakya, estava ocupado enquanto eu
+estava sentado à sombra fresca de um jambo-rosa, afastado dos prazeres
+sensuais, afastado das qualidades não hábeis, eu entrei e permaneci no primeiro
+jhana, que é caracterizado pelo pensamento aplicado e sustentado, com o êxtase e
+felicidade nascidos do afastamento. <a name=R10></a>Poderia ser esse o caminho
+para a iluminação?' Então, seguindo essa memória, cheguei à conclusão: ‘Esse é
+o caminho para a iluminação.’ </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Eu
+pensei: 'Por que temo esse prazer que não tem nada que ver com a sensualidade,
+nem com qualidades mentais prejudiciais?'<span ='mso-spacerun:yes'>
+</span>Eu pensei: 'Eu não temo mais esse prazer já que ele não tem nada que ver
+com a sensualidade nem com qualidades mentais prejudiciais.'</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'> </span><span
+lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='Arial'>&quot;Eu
+refleti: 'Não é fácil alcançar esse prazer com um corpo tão extremamente
+emaciado. E se eu comesse alguma comida sólida - um pouco de arroz doce com leite.'
+E eu comi um pouco de comida sólida: um pouco de arroz doce com leite. Agora os
+cinco monges que estavam comigo, pensaram: 'Se Gotama, nosso contemplativo,
+alcançar algum estado mais elevado, ele nos dirá.’' Porém, quando eles me viram
+comendo comida sólida – um pouco de arroz doce com leite – eles
+sentiram repulsa e me deixaram, pensando: 'O contemplativo Gotama agora vive
+gratificado pelos sentidos. Ele deixou de lado a sua busca e reverteu ao luxo.'
+</span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='Arial'>&quot;Agora,
+tendo comido comida sólida e recuperado as minhas forças, afastado dos prazeres
+sensuais, afastado das qualidades não hábeis eu entrei e permaneci no primeiro
+jhana, que é caracterizado pelo pensamento aplicado e sustentado, com o êxtase e felicidade
+nascidos do afastamento. Mas essa sensação prazerosa que surgiu em mim não
+invadiu a minha mente e permaneceu.</span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='Arial'>&quot;Abandonando
+o pensamento aplicado e sustentado eu entrei e permaneci no segundo jhana ... Abandonando o êxtase ... eu entrei e permaneci no terceiro jhana ... Com o
+completo desaparecimento da felicidade ... eu entrei e permaneci no quarto jhana.
+Mas essa sensação prazerosa que surgiu em mim não invadiu a minha mente e
+permaneceu.&quot;</span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+Arial'>[<a href="../sutta/MN36.html">MN 36</a>]</span><span
+='Arial'> </span></p>
+
+<hr size=1 width="100%" align=center>
+
+<p class=Tit2><a name=Despértar></a><span
+lang=PT-BR ='mso-ansi-language:PT-BR'>A iluminação <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="../img/tup.gif"></span></a>
+<a name=Top></a>
+</p>
+
+<p class=Normal><span lang=PT-BR
+='mso-ansi-language:PT-BR'>[Data: -45 EB]</span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+descobre o Caminho do Meio</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“ Bhikkhus,
+há esses dois extremos aos quais aquele que abandonou a vida em família e
+seguiu a vida santa não deve se entregar. Quais dois? A busca da felicidade nos
+prazeres sensuais, que são baixos, vulgares, grosseiros, ignóbeis e que não
+trazem benefício; e a busca da mortificação, que é dolorosa, ignóbil e que não
+traz benefício. Evitando esses dois extremos o Tathagata despertou para o
+Caminho do Meio, que faz surgir a visão, que faz surgir a sabedoria, que conduz
+à paz, ao conhecimento direto, à iluminação, a Nibbana.</span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“ E
+qual, bhikkhus, é o caminho do meio para o qual o Tathagata despertou, que faz
+surgir a visão ... que conduz a Nibbana? É este Nobre Caminho Óctuplo:
+entendimento correto, pensamento correto, linguagem correta, ação correta, modo
+de vida correto, esforço correto, atenção plena correta, concentração correta.
+Esse, bhikkhus, é o caminho do meio para o qual o Tathagata despertou, que faz
+surgir a visão, que faz surgir a sabedoria, que conduz à paz, ao conhecimento
+direto, à iluminação, a Nibbana.</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>[<a href="../sutta/SNLVI.11.html">SN
+LVI.11</a>]</span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+penetra os Três Conhecimentos</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;Quando a minha mente dessa forma concentrada, purificada,
+luminosa, pura, imaculada, livre de defeitos, flexível, maleável, estável e
+atingindo a imperturbabilidade, eu a dirigi para o conhecimento da recordação
+de minhas vidas passadas. Eu recordei minhas muitas vidas passadas, isto é, um
+nascimento, dois...cinco, dez...cinqüenta, cem, mil, cem mil, muitos ciclos
+cósmicos de contração, muitos ciclos cósmicos de expansão, muitos ciclos
+cósmicos de contração e expansão: 'Lá eu tinha tal nome, pertencia a tal clã,
+tinha tal aparência. Assim era minha comida, assim era a minha experiência de
+prazer e de dor, assim foi o fim da minha vida. Falecendo daquele estado eu ressurgi
+ali. Ali eu também tinha tal nome, pertencia a tal clã, tinha tal aparência.
+Assim era a minha comida, assim a minha experiência de prazer e de dor, assim
+foi o fim da minha vida. Falecendo daquele estado eu ressurgi aqui.'<span
+='mso-spacerun:yes'>  </span>Assim eu me recordei das minhas vidas
+passadas nos seus modos e detalhes. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Esse
+foi o primeiro conhecimento verdadeiro que eu obtive na primeira vigília da
+noite. A ignorância foi destruída; o conhecimento surgiu; a escuridão foi
+destruída; surgiu a luz – como acontece com alguém que seja diligente, ardente
+e decidido. Mas o sentimento prazeroso que surgiu em mim não invadiu a minha
+mente e permaneceu.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Quando
+a minha mente dessa forma concentrada, purificada, luminosa, pura, imaculada,
+livre de defeitos, flexível, maleável, estável e atingindo a
+imperturbabilidade, eu a dirigi para o conhecimento do falecimento e
+ressurgimento dos seres. Eu vi – através do olho divino, purificado e que
+sobrepuja o humano – seres falecendo e renascendo e eu compreendi como eles são
+inferiores e superiores, bonitos e feios, afortunados e desafortunados de
+acordo com o seu kamma: 'Esses seres – que são dotados de má conduta com o
+corpo, linguagem e mente, que insultam os nobres, que têm entendimento
+incorreto e realizam ações sob a influência do entendimento incorreto – na
+dissolução do corpo, após a morte, renascem no plano da privação, numa
+destinação ruim, nos reinos inferiores, no inferno. Porém, aqueles seres – que
+são dotados de boa conduta com o corpo, linguagem e mente, que não insultam os nobres,
+que têm entendimento correto e realizam ações sob a influência do entendimento
+correto – com a dissolução do corpo, após a morte, renascem num destino feliz,
+no paraíso.' Dessa forma – através do olho divino, purificado e que sobrepuja<span
+='mso-spacerun:yes'>  </span>o humano – eu vi seres falecendo e renascendo
+e eu compreendi como eles são inferiores e superiores, bonitos e feios,
+afortunados e desafortunados de acordo com o seu kamma.<span
+='mso-spacerun:yes'>  </span></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Esse
+foi o segundo conhecimento verdadeiro que eu obtive na segunda vigília da
+noite. A ignorância foi destruída; o conhecimento surgiu; a escuridão foi
+destruída; surgiu a luz – como acontece com alguém que seja diligente, ardente
+e decidido. Mas o sentimento prazeroso que surgiu em mim não invadiu a minha
+mente e permaneceu.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Quando
+a minha mente dessa forma concentrada, purificada, luminosa, imaculada, livre
+de defeitos, flexível, maleável, estável e atingindo a imperturbabilidade, eu a
+dirigi para o conhecimento do fim das impurezas mentais. Eu compreendi, da
+maneira como realmente é, que ‘Isto é sofrimento… Esta é a origem do
+sofrimento… Esta é a cessação do sofrimento… Este é o caminho que conduz à
+cessação do sofrimento... Estas são as impurezas...Esta é a origem das
+impurezas.... Esta é a cessação das impurezas...Este é o caminho que conduz à
+cessação das impurezas.’ </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Quando
+eu assim soube e vi, minha mente estava livre da impureza do desejo sensual, da
+impureza de ser/existir, da impureza da ignorância. Quando ela se libertou,
+surgiu o conhecimento, ‘Libertada.’ Eu compreendi que ‘O nascimento foi
+destruído, a vida santa foi vivida, o que devia ser feito foi feito, não há
+mais vir a ser em nenhum estado.' </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Esse
+foi o terceiro conhecimento verdadeiro que eu obtive na terceira vigília da
+noite. A ignorância foi destruída e o verdadeiro conhecimento surgiu; a
+escuridão foi destruída e a luz surgiu – como acontece com alguém que seja
+diligente, ardente e decidido. Mas o sentimento prazeroso que surgiu em mim não
+invadiu a minha mente e permaneceu.</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>[<a href="../sutta/MN36.html">MN 36</a>]</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Despertar
+Supremo!</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Incontáveis nascimentos, neste samsara<br>
+perambulei, buscando sem encontrar<br>
+o construtor desta casa:<br>
+renascer é sofrimento.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Construtor desta casa você foi visto,<br>
+você nunca mais construirá uma casa,<br>
+todas as vigas cederam,<br>
+a estrutura doi demolida,<br>
+a mente superou o condicionado,<br>
+a cessação do desejo.</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>[<a href="../dhp/dhp11.html">Dhp 153-4</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele se
+torna um Tathagata</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;O Tathagata despertou completamente para o mundo. Do mundo, o Tathagata está desunido. O Tathagata despertou completamente para a origem do mundo. A origem do mundo foi abandonada pelo Tathagata. O Tathagata despertou completamente para a cessação do mundo. A cessação do mundo foi realizada pelo Tathagata. O Tathagata despertou completamente para o caminho para a cessação do mundo. O caminho para a cessação do mundo foi desenvolvido pelo Tathagata.</span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;Tudo aquilo no mundo, com os seus devas, maras e brahmas, esta população com seus contemplativos e brâmanes, seus príncipes e o povo, tudo aquilo que é  visto, ouvido, sentido, conscientizado, buscado, procurado, ponderado pela mente: o Tathagata despertou completamente para tudo isso. Por isso ele é chamado o Tathagata. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Desde a noite em que o Tathagata despertou completamente para a insuperável perfeita iluminação até a noite na qual ele realize o parinibbana, tudo aquilo que o Tathagata disse, falou, explicou é assim <i>(tatha)</i> e não de outra forma. Por isso ele é chamado o Tathagata. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;O
+Tathagata é aquele que age de acordo com <i>(tatha)</i> o que ele ensina,
+aquele que ensina de acordo com as suas ações. Por isso ele é chamado o
+Tathagata. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>&quot;Neste mundo, com os seus devas, maras e brahmas, esta população com seus contemplativos e brâmanes, seus príncipes e o povo, o Tathagata é o Conquistador, o Não-conquistado, Omnisciente, Todo Poderoso. Por isso ele é chamado o Tathagata.&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>[<a href="../sutta/It.112.html">It.112</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<hr size=1 width="100%" align=center>
+
+<p class=Tit2><a name=Apos></a><span lang=PT-BR
+='mso-ansi-language:PT-BR'>Após a iluminação <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="../img/tup.gif"></span></a>
+<a name=Top></a>
+</p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O Buda
+investiga as leis de causa e efeito</b></span></p>
+
+<p class=Normal ='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Assim
+ouvi. Certa ocasião o Abençoado estava em Uruvela às margens do rio Neranjara
+ao pé de uma figueira-dos-pagodes, pouco tempo depois de ter alcançado a
+perfeita iluminação. Então, enquanto o Abençoado estava só em isolamento, um
+pensamento surgiu na sua mente – ele ficou sentado em meditação sob a sombra
+dessa árvore por sete dias sem parar, sensível à felicidade da libertação. Ao
+final de sete dias, após emergir daquela concentração, na terceira vigília da
+noite, ele considerou minuciosamente a origem dependente em ordem progressiva e
+regressiva, dessa forma:</span></p>
+
+<p class=Normal ='mso-margin-top-alt:auto;margin-right:1.0in;
+mso-margin-bottom-alt:auto;margin-left:1.0in'><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>Quando existe isso, aquilo existe.<br>
+Com o surgimento disso, aquilo surge.<br>
+Quando não existe isso, nem aquilo existe.<br>
+Com a cessação disto, aquilo cessa. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:1.0in;margin-bottom:5.0pt;margin-left:
+1.0in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Em
+outras palavras: </span></p>
+
+<p class=Normal ='margin-left:1.0in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Da
+ignorância como condição, as formações [surgem]</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Das
+formações como condição, a consciência.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+consciência como condição, a mentalidade-materialidade.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+mentalidade-materialidade como condição, as seis bases dos sentidos.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Das
+seis bases dos sentidos como condição, o contato.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Do
+contato como condição, as sensações.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Das sensações como condição, o
+desejo</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Do
+desejo como condição, o apego.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Do
+apego como condição, ser/existir.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Do
+ser/existir como condição, o nascimento.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Do
+nascimento como condição, o envelhecimento e morte, tristeza, lamentação, dor,
+angústia e desespero.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Essa
+é a origem dessa massa de sofrimento e estresse. </span></p>
+
+
+<p class=Normal ='margin-left:1.0in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Agora
+da cessação sem deixar vestígios dessa mesma ignorância, cessam as formações.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação das formações, cessa a consciência.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação da consciência, cessa a mentalidade-materialidade.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação da mentalidade-materialidade, cessam as seis bases dos sentidos.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação das seis bases dos sentidos, cessa o contato.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação do contato, cessam as sensações.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação das sensações, cessa o desejo.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação do desejo, cessa o apego.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação do apego, cessa o ser/existir.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação do ser/existir, cessa o nascimento.</span><br>
+
+<span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Da
+cessação do nascimento, então envelhecimento e morte, tristeza, lamentação,
+dor, angústia e desespero, todos cessam.&quot; Essa é a cessação dessa massa de
+sofrimento e estresse.</span></p>
+
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'><span ='mso-tab-count:
+1'>            </span>Então, dando-se conta do significado disso, o Abençoado
+nessa ocasião exclamou: </span></p>
+
+<p class=Normal ='mso-margin-top-alt:auto;margin-right:1.0in;
+mso-margin-bottom-alt:auto;margin-left:1.0in'><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>Na medida em que os fenômenos ficam mais claros<br>
+para o brâmane – ardente, absorto - <br>
+ele permanece, arrasando as tropas de Mara,<br>
+como o sol que ilumina<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; o céu. </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+Arial'>[<a href="../sutta/UdI3.html">Ud I.3</a>]</span><span
+='Arial'> </span></p>
+
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O Buda
+pergunta a si mesmo: a quem devo reverenciar como meu mestre?</b></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Assim ouvi. Certa ocasião, o Abençoado estava em
+Uruvela às margens do rio Neranjara ao pé da figueira-dos-pagodes, pouco tempo
+depois de ter alcançado a perfeita iluminação. Então, enquanto o Abençoado
+estava só e isolado, um pensamento surgiu na sua mente: “Uma pessoa sofre se
+permanecer sem reverência ou deferência. Agora, de qual brâmane ou
+contemplativo posso depender, honrando-o e respeitando-o?&quot; </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Então, o pensamento lhe ocorreu: “Seria com o
+propósito de aperfeiçoar um agregado de virtude não aperfeiçoado que eu
+permaneceria na dependência de um outro brâmane ou contemplativo, honrando-o e respeitando-o?
+No entanto, neste mundo com os seus devas, Mara e Brahma, nesta população com
+seus brâmanes e contemplativos, seus príncipes e povo, eu não vejo outro
+brâmane ou contemplativo mais consumado em virtude do que eu, ninguém na
+dependência do qual eu possa permanecer honrando-o e respeitando-o.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Seria com o propósito de aperfeiçoar um agregado de
+concentração não aperfeiçoado... </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Seria com o propósito de aperfeiçoar um agregado de
+sabedoria não aperfeiçoado... </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Seria com o propósito de aperfeiçoar um agregado de
+libertação não aperfeiçoado... </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Seria com o propósito de aperfeiçoar um agregado de
+conhecimento e visão da libertação não aperfeiçoado que eu permaneceria na
+dependência de um outro brâmane ou contemplativo, honrando-o e respeitando-o? No
+entanto, neste mundo com os seus devas, Mara e Brahma, nesta população com seus
+brâmanes e contemplativos, seus príncipes e povo, eu não vejo outro brâmane ou
+contemplativo mais consumado em conhecimento e visão da libertação do que eu,
+ninguém na dependência do qual eu possa permanecer honrando-o e respeitando-o.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>&quot;E se eu permanecesse na dependência deste mesmo
+Dhamma para o qual eu despertei perfeitamente, honrando-o e
+respeitando-o?&quot; </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Então, tendo percebido com a sua<span
+='mso-spacerun:yes'>  </span>mente o pensamento na mente do Abençoado –
+com a mesma rapidez com que um homem forte pode estender o seu braço flexionado
+ou flexionar o seu braço estendido - o Brahma Sahampati desapareceu do mundo de
+Brahma e </span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>reapareceu</span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'> na frente do Abençoado. Arrumando o
+seu manto externo sobre o ombro, ele juntou as mãos em uma reverenciosa
+saudação dizendo: “Assim é, Abençoado! Assim é,<span ='mso-spacerun:yes'>
+</span>Iluminado! Aqueles que foram Arahants, Perfeitamente Iluminados no
+passado – esses Abençoados, também, permaneceram na dependência deste mesmo
+Dhamma, honrando-o e respeitando-o. Aqueles que serão Arahants, Perfeitamente
+Iluminados no futuro – esses Abençoados, também, permanecerão na dependência
+deste Dhamma, honrando-o e respeitando-o. Que o Abençoado, que é o Arahant no
+momento, o Perfeitamente Iluminado, permaneça na dependência deste Dhamma,
+honrando-o e respeitando-o.” </span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'></span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+Arial'>[<a href="../sutta/SNVI.2.html">SN VI.2</a>]</span><span
+='Arial'> </span></p>
+
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele se
+pergunta: devo ensinar este Dhamma a outros?</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>“Eu pensei: ‘Este Dhamma que eu alcancei é profundo, difícil de ver e
+difícil de compreender, pacífico e sublime, que não pode ser alcançado através
+do mero raciocínio, sutil, para ser experimentado pelos sábios. Porém esta
+população se delicia com a adesão, está excitada com a adesão, desfruta da
+adesão. Para uma população que se delicia com a adesão, excitada pela adesão,
+desfrutando da adesão, esta verdade, isto é, a condicionalidade isto/aquilo e a
+origem dependente são difíceis de serem vistas. E também, é difícil de ver esta
+verdade, isto é, o silenciar de todas as formações, o abandono de todas aquisições,
+o fim do desejo, desapego, cessação, Nibbana. Se eu fosse ensinar o Dhamma, os
+outros não me entenderiam, e isso seria fatigante, enervante.’ Então, estes
+versos nunca antes ouvidos, me ocorreram: </span></p>
+
+<p class=Normal ='mso-margin-top-alt:auto;margin-right:1.0in;
+mso-margin-bottom-alt:auto;margin-left:1.0in'><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>‘Basta agora com o ensino do Dhamma<br>
+que até para mim foi difícil alcançar;<br>
+pois ele nunca será entendido<br>
+por aqueles que vivem com a cobiça e o ódio.</span></p>
+
+<p class=Normal ='margin-left:1.0in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Aqueles
+tingidos pela cobiça, envoltos na escuridão&nbsp;<span
+='mso-spacerun:yes'>   </span></span></br>
+nunca
+irão discernir este Dhamma difícil de ser compreendido<br>
+que vai contra a torrente do mundo,<br>
+sutil, profundo, e difícil de ser visto.’</p>
+
+<p class=Normal ='margin-top:0in;margin-right:.5in;margin-bottom:
+0in;margin-left:.5in;margin-bottom:.0001pt'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Pensando dessa forma, minha mente tendia à
+inação ao invés do ensino do Dhamma. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Então,
+bhikkhus,<span ='mso-spacerun:yes'>  </span>o Brahma Sahampati, soube com
+a mente dele o pensamento na minha mente e pensou: “O mundo estará perdido, o
+mundo estará destruído, já que a mente do Tathagata, um arahant, perfeitamente
+iluminado, se inclina à inação ao invés do ensino do Dhamma.’ Então, com a
+mesma rapidez com que um homem forte pode estender o seu braço dobrado ou
+dobrar o seu braço estendido, Brahma Sahampati desapareceu do mundo de Brahma e
+apareceu na minha frente. Ele arrumou o seu manto externo sobre o ombro e
+juntou as mãos em uma reverenciosa saudação, dizendo: ‘ Venerável senhor, que o
+Abençoado ensine o Dhamma, que o Iluminado ensine o Dhamma. Há seres com pouca
+poeira sobre os olhos que estão decaindo por não ouvir o Dhamma. Há aqueles que
+entenderão o Dhamma.’ Depois de dizer isso, Brahma Sahampati disse ainda mais:</span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'><span ='mso-tab-count:2'>                        </span></span><span
+lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>‘Em Magadha surgiram até agora</span></br>
+ensinamentos
+contaminados formulados por aqueles que ainda estão poluídos.</span></br>
+Abram as portas para o Imortal! Que eles
+ouçam</span></br>
+
+o Dhamma que o Imaculado encontrou.</span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'><span ='mso-tab-count:
+2'>                        </span>Tal como alguém que esteja no pico
+de uma montanha</span></br>
+é capaz de ver todas as pessoas embaixo,</span></br>
+da mesma forma, Oh sábio, sábio que tudo vê,</span></br>
+
+suba ao palácio do Dhamma.</span></br>
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'><span ='mso-tab-count:
+2'>                        </span>Que o Conquistador da Tristeza inspecione
+esta raça humana,</span></br>
+
+engolfada na tristeza, subjugada pelo
+nascimento e envelhecimento.</span></br>
+
+
+
+Levante-se, Oh herói vitorioso na batalha!<br>
+Oh líder da caravana, sem dívidas, saia pelo mundo.</span></br>
+
+<p class=Normal>Ensine o Dhamma, Oh Abençoado,</span></br>
+
+existem aqueles que irão compreender.’</span></p>
+
+
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+tendo ouvido o pedido de Brahma, e por compaixão pelos seres, inspecionei o
+mundo com o olho de um Buda. Inspecionando o mundo com o olho de um Buda, eu vi
+seres com pouca poeira sobre os olhos e<span ='mso-spacerun:yes'>
+</span>com muita poeira sobre os olhos, com faculdades aguçadas e com
+faculdades embotadas, com boas qualidades e com más qualidades, fáceis de serem
+ensinados e difíceis de serem ensinados, e alguns que permaneciam vendo medo
+e<span ='mso-spacerun:yes'>  </span>culpa<span ='mso-spacerun:yes'>
+</span>no outro mundo. Tal como em um lago com flores de lótus azuis ou
+vermelhas ou brancas, algumas flores de lótus que nascem e crescem n’água
+florescem imersas na água sem sair fora d’água, e algumas outras flores de
+lótus que nascem e crescem n’água pousam sobre a superfície d’água, e algumas
+outras flores de lótus que nascem e crescem n’água sobem acima do nível d’água
+e permanecem sem<span ='mso-spacerun:yes'>  </span>serem molhadas pela
+água; assim também, inspecionando o mundo com o olho de um Buda, eu vi seres
+com pouca poeira sobre os olhos e<span ='mso-spacerun:yes'>  </span>com
+muita poeira sobre os olhos, com faculdades aguçadas e com faculdades
+embotadas, com boas qualidades e com más qualidades, fáceis de serem ensinados
+e difíceis de serem ensinados, e alguns que permaneciam vendo medo e<span
+='mso-spacerun:yes'>  </span>culpa no outro mundo. Então respondi ao
+Brahma Sahampati em versos:</span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'><span ='mso-tab-count:2'>                        </span></span><span
+lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Para eles estão abertas as portas para o Imortal,</span></br>
+
+que aqueles com ouvidos mostrem agora a sua fé.</span></br>
+
+Pensando que seria problemático, Oh Brahma,</span></br>
+
+eu não quis falar o Dhamma sutil e sublime.’</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+o Brahma Sahampati pensou: ‘Eu criei a oportunidade para que o Abençoado ensine
+o Dhamma.’ E depois de me homenagear, mantendo-me à sua direita, ele então
+desapareceu.</span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'> </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+Arial'>[<a href="../sutta/MN26.html">MN 26</a>]</span><span
+='Arial'> </span></p>
+
+<hr size=1 width="100%" align=center>
+
+<p class=Tit2><a name=Quarenta></a><span
+lang=PT-BR ='mso-ansi-language:PT-BR'>Quarenta e cinco
+anos de ensinamentos <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="../img/tup.gif"></span></a>
+<a name=Top></a>
+</p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O primeiro
+sermão do Buda para o grupo de cinco ascéticos</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Assim
+ouvi. </span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Em certa ocasião, o Abençoado estava em Benares, no
+Parque do Gamo, em Isipatana</span><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>. </span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'>Lá
+ele se dirigiu</span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'> ao grupo de cinco bhikkhus: </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Bhikkhus,
+há esses dois extremos aos quais aquele que abandonou a vida em família e
+seguiu a vida santa não deve se entregar. Quais dois? A busca da felicidade nos
+prazeres sensuais, que são baixos, vulgares, grosseiros, ignóbeis e que não
+trazem benefício; e a busca da mortificação, que é dolorosa, ignóbil e que não
+traz benefício. Evitando esses dois extremos o Tathagata despertou para o
+Caminho do Meio, que faz surgir a visão, que faz surgir a sabedoria, que conduz
+à paz, ao conhecimento direto, à iluminação, a Nibbana</span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O Nobre
+Caminho Óctuplo</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='Arial'>“E qual,
+bhikkhus, é o caminho do meio para o qual o Tathagata despertou, que faz surgir
+a visão ... que conduz a Nibbana? É este Nobre Caminho Óctuplo: entendimento
+correto, pensamento correto, linguagem correta, ação correta, modo de vida
+correto, esforço correto, atenção plena correta, concentração correta. Esse,
+bhikkhus, é o caminho do meio para o qual o Tathagata despertou, que faz surgir
+a visão, que faz surgir a sabedoria, que conduz à paz, ao conhecimento direto,
+à iluminação, a Nibbana..</span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>As
+Quatro Nobres Verdades</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Agora,
+bhikkhus, esta é a nobre verdade do sofrimento: nascimento é sofrimento,
+envelhecimento é sofrimento, enfermidade é sofrimento, morte é sofrimento;
+tristeza, lamentação, dor, angústia e desespero são sofrimento; a união com
+aquilo que é desprazeroso é sofrimento; a separação daquilo que é prazeroso é
+sofrimento; não obter o que se deseja é sofrimento; em resumo, os cinco
+agregados influenciados pelo apego são sofrimento.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Agora,
+bhikkhus, esta é a nobre verdade da origem do sofrimento: é este desejo que
+conduz a uma renovada existência,<span ='mso-spacerun:yes'>
+</span>acompanhado pela cobiça e pelo prazer, buscando o prazer aqui e ali;
+isto é, o desejo pelos prazeres sensuais, o desejo por ser/existir, o desejo
+por não ser/existir.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Agora,
+bhikkhus, esta é a nobre verdade da cessação do sofrimento: é o desaparecimento
+e cessação sem deixar vestígios daquele mesmo desejo, abrir mão, descartar, libertar-se, despegar desse mesmo desejo.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“Agora,
+bhikkhus, esta é a nobre verdade do caminho que conduz à cessação do sofrimento:
+é este Nobre Caminho Óctuplo: entendimento correto, pensamento correto,
+linguagem correta, ação correta, modo de vida correto, esforço correto, atenção
+plena correta, concentração correta. </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>As
+responsabilidades de cada um com relação às Quatro Nobres Verdades</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+é a nobre verdade do sofrimento’: assim, bhikkhus, com relação a coisas não
+ouvidas antes, surgiram em mim a visão,<span ='mso-spacerun:yes'>
+</span>a compreensão, a sabedoria, o verdadeiro conhecimento e a iluminação.<span
+='mso-spacerun:yes'>  </span></span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade do sofrimento deve ser completamente compreendida: assim,
+bhikkhus, com relação a coisas não ouvidas antes, surgiram em mim a visão, a
+compreensão, a sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade do sofrimento foi completamente compreendida: assim, bhikkhus,
+com relação a coisas não ouvidas antes, surgiram em mim a visão, a compreensão,
+a sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’
+Esta é a nobre verdade da origem do sofrimento: assim, bhikkhus, com relação a
+coisas não ouvidas antes, surgiram em mim a visão, a compreensão, a sabedoria,
+o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade da origem do sofrimento deve ser abandonada: assim, bhikkhus, com
+relação a coisas não ouvidas antes, surgiram em mim a visão, a compreensão, a
+sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade da origem do sofrimento foi abandonada: assim, bhikkhus, com
+relação a coisas não ouvidas antes, surgiram em mim a visão, a compreensão, a
+sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+é a nobre verdade da cessação do sofrimento: assim, bhikkhus, com relação a
+coisas não ouvidas antes, surgiram em mim a visão, a compreensão, a sabedoria,
+o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade da cessação do sofrimento deve ser realizada: assim, bhikkhus,
+com relação a coisas não ouvidas antes, surgiram em mim a visão,<span
+='mso-spacerun:yes'>  </span>a compreensão,<span
+='mso-spacerun:yes'>  </span>a sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade da cessação do sofrimento foi realizada: assim, bhikkhus, com
+relação a coisas não ouvidas antes, surgiram em mim a visão, a compreensão, a
+sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+é a nobre verdade do caminho que conduz à cessação do sofrimento: assim, bhikkhus,
+com relação a coisas não ouvidas antes, surgiram em mim a visão, a compreensão,
+a sabedoria, o verdadeiro conhecimento e a iluminação.</span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>“’Esta
+nobre verdade do caminho que conduz à cessação do sofrimento deve ser
+desenvolvida: assim, bhikkhus, com relação a coisas não ouvidas antes, surgiram
+em mim a visão, a compreensão, a sabedoria, o verdadeiro conhecimento e a
+iluminação.</span></p>
+
+
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR;font-weight:normal'>“’Esta nobre
+verdade do caminho que conduz à cessação do sofrimento foi desenvolvida: assim,
+bhikkhus, com relação a coisas não ouvidas antes, surgiram em mim a visão, a
+compreensão,<span ='mso-spacerun:yes'>  </span>a sabedoria, o verdadeiro
+conhecimento e a iluminação.</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'></span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>A roda
+do Dhamma com doze raios</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='Arial'>“Enquanto,
+bhikkhus, meu conhecimento e visão dessas Quatro Nobres Verdades como na
+verdade elas são, nas suas três fases e doze aspectos, não estava completamente
+purificado desse modo, não reivindiquei ter despertado para a insuperável
+perfeita iluminação neste mundo com os seus devas, maras e brahmas, esta
+população com seus contemplativos e brâmanes, seus príncipes e povo. Mas quando
+meu conhecimento e visão dessas Quatro Nobres Verdades como na verdade elas
+são, nas suas três fases e doze aspectos, estava completamente purificado desse
+modo, reivindiquei ter despertado para a insuperável perfeita iluminação neste
+mundo com os seus devas, maras e brahmas, esta população com seus contemplativos
+e brâmanes, seus príncipes e povo. O conhecimento e visão surgiram em mim: ‘A
+libertação da minha mente é inabalável. Este é o meu último nascimento. Não há
+mais vir a ser.</span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Nasce a
+Nobre Sangha</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='Arial'>Isto foi
+o que o Abençoado disse. </span><span lang=PT-BR ='mso-bidi-
+Arial'>Os cinco bhikkhus ficaram satisfeitos e contentes com
+as palavras do Abençoado</span><span lang=PT-BR ='Arial'>. E
+enquanto o Abençoado discursava, o olho imaculado do Dhamma surgiu no Venerável
+Kondañña: ‘Tudo que está sujeito ao surgimento está sujeito à cessação.’</span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>A Roda
+do Dhamma começa a girar</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>E
+quando a roda do Dhamma havia sido colocada em movimento pelo Abençoado, os
+devas da terra exclamaram: “Em</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> Benares, no Parque do Gamo, em
+Isipatana,</span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'> esta insuperável roda do
+Dhamma foi colocada em movimento pelo Abençoado, e não poderá ser detida por
+nenhum brâmane ou contemplativo, ou deva, ou Mara, ou Brahma, ou qualquer um no
+mundo.” Ouvindo a exclamação dos devas da terra, os devas do Reino dos Quatro
+Grandes Reis também exclamaram… os devas dos Trinta e Três…. os devas do Yama….
+os devas do Tusita… os devas do Nimmanarati… os devas do
+Paranimmita-vasavatti…. os devas do cortejo de Brahma também exclamaram:<span
+='mso-spacerun:yes'>  </span>“Em </span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Benares, no Parque do Gamo,
+em Isipatana,</span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'> esta insuperável roda do
+Dhamma foi colocada em movimento pelo Abençoado, e não poderá ser detida por
+nenhum brâmane ou contemplativo, ou deva, ou Mara, ou Brahma, ou qualquer um no
+mundo.”</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Assim,
+naquele momento, naquele instante, naquele segundo, a exclamação subiu até os
+distantes mundos de Brahma e esse sistema cósmico com dez mil mundos tremeu,
+estremeceu e se abalou e uma intensa, imensurável e gloriosa luminosidade
+surgiu no mundo ultrapassando a divina majestade dos devas.</span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Então,
+o Abençoado exclamou: “Kondañña de fato compreendeu! Kondañña de fato
+compreendeu!” E foi assim que o Venerável Kondañña adquiriu o nome
+Añña-Kondañña – Kondañña aquele que Compreendeu.”</span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[<a href="../sutta/SNLVI.11.html">SN
+LVI.11</a>]</span><span ='Arial'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O que
+diferenciou o Buda dos demais</b></span></p>
+
+<p class=Normal 'margin-left:.5in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>O brâmane Gopaka Moggallana<span
+='mso-spacerun:yes'>  </span>tomou um assento mais baixo, sentou-se a um
+lado e perguntou ao venerável Ananda:<span ='mso-spacerun:yes'>
+</span>“Mestre Ananda, existe algum bhikkhu que possua, em todos os aspectos,
+todas as qualidades que o Mestre Gotama, um arahant, perfeitamente iluminado,
+possuía?”</span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Não existe
+nenhum bhikkhu , brâmane, que possua, em todos os aspectos, todas as qualidades
+que o Abençoado, um arahant, perfeitamente iluminado, possuía. Pois o Abençoado foi
+aquele que fez surgir o caminho que não havia surgido, aquele que produziu o
+caminho que não estava produzido, aquele que declarou o caminho que não estava
+declarado; ele era o conhecedor do caminho, aquele que encontrou o caminho,
+aquele com habilidade no caminho. Mas os seus discípulos agora seguem esse
+caminho e eles se tornarão possuidores dessas qualidades no futuro.”</span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[</span><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'><a href="../sutta/MN108.html">MN 108</a></span><span ='
+mso-bidi-Arial'>]</span><span
+='Arial'> </span></p>
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Os seus
+ensinamentos, sempre práticos, incluem lições acerca de regras básicas de boas
+maneiras,</b></span></p>
+
+<p class=Normal 'margin-left:.5in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>“E como um bhikkhu tem noção de encontros sociais? É o
+caso em que um bhikkhu compreende o encontro social em que está: ‘Este, um
+encontro social de nobres guerreiros; este, um encontro social de sacerdotes;
+este, um encontro social de chefes de família; este, um encontro social de
+contemplativos; aqui se deve aproximar deles desta forma, ficar em pé desta
+forma, agir desta forma, sentar desta forma, falar desta forma, permanecer em
+silêncio desta forma.’ Se ele não compreendesse o encontro social em que está -
+‘Este, um encontro social de nobres guerreiros; este, um encontro social de sacerdotes;
+este, um encontro social de chefes de família; este, um encontro social de
+contemplativos; aqui se deve aproximar deles desta forma, ficar em pé desta
+forma, agir desta forma, sentar desta forma, falar desta forma, permanecer em
+silêncio desta forma’ – não se diria que ele é alguém com noção de encontros
+sociais. Portanto porque ele compreende o encontro social em que está - ‘Este,
+um encontro social de nobres guerreiros; este, um encontro social de
+sacerdotes; este, um encontro social de chefes de família; este, um encontro
+social de contemplativos; aqui se deve aproximar deles desta forma, ficar em pé
+desta forma, agir desta forma, sentar desta forma, falar desta forma,
+permanecer em silêncio desta forma’ – que se diz que ele é alguém com noção de
+encontros sociais. Ele tem noção do Dhamma, noção do significado, noção de si
+mesmo, noção de moderação, noção do tempo e noção de encontros sociais. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANVII.64.html">AN VII.64</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...lições
+sobre como tratar os pais,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Sustentar o pai e a mãe,<br>
+zelar pela esposa e filhos,<br>
+dedicar-se a uma ocupação pacífica:<br>
+&nbsp;&nbsp;&nbsp; Essa é a proteção suprema. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/SnpII.4.html">Snp II.4</a>] </span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Mãe e pai,<br>
+com compaixão pela família,<br>
+são chamados<br>
+&nbsp;&nbsp;&nbsp; Brahma,<br>
+&nbsp;&nbsp;&nbsp; primeiros mestres,<br>
+&nbsp;&nbsp;&nbsp; aqueles dignos de oferendas<br>
+&nbsp;&nbsp;&nbsp; dos seus filhos.<br>
+Dessa forma os sábios deveriam lhes prestar<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; homenagem,<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; honra<br>
+&nbsp;&nbsp;&nbsp; com comida e bebida<br>
+&nbsp;&nbsp;&nbsp; vestuário e roupa de cama<br>
+&nbsp;&nbsp;&nbsp; ungüentos e banhos<br>
+&nbsp;&nbsp;&nbsp; e lavando os seus pés.<br>
+Realizando esses serviços para os seus pais, os sábios<br>
+&nbsp;&nbsp;&nbsp; são aqui elogiados,<br>
+&nbsp;&nbsp;&nbsp; e após a morte<br>
+&nbsp;&nbsp;&nbsp; se regozijam no paraíso. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a href="../sutta/It.106.html">It.106</a>]</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...lições
+acerca do valor da generosidade,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+Arial'>&quot;E qual é o tesouro da generosidade? É o caso em
+que um nobre discípulo permanece em casa com uma mente desprovida da mácula da
+avareza, espontaneamente generoso, mão aberta, que se delicia com a renúncia,
+devotado à caridade, deliciando-se em dar e compartir. A isto se denomina o
+tesouro da generosidade.&quot;</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANVII.6.html">AN VII.6</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...acerca
+do valor da virtude,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+Arial'>&quot;E o que ­­é o tesouro da virtude? É o caso em
+que um nobre discípulo se abstém de matar, se abstém de roubar, se abstém de
+conduta sexual imprópria, se abstém de mentir, se abstém de tomar vinho, álcool
+e outros embriagantes que causam negligência. A isto, bhikkhus se chama o
+tesouro da virtude.</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANVII.6.html">AN VII.6</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...dos
+frutos da conduta virtuosa,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Com a mente dirigida corretamente,<br>
+falando a linguagem correta,<br>
+agindo corretamente com o corpo:<br>
+&nbsp;&nbsp;&nbsp; uma pessoa<br>
+com muito aprendizado,<br>
+que realiza méritos<br>
+&nbsp;&nbsp;&nbsp; nesta vida tão curta,<br>
+na dissolução do corpo,<br>
+&nbsp;&nbsp;&nbsp; sendo sábia,<br>
+&nbsp;&nbsp;&nbsp; renasce no paraíso. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/It.71.html">It 71</a>]</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...acerca
+das desvantagens dos prazeres sensuais – mesmo os divinos</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;É o caso em que uma pessoa, sujeita ela mesma ao envelhecimento,
+dando-se conta das desvantagens daquilo que está sujeito ao envelhecimento,
+busca aquilo que não envelhece, o descanso insuperável do jugo: Libertação.
+Sendo sujeita ela mesma à doença, dando-se conta das desvantagens daquilo que
+está sujeito à doença, ela busca aquilo que não adoece, o descanso insuperável
+do jugo: Libertação. Sendo sujeita ela mesma à morte, dando-se conta das
+desvantagens daquilo que está sujeito à morte, ela busca aquilo que é imortal,
+o descanso insuperável do jugo: Libertação. Sendo sujeita ela mesma à
+contaminação, dando-se conta das desvantagens daquilo que está sujeito à
+contaminação, ela busca aquilo que não se contamina, o descanso insuperável do
+jugo: Libertação&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANIV.252.html">AN IV.252</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...acerca
+do valor da renúncia,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;Tendo visto a desvantagem dos prazeres sensuais, eu inisiti nesse
+tema; tendo compreendido as recompensas da renúncia, eu me familiarizei com
+isso. Meu coração ficou excitado com a renúncia, ganhou confiança, decisão, e
+firmeza, vendo-a como a paz. Então totalmente afastado dos prazeres sensuais,
+afastado das qualidades não hábeis, entrei e permaneci no primeiro jhana, que é
+caracterizado pelo pensamento aplicado e sustentado, com o êxtase e felicidade
+nascidos do afastamento&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANIX.41.html">AN IX.41</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>... e
+acerca das Quatro Nobres Verdades.</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;Bhikkhus, é por não compreender, não penetrar as Quatro Nobres Verdades que eu, bem como vocês, durante muito tempo perambulamos e transmigramos neste ciclo de nascimento e morte. Quais são elas? Por não compreender a Nobre Verdade do Sofrimento é que nós perambulamos e transmigramos, por não compreender a Nobre Verdade da Origem do Sofrimento..., da Cessação do Sofrimento..., e do Caminho que conduz à Cessação do Sofrimento que nós perambulamos e transmigramos neste ciclo de nascimento e morte. E por compreender e penetrar essa mesma Nobre Verdade do Sofrimento, da Origem do Sofrimento, da Cessação do Sofrimento e do Caminho que conduz à Cessação do Sofrimento, que o desejo por ser/existir foi cortado, o suporte para o ser/existir foi destruído, não há mais vir a ser a nenhum estado.&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T2_2">DN 16.2.2</a>] </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Em
+resumo, o Buda ensina como realizar a felicidade verdadeira e duradoura:
+Nibbana</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>&quot;Existe aquela esfera da existência em que não 
+há nem terra, nem água, nem fogo, nem ar; não há a experiência do espaço infinito, 
+nem da consciência infinita, nem do nada, nem da nem percepção, nem não percepção; 
+ali não há nem este mundo e tampouco outro mundo, nem sol, nem lua. Nessa esfera da 
+existência, eu digo, não há vir, nem ir, nem permanecer; não há morte nem renascimento; 
+não há base, não há evolução e não há suporte (objeto mental). Isso, justamente isso, é apenas 
+o fim do sofrimento.&quot;</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/UdVIII1.html">Ud VIII.1</a>] </span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>&quot;Tanto antes, como
+agora, eu declaro somente o sofrimento e a cessação do sofrimento.&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/SNXXII.86.html">SN XXII.86</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>A sua
+reputação se espalha</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Gotama o contemplativo, o filho dos Sakyas, que adotou a vida santa
+deixando o clã dos Sakyas, que andava perambulando em Kosala com um grande
+número de bhikkhus chegou em Sala. E acerca desse mestre Gotama existe essa boa
+reputação: ‘Esse Abençoado </span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>é  um arahant,
+perfeitamente iluminado, consumado no verdadeiro conhecimento e conduta,
+bem-aventurado, conhecedor dos mundos, um líder insuperável de pessoas
+preparadas para serem treinadas, mestre de devas e humanos, desperto, sublime</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'>. Ele declara -
+tendo realizado por si próprio com o conhecimento direto - este mundo com os
+seus devas, maras e brahmas, esta população com seus contemplativos e brâmanes,
+seus príncipes e o povo. Ele ensina o Dhamma, com o significado e fraseado
+corretos, que é admirável no início, admirável no meio, admirável no final; e
+ele revela uma vida santa que é completamente perfeita e imaculada. É bom poder
+encontrar alguém tão nobre.’ </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/MN41.html">MN 41</a>]</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span></p>
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+viaja extensamente, ensinando milhares de discípulos leigos,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Assim ouvi. Em certa ocasião o Abençoado estava<span
+='mso-spacerun:yes'>  </span>em Savatthi no Bosque de Jeta, no Parque de
+Anathapindika. Então o discípulo leigo Dhammika com outros quinhentos
+discípulos leigos foi até o Abençoado e depois de cumprimentá-lo sentou a um
+lado e disse ....</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[</span><span
+='mso-bidi-Arial'><a
+href="../sutta/SnpII14.html"><span lang=PT-BR ='mso-ansi-language:PT-BR'>Sn
+II.14</span></a></span><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...bhikkhus,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Em certa ocasião, o Abençoado estava em Gaya, em Gayasissa, com 1.000
+bhikkhus.... </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/SNXXXV.28.html">SN XXXV.28</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...pessoas
+de todas as castas e de todos estilos de vida,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;Eu lembro ter me aproximado de muitas centenas de assembléias de
+nobres… muitas centenas de assembléias de Brâmanes… muitas centenas de
+assembléias de chefes de família… muitas centenas de assembléias de
+contemplativos… ...&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/MN12.html">MN 12</a>]</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...incluindo
+leprosos,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Então o Abençoado, tendo compreendido a mente de toda a assembléia com a
+sua mente, perguntou a si mesmo, “Agora quem aqui é capaz de entender o
+Dhamma?” Ele viu Suppabuddha o leproso sentado na assembléia, e ao vê-lo o
+pensamento lhe ocorreu, “Esta pessoa aqui é capaz de entender o Dhamma.” Assim,
+visando Suppabuddha o leproso, ele fez um discurso passo a passo isto é, um
+discurso acerca da generosidade, acerca da virtude, acerca do paraíso, ele
+declarou as desvantagens, degradação e corrupção dos prazeres sensuais, e as
+recompensas da renúncia. Então, quando ele viu que a mente de Suppabuddha o
+leproso estava pronta, receptiva, livre de obstáculos, satisfeita, clara, com serena confiança,
+ele então proferiu um discurso do Dhamma peculiar aos iluminados, isto é, o
+sofrimento, a origem, a cessação e o caminho. E tal como um pano limpo, livre
+de manchas, absorveria da maneira adequada um corante, da mesma forma, enquanto
+Suppabuddha o leproso estava sentado naquele mesmo assento, o olho do Dhamma,
+límpido, imaculado, surgiu nele, “Tudo que está sujeito ao surgimento está
+sujeito à cessação.”<span ='mso-spacerun:yes'>  </span></span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/UdV3.html">Ud V.3</a>]</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...párias,</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>Em uma família humilde eu nasci,<br>
+pobre, com quase nenhuma comida.<br>
+Meu trabalho era degradante:<br>
+Eu recolhia o que estava estragado,<br>
+as flores murchas das capelas<br>
+&nbsp;&nbsp;&nbsp; e as jogava fora.<br>
+As pessoas me achavam repugnante,<br>
+me desprezavam, me menosprezavam.<br>
+Humilhando meu coração,<br>
+Eu mostrava reverência para muitos. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+eu vi o Iluminado,<br>
+formado com um batalhão de bhikkhus,<br>
+o Grande Herói, entrando na cidade dos Magadhas,<br>
+supremo.<br>
+Arremessando a minha trave de carga,<br>
+Eu me aproximei dele para reverenciá-lo.<br>
+Ele – o homem supremo – ficou parado<br>
+&nbsp;&nbsp;&nbsp; por compaixão<br>
+&nbsp;&nbsp;&nbsp; justamente<br>
+&nbsp;&nbsp;&nbsp; por mim<br>
+Depois de homenageá-lo<br>
+aos pés do mestre, supremo entre todos seres vivos,<br>
+&nbsp;&nbsp;&nbsp; eu fiquei de pé a um lado<br>
+&nbsp;&nbsp;&nbsp; e solicitei a admissão na Vida Santa,<br>
+O Mestre compassivo,<br>
+com simpatia por todo o mundo, disse:<br>
+&nbsp;&nbsp;&nbsp; &quot;Venha, bhikkhu.&quot;<br>
+Essa foi a minha Aceitação formal. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Sozinho,
+eu fiquei na floresta,<br>
+&nbsp;&nbsp;&nbsp; incansável<br>
+eu segui as palavras do Mestre,<br>
+tal como ele, o Conquistador, havia me ensinado. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Na
+primeira vigília da noite,<br>
+&nbsp;&nbsp;&nbsp; Eu me recordei de vidas passadas;<br>
+na vigília do meio,<br>
+&nbsp;&nbsp;&nbsp; purifiquei o olho divino<br>
+na última,<br>
+&nbsp;&nbsp;&nbsp; arrebentei a massa de escuridão. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então,
+quando a noite estava terminando<br>
+e o sol retornando,<br>
+Indra e Brahma vieram prestar-me homenagem,<br>
+mãos palma com palma sobre o coração:<br>
+&nbsp;&nbsp;&nbsp; &quot;Homenageamos você, Oh puro sangue dos homens,<br>
+&nbsp;&nbsp;&nbsp; Homenageamos você, Oh homem supremo,<br>
+&nbsp;&nbsp;&nbsp; cujas impurezas terminaram.<br>
+&nbsp;&nbsp;&nbsp; Você, estimado senhor, é digno de oferendas.&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[Thag
+XII.2]</span><span lang=PT-BR ='mso-ansi-language:PT-BR'>
+</span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...e
+seres divinos</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>&quot;...muitas centenas de assembléias de devas do paraíso dos Quatro Grandes
+Reis… muitas centenas de assembléias de devas do paraíso dos Trinta e Três …
+muitas centenas de assembléias dos discípulos de Mara… muitas centenas de
+assembléias de Brahma. E no passado eu sentei com eles e falei com eles e
+mantive conversações com eles....&quot; </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[<a href="../sutta/MN12.html">MN 12</a>]</span><span
+='Arial'> </span></p>
+
+
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O Buda
+ensina sua família, incluindo seu filho Rahula,</b></span></p>
+
+<p class=Normal ='margin-left:.5in;mso-layout-grid-align:auto;
+punctuation-wrap:hanging;text-autospace:ideograph-other'><span lang=PT-BR
+='mso-bidi-mso-ansi-language:
+PT-BR'>&quot;Renunciando aos cinco prazeres dos sentidos que hipnotizam e
+deliciam a mente, e pela fé abandonando a vida em família, torne-se um daqueles
+que dá um fim ao sofrimento.</span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'></span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Associe-se
+com bons amigos e escolha uma moradia afastada, isolada, com pouco ruido.
+Modere-se na alimentação. Mantos, alimentos, moradia e medicamentos - não se
+apegue a essas coisas; não seja um daqueles que retorna ao mundo. Pratique a
+moderação de acordo com a Disciplina, e guarde as cinco faculdades dos
+sentidos. </span></p>
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Pratique
+a atenção plena no corpo e continuamente desenvolva desapego (em relação a
+ele). Evite o sinal da beleza conectado com a cobiça; meditando acerca do que é
+repulsivo cultive uma mente que é concentrada e controlada. </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Medite
+com a ausência de sinal e livre-se da tendência à presunção. Através da
+completa compreensão e destruição da presunção você viverá na paz (mais
+sublime).&quot; </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Desta
+maneira o Mestre<span ='mso-spacerun:yes'>  </span>repetidamente
+encorajava o<span ='mso-spacerun:yes'>  </span>Venerável Rahula.</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'></span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/SnpII11.html">Snp II.11</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...sua
+madrasta, Mahapajapati Gotami,</b></span></p>
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Assim
+ouvi. Em certa ocasião o Abençoado estava<span ='mso-spacerun:yes'>
+</span>em Vesali na Grande Floresta no Salão com um pico na cumeeira. </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>Então
+Mahapajapati Gotami foi até o Abençoado e depois de cumprimentá-lo ficou em pé
+a um lado e disse: &quot;Seria bom, venerável senhor, se o Abençoado pudesse me
+ensinar o Dhamma de maneira resumida de forma que, tendo ouvido o Dhamma do
+Abençoado, eu possa permanecer só, isolada, diligente, ardente e decidida.
+&quot; </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Gotami,
+as qualidades que você provavelmente conhece, ' Essas qualidades conduzem à
+cobiça, não ao desapego; a estar agrilhoada, não a estar livre dos grilhões; ao
+acúmulo, não à renúncia; ao engrandecimento pessoal, não à modéstia; à
+insatisfação, não à satisfação;<span ='mso-spacerun:yes'>  </span>ao
+enredamento, não ao isolamento; à preguiça, não a estimular a energia; a ser um
+incômodo, não a não ser um incômodo': Você deve definitivamente entender, '
+Isto não é o Dhamma, isto não é o Vinaya, essas não são as instruções do
+Mestre.' </span></p>
+
+
+
+<p class=Normal ='margin-left:.5in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>&quot;Quanto
+às qualidades que você provavelmente conhece. ' Essas qualidades conduzem ao
+desapego, não à cobiça; a estar livre dos grilhões, não a estar agrilhoada; à
+renúncia, não ao acúmulo; à modéstia, não ao engrandecimento pessoal; à
+satisfação, não à insatisfação;<span ='mso-spacerun:yes'>  </span>ao
+isolamento, não ao enredamento; a estimular a energia, não à preguiça; a não
+ser um incômodo, não a ser um incômodo: Você deve definitivamente entender, '
+Isto é o Dhamma, isto é o Vinaya, essas são as instruções do Mestre.'&quot;.</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/ANVIII.53.html">AN VIII.53</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>...e ele
+guia o seu irmão, Nanda, ao estado de arahant</b></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Em
+certa ocasião o Abençoado estava em Savatthi, no Bosque de<span
+='mso-spacerun:yes'>  </span>Jeta, no Parque de Anathapindika. Naquela
+ocasião o<span ='mso-spacerun:yes'>  </span>Ven. Nanda – irmão do
+Abençoado, filho da sua tia materna – disse a um grande número de bhikkhus, “Eu
+não aprecio viver a vida santa, meus amigos. Eu não consigo tolerar a vida
+santa. Desistindo do treinamento, eu retornarei para a vida comum.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+um certo bhikkhu foi até o Abençoado e depois de cumprimentá-lo sentou a um
+lado e disse: “Senhor, o Ven. Nanda – o irmão do Abençoado, filho da sua tia
+materna – contou para um grande grupo de bhikkhus, ‘ Eu não aprecio viver a
+vida santa, meus amigos. Eu não consigo tolerar a vida santa. Desistindo do
+treinamento, eu retornarei para a vida comum.’”</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+o Abençoado disse para esse bhikkhu, “Venha, bhikkhu em meu nome chame Nanda,
+dizendo-lhe, ‘O Mestre o chama, meu amigo.’” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Assim
+seja senhor,” o bhikkhu respondeu e, tendo ido até o Ven. Nanda, chegando ele
+disse, “O Mestre o chama, meu amigo” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Assim
+seja amigo”, respondeu o Ven. Nanda. Então ele foi até o Abençoado e depois de
+cumprimentá-lo sentou a um lado e o Abençoado disse: “É verdade, Nanda, que
+você disse para um grande grupo de bhikkhus, ‘Eu não aprecio viver a vida
+santa, meus amigos. Eu não consigo tolerar a vida santa. Desistindo do
+treinamento, eu retornarei para a vida comum.’?”<span
+='mso-spacerun:yes'>  </span></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Sim,
+senhor.”</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Mas
+por que, Nanda, você não aprecia viver a vida santa?” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Senhor,
+quando eu estava deixando a minha casa, uma moça Sakya – que causava inveja a
+todos – olhou para mim, com o seu cabelo parcialmente penteado, e disse, ‘Volte
+depressa, senhor.’ Relembrando isso, eu não aprecio viver a vida santa. Eu não
+consigo tolerar a vida santa. Desistindo do treinamento eu retornarei para a
+vida comum.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então,
+tomando o Ven. Nanda pelo braço – como um homem forte flexiona o seu braço
+estendido ou estende seu braço flexionado – o Abençoado desapareceu do Bosque
+de Jeta e reapareceu entre os devas do paraíso de Tavatimsa. Agora naquela
+ocasião cerca de 500 ninfas com pés de pombas vieram esperar por Sakka, o
+senhor dos devas. E o Abençoado disse ao Ven. Nanda, “Nanda, você vê essas 500
+ninfas com os pés de pombas?” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Sim,
+senhor.”</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“O que
+você pensa, Nanda: Qual é a mais bela, com melhor aparência, mais encantadora –
+a moça Sakya, que causa inveja a todos, ou essas 500 ninfas com os pés de
+pombas?” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Senhor,
+comparada com essas 500 ninfas com pés de pombas a moça Sakya, que causa inveja
+a todos, é como um macaco cujas orelhas e nariz foram cortados e cauterizados.
+Ela não pode ser levada em conta. Ela não é nem uma fração. Não há comparação.
+As 500 ninfas com pés de pomba são mais bonitas, com melhor aparência, mais
+encantadoras.”</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Então
+alegre-se, Nanda. Alegre-se! Eu sou a sua garantia para conseguir 500 ninfas
+com pés de pomba.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Se o
+Abençoado é minha garantia para conseguir 500 ninfas com os pés de pomba, eu
+apreciarei viver a vida santa sob o Abençoado.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então,
+tomando o Ven. Nanda pelo braço - como um homem forte flexiona o seu braço
+estendido ou estende seu braço flexionado – o Abençoado desapareceu dentre os
+devas do paraíso de Tavatimsa e reapareceu no Bosque de Jeta. Os bhikkhus
+ouviram, “Dizem que o Ven. Nanda – o irmão do Abençoado, filho da sua tia
+materna – está vivendo a vida santa por conta de ninfas. Eles dizem que o
+Abençoado é a sua garantia para obter 500 ninfas com os pés de pomba.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+os bhikkhus que eram amigos do Ven. Nanda circulavam dirigindo-se a ele como se
+ele fosse um empregado e um negociante: “Nosso amigo Nanda, eles dizem, é um
+empregado. Nosso amigo Nanda, eles dizem, é um negociante. Ele vive a vida
+santa por conta de ninfas. O Abençoado é a sua garantia para obter 500 ninfas
+com os pés de pomba.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+o Ven. Nanda – horrorizado, repelido e enojado  porque os bhikkhus que eram
+seus amigos estavam se dirigindo a ele como se ele fosse um empregado e um
+comerciante – se afastou, permanecendo só, isolado, diligente, ardente e
+decidido, em pouco tempo, ele alcançou e permaneceu no objetivo supremo da vida
+santa pelo qual membros de um clã deixam a vida em família pela vida santa,
+tendo conhecido e realizado por si mesmo no aqui e agora. Ele soube: “O
+nascimento foi destruído, a vida santa foi vivida, o que deveria ser feito foi
+feito, não há mais vir a ser a nenhum estado.” E assim o Ven. Nanda tornou-se
+mais um dos Arahants. </span></p>
+
+<p align=right style='margin-right:0.3in'><span ='
+mso-bidi-Arial'>[<a href="../sutta/UdIII2.html">Ud
+3.2</a>]</span><span ='Arial'> </span></p>
+
+<hr size=1 width="100%" align=center>
+
+<p class=Tit2><a name=Ultimos></a>Os últimos dias do Buda
+<a href="#R5"></a> <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="../img/tup.gif"></span></a>
+<a name=Top></a>
+</p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ananda
+percebe que o Buda está envelhecendo</b></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Assim ouvi. Em certa ocasião, o Abençoado estava<span
+='mso-spacerun:yes'>  </span>em Savatthi, no palácio da mãe de Migara, no
+Parque do Oriente. Agora, naquela ocasião o Abençoado havia saído do seu
+isolamento no final da tarde e estava sentado aquecendo as costas no sol que se
+punha. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Então, o Ven. Ananda foi até o Abençoado e depois de
+cumprimentá-lo, enquanto massageava os membros do Abençoado disse o seguinte:
+“É incrível, senhor! É impressionante, senhor! A complexão do Abençoado já não
+é mais tão pura e luminosa, os seus membros estão flácidos e enrugados, as suas
+costas recurvadas e é possível discernir uma mudança nas suas faculdades – a
+faculdade do olho, a faculdade do ouvido, a faculdade do nariz, a faculdade da
+língua, a faculdade do corpo.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Assim é como são as coisas, Ananda! Quando jovem, a
+pessoa está sujeita ao envelhecimento; quando saudável, sujeita à enfermidade;
+quando viva, sujeita à morte. A complexão já não é mais tão pura e luminosa, os
+membros flácidos e enrugados, as costas recurvadas; é possível discernir uma mudança
+nas faculdades – a faculdade do olho, a faculdade do ouvido, a faculdade do
+nariz, a faculdade da língua, a faculdade do corpo.”</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'><span
+='mso-spacerun:yes'>  </span></span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/SNXLVIII.41.html">SN XLVIII.41</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Qual
+refúgio devem os discípulos do Buda buscar após a sua morte?</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Eu agora estou velho,
+Ananda, envelhecido, pressionado pelos anos, com a idade avançada, chegando ao
+último estágio da vida. Este é o meu octogésimo ano. Assim como uma carroça
+velha é mantida por meio de ataduras, da mesma forma o corpo do Tathagata é
+mantido por meio de uma combinação de ataduras. Sempre que, Ananda, através da
+não atenção a todos os sinais e pela cessação de certas sensações, o Tathagata
+entra e permanece na concentração sem sinais da mente, nessa ocasião, Ananda, o
+corpo do Tathagata fica mais confortável </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Portanto, Ananda, sejam ilhas para vocês mesmos,
+refúgios para vocês mesmos, buscando nenhum refúgio externo; com o Dhamma como
+a sua ilha, o Dhamma como o seu refúgio, buscando nenhum outro refúgio. E como,
+Ananda, um bhikkhu é uma ilha para ele mesmo, um refúgio para ele mesmo,
+buscando nenhum refúgio externo; com o Dhamma como a sua ilha, o Dhamma como o
+seu refúgio, buscando nenhum outro refúgio? Neste caso, Ananda, um bhikkhu
+permanece contemplando o corpo como um corpo, ardente, plenamente consciente e
+com atenção plena, tendo colocado de lado a cobiça e o desprazer pelo mundo.
+Ele permanece contemplando as sensações como sensações ... mente como mente ...
+objetos mentais como objetos mentais, ardente, plenamente consciente e com
+atenção plena, tendo colocado de lado a cobiça e o desprazer pelo mundo. Esses
+bhikkhus,<span ='mso-spacerun:yes'>  </span>Ananda, que agora ou depois
+que eu me for, permanecerem como uma ilha para eles mesmos, como um refúgio
+para eles mesmos, sem nada mais como refúgio, com o Dhamma como uma ilha, o
+Dhamma como refúgio, sem nada mais como refúgio, eles serão para mim os
+bhikkhus mais eminentes dentre aqueles que têm interesse em aprender.”</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T2_25">DN 16.2.25</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele
+renuncia à vontade de seguir vivendo</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Então, pouco tempo depois que
+o venerável Ananda havia partido, Mara, o Senhor do Mal, foi até o Abençoado e
+disse: “Venerável senhor, que o Abençoado agora realize o Parinibbana ! Que o
+Iluminado agora realize o Parinibbana ! Agora é o momento para o Parinibbana do
+Abençoado! Esta afirmação, venerável senhor, foi feita pelo Abençoado: ‘Eu não
+realizarei Parinibbana, Senhor do Mal, até que eu tenha discípulos bhikkhus que
+sejam sábios, disciplinados, confiantes, libertados do cativeiro, estudados, defensores
+do Dhamma, praticando de acordo com o Dhamma, praticando do modo correto,
+comportando-se de modo apropriado; que tenham aprendido a doutrina do mestre e
+sejam capazes de explicá-la, ensiná-la, proclamá-la, estabelecê-la, revelá-la,
+analisá-la e elucidá-la; que sejam capazes de refutar completamente com
+argumentos as doutrinas dos outros e que sejam capazes de ensinar o Dhamma que
+é eficaz.’ </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“Mas
+no momento, venerável senhor, o Abençoado tem discípulos bhikkhus que são
+sábios ... que são capazes de ensinar o Dhamma que é eficaz. Venerável senhor,
+que o Abençoado agora realize o Parinibbana ! Que o Iluminado agora realize
+Parinibbana ! Agora é o momento para o Parinibbana do Abençoado! </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Quando
+isso foi dito, o Abençoado disse para Mara o Senhor do Mal: “Fique tranqüilo,
+Senhor do Mal. Não tardará muito até que ocorra o Parinibbana do Tathagata.
+Daqui a três meses o Tathagata realizará o Parinibbana.”</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então,
+o Abençoado, no santuário de Capala, com atenção plena e plena consciência
+renunciou à sua formação vital. E quando o Abençoado renunciou à sua formação
+vital, ocorreu um grande terremoto, assustador e aterrorizador e o estrondo de
+trovões sacudiram o céu.</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'><span
+='mso-spacerun:yes'> </span>[<a href="../sutta/DN16.html#T3_7">DN 16.3.7</a>]</span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>A sua
+última advertência aos bhikkhus</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Bhikkhus, esses ensinamentos
+que compreendi através do conhecimento direto e que tornei do seu
+conhecimento,<span ='mso-spacerun:yes'>  </span>vocês devem aprende-los
+completamente, cultivá-los, desenvolve-los e praticá-los com freqüência, que a
+vida santa se stabeleça e que dure por muito tempo, para o bem-estar e
+felicidade de muitos, com compaixão pelo mundo, pelo bem, pelo bem-estar e
+felicidade de devas e humanos. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>“E
+quais, bhikkhus, são esses ensinamentos? Eles são os quatro fundamentos da
+atenção plena, os quatro esforços corretos, as quatro bases do poder, as cinco
+faculdades dominantes, os cinco poderes, os sete<span
+='mso-spacerun:yes'>  </span>fatores de iluminação, e o Nobre Caminho
+Óctuplo. Esses, bhikkhus, são os ensinamentos que compreendi através do
+conhecimento direto e que tornei do seu conhecimento, <span
+='mso-spacerun:yes'> </span>vocês devem aprende-los completamente,
+cultivá-los, desenvolve-los e praticá-los com freqüência, que a vida santa se
+stabeleça e que dure por muito tempo, para o bem-estar e felicidade de muitos,
+com compaixão pelo mundo, pelo bem, pelo bem-estar e felicidade de devas e
+humanos.” </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+o Abençoado disse aos bhikkhus: “Dessa forma, bhikkhus, eu os encorajo: todas
+as coisas condicionadas estão sujeitas à dissolução. Esforcem-se com
+diligência. O momento do parinibbana do Tathagata está próximo. Daqui a três
+meses o Tathagata realizará o parinibbana.”</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T3_50">DN 16.3.50</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Sua
+última refeição</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>E logo depois do Abençoado
+ter comido a refeição dada pelo prateiro Cunda, uma doença terrível se abateu sobre
+ele com diaréia sangrenta, com dores terríveis como se estivesse a ponto de
+morrer. Porém o Abençoado suportou tudo com atenção plena e plena consciência,
+sem se queixar.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+o Abençoado disse: “Ananda, vamos para Kusinara” E o Venerável Ananda respondeu<span
+='mso-spacerun:yes'>  </span>“Sim, venerável senhor.”</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T4_20">DN 16.4.20</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Ele se
+retira para o seu leito de morte</b></span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>O
+Abençoado disse: “Ananda, vamos cruzar o rio Hiraññavati para ir até o o bosque
+de árvores-sal dos Mallas perto de Kusinara.” “Muito bem, venerável senhor,”
+Ananda disse, e o Abençoado com uma grande comitiva de bhikkhus cruzaram o rio
+e foram para o bosque de árvores sal. Lá o Abençoado disse: “Ananda,<span
+='mso-spacerun:yes'>  </span>prepare para mim um leito entre as
+árvores-sal gêmeas, com a cabeça para o norte. Eu estou cansado e quero
+deitar.” “Muito bem, venerável senhor,” Ananda disse e assim fez. Então o
+Abençoado se deitou no seu lado direito, na postura do leão, com um pé sobre o
+outro, atento e plenamente consciente, após anotar na mente o horário para
+levantar .</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>E
+daquelas árvores sal gêmeas, fora de época, brotaram flores em abundância que
+caíram sobre o corpo do Tathagata, dispersando-se e cobrindo o seu corpo,
+homenageando-o. Flores divinas da árvore de coral caíram do céu, sândalo divino
+caiu do céu, dispersando-se e cobrindo o corpo do Tathagata,
+homenageando-o.<span ='mso-spacerun:yes'>  </span>Música<span
+='mso-spacerun:yes'>  </span>e canções divinas se ouviam do céu, em<span
+='mso-spacerun:yes'>  </span>homenagem ao Tathagata. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T5_1">DN 16.5.1</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>O Buda
+recomenda quatro locais para peregrinação</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Ananda, há quatro lugares
+que ao serem vistos despertarão um senso de urgência e consternação nos
+devotos. Quais quatro? ‘Aqui o Tathagata nasceu’,<span
+='mso-spacerun:yes'>  </span>é o primeiro. ‘Aqui o Tathagata realizou a
+perfeita iluminação’,<span ='mso-spacerun:yes'>  </span>é o segundo. ‘Aqui
+o Tathagata colocou em movimento a insuperável roda do Dhamma’, é o terceiro.
+‘Aqui o Tathagata realizou o parinibbana’,<span ='mso-spacerun:yes'>
+</span>esse é o quarto.<span ='mso-spacerun:yes'>  </span>E, Ananda, os
+bhikkhus e bhikkhunis fiéis, os discípulos leigos, visitarão esse lugares. E
+qualquer um que morra com um coração devoto enquanto estiver numa peregrinação
+a esses santuários, irá, na dissolução do corpo, após a morte, renascer em um
+bom destino, no paraíso.”</span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T5_8">DN 16.5.8</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Milhares
+lamentam o falecimento iminente do Buda</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>Exatamente naquela ocasião
+os<span ='mso-spacerun:yes'>  </span>Mallas de Kusinara haviam se reunido
+para tratar de negócios no seu salão de assembléias. O Ven. Ananda foi até o
+salão de assembléias e chegando<span ='mso-spacerun:yes'>  </span>lhes
+anunciou: “Esta noite, Vasetthas, na última vigília, o Tathagata realizará o
+parinibbana. Venham vê-lo, Vasetthas, venham vê-lo para que vocês não se
+arrependam depois dizendo: ‘O Tathagata morreu na nossa comunidade e nós não
+aproveitamos a oportunidade para vê-lo pela última vez!’” Ao ouvirem o venerável
+Ananda, os Mallas, com os seus filhos, filhas e esposas foram abatidos pela
+tristeza e angústia, com a mente subjugada pelo pesar o que fez com que eles
+chorassem e arrancassem os cabelos. Então todos foram para o bosque de árvores
+sal onde estava o venerável Ananda.</span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T5_20">DN 16.5.20</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>Enquanto<span
+='mso-spacerun:yes'>  </span>o nobre Caminho Óctuplo for praticado, haverá
+Arahants</b></span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>“Em qualquer doutrina e
+disciplina na qual o nobre caminho óctuplo não é encontrado, nenhum
+contemplativo da primeira ... segunda ... terceira ... quarta ordem<span
+='mso-spacerun:yes'>  </span>[que entrou na correnteza, retorna uma vez,
+não retorna, ou Arahant] é encontrado. Agora, Subhadda, neste Dhamma e
+Disciplina o nobre caminho óctuplo <span ='mso-bidi-font-:italic'>é</span>
+encontrado, contemplativos da primeira ... segunda ... terceira ... quarta ordem <span
+='mso-bidi-font-:italic'>são<i> </i></span>encontrados. O nobre
+caminho óctuplo é encontrado nesta doutrina e disciplina, e exatamente aqui
+existem contemplativos da primeira ... segunda ... terceira ... quarta ordem. Essa outras
+seitas estão desprovidas de verdadeiros contemplativos; mas se nesta os
+bhikkhus viverem a vida com perfeição, o<span ='mso-spacerun:yes'>
+</span>mundo não ficará vazio de<span ='mso-spacerun:yes'>
+</span>Arahants.” </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T5_27">DN 16.5.27</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'></span></p>
+
+<p class=Normal><b><span lang=PT-BR ='mso-ansi-language:PT-BR'>As
+últimas palavras do Buda</b></span></p>
+
+<p class=Normal><span lang=PT-BR ='mso-ansi-language:
+PT-BR'>[Data: 1 EB] </span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Então o Abençoado disse para os bhikkhus: “Dessa
+forma, bhikkhus, eu os encorajo: todas as coisas condicionadas estão sujeitas à
+dissolução. Esforçem-se pelo objetivo com diligência”. Essas foram as últimas
+palavras do Tathagata. </span></p>
+
+<p class=Normal ='margin-top:5.0pt;margin-right:.5in;margin-bottom:
+5.0pt;margin-left:.5in'><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Então o Abençoado entrou no primeiro jhana.
+Emergindo dele ele entrou no segundo jhana ... no terceiro ... no quarto jhana
+… na esfera do espaço infinito ... na esfera da consciência infinita ... na
+esfera do nada ... na esfera da nem percepção, nem não percepção. Emergindo
+dela, ele entrou na cessação da percepção e sensação. </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>... </span></p>
+
+<p class=Normal 'margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><span lang=PT-BR ='mso-ansi-language:PT-BR'>Então
+o Abençoado, emergindo da cessação da percepção e sensação, entrou na esfera da
+nem percepção, nem não percepção. Emergindo dela, ele entrou na esfera do nada
+… na esfera da consciência infinita ... na esfera do espaço infinito ... no
+quarto jhana ... no terceiro ... no segundo ... no primeiro jhana. Emergindo do
+primeiro jhana ele entrou no segundo ... no terceiro ... no quarto jhana. No
+quarto jhana, ele faleceu. </span></p>
+
+<p align=right style='margin-right:0.3in'><span lang=PT-BR ='
+mso-bidi-mso-ansi-language:PT-BR'>[<a
+href="../sutta/DN16.html#T6_7">DN 16.6.7</a>]</span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> </span></p>
+
+
+<hr size=1 width="100%" align=center>
+
+<p class=Tit2><a name=Post></a>Post Scriptum:<br>
+Os muitos nomes do Buda<span ='mso-spacerun:yes'>
+<a href="#R6"></a> <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="../img/tup.gif"></span></a>
+<a name=Top></a>
+</p>
+
+<p class=Normal><span lang=PT-BR ='mso-bidi-
+mso-ansi-language:PT-BR'>A seguir estão alguns dos
+muitos epítetos que aparecem nos suttas em referência ao Buda. As passagens dos
+suttas indicados contêm os exemplos. </span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Sublime (exalted
+one, <i>bhagava</i>; </span><span lang=PT-BR ='
+mso-ansi-language:PT-BR'><a href="../sutta/MN12.html#T5"><span lang=EN-US
+='mso-ansi-language:EN-US'>MN 12.5</span></a></span><span
+='Arial'>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Digno (worthy, <i>araham; </i><a
+href="../sutta/MN12.html#T5">MN 12.5</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Perfeitamente Iluminado (perfectly enlightened, <i>sammasambuddho;
+</i><a href="../sutta/MN12.html#T5">MN 12.5</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Consumado no verdadeiro conhecimento e conduta
+(endowed with knowledge and conduct, <i>vijjacaranasampanno</i>; <a
+href="../sutta/MN12.html#T5">MN 12.5</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Bem-aventurado (well-gone, <i>sugato</i>; <a
+href="../sutta/MN12.html#T5">MN 12.5</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Conhecedor dos
+mundos (knower of the worlds, <i>lokavidu</i>; </span><span lang=PT-BR
+='mso-ansi-language:PT-BR'><a href="../sutta/MN12.html#T5"><span
+lang=EN-US ='mso-ansi-language:EN-US'>MN 12.5</span></a></span><span
+='Arial'>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Líder insuperável de pessoas preparadas para serem
+treinadas (supreme trainer pf persons to be tamed, <i>anuttaro
+purisadammasarathi; </i><a href="../sutta/MN12.html#T5">MN 12.5</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Mestre de devas e humanos (teacher of gods and humans,
+<i>satha devamanussanam; </i><a href="../sutta/MN12.html#T5">MN 12.5</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Omnisciente
+(All-seeing: <a href="../sutta/It.112.html">It.112</a>) </span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Melhor entre aqueles que podem ser domesticados (Best of those who can be tamed: <a href="../sutta/It.112.html">It.112</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Touro entre os
+homens (Bull among men: <a href="../sutta/SnpIII11.html">Sn III.11</a> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Touro entre os
+videntes (Bull among seers: <a href="../sutta/SnpIII11.html">Sn III.11</a> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Touro dos Sakyas
+(Bull of the Sakyan clan: <a href="../sutta/SnpIII11.html">Sn III.11</a> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Líder da Caravana (Caravan leader: <a
+href="../sutta/MN26.html#T20">MN 26</a>.20)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Conquistador de bestas (Conqueror of beasts: </span><span
+='Arial'><a href="../sutta/SnpIII11.html"><span lang=PT-BR
+='mso-ansi-language:PT-BR'>Sn III.11</span></a></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Sem dívidas (Debtless one: <a
+href="../sutta/MN26.html#T20">MN 26</a>.20)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Dissipador da escuridão (Dispeller of darkness: It 38</span></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Dotado com todas as marcas de um grande homem (Endowed
+with all the foremost marks: <a href="../sutta/SnpIII1.html">Snp III.1</a> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Primeiro no
+mundo (First in the world: <a href="../sutta/It.84.html">It.84</a>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Jóia mais preciosa (Foremost jewel: </span><span
+='Arial'><a href="../sutta/SnpIII11.html"><span lang=PT-BR
+='mso-ansi-language:PT-BR'>Sn III.11</span></a></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Primeiro entre
+todas as pessoas</span><span lang=PT-BR ='mso-ansi-language:
+PT-BR'><span ='mso-spacerun:yes'>  </span>(Foremost of all people: </span><span
+='Arial'><a href="../sutta/SnpIII11.html">Sn III.11</a></span><span
+lang=PT-BR ='mso-ansi-language:PT-BR'>)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Primeiro entre os condutores de carruagens (Foremost
+of charioteers: Thag VI.9</span></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Primeiro daqueles que são capazes de atravessar (Foremost
+of those who can cross: <a href="../sutta/It.112.html">It.112</a>)</p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Sábio mais destacado (Foremost sage: </span><span
+='Arial'><a href="../sutta/SnpIII11.html"><span lang=PT-BR
+='mso-ansi-language:PT-BR'>Sn III.11</span></a></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Que provê o
+imortal (Giver of the deathless: <a href="../sutta/MN18.html">MN 18</a> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Grande vidente
+(Great seer: Snp IV.14</span>
+)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Parente do sol
+(Kinsman of the sun: Snp IV.14</span>
+)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Touro
+inigualável (Peerless bull: SN I.38</span>
+)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Que mostra o
+caminho (Shower of the way: <a href="../sutta/MN107.html">MN 107</a> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Conquistador da Tristeza (Sorrowless One: </span><span
+='Arial'><a href="../sutta/MN26.html#T20"><span lang=PT-BR
+='mso-ansi-language:PT-BR'>MN26</span></a></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'>.20)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Supremo entre
+aqueles que podem ser libertados (Supreme among those who can be released: <a href="../sutta/It.112.html">It.112</a></a>
+)</p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Tathagata ( aquele que “assim foi” ou “assim vem”)
+(the one &quot;Thus-gone&quot; or &quot;Thus-come&quot;: <a href="../sutta/It.112.html">It.112</a>)</p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol'><span ='mso-list:Ignore'>•<span ='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span ='Arial'>Totalmente amadurecido  (Thoroughly mature: <a href="../sutta/It.112.html">It.112</a>
+)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Líder ultimo (Ultimate leader: </span><span
+='Arial'Thag VI.9</span></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Conquistador não conquistado (Unconquered conqueror: <a href="../sutta/It.112.html">It.112</a>)</p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Vitorioso Universal (Universal Victor: <a
+href="../sutta/MN26.html#T25">MN26</a>.25)</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Médico e cirurgião insuperável (Unsurpassed doctor and
+surgeon: </span><span ='Arial'>Iti 100</span></a></span><span lang=PT-BR
+='mso-ansi-language:PT-BR'> )</span></p>
+
+<p class=Normal style='margin-left:1.0in;text-indent:-.25in;mso-list:
+l1 level1 lfo5;tab-stops:list 1.0in'><![if !supportLists]><span lang=PT-BR
+='Symbol;mso-fareast-Symbol;mso-bidi-
+Symbol;mso-ansi-language:PT-BR'><span ='mso-list:Ignore'>•<span
+='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR ='
+mso-ansi-language:PT-BR'>Todo Poderoso (Wielder of power: <a href="../sutta/It.112.html">It.112</a> )</p>
+
+<br>
+
+<br>
+
+
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  14 Setembro 2013         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/caminho_liberdade/buda.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:03 GMT -->
+</html>
+ 
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

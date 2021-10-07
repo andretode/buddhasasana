@@ -1,0 +1,112 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/contemple_corpo.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:39 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - contemple_corpo</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="contemple_corpo" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_97.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1 align=center style='text-align:center'>Contemple o Corpo, Liberte a Mente </Tit1>
+<p class=Tit2 align=center style='text-align:center'>Um ensinamento desafiador para abrir mão do apego ao corpo</Tit2>
+<p class=Tit3 align=center style='text-align:center'> Por  </Tit3>
+<p class=Tit2 align=center style='text-align:center'>Ajaan Suwat Suvaco</Tit2>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>Quando as mentes dos meditadores, através da atenção plena e da sabedoria, alcançam a genuína felicidade do Dhamma vendo claramente as quatro nobres verdades, nenhum deles - nem um que seja - voltará a procurar a felicidade no mundo ou nas coisas materiais. Isso ocorre porque a felicidade do Dhamma é duradoura: sólida, perfeita e genuinamente pura. Se compararmos com a felicidade do Dhamma veremos que na felicidade mundana não há nem mesmo um mínimo de felicidade real. A felicidade mundana não oferece nada além de sofrimento, nada além de desvantagens. Então, por que pensamos ser a felicidade? Porque ardemos com a dor e buscamos a felicidade e os prazeres mundanos para aliviar a dor, que então desaparece por um tempo, mas depois novamente volta.</p>
+
+<p class=Normal>Por exemplo, o Buda disse que o nascimento é sofrimento, mas em geral as pessoas consideram como algo feliz. Não vemos o sofrimento e a dor envolvidos. Contudo, uma vez que a mente tenha alcançado a felicidade do Dhamma, podemos ver que o nascimento é realmente sofrimento, assim como disse o Buda. A razão pela qual mesmo procurando cuidar de nós mesmos não encontramos a paz, é porque as coisas que surgem nos perturbam. Sentamos e sentimos algum prazer e tranquilidade estando sentados, mas depois de um tempo, sentimos desconforto. Dizemos que é agradável deitar, mas isso é verdade apenas bem no começo. Depois de deitados por um certo tempo, começa a ficar desagradável. Assim temos que ficar mudando as posturas para sentir conforto. Procuramos isso ou aquilo, mas assim que ganhamos um pouco de prazer, o sofrimento e a dor surgem no seu rastro. Se temos uma família e um lar para vivermos juntos agradavelmente, desfrutamos apenas de pequenos prazeres que nos enganam e iludem, enquanto há centenas e milhares de coisas desagradáveis. A felicidade e o prazer que vêm das coisas externas, das coisas materiais, nunca são suficientes. Seguem se desgastando, desgastando, e desgastando a nós mesmos, sem nenhum propósito. É por isso que aqueles que alcançam o Dhamma não retornam a este mundo tão cheio de tristezas e perturbações.</p>
+
+<p class=Normal>Por isso quero que vocês se esforcem para meditar, contemplando de acordo com o Dhamma. Mesmo que alguém ainda não esteja convencido do Dhamma, pelo menos aceite os ensinamentos do Buda como parâmetro para a meditação. Por exemplo, quando o Buda ensina sobre as três características: impermanência, sofrimento e não-eu, devemos treinar nossas mentes para estar em sintonia com esse ensinamento. Faça a tentativa. Por exemplo, o Buda explica que esse nosso corpo está repleto de todo tipo de coisas impuras. Podemos não concordar, mas pelo menos podemos tentar ver o que acontece quando observamos as coisas de acordo com esse ensinamento. O Buda ensina que o corpo não é puro. <i>Atthi imasmim kaye</i> - neste corpo existe: cabelos na cabeça, que não são puros; pêlos no corpo, que não são puros; unhas, que não são puras. Não tenha pressa em rejeitar os ensinamentos do Buda. Observe se essas coisas são realmente impuras ou não. Quando a mente foca nessas coisas cada vez com mais estabilidade, começando a se sentir calma e relaxada, a verdade gradualmente surge com mais clareza. A convicção no Dhamma, na prática, irá surgir. A energia surgirá ao querermos ver mais. Conforme a atenção se intensifica, a mente se torna mais luminosa e tranquila. Esse é o caminho de prática. Lembre-se desse princípio simples: pratique meditação observando seu corpo, observando sua mente.</p>
+
+<p class=Normal>Use a atenção plena para acompanhar o corpo em si mesmo, de modo a conhecê-lo de acordo com a verdade. Se não olhar para o corpo, olhe para a mente em si mesma. Ao observarmos os movimentos do corpo e da mente, os prazeres e as dores que surgem com tanta frequência, desenvolveremos a atenção e a habilidade. Aprendemos a lidar com as coisas de acordo com os ensinamentos do Buda. Ganharemos a sabedoria que vê e conhece a verdade. Veremos as coisas cada vez com mais clareza. Quando as coisas são vistas com mais clareza, a mente desenvolve mais força e calma. Vemos o corpo como estressante e impuro, mas temos que cuidar da mente, cientes que o estresse e a impureza dizem respeito ao corpo, não à mente.</p>
+
+<p class=Normal>O corpo sempre tem estado impuro. Vivemos com isso todo esse tempo, então não há necessidade de ter medo de ver essas coisas, não há necessidade de rejeitá-las. Devemos contemplar o corpo de modo a dar origem a um sentimento de desencantamento. Quando abrir mão do corpo, faça-o de uma maneira criteriosa. Não abra mão de modo que a delusão e o entendimento incorreto subjuguem a mente. Não fique enojado com o corpo ao ponto que a mente fique inquieta e agitada e deixe de meditar. Esse tipo de aversão não é correta. Quando olhar para aquilo que não gostamos, como a impermanência, o sofrimento e a falta de atratividade do corpo, lembre-se que isso faz parte das Nobres Verdades. O Buda disse que essas são observações muito benéficas.</p>
+
+<p class=Normal>Contemplar a falta de atratividade do corpo é muito benéfico porque serve a um propósito importante. Se vemos o corpo adequadamente dessa maneira, isso ajuda a mente a se acalmar com um sentimento de desencantamento. Sendo isso que vai curar nossas delusões e os entendimentos incorretos. Por isso que na ordenação de um monge, o primeiro passo é ensinar-lhe cinco temas de meditação - <i>kesa</i>, cabelo da cabeça; <i>loma</i>, pêlos do corpo; <i>nakha</i>, unhas; <i>danta</i>, dentes; <i>taco</i>, pele - como forma de desenvolver sabedoria e conhecimento da verdade.</p>
+
+<p class=Normal>Portanto tome esses objetos e continue contemplando-os, independentemente da mente  estar calma ou não. Sempre que tiver tempo livre, contemple-os. Você pode contemplá-los mesmo enquanto trabalha. Contemple-os até os seus mínimos detalhes de modo que dê origem a uma sensação de calma e tranquilidade.</p>
+
+<p class=Normal>É parecido com realizar um trabalho físico. Recebemos salário por cada hora trabalhada. Quanto mais horas trabalhamos, maior o nosso salário. Mas se ficarmos gananciosos e continuarmos trabalhando sem descanso, o corpo se desgasta, a mente fica fraca e não conseguimos mais trabalhar. Então temos que descansar e nos alimentar para recuperar a energia do corpo e da mente. Mesmo que não sejamos pagos pelo tempo que descansamos, estamos dispostos a assumir essa perda para que o corpo e a mente ganhem força, para que possamos lidar com o trabalho depois do descanso.</p>
+
+<p class=Normal>É parecido com a meditação: se continuamos contemplando e investigando, não demorará muito para que a mente fique inquieta e agitada. Então temos que tranquilizar a mente para evitar a inquietação e agitação. Com inquietação não haverá paz. A mente irá ficar toda enrolada com o cansaço da meditação. Então, contemplamos por algum tempo até que possamos sentir que a mente quer parar e descansar; em seguida, focamos novamente na respiração ou em algum outro objeto que sirva como um ponto de calma para a mente. Gradualmente abandonamos a contemplação, gradualmente deixamos a mente se acalmar, de modo a ganhar energia da sensação de prazer e tranquilidade que surge desse estado. Não nos preocupamos com quanto tempo ficamos nesse estágio. Mesmo que a mente não pareça estar adquirindo nenhum conhecimento, não nos preocupamos com isso. É como quando estamos descansando do trabalho físico: mesmo que não tenhamos nenhum trabalho durante a hora do descanso, estamos dispostos a recuperar a energia - neste caso, a energia da mente.</p>
+
+<p class=Normal>Por essa razão que os nobres discípulos praticam constantemente a concentração, constantemente conduzem a mente para se acalmar. Depois de contemplarem até o ponto em que a mente fica cansada, fazem com que a mente se acalme. Depois de calma o suficiente, retornam para a contemplação. Assim é como devemos praticar. Se praticarmos dessa maneira, a mente ganhará energia e força, vendo as coisas como na verdade são ganhará sabedoria até o ponto final de todo sofrimento e estresse. A pergunta feita outro dia - como praticar quando voltamos para casa - foi uma boa pergunta. A resposta é: continue cuidando da sua mente da maneira descrita aqui. Pratique exercitar sua atenção plena e sabedoria.</p>
+
+
+
+<p class=Normal style='margin-left:.75in'>Phra Ajaan Suwat Suvaco (1919–2001) foi um abade na Tradição das Florestas da Tailândia. Na década de 1980, mudou-se para a Califórnia, onde mais tarde fundou o Metta Forest Monastery.</p>
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado: 20 Dezembro 2018          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/contemple_corpo.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:39 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

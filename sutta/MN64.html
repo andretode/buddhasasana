@@ -1,0 +1,505 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN64.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:11 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - MN64</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("It.1.html","It.2.html","It.3.html","It.4.html","It.5.html","It.6.html","It.7.html","It.8.html","It.9.html","It.10.html","It.11.html","It.12.html","It.13.html","It.14.html","It.15.html","It.16.html","It.17.html","It.18.html","It.19.html","It.20.html","It.21.html","It.22.html","It.23.html","It.24.html","It.25.html","It.26.html","It.27.html","It.28.html","It.29.html","It.30.html","It.31.html","It.32.html","It.33.html","It.34.html","It.35.html","It.36.html","It.37.html","It.38.html","It.39.html","It.40.html","It.41.html","It.42.html","It.43.html","It.44.html","It.45.html","It.46.html","It.47.html","It.48.html","It.49.html","It.50.html","It.51.html","It.52.html","It.53.html","It.54.html","It.55.html","It.56.html","It.57.html","It.58.html","It.59.html","It.60.html","It.61.html","It.62.html","It.63.html","It.64.html","It.65.html","It.66.html","It.67.html","It.68.html","It.69.html","It.70.html","It.71.html","It.72.html","It.73.html","It.74.html","It.75.html","It.76.html","It.77.html","It.78.html","It.79.html","It.80.html","It.81.html","It.82.html","It.83.html","It.84.html","It.85.html","It.86.html","It.87.html","It.88.html","It.89.html","It.90.html","It.91.html","It.92.html","It.93.html","It.94.html","It.95.html","It.96.html","It.97.html","It.98.html","It.99.html","It.100.html","It.101.html","It.102.html","It.103.html","It.104.html","It.105.html","It.106.html","It.107.html","It.108.html","It.109.html","It.110.html","It.111.html","It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="MN64" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_12.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+
+<p class=Tit3 align=center style='text-align:center'><b> Majjhima Nikaya 64 </b></Tit3>
+<p class=Tit1 align=center style='text-align:center'>Mahamalunkya Sutta  </Tit1>
+<p class=Tit1 align=center style='text-align:center'>O Grande Discurso para Malunkyaputta </Tit1>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal style='margin-left:1.0in'>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>1. Assim ouvi.
+Em certa ocasião o Abençoado estava em Savatthi no Bosque de Jeta, no Parque de
+Anathapindika. Lá ele se dirigiu aos bhikkhus: “Bhikkhus.” – “Venerável
+senhor,” eles responderam. O Abençoado disse o seguinte:<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>2. “Bhikkhus, vocês se recordam dos cinco primeiros grilhões tal como
+ensinado por mim?”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Quando isso
+foi dito, o venerável Malunkyaputta respondeu: “Venerável senhor, eu me recordo
+dos cinco primeiros grilhões tal como ensinado pelo Abençoado.” [</span><a
+href="#N1"><span lang=PT-BR style='mso-ansi-language:PT-BR'>1</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=R1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>“Mas, Malunkyaputta, de que forma você se recorda dos cinco primeiros
+grilhões tal como ensinado por mim?”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Venerável
+senhor, eu me recordo da idéia da existência de um eu como um grilhão ensinado
+pelo Abençoado. Eu me recordo da dúvida como um grilhão ensinado pelo
+Abençoado. Eu me recordo do apego a preceitos e rituais como um grilhão
+ensinado pelo Abençoado. Eu me recordo do desejo sensual como um grilhão
+ensinado pelo Abençoado. Eu me recordo da má vontade como um grilhão ensinado
+pelo Abençoado. É dessa forma, venerável senhor, que eu me recordo dos cinco
+grilhões tal como ensinado pelo Abençoado.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>3.
+“Malunkyaputta, você se recorda para quem que eu ensinei esses cinco primeiros
+grilhões dessa forma? [</span><a href="#N2"><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>2</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>] <a
+name=R2></a>Os errantes de outras seitas não lhe refutariam com o símile do
+bebê? Pois um bebê recém-nascido não tem nem mesmo a noção de ‘identidade,’
+então como a idéia da existência de um eu pode surgir nele? No entanto, a
+tendência subjacente à idéia da existência de um eu está nele. [</span><a
+href="#N3"><span lang=PT-BR style='mso-ansi-language:PT-BR'>3</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>] <a name=R3></a>Um bebê recém-nascido
+não tem nem mesmo a noção de ‘ensinamentos,’[</span><a href="#N4"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>4</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>] <a name=R4></a>então como a dúvida com
+respeito aos ensinamentos pode surgir nele? No entanto, a tendência subjacente
+à dúvida está nele. Um bebê recém-nascido não tem nem mesmo a noção de ‘regras,’
+então como o apego a preceitos e rituais pode surgir nele? No entanto, a
+tendência subjacente ao apego a preceitos e rituais está nele. Um bebê
+recém-nascido não tem nem mesmo a noção de ‘prazeres sensuais,’ então como o
+desejo sensual pode surgir nele? No entanto, a tendência subjacente ao desejo
+sensual está nele. Um bebê recém-nascido não tem nem mesmo a noção de ‘seres,’
+então como a má vontade em relação aos seres pode surgir nele? No entanto, a
+tendência subjacente à má vontade está nele. Os errantes de outras seitas não
+lhe refutariam com este símile do bebê?” <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>4. Em vista
+disso, o venerável Ananda disse: “Agora é o momento, Abençoado, agora é o
+momento, Iluminado, para que o Abençoado ensine os cinco primeiros grilhões.
+Tendo ouvido do Abençoado os bhikkhus o recordarão.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Então
+ouça, Ananda e preste muita atenção àquilo que eu vou dizer,” “Sim, venerável
+senhor,” o venerável Ananda respondeu. O Abençoado disse o seguinte:<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>5. “Aqui,
+Ananda, uma pessoa comum sem instrução que não respeita os nobres, que não é
+proficiente nem treinada no Dhamma deles, que não respeita os homens
+verdadeiros, que não é proficiente nem treinada no Dhamma deles, permanece
+com a mente obcecada e escravizada pela idéia da existência de um eu e ela não
+compreende como na verdade é a escapatória da idéia da existência de um eu que
+já surgiu; e quando essa idéia da existência de um eu se torna habitual nela e
+não está subjugada, isso é um grilhão. Ela permanece com a mente obcecada e
+escravizada pela dúvida … pelo apego a preceitos e rituais … pelo desejo
+sensual … pela má vontade, e ela não compreende como na verdade é a escapatória
+da má vontade que já surgiu; e quando essa idéia da má vontade se torna
+habitual nela e não está subjugada, isso é um grilhão.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>6. “Um
+discípulo nobre bem instruído que respeita os nobres que é proficiente e
+treinado no Dhamma deles, que respeita os homens verdadeiros, que é
+proficiente e treinado no Dhamma deles, não permanece com a mente obcecada
+e escravizada pela idéia da existência de um eu;<span style="mso-spacerun:
+yes">  </span>ele compreende como na verdade é a escapatória da idéia da
+existência de um eu que já surgiu, e a idéia da existência de um eu juntamente
+com a tendência subjacente são abandonadas por ele. [</span><a href="#N5"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>5</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>] <a name=R5></a>Ele não permanece com a mente
+obcecada e escravizada pela dúvida ... pelo apego a preceitos e rituais … pela
+desejo sensual … pela má vontade; ele compreende como na verdade é a
+escapatória da má vontade que já surgiu, e a má vontade juntamente com a
+tendência subjacente são abandonadas por ele.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>7. “Existe um
+caminho, Ananda, uma prática para o abandono dos cinco primeiros grilhões; mas
+alguém que não venha para esse caminho, para essa prática, possa compreender ou
+ver, ou abandonar esses cinco primeiros grilhões – isso não é possível. É como
+se houvesse uma grande árvore com seu cerne, não seria possível que alguém
+pudesse cortar o cerne sem cortar a casca e o alburno, da mesma forma, existe
+um caminho … isso não é possível.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Existe um
+caminho, Ananda, uma prática para o abandono dos cinco primeiros grilhões; e
+alguém que venha para esse caminho, para essa prática, possa compreender ou
+ver, ou abandonar esses cinco primeiros grilhões – isso é possível. É como se
+houvesse uma grande árvore com seu cerne, seria possível que alguém pudesse
+cortar o cerne cortando a casca e o alburno, da mesma forma, existe um caminho
+… isso é possível.<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>8.
+“Suponha, Ananda, que o rio Ganges estivesse cheio d’água até a borda de forma
+que corvos pudessem beber nele e então, um homem fraco viesse e pensasse:
+‘Nadando através da correnteza com os meus braços, cruzarei com segurança até a
+outra margem deste rio Ganges’; no entanto, ele não seria capaz de cruzar até a
+outra margem com segurança. Da mesma forma, quando o Dhamma está sendo ensinado
+para alguém, para a cessação da idéia da existência de um eu, se a mente dele
+não entrar nisso e adquirir confiança, se estabilizar e se libertar, ele será
+considerado como o homem fraco.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Suponha,
+Ananda, que o rio Ganges estivesse cheio d´água até a borda de forma que corvos
+pudessem beber nele e então, um homem forte viesse e pensasse: ‘Nadando através
+da correnteza com os meus braços, cruzarei com segurança até a outra margem
+deste rio Ganges’; e ele seria capaz de cruzar até a outra margem com
+segurança. Da mesma forma, quando o Dhamma está sendo ensinado para alguém,
+para a cessação da idéia da existência de um eu, se a mente dele entrar nisso e
+adquirir confiança, se estabilizar e se libertar, então ele será considerado como o
+homem forte.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T9></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>9. “E qual, Ananda, é o caminho, a prática, para o abandono dos cinco
+primeiros grilhões? Aqui, um bhikkhu afastado das aquisições, [</span><a href="#N6"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>6</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>] <a name=R6></a>com o abandono dos estados
+prejudiciais, com a completa tranqüilização da resistência corporal, afastado dos prazeres sensuais, 
+afastado das qualidades não hábeis, entra e permanece no primeiro jhana, que é caracterizado pelo pensamento 
+aplicado e sustentado, com o êxtase e felicidade nascidos do afastamento.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Tudo que
+ali existe de forma material, sensação, percepção, formações volitivas e consciência, ele
+vê esses estados como impermanentes, como sofrimento, como uma enfermidade, um
+tumor, uma flecha, uma calamidade, uma aflição, estranhos, desintegrando,
+vazios, como não-eu. [</span><a href="#N7"><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>7</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>] <a
+name=R7></a>Ele afasta a sua mente desses estados e a dirige para o elemento
+imortal, desta forma: ‘Isto é a paz, isto é o sublime, isto é, o silenciar de
+todas as formações, o abandono de todas as aquisições, a destruição do desejo,
+desapego, cessação, Nibbana.’ [</span><a href="#N8"><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>8</span></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>] <a name=R8></a>Firmando-se sobre isso, ele realiza a destruição das
+impurezas. Mas se ele não realizar a destruição das impurezas, então devido a
+esse desejo pelo Dhamma, esse deleite com o Dhamma, [</span><a href="#N9"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>9</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>] <a name=R9></a>com a destruição dos cinco
+primeiros grilhões ele se tornará um dos que irá renascer de forma espontânea
+nas Moradas Puras e lá realizará o parinibbana sem nunca mais retornar desse
+mundo. Esse é o caminho, a prática para o abandono dos cinco primeiros
+grilhões.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>10-12.
+“Além disso, abandonando o pensamento aplicado e sustentado, um bhikkhu entra e
+permanece no segundo jhana ... Além disso, abandonando o êxtase um
+bhikkhu ... entra e permanece no terceiro jhana ... Além disso, com o completo desaparecimento da felicidade, 
+um bhikkhu entra e permanece no quarto jhana, que possui nem felicidade nem sofrimento, com a atenção plena e
+ a equanimidade purificadas. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Tudo que
+ali existe de forma material, sensação, percepção, formações volitivas e consciência, ele
+vê esses estados como impermanentes ... como não-eu. Ele afasta a sua mente
+desses estados e a dirige para o elemento imortal ... Esse é o caminho, a
+prática para o abandono dos cinco primeiros grilhões.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>13. “Além
+disso, com a completa superação das percepções da forma, com o desaparecimento
+das percepções do contato sensorial, sem dar atenção às percepções da diversidade,
+consciente que o ‘espaço é infinito,’ um bhikkhu entra e permanece na base do
+espaço infinito.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Tudo que
+ali existe de sensação, percepção, formações volitivas e consciência, [</span><a
+href="#N10"><span lang=PT-BR style='mso-ansi-language:PT-BR'>10</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>] <a name=R10></a>ele vê esses
+estados como impermanentes ... como não-eu.<span style="mso-spacerun: yes"> 
+</span>Ele afasta a sua mente desses estados e a dirige para o elemento imortal
+... Esse é o caminho, a prática para o abandono dos cinco primeiros grilhões.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>14. “Além
+disso, com a completa superação da base do espaço infinito, consciente de que a
+‘consciência é infinita,’ um bhikkhu entra e permanece na base da consciência
+infinita.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Tudo que
+ali existe de sensação, percepção, formações volitivas e consciência, ele vê esses
+estados como impermanentes ... como não-eu.<span style="mso-spacerun: yes"> 
+</span>Ele afasta a sua mente desses estados e a dirige para o elemento imortal
+... Esse é o caminho, a prática para o abandono dos cinco primeiros grilhões.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>15. “Além
+disso, com a completa superação da base da consciência infinita, consciente de
+que ‘não há nada,’ um bhikkhu entra e permanece na base do nada.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Tudo que
+ali existe de sensação, percepção, formações volitivas e consciência, ele vê esses
+estados como impermanentes, como sofrimento, como uma enfermidade, um tumor,
+uma flecha, uma calamidade, uma aflição, estranhos, desintegrando, vazios, como
+não-eu. Ele afasta a sua mente desses estados e a dirige para o elemento
+imortal desta forma: ‘Isto é a paz, isto é o sublime, isto é, o silenciar de
+todas as formações, o abandono de todas as aquisições, a destruição do desejo,
+desapego, cessação, Nibbana.’ Firmando-se sobre isso, ele realiza a destruição
+das impurezas. Mas se ele não realizar a destruição das impurezas, então devido
+a esse desejo pelo Dhamma, esse deleite com o Dhamma, com a destruição dos
+cinco primeiros grilhões ele se tornará um dos que irá renascer de forma
+espontânea nas Moradas Puras e lá realizará o parinibbana sem nunca mais
+retornar desse mundo. Esse é o caminho, a prática para o abandono dos cinco
+primeiros grilhões.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>16.
+“Venerável senhor. Se esse é o caminho, a prática para o abandono dos cinco
+primeiros grilhões, então como é que alguns bhikkhus, dizem, obtiveram a
+libertação da mente e alguns, dizem, obtiveram a libertação através da sabedoria?”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“A
+diferença, Ananda, está nas faculdades deles, eu digo.” [</span><a href="#N11"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>11</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>] <a name=R11></a>Isso foi o que disse o
+Abençoado. O venerável Ananda ficou satisfeito e contente com as palavras do
+Abençoado<o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>Notas</span></b><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>: <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=Normal><a name=N1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[1] Os cinco primeiros grilhões, (<i>orambhagiyani samyojanani</i>), são também
+chamados grilhões inferiores porque levam ao renascimento no reino da esfera
+sensual. Eles são erradicados de forma completa apenas pelo ‘que não retorna.’
+[</span><a href="#R1"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[2] MA: A pergunta surge: “Quando o Buda perguntou sobre os grilhões e o
+bhikkhu respondeu se referindo aos grilhões, porque o Buda criticou a sua
+resposta?” A razão é que Malunkyaputta tinha a idéia de que uma pessoa é
+aprisionada pelos grilhões apenas naquelas ocasiões em que estes a atacam,
+enquanto que em outras ocasiões ela não estaria aprisionada por eles. O Buda
+falou daquela forma para mostrar o erro nesse entendimento. [</span><a
+href="#R2"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N3></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[3] <i>Anuseti tvev'assa sakkayaditthanusayo</i>. Com respeito aos <i>anusayas</i>
+ou tendências subjacentes, veja o </span><a href="MN44.html#N15"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>MN 44, nota 15</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>. Nos comentários as impurezas são
+identificadas como ocorrendo em três níveis: nível <i>anusaya, </i>no qual elas
+permanecem como inclinações latentes na mente; nível <i>pariyutthana, </i>onde
+elas surgem para obcecar e escravizar a mente (mencionado no verso 5 deste
+sutta); e nível <i>vitikkama</i>, onde<i> </i>elas causam as ações corporais e
+verbais prejudiciais. O ponto da crítica do Buda é que os grilhões, mesmo
+quando não se convertem em manifestação ativa, continuam a existir no nível <i>anusaya</i>
+enquanto não forem erradicados pelos caminhos supramundanos. [</span><a
+href="#R3"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N4></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[4] Dhamma. Isto também poderia ter sido interpretado como “coisas.” [</span><a
+href="#R4"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]</span><span lang=PT-BR
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PT-BR'><o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N5></a> [5] </span><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>MA: O grilhão e a tendência subjacente em
+princípio não são coisas distintas; ao contrário, trata-se da mesma
+contaminação que é chamada de grilhão no sentido de aprisionamento e de
+tendência subjacente no sentido de ser não abandonada. [</span><a href="#R5"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N6></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>[6] <i>Upadhiviveka</i>.
+MA aponta <i>upadhi</i> neste caso como os cinco elementos do prazer sensual.
+Embora as três primeiras seções deste enunciado pareçam expressar as mesmas
+idéias das duas seções mais usuais a seguir, MT indica que elas têm a intenção
+de mostrar o significado de se tornar “afastado dos prazeres sensuais, afastado
+das qualidades não hábeis.” [</span><a href="#R6"><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>Retorna</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N7></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[7] Este trecho mostra o desenvolvimento de insight, (<i>vipassana</i>),
+sobre uma base de tranqüilidade, (<i>samatha</i>), usando o jhana sobre o qual a
+prática de insight está baseada como o objeto da<span style="mso-spacerun:
+yes">  </span>meditação. Veja o <a href="MN52.html#T4">MN 52.4</a>. Aqui dois
+termos – impermanente e desintegrando – mostram a característica da
+impermanência; três termos – estranhos, vazios e não-eu – mostram a
+característica de não-eu; os restantes seis termos mostram a característica do
+sofrimento. [</span><a href="#R7"><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>Retorna</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N8></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[8] MA: Ele “afasta a sua mente” dos cinco agregados incluídos no <i>jhana</i>,
+que ele viu estarem estampados com as três características. O “elemento imortal,” (<i>amata dhatu</i>), é Nibbana. Primeiro “ele dirige a sua mente para
+Nibbana” com a consciência do insight, tendo ouvido a sua descrição como “a paz
+e o sublime,” etc. Então com o caminho supramundano, “ele dirige a sua mente
+para Nibbana” fazendo disso um objeto e penetrando-o como a paz e o sublime,
+etc. [</span><a href="#R8"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N9></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[9] Veja o <a href="MN52.html#N3">MN 52, nota 3</a>. [</span><a href="#R9"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N10></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[10] Deve ser notado que quando as realizações imateriais são tomadas
+como base para o insight, o agregado da forma material não é incluído entre os
+objetos de insight. Por isso, somente os quatro agregados mentais são
+mencionados. [</span><a href="#R10"><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>Retorna</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N11></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[11] MA: Entre aqueles que adotam o caminho da tranqüilidade, um bhikkhu
+que enfatiza a unificação da mente – se diz que ele obtém a libertação da mente;
+outro que enfatiza a sabedoria – se diz que ele obtém a libertação através da
+sabedoria. Entre aqueles que adotam o caminho do insight, aquele que enfatiza a
+sabedoria – se diz que ele obtém a libertação através da sabedoria; outro que
+enfatiza a unificação da mente – se diz que ele obtém a libertação da mente. Os
+dois principais discípulos do Buda alcançaram o estado de arahant enfatizando
+ambos a tranqüilidade e<span style="mso-spacerun: yes">  </span>o insight, mas
+o Ven. Sariputta se tornou um que obteve a libertação através da sabedoria e o Ven. Maha Moggallana se tornou um que obteve a libertação da
+mente. Portanto, a razão para as diferentes designações é a diferença nas
+faculdades, isto é, entre a predominância da faculdade da concentração e da faculdade
+da sabedoria.<a name=N12></a> </span>[<a href="#R11">Retorna</a>]<span
+lang=PT-BR style='mso-ansi-language:PT-BR'><o:p></o:p></span></p>
+
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  4 Dezembro 2010         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN64.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:11 GMT -->
+</html>
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

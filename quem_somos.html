@@ -1,0 +1,281 @@
+<!-- DEFINE PARAMETROS -->
+
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/quem_somos.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:50:01 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - quem_somos</title>
+<link REL="SHORTCUT ICON" href="img/favicon.ico"><!-- Jquery e Bootstrap --><script src="bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="bootstrap/bootstrap-theme-3.3.7.min.css"><script src="bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="insightf195.css?v=2.1"><script language="JavaScript" src="func.js"> </script><script type="text/javascript" src="expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("dhp/dhp1.1.html","dhp/dhp1.3.html","dhp/dhp1.5.html","dhp/dhp1.6.html","dhp/dhp1.13.html","dhp/dhp1.15.html","dhp/dhp1.17.html","dhp/dhp1.19.html","dhp/dhp2.21.html","dhp/dhp2.25.html","dhp/dhp2.26.html","dhp/dhp2.27.html","dhp/dhp2.28.html","dhp/dhp2.29.html","dhp/dhp2.31.html","dhp/dhp3.33.html","dhp/dhp3.35.html","dhp/dhp3.36.html","dhp/dhp3.37.html","dhp/dhp3.38.html","dhp/dhp3.40.html","dhp/dhp3.42.html","dhp/dhp3.43.html","dhp/dhp4.44.html","dhp/dhp4.46.html","dhp/dhp4.47.html","dhp/dhp4.48.html","dhp/dhp4.50.html","dhp/dhp4.51.html","dhp/dhp4.54.html","dhp/dhp4.58.html","dhp/dhp5.60.html","dhp/dhp5.61.html","dhp/dhp5.62.html","dhp/dhp5.63.html","dhp/dhp5.64.html","dhp/dhp5.66.html","dhp/dhp5.71.html","dhp/dhp5.75.html","dhp/dhp6.76.html","dhp/dhp6.78.html","dhp/dhp6.80.html","dhp/dhp6.81.html","dhp/dhp6.85.html","dhp/dhp7.92.html","dhp/dhp8.102.html","dhp/dhp8.111.html","dhp/dhp8.113.html","dhp/dhp9.118.html","dhp/dhp9.121.html","dhp/dhp9.126.html","dhp/dhp9.127.html","dhp/dhp10.129.html","dhp/dhp10.130.html","dhp/dhp10.145.html","dhp/dhp11.146.html","dhp/dhp11.147.html","dhp/dhp11.151.html","dhp/dhp11.153.html","dhp/dhp11.155.html","dhp/dhp12.1.html","dhp/dhp12.2.html","dhp/dhp12.3.html","dhp/dhp12.4.html","dhp/dhp12.5.html","dhp/dhp12.6.html","dhp/dhp12.7.html","dhp/dhp12.8.html","dhp/dhp13.1.html","dhp/dhp13.2.html","dhp/dhp13.3.html","dhp/dhp13.4.html","dhp/dhp13.5.html","dhp/dhp13.6.html","dhp/dhp13.7.html","dhp/dhp13.8.html","dhp/dhp13.9.html","dhp/dhp13.10.html","dhp/dhp13.11.html","dhp/dhp14.1.html","dhp/dhp14.2.html","dhp/dhp14.3.html","dhp/dhp14.4.html","dhp/dhp14.5.html","dhp/dhp14.6.html","dhp/dhp14.7.html","dhp/dhp15.1.html","dhp/dhp15.2.html","dhp/dhp15.3.html","dhp/dhp15.4.html","dhp/dhp15.5.html","dhp/dhp15.6.html","dhp/dhp15.7.html","dhp/dhp15.8.html","dhp/dhp15.9.html","dhp/dhp15.10.html","dhp/dhp16.1.html","dhp/dhp16.2.html","dhp/dhp16.3.html","dhp/dhp16.4.html","dhp/dhp16.5.html","dhp/dhp16.6.html","dhp/dhp16.7.html","dhp/dhp17.1.html","dhp/dhp17.2.html","dhp/dhp17.3.html","dhp/dhp17.4.html","dhp/dhp17.5.html","dhp/dhp18.1.html","dhp/dhp18.2.html","dhp/dhp18.3.html","dhp/dhp18.4.html","dhp/dhp18.5.html","dhp/dhp18.6.html","dhp/dhp18.7.html","dhp/dhp18.8.html","dhp/dhp19.1.html","dhp/dhp19.2.html","dhp/dhp20.1.html","dhp/dhp20.2.html","dhp/dhp20.3.html","dhp/dhp20.4.html","dhp/dhp20.5.html","dhp/dhp21.1.html","dhp/dhp21.2.html","dhp/dhp21.3.html","dhp/dhp21.4.html","dhp/dhp21.5.html","dhp/dhp22.1.html","dhp/dhp23.1.html","dhp/dhp23.2.html","dhp/dhp24.1.html","dhp/dhp24.2.html","dhp/dhp24.3.html","dhp/dhp24.4.html","dhp/dhp24.5.html","dhp/dhp24.6.html","dhp/dhp24.7.html","dhp/dhp24.8.html","dhp/dhp25.1.html","dhp/dhp25.2.html","dhp/dhp25.3.html","dhp/dhp25.4.html","dhp/dhp25.5.html","dhp/dhp25.6.html","dhp/dhp25.7.html","dhp/dhp25.8.html","dhp/dhp25.9.html","dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("sutta/It.1.html","sutta/It.2.html","sutta/It.3.html","sutta/It.4.html","sutta/It.5.html","sutta/It.6.html","sutta/It.7.html","sutta/It.8.html","sutta/It.9.html","sutta/It.10.html","sutta/It.11.html","sutta/It.12.html","sutta/It.13.html","sutta/It.14.html","sutta/It.15.html","sutta/It.16.html","sutta/It.17.html","sutta/It.18.html","sutta/It.19.html","sutta/It.20.html","sutta/It.21.html","sutta/It.22.html","sutta/It.23.html","sutta/It.24.html","sutta/It.25.html","sutta/It.26.html","sutta/It.27.html","sutta/It.28.html","sutta/It.29.html","sutta/It.30.html","sutta/It.31.html","sutta/It.32.html","sutta/It.33.html","sutta/It.34.html","sutta/It.35.html","sutta/It.36.html","sutta/It.37.html","sutta/It.38.html","sutta/It.39.html","sutta/It.40.html","sutta/It.41.html","sutta/It.42.html","sutta/It.43.html","sutta/It.44.html","sutta/It.45.html","sutta/It.46.html","sutta/It.47.html","sutta/It.48.html","sutta/It.49.html","sutta/It.50.html","sutta/It.51.html","sutta/It.52.html","sutta/It.53.html","sutta/It.54.html","sutta/It.55.html","sutta/It.56.html","sutta/It.57.html","sutta/It.58.html","sutta/It.59.html","sutta/It.60.html","sutta/It.61.html","sutta/It.62.html","sutta/It.63.html","sutta/It.64.html","sutta/It.65.html","sutta/It.66.html","sutta/It.67.html","sutta/It.68.html","sutta/It.69.html","sutta/It.70.html","sutta/It.71.html","sutta/It.72.html","sutta/It.73.html","sutta/It.74.html","sutta/It.75.html","sutta/It.76.html","sutta/It.77.html","sutta/It.78.html","sutta/It.79.html","sutta/It.80.html","sutta/It.81.html","sutta/It.82.html","sutta/It.83.html","sutta/It.84.html","sutta/It.85.html","sutta/It.86.html","sutta/It.87.html","sutta/It.88.html","sutta/It.89.html","sutta/It.90.html","sutta/It.91.html","sutta/It.92.html","sutta/It.93.html","sutta/It.94.html","sutta/It.95.html","sutta/It.96.html","sutta/It.97.html","sutta/It.98.html","sutta/It.99.html","sutta/It.100.html","sutta/It.101.html","sutta/It.102.html","sutta/It.103.html","sutta/It.104.html","sutta/It.105.html","sutta/It.106.html","sutta/It.107.html","sutta/It.108.html","sutta/It.109.html","sutta/It.110.html","sutta/It.111.html","sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="quem_somos" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('img/topo/new_12.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="livros.html">Livros</a></li>									<li><a href="audiobook.html">Audiobook</a></li>									<li><a href="podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1>Quem Somos</p>
+
+<p class=Normal>Aqui você encontrará
+informações gerais acerca deste site. Se você tiver questões mais especificas
+consulte a seção de <a href="questoes.html">Perguntas mais Freqüentes</a>.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+<br>
+
+<p class=Tit2>O que é o Acesso ao Insight? <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="img/tup.gif"></span></a>
+</p>
+
+<p class=Normal>O Acesso
+ao Insight é um site dedicado a fornecer informações precisas, confiáveis e
+úteis relativas à prática e estudo do Budismo Theravada, da forma como nos têm
+sido transmitidas através da palavra escrita contida no Cânone em Pali e com o
+exemplo vivo da Sangha. O Acesso
+ao Insight não se trata de uma organização, nem é afiliado a nenhuma
+instituição, mas se trata da iniciativa pessoal de um indivíduo, <a href="arquivo_textos_theravada/beisert.html">Michael Beisert</a>.  </p>
+
+<p class=Normal>Embora os
+textos oferecidos não incluam o conjunto completo dos ensinamentos do Budismo
+Theravada, há material mais do que suficiente para permitir obter um
+entendimento abrangente e completo  dos ensinamentos do Buda. </p>
+
+<p class=Normal>Tudo que
+está disponível neste site é oferecido gratuitamente, com o claro entendimento de que nenhum material poderá
+ser comercializado. Para mais informações acerca da questão dos direitos
+autorais sobre o material disponível neste site por favor veja as <a
+href="questoes.html">Perguntas mais Freqüentes</a>. </p>
+
+<p class=Tit2>Princípios
+Editoriais <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="img/tup.gif"></span></a>
+</p>
+
+<p class=Normal>O
+princípio fundamental para guiar a escolha de qual texto deve ser incluído ou
+não no site é a convicção de que os ensinamentos encontrados no Cânone em Pali
+têm tanta relevância hoje como quando eles foram formulados pela primeira vez a
+2.600 anos. Apesar de todo avanço no mundo em termos materiais desde a época do
+Buda, as Quatro Nobres Verdades parecem ser tão vitais hoje como sempre: o
+sofrimento e o estresse ainda impregnam as nossas vidas; a causa ainda parece
+ser o desejo em todas as suas manifestações traiçoeiras; e não existe razão
+para suspeitar que o Nobre Caminho Óctuplo seja menos efetivo hoje em trazer um
+fim para todo o sofrimento e estresse. Existe muito pouco no Cânone que
+demandaria uma &quot;modernização&quot; ou reforma para adequá-lo aos tempos
+modernos. Os ensinamentos do Buda acerca da Iluminação dizem respeito a
+princípios fundamentais da natureza humana que transcendem todas as
+questões sociais, culturais, e politicas. Um
+professor fez uma boa síntese: &quot;O Ocidente tem muito mais a aprender do
+Theravada, do que o Theravada do Ocidente.&quot; </p>
+
+<p class=Normal>A ênfase
+do material contido no site diz respeito à prática. O objetivo é de permitir o
+desenvolvimento do entendimento pessoal dos ensinamentos do Buda, ao invés de
+incentivar debates especulativos acerca de conceitos filosóficos de difícil
+compreensão. </p>
+
+<p class=Normal>No geral evitamos
+apresentar nossas opiniões e entendimentos, preferindo ao invés disso permitir
+que as passagens dos suttas falem por si mesmas. Alguma preferência pessoal no
+entanto existe devido às escolhas editoriais que foram feitas. </p>
+
+<p class=Tit2><a name=preco>Política de Preços dos <a href="livros.html">Livros</a> no Acesso ao Insight <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="img/tup.gif"></span></a>
+</p>
+
+<p class=Normal>O Dhamma, ou a verdade sobre a realidade dos fenômenos, não é algo que pertença a alguém, nem sequer ao próprio Buda, pois se trata da realidade de como as coisas na verdade são. O Buda re-descobriu essa verdade e a expôs para o mundo. O direito do Buda sobre o Dhamma é de ter alcançado a máxima realização possível dessa verdade e de ser um expoente perfeito dessa realização.</p> 
+
+<p class=Normal>Uma pessoa que assuma qualquer direito de propriedade em relação ao Dhamma e com base nisso se dedique ao comércio desses ensinamentos estará tomando aquilo que não lhe pertence para obter um ganho financeiro. Esse tipo de atitude fere a ética Budista. Coerente com essa ética o Acesso ao Insight oferece os livros digitais em todos os seus formatos gratuitamente.</p> 
+
+<p class=Normal>No caso de livros impressos, que são comercializados pela <a href="http://www.bookess.com/">Bookess</a>, os resultados financeiros das vendas são todos doados, com prioridade para os monastérios da Forest Sangha. </p>
+
+<p class=Normal>Qualquer dúvida ou se precisar mais esclarecimentos escreva para acessoaoinsight[arroba]yahoo[ponto]com</p>
+
+<p class=Tit2>Uma
+breve história do Acesso ao Insight <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="img/tup.gif"></span></a>
+</p>
+
+<p class=Normal>O
+estimulo para traduzir os textos do Access to Insight do inglês para o
+português teve inicio no final de 1999 com a tradução de alguns suttas para
+estudo na Casa de Dharma em São Paulo.</p>
+
+<p class=Normal>Durante
+os primeiros seis meses de 2000 fizemos um esforço concentrado para traduzir e
+revisar suttas e textos que formassem um conjunto coerente e com um mínimo de
+abrangência para poder transmitir um entendimento o mais completo possível dos
+ensinamentos do Budismo Theravada. Esse material foi publicado em Agosto de
+2000. </p>
+
+<p class=Normal>Ao longo
+do tempo fomos adicionando textos e suttas, aumentando a quantidade e
+profundidade do material disponível no site. A diversidade de autores também
+foi expandida incluindo material encontrado em outros web sites que não o
+Access to Insight.</p>
+
+<p class=Normal><a name=aniversario></a><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>Ao completar o quinto aniversário de
+existência</i></b> o site mudou muito, tanto em quantidade como em
+qualidade. O começo foi modesto com apenas um punhado de suttas e textos. Ao
+longo dos anos o conteúdo cresceu de modo significativo, passando de 60 suttas
+no início do site para mais de 1.000, sendo que agora o site contém mais suttas
+traduzidos para o português do que o Access to Insight, o site em inglês, que
+num primeiro momento nos serviu de inspiração.
+A significância não fica só no número, mas principalmente pelo fato de
+que o Majjhima Nikaya, um dos Nikayas mais importantes, foi traduzido na sua
+totalidade. </p>
+
+
+<p class=Normal>No que diz respeito aos livros, ensaios, palestras e
+entrevistas, contamos com quase 120 textos de 25 autores distintos, monges e
+leigos, somando mais de mil páginas que tratam dos mais variados temas.</p>
+
+<p class=Normal>O
+aprimoramento da qualidade das traduções, um aspecto talvez não tão evidente
+para a maioria dos leitores, tem sido, ao longo desses cinco anos, alvo de
+constante esforço e no caso dos suttas, um trabalho especial tem sido
+desenvolvido para a uniformização dos termos mais usados. As traduções do pali
+para o inglês podem variar bastante de um autor para outro e nas traduções para
+o português procuramos seguir um padrão único na escolha de palavras e
+construções. Isso fez com que ao longo do tempo recorrêssemos cada vez mais aos
+textos originais em pali para dirimir dúvidas e em vista disso, os suttas vêm
+sendo submetidos a um processo de revisão constante ao longo de todos esses
+anos e o resultado é que todos os suttas do site apresentam absoluta coerência
+entre si, em relação ao vocabulário empregado. Para assegurar a coerência na
+terminologia, nos últimos três meses realizamos um trabalho ainda mais
+completo, não só revisando todos os suttas do site, mas também todos os textos.
+Como parte desse processo, o glossário em pali e em português também foi
+enriquecido. A partir de agora, em vista dessa revisão abrangente, a necessidade
+de ajustes será muito menor e agora o site está numa situação mais estável. </p>
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+lang=PT-BR>Durante o sexto ano de existência</i></b> do site, demos prioridade para a finalização da
+tradução dos suttas do Digha Nikaya, que é a coleção dos discursos longos do
+Buda. Essa tarefa foi concluída com a publicação, no aniversário do site, do
+Mahaparinibbana Sutta – DN 16, que é o sutta mais longo do Cânone. Agora os
+leitores podem ter acesso à coleção completa dos suttas do Digha Nikaya, além
+dos do Majjhima Nikaya. Dispor dessas duas coleções traduzidas na sua
+totalidade é um privilégio para os leitores de língua portuguesa. A título de
+ilustração, na data em que completamos a tradução do Digha Nikaya, o Access to
+Insight, que num primeiro momento nos serviu de inspiração, dispõe de 12 suttas
+do Digha Nikaya e 72 suttas do Majjhima Nikaya traduzidos para o inglês, de um
+total respectivamente de 34 e 152 suttas. Ao completar o sexto aniversário o
+site foi também rejuvenescido com um novo visual graças ao excelente trabalho
+feito pelo Flávio Maia. A organização geral do site permaneceu inalterada.</p>
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><i>No sétimo aniversário</i></b> além dos suttas e ensaios traduzidos, o destaque fica para a publicação de um guia de estudo sobre As Dez Perfeições, (<i>Paramis</i>), 
+baseado em grande parte no material já disponível no site. Atenção especial foi dada na seleção de textos dirigidos 
+para pessoas leigas. </p> 
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><i>Durante o oitavo ano de existência</i></b> publicamos vários suttas, principalmente do Anguttara Nikaya e alguns textos de bhikkhus da tradição das florestas da Tailândia.</p>
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><i>Durante o nono ano de existência</i></b> além da publicação de mais suttas, principalmente do Anguttara Nikaya, o destaque ficou para a novidade dos podcasts com leitura e análise de alguns suttas. Até o momento foram divulgados 7 podcasts todos relativos a suttas do Majjhima Nikaya. Inicialmente a gravação do primeiro podcast foi feita ao vivo e nos seguintes foram feitas em estúdio visando agilizar e simplificar o processo de divulgação.</p> 
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><i>Durante o décimo ano de existência</i></b> demos seguimento aos podcasts dos suttas do Majjhima Nikaya, a publicação de textos de bhikkhus da tradição das florestas da Tailândia e alguns suttas do Anguttara Nikaya.</p>
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><i>Durante o décimo primeiro ano de existência</i></b> os destaques foram a publicação do livro de Ajaan Anan - "Ensinamentos Acessíveis, Verdades Profundas", a publicação do livreto de Ajaan Brahm sobre os Jhanas, a  adição de uma nova página "A Meditação e a Ciência" e para celebrar o Vesak foi publicado o podcast do Mahaparinibbana Sutta.</p>
+
+<p class=Normal><b><i>Durante o décimo segundo ano de existência</i></b> os destaques foram o início da publicação da tradução do Dhammapada feita pelo Raryel C Souza. A tradução traz notas explicativas e ilustrações que enriquecem a leitura e entendimento dos versos.<br> Outro ponto alto foi a gravação de podcasts temáticos com base nos suttas mais curtos do Anguttara Nikaya, Samyutta Nikaya e Khuddaka Nikaya (Generosidade, Virtude, Amor Bondade, Kamma, Kalama Sutta e as Três Características).</p>
+
+<p class=Normal><b><i>Durante o décimo terceiro e décimo quarto ano de existência</i></b> os destaques foram a publicação de traduções dos suttas do Anguttara Nikaya, totalizando 6.333 suttas traduzidos ou 80% dessa coleção. Também foram priorizadas as traduções de ensaios de Ajaan Brahm incluindo uma coleção de ensaios curtos sobre temas do Vinaya.</p>
+
+<p class=Normal><b><i>Tendo completado 15 anos</i></b> o site alcançou o objetivo de oferecer um conjunto abrangente dos ensinamentos originais do Buda, fazendo jus ao título de site mais completo sobre os ensinamentos do Budismo Theravada. Material suficiente para que qualquer um que se dedique aos estudos e à prática com seriedade possa libertar a mente. A prioridade agora será oferecer o material do site em novos formatos - livros digitais e impressos. </p>
+
+
+
+
+
+
+<p class=Tit2>Agradecimentos <a
+href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0 title="Topo" src="img/tup.gif"></span></a>
+</p>
+
+<p class=Normal>Diretamente
+o maior agradecimento vai para John Bullit que é o coordenador do site em
+inglês 'Access to Insight' e que concordou com a tradução do material e também
+permitiu utilizar o mesmo desenho e organização do site em inglês. Com o passar
+do tempo o aspecto visual e a organização de ambos sites acabou se distanciando. </p>
+
+<p class=Normal>Indiretamente
+o agradecimento também vai a todos os autores, tradutores e editores que
+permitiram tornar disponíveis os textos através da Internet.</p>
+
+<p class=Normal>Um
+agradecimento especial ao Flávio Maia pelo belíssimo trabalho na elaboração do
+visual rejuvenescido do site, ao completarmos o sexto ano de existência.</p>
+
+<p class=Normal>Agradecemos também a colaboração do Almeida Junior - <a href="https://www.facebook.com/almeidajuniorajstudio">Studio AJ</a> na significativa melhoria na qualidade dos áudios.</p>
+
+<p class=Normal>Agradecimento ao André Ribeiro Barros pela reprogramação do layout em Julho de 2018 adaptado para a visualização nos smartphones.</p>
+
+
+<p class=Normal>Obrigado
+a todos.</p>
+
+<p class=Normal>Michael Beisert</p>
+
+<br>
+<!-- Counter/Statistics -->
+<script language="JavaScript"
+src="../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
+</script>
+<script language="javascript">geovisit();</script>
+<noscript><img src="../visit.webhosting.yahoo.com/visit07cc.html?time"
+alt="setstats" border="0" width="1" height="1"></noscript> 
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  3 Outubro 2015          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/quem_somos.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:50:01 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

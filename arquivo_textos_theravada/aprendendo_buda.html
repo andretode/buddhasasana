@@ -1,0 +1,359 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/aprendendo_buda.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:37 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - aprendendo_buda</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="aprendendo_buda" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_72.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1 align=center style='text-align:center'>Aprendendo com o Buda  </Tit1>
+<p class=Tit3 align=center style='text-align:center'> Por  </Tit3>
+<p class=Tit2 align=center style='text-align:center'>Bhikkhu Bodhi  </Tit2>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>O tema deste Retiro do
+Dharma pode ser descrito como a importância de combinar o estudo com a prática.
+Nos dias de hoje, aqui nos Estados Unidos, há um grande interesse pelo Budismo
+em muitos níveis. Com freqüência, no entanto, os praticantes e estudiosos estão
+separados por uma grande distância, quase como se vivessem em mundos distintos.
+Muitos daqueles que se consideram praticantes do Budismo consideram que a
+prática Budista consiste apenas de meditação, perseguida em separado de um
+entendimento mais amplo do Dharma. Isto algumas vezes conduz a radicais novas
+interpretações dos ensinamentos, que transformam o Dharma em um antigo sistema
+de psicoterapia que transcende o indivíduo ou uma mera ‘arte de vida,’ uma
+maneira de viver feliz e em paz aqui e agora. Isto pode ser bom até onde possa
+levar, mas quem estiver em busca de algo mais sério em breve irá sentir uma
+deficiência de visão, uma falta de profundidade, ao comparar essa versão dos
+ensinamentos com a versão clássica.<o:p></o:p></span></p>
+
+<p class=Normal>Por outro lado, nas
+universidades seculares, os acadêmicos realizam estudos avançados dos textos,
+cultura e história Budista, tentando compreender o Budismo em termos puramente
+objetivos como um fenômeno cultural e histórico. Esta abordagem pode nos
+proporcionar um vasto volume de conhecimentos sobre o Budismo, mas isso não
+produz o genuíno insight em relação às verdades que o Buda estava tentando
+transmitir. O defeito nesta abordagem é que o estudo do Budismo é feito com
+total desconsideração da fé e prática Budista, que são os requisitos para o
+insight genuíno. Sem dúvida, sob o ponto de vista acadêmico é útil adquirir
+esse conhecimento, mas se esse conhecimento não tiver um impacto nas nossas
+vidas, este será estéril e improdutivo.<o:p></o:p></span></p>
+
+<p class=Normal>Portanto, aqui na América,
+o presente encantamento com o Budismo tende a se dividir em duas facções. De um
+lado, há praticantes que são sinceros no seu comprometimento com a prática
+Budista mas com freqüência carecem de uma clara compreensão dos princípios
+Budistas. Alguns até mesmo rejeitam o estudo do Dharma, chamando isso de
+emaranhado de conceitos e idéias. Do outro lado da divisão encontramos os acadêmicos
+eruditos que possuem amplo conhecimento factual sobre o Budismo mas que carecem
+de fé no Dharma e da experiência prática no caminho Budista. Em nenhum dos
+casos existe a preocupação de na verdade “aprender com o Buda.”<o:p></o:p></span></p>
+
+<p class=Normal><b>A União do Estudo e a
+Prática</b><o:p></o:p></span></p>
+
+<p class=Normal>Aqui no Bodhi Monastery
+(New Jersey, USA) enfatizamos a importância de juntar a fé, estudo e a prática
+num equilíbrio harmonioso. Embora este monastério exista faz apenas três anos,
+a nossa missão já está tomando uma forma e na medida em que os anos passam,
+esperamos que irá trazer frutos abundantes. A visão que guia este monastério
+provém do trabalho do Mestre Yin-shun, o mais destacado monge-erudito Chinês da
+era moderna, que ainda vive hoje em Taiwan com 97 anos de idade. O trabalho do
+Mestre Yin-shun é verdadeiramente impressionante e inspira respeito. Combina os
+métodos mais rigorosos de erudição histórica e literária com ousados insights
+acerca da doutrina e história Budista, suportado por um comprometimento firme e
+inabalável com o caminho espiritual Budista. Os seus muitos volumes de estudos
+eruditos abrangem toda a história do Budismo, desde as suas origens através da evolução
+na Índia e o subseqüente desenvolvimento na China. O fundador do Bodhi
+Monastery, Mestre Jen-chun, é o pupilo mais sênior vivo do Mestre Yin-shun e
+também uma pessoa extraordinária. Igual ao seu mestre, ele combina o
+conhecimento erudito do Budismo com um coração compassivo, profundos insights,
+e grandes votos de alguém que está bem avançado no caminho Budista.<o:p></o:p></span></p>
+
+<p class=Normal>Combinar o estudo e a
+prática como parte da estrutura da fé Budista é uma abordagem que ressoa a
+própria tradição Budista. Muitas formulações nos textos enfatizam a importância
+de combinar essas duas asas do caminho Budista num equilíbrio saudável. Uma,
+encontrada nos suttas, diz que quando uma pessoa adquire fé, ela deve se
+aproximar de um mestre para aprender a doutrina. Tendo ouvido a doutrina,
+ela a retém na mente; aí, ela deve dominá-la verbalmente para imprimi-la
+com firmeza na mente; em seguida, ela examina o significado para ver como os
+ensinamentos se relacionam com a própria experiência individual, como eles se
+aplicam à própria vida. Por fim, ela se esforça para concretizar os ensinamentos
+e quando a prática amadurecer, ela enxergará a verdade última por ela mesma.Outra, num esquema mais simples, encontrado nos comentários Budistas, fala das três
+principais pilastras no desenvolvimento do caminho: estudo, prática e
+realização. Primeiro a pessoa estuda a doutrina, depois a coloca em prática e
+por fim realiza a verdade.<o:p></o:p></span></p>
+
+<p class=Normal>Ambas as formulações sugerem
+que o estudo do Dharma é a base para a prática e a realização. Quanto de estudo
+é necessário irá variar de pessoa para pessoa e de uma tradição para outra. Não
+pode haver regras rígidas e imutáveis que se apliquem a todos. Sem dúvida,
+algumas pessoas podem praticar de modo eficaz e obter sucesso com o mínimo de
+conhecimento doutrinário. Outras precisam de mais conhecimento, enquanto que
+outras, ainda, terão a inclinação natural de estudar o Dharma de forma ampla e
+profunda. Isto poderá auxiliar na prática delas e torná-las mais eficientes
+no ensino do Dharma. Portanto, o conhecimento amplo do Dharma, quando apoiado
+pela fé e conectado com a prática, tem valor porque ele não só amplia a própria
+compreensão como acentua a eficácia como mestre. O estudo em si também pode
+se tornar um empreendimento inspirador e que enaltece, abrindo os próprios
+olhos para a vastidão e profundidade do domínio do Dharma.<o:p></o:p></span></p>
+
+<p class=Normal><b>Tendo Noção Clara do
+Objetivo</b><o:p></o:p></span></p>
+
+<p class=Normal>Embora aprendamos de muitos
+mestres e oradores, em ultima instância estamos aprendendo do próprio Buda –
+pois todos os ensinamentos que estudamos derivam do Buda diretamente ou através
+da contínua tradição Budista. Ao iniciarmos juntos o aprendizado dos
+ensinamentos do Buda, é bom ter em mente um dos ditos do mestre<span
+style="mso-spacerun: yes">  </span>Yin-shun: “Nosso objetivo ao aprender os
+ensinamentos do Buda hoje deve ter o mesmo propósito do Buda em disseminar os
+seus ensinamentos.” O Buda surgiu no mundo para conduzir as pessoas a dar um
+fim ao sofrimento e aflição mostrando-lhes o caminho para a felicidade e a paz
+supremas. Todas as pessoas possuem uma aversão natural ao sofrimento e aflição
+e desejam a felicidade e a paz.<o:p></o:p></span></p>
+
+<p class=Normal>Então porque não podemos
+obter isso por conta própria, seguindo as tendências das nossas próprias
+mentes? Porque temos que aprender isso do Buda? A razão é porque as nossas
+mentes estão obscurecidas pela ignorância e pelas contaminações: as nossas
+idéias estão “de pernas para o ar.”<o:p></o:p></span></p>
+
+<p class=Normal>Então, embora todos nós
+desejamos ter felicidade, com demasiada freqüência nos sentimos agitados e
+aflitos. Nós criamos muito sofrimento para nós mesmos, e nós causamos muito
+sofrimento para nós mesmos e para os outros. Através da sua perfeita sabedoria,
+o Buda compreendeu de modo preciso e a fundo, as causas e condições que
+conduzem ao sofrimento e à felicidade. Devido à sua imensa compaixão, durante
+quarenta e cinco anos ele ensinou essas causas e condições extensivamente para
+o mundo, de modo que as pessoas pudessem entender que<span style="mso-spacerun:
+yes">  </span>tipo de ações devem ser evitadas e que tipos de ações devem ser
+cultivadas. Portanto nosso objetivo último ao estudar os ensinamentos do Buda
+deve ser aprender como distinguir os modos que são prejudiciais e destrutivos
+dos modos que são úteis e benéficos; os caminhos que conduzem ao sofrimento e
+os caminhos que conduzem à felicidade e a paz.<o:p></o:p></span></p>
+
+<p class=Normal>Deveríamos fazer isso com
+um objetivo duplo: primeiro, progredir na direção da nossa própria libertação,
+e segundo permitir que contribuamos da forma mais eficaz para o bem estar dos
+outros. Isto satisfaz o que é chamado de “o bem duplo,” o bem estar próprio e
+dos demais.<o:p></o:p></span></p>
+
+<p class=Normal>Ao aprender os ensinamentos
+do Buda, temos que aprender como aplicá-los à nossa própria situação. Muitos
+dos ensinamentos que encontramos nos suttas mais antigos eram dirigidos aos
+monásticos, pessoas que haviam renunciado ao mundo dedicando-se tempo integral
+à prática do caminho. Eu penso que seria um erro as pessoas leigas descartarem
+esses ensinamentos como sendo irrelevantes nas suas vidas, pois esses
+ensinamentos apontam para o objetivo último que todos os discípulos do Buda
+deveriam buscar e a prática necessária para alcançar esse objetivo. Mas também
+seria um erro as pessoas leigas pensarem que elas apenas podem praticar o
+Dhamma de modo adequado imitando a prática de monges e monjas. Eu penso que
+durante as suas rondas de pregações o Buda deve haver dado muito mais
+ensinamentos para os seus discípulos leigos do que aquilo que está registrado
+nos textos. Embora estes possam ter sido perdidos, podemos extrair os
+princípios principais dos ensinamentos que foram preservados. Não é suficiente
+apenas repetir esses ensinamentos com as palavras usadas para registrá-los.
+Precisamos ver como praticá-los na atualidade, nas nossas próprias situações de
+vida. Ao fazer isso, precisamos traçar um rumo entre dois extremos: um é o
+conservadorismo rígido, que adere com rigor e de modo impensado às formulações
+antigas sem a preocupação de entender as suas razões subjacentes; o outro é o
+revisionismo excessivo, que torce os ensinamentos em demasia para adaptá-los às
+condições presentes. Uma abordagem saudável em relação ao Dharma reconheceria
+que a doutrina em si está sujeita às duas leis da impermanência e
+condicionalidade. As formulações têm que mudar com as inevitáveis mudanças no
+pensamento humano e nas condições sociais, no entanto elas têm que sempre
+permanecer fiéis aos princípios fundamentais do Dharma.<o:p></o:p></span></p>
+
+<p class=Normal><b>Dois Aspectos na Prática
+do Dharma</b><o:p></o:p></span></p>
+
+<p class=Normal>Aqui, quero sugerir que
+aprender com o Buda em um contexto prático, significa antes de mais nada aprender
+dois aspectos do Dharma que de modo ideal devem correr em paralelo. Eu irei
+chamá-los de autotransformação e auto-transcendência. O objetivo último dos
+ensinamentos, a iluminação ou libertação, é alcançada através de um ato de
+auto-transcendência, um ato através do qual ultrapassamos os limites e
+fronteiras da mente condicionada e penetramos na verdade incondicionada. Esse
+ato é exercido através da sabedoria. No entanto, a sabedoria libertadora pode
+surgir apenas numa mente que seja cultivada de forma apropriada, e o processo
+de cultivo da mente é a tarefa da autotransformação.<o:p></o:p></span></p>
+
+<p class=Normal><b>Autotransformação</b><o:p></o:p></span></p>
+
+<p class=Normal>A autotransformação
+significa o cultivo gradual de modo a progredir passo a passo na direção do
+despertar da verdadeira sabedoria. A autotransformação envolve dois processos:
+um é a eliminação; o outro é o desenvolvimento. Irei discutir ambos de forma
+breve.<o:p></o:p></span></p>
+
+<p class=Normal>“Eliminação” significa a
+remoção das qualidades prejudiciais nas nossas vidas. Significa evitar as ações
+prejudiciais com o corpo, linguagem e mente: o controle e submissão dos
+pensamentos prejudiciais; a rejeição das opiniões falsas e das idéias
+deludidas. Tal como um jardineiro que queira cultivar um belo jardim precisa
+primeiro eliminar as ervas daninhas e o entulho, assim também nós precisamos
+exterminar as ervas daninhas e o entulho das nossas mentes. Ao aprender com o
+Buda estamos tentando entender a nós mesmos, entender a nossa própria mente. O
+Buda nos mostra um espelho das nossas mentes e corações, mostrando os estados
+mentais poluídos que prejudicam a nós a aos outros. Portanto, ao estudar os
+ensinamentos do Buda, obtemos um melhor entendimento das nossas fraquezas, os
+defeitos que temos que nos esforçar para superar.<o:p></o:p></span></p>
+
+<p class=Normal>Nós também aprendemos os
+métodos para superá-los, pois esse é exatamente o poder do ensinamento Budista:
+nos proporciona, com uma precisão impressionante, os medicamentos para eliminar
+todas as enfermidades das nossas mentes. O que é tão surpreendente nos
+ensinamentos Budistas mais antigos é o insight incrivelmente detalhado da mente
+humana. Esses ensinamentos proporcionam um tipo distinto de análise psicológica
+do que aquilo que encontramos na psicologia ocidental. O objetivo aqui não é
+tanto recuperar pessoas perturbadas de modo patológico a um nível de saúde
+mental considerado como normal, mas de tratar as “pessoas normais” de modo que
+elas possam se elevar acima das limitações e grilhões da mente normal e
+concretizar o seu potencial oculto, a mente totalmente purificada e desperta.
+Isto requer uma abordagem completamente distinta, uma abordagem que é a
+excelente contribuição do Buda para o entendimento da natureza humana.<o:p></o:p></span></p>
+
+<p class=Normal>O Buda não somente nos
+oferece uma análise dos nossos defeitos, mas um catálogo das nossas forças em
+potencial. Ele também nos ensina os meios para fazer com que essas forças em
+potencial se tornem reais e efetivas. Ele nos proporciona um ensinamento extraordinariamente
+pragmático que podemos aplicar na nossa vida diária para passo a passo ascender
+na direção da realização última, o movimento nessa direção é o que significa
+desenvolvimento. “Desenvolvimento” significa o cultivo de qualidades benéficas,
+as qualidades que promovem a paz interior e a felicidade e que faz das nossas
+vidas canais efetivos para trazer a paz e felicidade para os outros. O Buda
+oferece um amplo espectro de práticas benéficas, desde as observâncias éticas
+básicas até práticas como as cinco faculdades espirituais, o Nobre Caminho
+Óctuplo e os seis ou dez <i>paramis</i>. Para aprender isso, devemos estudar o
+Dharma em extensão e profundidade. Depois devemos aprender como aplicá-lo nas
+nossas vidas do modo mais realista e benéfico.<o:p></o:p></span></p>
+
+<p class=Normal><b>Auto-transcendência</b><o:p></o:p></span></p>
+
+<p class=Normal>O segundo processo
+principal que aprendemos do Buda é a auto-transcendência. Embora o Buda fale em
+eliminar os estados prejudiciais e desenvolver os benéficos, o objetivo dele não
+é que apenas sejamos pessoas felizes e contentes dentro dos limites mundanos do
+mundo. Ele nos aponta para um objetivo transcendente: ele nos conduz para a
+realidade incondicionada, Nibbana, o estado calmo e quiescente que está além do
+nascimento, envelhecimento, sofrimento e morte. Esse objetivo apenas pode ser
+alcançado através de uma completa e clara compreensão da natureza última das
+coisas, o modo de existência final de todos os fenômenos. Enquanto que essa
+realidade tem que ser penetrada através da experiência direta, nós precisamos
+de instruções específicas para compreendê-la. O objetivo em si transcende
+conceitos e palavras, mas o Buda e os grandes mestres Budistas nos
+proporcionaram uma variedade de “fotografias” que nos oferecem um vislumbre da
+verdadeira natureza das coisas. Nenhuma dessas “fotos” pode capturá-la
+completamente, mas elas nos proporcionam uma idéia das coisas que deveríamos
+estar buscando, os princípios que precisamos entender e o objetivo ao qual
+deveríamos estar aspirando.<o:p></o:p></span></p>
+
+<p class=Normal>Dedicar-se ao estudo dos
+princípios relevantes à auto-transcendência é um empreendimento filosófico, mas
+essa não é uma filosofia como mera especulação ociosa. Para o Budismo, a
+filosofia é o esforço para sondar a verdadeira natureza das coisas, empregar
+conceitos e idéias para obter um vislumbre da verdade que nos liberta, uma
+verdade que transcende todos os conceitos e idéias.<o:p></o:p></span></p>
+
+<p class=Normal>A filosofia Budista é uma
+grande correnteza que flui do Buda, continuamente remodelada e ampliada para
+trazer à luz as diferentes facetas da realidade, para expor os diferentes
+aspectos de uma verdade que nunca pode ser capturada de forma adequada dentro
+de algum sistema. Quando estudamos a filosofia Budista, precisamos sempre
+lembrar que<span style="mso-spacerun: yes">  </span>essas investigações
+filosóficas não são realizadas com o mero intento de satisfazer a curiosidade
+intelectual mas para ajudar na tarefa de auto-transcendência. Elas fazem isso
+identificando com precisão a natureza da sabedoria que precisamos ter para
+obliterar a ignorância, a raiz principal de todo sofrimento e cativeiro.<o:p></o:p></span></p>
+
+<p class=Normal><b>Ser um Buda</b><o:p></o:p></span></p>
+
+<p class=Normal>Eu tenho falado em
+“aprender com o Buda” como se<span style="mso-spacerun: yes">  </span>isso
+sempre implique aprender os ensinamentos registrados de modo explícito nos
+textos. Mas isso é apenas parte do que “aprender com o Buda” envolve. Aprender
+com o Buda significa não somente estudar as palavras dele: também significa
+aprender da conduta dele e da mente dele. A tradição Budista nos proporciona
+muitos registros das ações do Buda ao longo da sua vida e nas vidas passadas, e
+isso forma uma parte significativa da herança Budista. A vida, conduta e a
+mente do Buda nos proporcionam um modelo a ser emulado, o padrão ideal que nós,
+como discípulos do Buda, deveríamos tentar incorporar nas nossas vidas.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado: 8 Novembro 2003          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/aprendendo_buda.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:37 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

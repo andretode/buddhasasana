@@ -1,0 +1,579 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/podcast/PS35.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:04 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - MN35</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="MN35" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_55.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+
+<p class=Tit3 align=center style='text-align:center'><b> Majjhima Nikaya 35 </b></Tit3>
+<p class=Tit1 align=center style='text-align:center'>Culasaccaka Sutta </Tit1>
+<p class=Tit1 align=center style='text-align:center'>O Pequeno Discurso para Saccaka </Tit1>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal style='margin-left:1.0in'>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>1. Em certa
+ocasião o Abençoado estava em Vesali na Grande Floresta no Salão com um pico na
+cumeeira.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>2. Agora,
+naquela ocasião Saccaka, o filho de Nigantha, estava em Vesali, um polemista e
+hábil orador considerado por muitos como um santo. Ele estava fazendo a seguinte afirmação perante a assembléia de
+Vesali: “Eu não vejo contemplativo ou brâmane, ou cabeça de uma ordem, ou cabeça de
+um grupo, ou mestre de um grupo, ou mesmo alguém que reivindique ser um arahant,
+perfeitamente iluminado, que não sacudisse, tiritasse, tremesse e suasse nas
+axilas, se fosse engajado num debate comigo. Mesmo que eu engajasse um poste
+insensível num debate, ele iria sacudir, tiritar e tremer se fosse engajado num
+debate comigo, então o que posso dizer de um ser humano?”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>3. Então,
+ao amanhecer, o venerável Assaji se vestiu e tomando a tigela e o manto
+externo, foi para Vesali para esmolar alimentos. Enquanto Saccaka, o filho de Nigantha, caminhava e perambulava em
+Vesali fazendo exercício, ele viu o venerável Assaji vindo à distância e foi
+até ele e ambos se cumprimentaram. Quando a conversa amigável e cortês havia
+terminado, Saccaka, o filho de Nigantha, ficou em pé a um lado e disse:<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>4. “Mestre
+Assaji, como o contemplativo Gotama disciplina os seus discípulos? E como, em
+geral, são apresentadas as instruções do contemplativo Gotama aos seus
+discípulos?”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Assim é
+como o Abençoado disciplina os seus discípulos, Aggivessana, e assim é como, em
+geral, são apresentadas as instruções do Abençoado aos seus discípulos:
+‘Bhikkhus, a forma material é impermanente, a sensação é impermanente, a
+percepção é impermanente, as formações são impermanentes, a consciência é
+impermanente. Bhikkhus, a forma material é não-eu, a sensação é não-eu, a
+percepção é não-eu, as formações são não-eu, a consciência é não-eu. Todas as
+formações são impermanentes, todas as coisas são não-eu.’ Assim é como o Abençoado disciplina os seus discípulos, e assim
+é como, em geral, são apresentadas as instruções do Abençoado aos seus
+discípulos.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Se isso é
+o que o contemplativo Gotama afirma, de fato ouvimos algo desagradável. Talvez
+em alguma ocasião possamos encontrar com o Mestre Gotama e ter uma conversa com
+ele. Talvez possamos fazer com que ele abandone essa idéia maléfica.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T5></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>5. Agora naquela ocasião quinhentos Licchavis haviam se reunido no salão
+de assembléias para tratar de negócios. Então Saccaka, o filho de Nigantha, foi
+até eles e disse: “Venham, bons Licchavis, venham! Hoje haverá uma discussão
+entre eu e o contemplativo Gotama. Se o contemplativo afirmar perante mim
+aquilo que foi afirmado perante mim por um dos seus discípulos famosos, o
+bhikkhu chamado Assaji, então da mesma forma como um homem forte é capaz de
+agarrar os pêlos de um carneiro peludo e arrastá-lo para cá e para lá e
+arrastá-lo em círculos, assim em debate eu irei arrastar o contemplativo Gotama
+para cá e para lá e em círculos. Da mesma forma como um forte cervejeiro é
+capaz de arremessar uma peneira grande num tanque de água profundo e
+agarrando-a pelos cantos é capaz de arrastá-la para cá e para lá e em círculos,
+assim em debate eu irei arrastar o contemplativo Gotama para cá e para lá e em
+círculos. Da mesma forma como um forte cervejeiro é capaz de tomar um filtro pelos
+cantos e agitá-lo para cima e para baixo e dar-lhe pancadas, assim em debate eu
+agitarei o contemplativo Gotama para cima e para baixo e darei pancadas nele. E
+da mesma forma como um elefante sexagenário é capaz de mergulhar num lago
+profundo e desfrutar o jogo de lavar o cânhamo, assim eu desfrutarei o jogo de
+lavar o cânhamo com o contemplativo Gotama. Venham,
+bons Licchavis, venham! Hoje haverá uma discussão entre eu e o contemplativo
+Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>6. Após o
+que, alguns Licchavis disseram: “Como poderá o contemplativo Gotama refutar as
+afirmações de Saccaka, o filho de Nigantha? Ao contrário, Saccaka, o filho de
+Nigantha, irá refutar as afirmações do contemplativo Gotama.” E alguns
+Licchavis disseram: “Quem é Saccaka, o filho de Nigantha, para poder refutar as
+afirmações do Abençoado? Ao contrário, o Abençoado irá refutar as afirmações de
+Saccaka, o filho de Nigantha.” Então Saccaka, o filho de Nigantha foi junto com
+quinhentos Licchavis ao Salão com um pico na cumeeira na Grande Floresta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>7. Agora,
+naquela ocasião muitos bhikkhus estavam caminhando para cá e para lá ao ar
+livre. Então Saccaka, o filho de Nigantha, foi até eles e perguntou: “Onde está
+o Mestre Gotama agora, senhores? Queremos ver o Mestre Gotama.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“O Abençoado
+foi para a Grande Floresta, Aggivessana, e está sentado à sombra de uma árvore
+para passar o resto do dia.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>8. Então
+Saccaka, o filho de Nigantha, juntamente com um grande número de Licchavis,
+entrou na Grande Floresta e foi até o Abençoado. Eles se cumprimentaram e
+depois que a conversa amigável e cortês havia terminado, ele sentou a um lado.
+Alguns Licchavis<span style="mso-spacerun: yes">  </span>homenagearam o
+Abençoado e sentaram a um lado; alguns trocaram saudações corteses com ele e
+após a troca de saudações sentaram a um lado; alguns ajuntaram as mãos em
+respeitosa saudação e sentaram a um lado; alguns anunciaram o seu nome e clã e
+sentaram a um lado. Alguns permaneceram em silêncio e sentaram a um lado.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>9. Quando
+Saccaka o filho de Nigantha havia sentado, ele disse para o Abençoado: “Eu
+faria uma pergunta ao Mestre Gotama acerca de certo tema, se o Mestre Gotama
+concedesse o favor de uma resposta à minha pergunta.” <o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Pergunte o
+que você quiser, Aggivessana.” <o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Como o
+contemplativo Gotama disciplina os seus discípulos? E como, em geral, são
+apresentadas as instruções do contemplativo Gotama aos seus discípulos?”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Assim é
+como disciplino os meus discípulos, Aggivessana, e assim é como, em geral, são
+apresentadas as instruções aos meus discípulos: ‘Bhikkhus, a forma material é
+impermanente, a sensação é impermanente, a percepção é impermanente, as
+formações são impermanentes, a consciência é impermanente. Bhikkhus, a forma
+material é não-eu, a sensação é não-eu, a percepção é não-eu, as formações são
+não-eu, a consciência é não-eu. Todas as formações são impermanentes, todas as
+coisas são não-eu.’<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>10. “Um
+símile me vem à mente, Mestre Gotama.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Explique o
+que lhe vem à mente, Aggivessana,” o Abençoado disse.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Tal como
+quando as sementes e plantas, qualquer que seja o seu tipo, crescem, aumentam e
+amadurecem, todas assim o fazem na dependência da terra, baseadas na terra; e
+como quando as tarefas extenuantes, qualquer que seja o seu tipo, são feitas,
+todas são feitas na dependência da terra, baseadas na terra – assim também,
+Mestre Gotama, uma pessoa tem a forma material como eu, e baseada na forma
+material ela produz mérito ou demérito. Uma pessoa tem a sensação como eu, e
+baseada na sensação ela produz mérito ou demérito.<span style="mso-spacerun:
+yes">  </span>Uma pessoa tem a percepção como eu, e baseada na percepção ela
+produz mérito ou demérito. Uma pessoa tem as formações como eu, e baseada nas
+formações ela produz mérito ou demérito. Uma pessoa tem a consciência como eu,
+e baseada na consciência ela produz mérito ou demérito.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>11.
+“Aggivessana, você está afirmando que: ‘A forma material é o meu eu, a sensação
+é o meu eu, a percepção é o meu eu, as formações são o meu eu, a consciência é
+o meu eu?”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Eu assim
+afirmo, Mestre Gotama: ‘A forma material é o meu eu, a sensação é o meu eu, a
+percepção é o meu eu, as formações são o meu eu, a consciência é o meu eu.’ E
+assim também o faz esta grande multidão.”<o:p></o:p></span></p>
+
+<p class=Normal><a name=R5></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>“O que tem esta grande multidão a ver com você, Aggivessana? Por favor
+limite-se somente à sua própria afirmação.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Então,
+Mestre Gotama, eu assim afirmo: ‘A forma material é o meu eu, a sensação é o
+meu eu, a percepção é o meu eu, as formações são o meu eu, a consciência é o
+meu eu.’”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>12. “Nesse
+caso, Aggivessana, eu lhe farei uma pergunta em retorno. Responda como quiser.
+O que você pensa, Aggivessana? Um nobre rei ungido – por exemplo o Rei Pasenadi
+de Kosala ou o Rei Ajatasatu Vedehiputta de Magadha – exerceria o poder no seu
+próprio reino para executar aqueles que devem ser executados, multar aqueles
+que devem ser multados e de banir aqueles que devem ser banidos?”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Mestre
+Gotama, um nobre rei ungido – por exemplo o Rei Pasenadi de Kosala ou o Rei
+Ajatasatu Vedehiputta de Magadha – exerceria o poder no seu próprio reino para
+executar aqueles que devem ser executados, multar aqueles que devem ser
+multados e de banir aqueles que devem ser banidos. Pois mesmo aquelas
+comunidades [oligárquicas] tal como os Vajjias e os Mallias exercem o poder no
+seu próprio reino para executar aqueles que devem ser executados, multar
+aqueles que devem ser multados e de banir aqueles que devem ser banidos; então
+muito mais um nobre rei ungido como o Rei Pasenadi de Kosala ou o Rei Ajatasatu
+Vedehiputta de Magadha. Ele o exerceria, Mestre Gotama, e ele teria dignidade
+para exercê-lo.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T13></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>13. “O que você pensa, Aggivessana? Quando você assim diz: ‘A forma
+material é o meu eu,’ você exerce algum poder como esse sobre essa forma
+material para poder dizer: ‘Que a minha forma seja assim; que a minha forma não
+seja assim?’” Quando isso foi dito,
+Saccaka, o filho de Nigantha, ficou em silêncio.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Pela
+segunda vez o Abençoado fez a mesma pergunta e pela segunda vez Saccaka, o
+filho de Nigantha, ficou em silêncio. Então o Abençoado disse: “Aggivessana,
+responda agora. Agora não é o momento de ficar em silêncio. Se alguém for
+questionado com uma pergunta razoável pela terceira vez pelo Tathagata, e ainda
+assim não responder, a sua cabeça se partirá em sete pedaços no mesmo
+instante.” <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T14></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>14. Agora, naquele momento um yakkha, segurando nas mãos um raio de
+ferro em chamas, incandescente e brilhante, apareceu no ar sobre a cabeça de
+Saccaka, o filho de Nigantha, pensando: “Se esse Saccaka, o filho de Nigantha,
+que foi questionado com uma pergunta razoável pela terceira vez pelo Tathagata,
+ainda assim não responder, partirei a sua cabeça em sete pedaços neste
+instante.” O Abençoado viu o yakkha e
+Saccaka, o filho de Niganttha, também o viu. Então Saccaka, o filho de Nigantha,
+ficou amedrontado, alarmado e aterrorizado. Buscando abrigo, proteção e refúgio
+no Abençoado, ele disse: “Pergunte, Mestre Gotama, eu responderei.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>15. “O que
+você pensa, Aggivessana? Quando você assim diz: ‘A forma material é o meu eu,’
+você exerce algum tipo de poder sobre essa forma material para poder dizer:
+‘Que a minha forma material seja assim; que a minha forma material não seja
+assim?’” – “Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>16. “Preste
+atenção, Aggivessana, preste atenção à sua reposta! O que você disse antes não
+está de acordo com o que disse depois, nem aquilo que você disse depois está de
+acordo com o que disse antes. O que você pensa, Aggivessana? Quando você assim
+diz: ‘A sensação é o meu eu,’ você exerce algum tipo de poder sobre essa sensação
+para poder dizer: ‘Que a minha sensação seja assim; que a minha sensação não
+seja assim?’” – “Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>17. “Preste
+atenção, Aggivessana, preste atenção à sua reposta! O que você disse antes não
+está de acordo com o que disse depois, nem aquilo que você disse depois está de
+acordo com o que disse antes. O que você pensa, Aggivessana? Quando você assim
+diz: ‘A percepção é o meu eu,’ você exerce algum tipo de poder sobre essa
+percepção para poder dizer: ‘Que a minha percepção seja assim; que a minha
+percepção não seja assim?’” – “Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>18. “Preste
+atenção, Aggivessana, preste atenção à sua reposta! O que você disse antes não
+está de acordo com o que disse depois, nem aquilo que você disse depois está de
+acordo com o que disse antes. O que você pensa, Aggivessana? Quando você assim
+diz: ‘As formações são o meu eu,’ você exerce algum tipo de poder sobre essas
+formações para poder dizer: ‘Que as minhas formações sejam assim; que as minhas
+formações não sejam assim?’” – “Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T19></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>19. “Preste atenção, Aggivessana, preste atenção à sua reposta! O que
+você disse antes não está de acordo com o que disse depois, nem aquilo que você
+disse depois está de acordo com o que disse antes. O que você pensa,
+Aggivessana? Quando você assim diz: ‘A consciência é o meu eu,’ você exerce
+algum tipo de poder sobre essa consciência para poder dizer: ‘Que a minha
+consciência seja assim; que a minha consciência não seja assim?’” – “Não,
+Mestre Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T20></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>20. “Preste atenção, Aggivessana, preste atenção à sua reposta! O que
+você disse antes não está de acordo com o que disse depois, nem aquilo que você
+disse depois está de acordo com o que disse antes. O que você pensa,
+Aggivessana, a forma material é permanente ou impermanente?” – “Impermanente, Mestre
+Gotama.” – “Aquilo que é impermanente é sofrimento ou felicidade?” –
+“Sofrimento, Mestre Gotama.” – “Aquilo que é impermanente, sofrimento e sujeito
+à mudança é adequado que seja assim considerado: ‘Isto é meu, isto sou eu, isto
+é o meu eu’?” – “Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“O que você
+pensa, Aggivessana? A sensação é permanente ou impermanente? ... A percepção é
+permanente ou impermanente? ... As formações são permanentes ou impermanentes? ...
+A consciência é permanente ou impermanente?” “Impermanente, Mestre Gotama.” –
+“Aquilo que é impermanente é sofrimento ou felicidade?” – “Sofrimento, Mestre
+Gotama.” – “Aquilo que é impermanente, sofrimento e sujeito à mudança é
+adequado que seja assim considerado: ‘Isto é meu, isto sou eu, isto é o meu
+eu’?” – “Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>21. “O que
+você pensa, Aggivessana? Quando alguém adere ao sofrimento, recorre ao
+sofrimento, se agarra ao sofrimento e considera aquilo que é sofrimento assim:
+‘Isto é meu, isto sou eu, isto é o meu eu,’ seria ele capaz de entender
+completamente o sofrimento ou<span style="mso-spacerun: yes"> 
+</span>permanecer com o sofrimento totalmente destruído?”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Como
+poderia ser, Mestre Gotama? Não, Mestre Gotama.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“O que você
+pensa, Aggivessana? Em sendo assim, você então adere ao sofrimento, recorre ao
+sofrimento, se agarra ao sofrimento e considera aquilo que é sofrimento
+assim:<span style="mso-spacerun: yes">  </span>‘Isto é meu, isto sou eu, isto é
+o meu eu,’?” “Como não poderia ser, Mestre Gotama? Sim, Mestre Gotama.” <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=R8></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>22. “É como se um homem que precisasse de madeira, procurasse madeira,
+perambulasse em busca de madeira, pegasse um machado afiado e entrasse na
+floresta, lá ele veria uma grande bananeira, ereta, jovem, sem frutos. Então
+ele a cortaria pela raiz, removeria a coroa e desenrolaria as folhas que
+envolvem o tronco; mas ao desenrolar as folhas do tronco ele não encontra nem
+alburno e muito menos madeira. Assim também, Aggivessana, quando você é
+pressionado, questionado e interrogado por mim acerca da sua afirmação, você se
+revela vazio, oco e equivocado. Mas foi você quem fez esta afirmativa perante a
+assembléia de Vessali: ‘Eu não vejo contemplativo ou brâmane, ou cabeça de
+ordem, ou cabeça de grupo, ou mestre de grupo, ou mesmo alguém que reivindique
+ser um arahant, perfeitamente iluminado, que não<span style="mso-spacerun: yes"> 
+</span>sacudisse, tiritasse, tremesse e suasse nas axilas, se fosse engajado
+num debate comigo. Mesmo se eu engajasse um poste insensível num debate, este
+iria sacudir, tiritar e tremer se fosse engajado num debate comigo, então o que
+posso dizer de um ser humano?’ Agora na sua testa há gotas de suor e estas
+encharcaram o seu manto superior e caíram no solo. Mas no meu corpo agora não
+há suor.” E o Abençoado revelou o seu corpo com a tez dourada para toda a
+assembléia. Quando isso foi dito, Saccaka, o filho de Nigantha, permaneceu
+sentado em silêncio, consternado, com os ombros caídos e a cabeça baixa,
+deprimido e sem resposta. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>23. Então
+Dummukha, o filho dos Licchavis, vendo Saccaka, o filho de Nigantha, em tal
+condição disse para o Abençoado:<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Um símile
+me vem à mente, Mestre Gotama.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Explique o
+que lhe vem à mente, Dummukha.” <o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Suponha,
+venerável senhor, que não distante de um vilarejo ou cidade houvesse uma lagoa
+com um caranguejo. Então, um grupo de meninos e meninas saíssem do vilarejo
+ou cidade indo até a lagoa, entrassem na água e tirassem o caranguejo da água e
+o colocassem sobre a terra firme. E sempre que o caranguejo estendesse uma
+perna, eles a cortassem, quebrassem e esmagassem com paus e pedras, de modo que
+o caranguejo tendo todas as pernas cortadas, quebradas e esmagadas, seria
+incapaz de regressar à lagoa. Da mesma forma, todas as contorções, entortaduras
+e vacilações de Saccaka, o filho de Nigantha, foram cortadas, quebradas e
+esmagadas pelo Abençoado, e agora ele não é capaz de novamente se aproximar do
+Abençoado para debater.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>24. Quando
+isso foi dito, Saccaka, o filho de Nigantha disse: “Espere, Dummukha, espere!
+Nós não estamos conversando com você, aqui estamos conversando com o Mestre
+Gotama.”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>[Então ele
+disse]: “Deixe essa nossa conversa, Mestre Gotama, ficar como a conversa de
+contemplativos e brâmanes comuns, isso foi só tagarelice, eu penso. Mas de que
+forma um discípulo do contemplativo Gotama é aquele que executa as suas
+instruções, que responde ao seu conselho, que superou a dúvida, se libertou da
+perplexidade, conquistou a intrepidez, e se tornou independente dos outros no Dhamma do Mestre?”<o:p></o:p></span></p>
+
+<p class=Normal><a name=R9></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>“Aqui, Aggivessana, qualquer tipo de forma material, quer seja passada,
+futura ou presente, interna ou externa, grosseira ou sutil, inferior ou
+superior, próxima ou distante – um discípulo meu vê toda forma material como na
+verdade ela é, com correta sabedoria assim: ‘Isto não é meu, isto não sou eu,
+isto não é o meu eu.’ Qualquer tipo de sensação ... Qualquer tipo de percepção ...
+Qualquer tipo de formação ... Qualquer tipo de consciência quer seja passada,
+futura ou presente, interna ou externa, grosseira ou sutil, inferior ou
+superior, próxima ou distante – um discípulo meu vê toda consciência como na
+verdade ela é, com correta sabedoria assim: ‘Isto não é meu, isto não sou eu,
+isto não é o meu eu.’ É dessa forma que um discípulo meu é aquele que executa
+as minhas instruções, que responde ao meu conselho, que superou a dúvida,<span
+style="mso-spacerun: yes">  </span>se libertou da perplexidade, conquistou a
+intrepidez, e se tornou independente dos outros no Dhamma do Mestre.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>25. “Mestre
+Gotama, de que forma um bhikkhu é um arahant com as impurezas destruídas, que
+viveu a vida santa, fez o que devia ser feito, depôs o fardo, alcançou o
+verdadeiro objetivo, destruiu os grilhões da existência e está completamente
+libertado através do conhecimento supremo?”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Aqui,
+Aggivessana, qualquer tipo de forma material, quer seja passada, futura ou
+presente, interna ou externa, grosseira ou sutil, inferior ou superior, próxima
+ou distante – um bhikkhu viu toda forma material como na verdade ela é, com
+correta sabedoria assim: ‘Isto não é meu, isto não sou eu, isto não é o meu
+eu,’ e através do desapego ele está libertado. Qualquer tipo de sensação ...
+Qualquer tipo de percepção ... Quaisquer tipos de formações ... Qualquer tipo de
+consciência quer seja passada, futura ou presente, interna ou externa,
+grosseira ou sutil, inferior ou superior, próxima ou distante – um bhikkhu viu
+toda consciência como na verdade ela é, com correta sabedoria assim: ‘Isto não
+é meu, isto não sou eu, isto não é o meu eu,’ e através do desapego ele está
+libertado. É dessa forma que um bhikkhu é um arahant com as impurezas
+destruídas, que viveu a vida santa, fez o que devia ser feito, depôs o fardo,
+alcançou o verdadeiro objetivo, destruiu os grilhões da existência e está
+completamente libertado através do conhecimento supremo.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T26></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>26. “Quando a mente de um bhikkhu está assim libertada, ele possui três
+qualidades insuperáveis: a visão insuperável, a prática do caminho insuperável
+e a libertação insuperável. Quando um
+bhikkhu está assim libertado, ele ainda honra, reverencia e venera o Tathagata
+assim: ‘O Abençoado é iluminado e ele ensina o Dhamma tendo como objetivo a
+iluminação. O Abençoado é domado e ele ensina o Dhamma para cada um domar a si
+mesmo. O Abençoado está em paz e ele ensina o Dhamma tendo como objetivo a paz.
+O Abençoado cruzou a torrente e ele ensina o Dhamma para cruzar a torrente. O
+Abençoado realizou Nibbana e ele ensina o Dhamma para realizar Nibbana.’”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>27. Quando
+isso foi dito, Saccaka, o filho de Nigantha, respondeu: “Mestre Gotama, fomos
+atrevidos e imprudentes em pensar que poderíamos atacar o Mestre Gotama num
+debate. Um homem poderia atacar um elefante louco e se sentir seguro, no
+entanto ele não poderia atacar o Mestre Gotama e se sentir seguro. Um homem
+poderia atacar uma massa de fogo incandescente e se sentir seguro, no entanto
+ele não poderia atacar o Mestre Gotama e se sentir seguro. Um homem poderia
+atacar uma terrível cobra venenosa e se sentir seguro, no entanto ele não
+poderia atacar o Mestre Gotama e se sentir seguro. Fomos atrevidos e
+imprudentes em pensar que poderíamos atacar o Mestre Gotama num debate.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Que o
+Abençoado junto com a Sangha dos bhikkhus concorde em aceitar a refeição de
+amanhã.” O Abençoado consentiu em silêncio.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>28. Então,
+sabendo que o Abençoado havia consentido, Saccaka, o filho de Nigantha, se
+dirigiu aos Licchavis: “Ouçam, Licchavis. O contemplativo Gotama junto com a
+Sangha dos bhikkhus foi convidado por mim para a refeição de amanhã. Vocês
+poderão me trazer qualquer coisa que considerem ser adequada para ele.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>29. Então,
+quando a noite terminou, os Licchavis trouxeram quinhentos pratos cerimoniais
+de arroz com leite como oferenda de alimentos. Então Saccaka, o filho de
+Nigantha, preparou vários tipos de boa comida no seu próprio parque e anunciou
+a hora para o Abençoado: “É hora, Mestre Gotama, a refeição está pronta.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>30. Então, ao
+amanhecer, o Abençoado se vestiu e tomando a sua tigela e o manto externo, ele
+foi junto com a Sangha dos bhikkhus para o parque de Saccaka, o filho de
+Nigantha, e sentou num assento que havia sido preparado. Então, com as suas
+próprias mãos, Saccaka, o filho de Nigantha, serviu e satisfez a Sangha dos
+bhikkhus liderada pelo Buda com os vários tipos de alimentos. Quando o
+Abençoado havia terminado de comer e removeu a mão da sua tigela, Saccaka, o
+filho de Nigantha, tomou um assento mais baixo e disse para o Abençoado:
+“Mestre Gotama, que o mérito e os bons frutos meritórios deste ato de
+generosidade seja pela felicidade dos doadores.”<o:p></o:p></span></p>
+
+<p class=Normal><a name=R11></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>“Aggivessana, qualquer coisa que resulte da generosidade para com um
+receptor como você – que não está livre da cobiça, não está livre da raiva, não
+está livre da delusão – será para os doadores. E qualquer coisa que resulte da
+generosidade para com um receptor como eu - que está livre da cobiça, está
+livre da raiva, está livre da delusão – será para você.” <o:p></o:p></span></p>
+
+
+
+
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  20 Março 2010          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/podcast/PS35.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:04 GMT -->
+</html>
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

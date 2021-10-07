@@ -1,0 +1,536 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp4.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:23 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - dhp4</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("dhp1.1.html","dhp1.3.html","dhp1.5.html","dhp1.6.html","dhp1.13.html","dhp1.15.html","dhp1.17.html","dhp1.19.html","dhp2.21.html","dhp2.25.html","dhp2.26.html","dhp2.27.html","dhp2.28.html","dhp2.29.html","dhp2.31.html","dhp3.33.html","dhp3.35.html","dhp3.36.html","dhp3.37.html","dhp3.38.html","dhp3.40.html","dhp3.42.html","dhp3.43.html","dhp4.44.html","dhp4.46.html","dhp4.47.html","dhp4.48.html","dhp4.50.html","dhp4.51.html","dhp4.54.html","dhp4.58.html","dhp5.60.html","dhp5.61.html","dhp5.62.html","dhp5.63.html","dhp5.64.html","dhp5.66.html","dhp5.71.html","dhp5.75.html","dhp6.76.html","dhp6.78.html","dhp6.80.html","dhp6.81.html","dhp6.85.html","dhp7.92.html","dhp8.102.html","dhp8.111.html","dhp8.113.html","dhp9.118.html","dhp9.121.html","dhp9.126.html","dhp9.127.html","dhp10.129.html","dhp10.130.html","dhp10.145.html","dhp11.146.html","dhp11.147.html","dhp11.151.html","dhp11.153.html","dhp11.155.html","dhp12.1.html","dhp12.2.html","dhp12.3.html","dhp12.4.html","dhp12.5.html","dhp12.6.html","dhp12.7.html","dhp12.8.html","dhp13.1.html","dhp13.2.html","dhp13.3.html","dhp13.4.html","dhp13.5.html","dhp13.6.html","dhp13.7.html","dhp13.8.html","dhp13.9.html","dhp13.10.html","dhp13.11.html","dhp14.1.html","dhp14.2.html","dhp14.3.html","dhp14.4.html","dhp14.5.html","dhp14.6.html","dhp14.7.html","dhp15.1.html","dhp15.2.html","dhp15.3.html","dhp15.4.html","dhp15.5.html","dhp15.6.html","dhp15.7.html","dhp15.8.html","dhp15.9.html","dhp15.10.html","dhp16.1.html","dhp16.2.html","dhp16.3.html","dhp16.4.html","dhp16.5.html","dhp16.6.html","dhp16.7.html","dhp17.1.html","dhp17.2.html","dhp17.3.html","dhp17.4.html","dhp17.5.html","dhp18.1.html","dhp18.2.html","dhp18.3.html","dhp18.4.html","dhp18.5.html","dhp18.6.html","dhp18.7.html","dhp18.8.html","dhp19.1.html","dhp19.2.html","dhp20.1.html","dhp20.2.html","dhp20.3.html","dhp20.4.html","dhp20.5.html","dhp21.1.html","dhp21.2.html","dhp21.3.html","dhp21.4.html","dhp21.5.html","dhp22.1.html","dhp23.1.html","dhp23.2.html","dhp24.1.html","dhp24.2.html","dhp24.3.html","dhp24.4.html","dhp24.5.html","dhp24.6.html","dhp24.7.html","dhp24.8.html","dhp25.1.html","dhp25.2.html","dhp25.3.html","dhp25.4.html","dhp25.5.html","dhp25.6.html","dhp25.7.html","dhp25.8.html","dhp25.9.html","dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="dhp4" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_80.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central"><!-- INICIO DO TEXTO -->
+
+<script type="text/javascript" src="../expando.js"></script>
+
+
+
+<p class=Tit1 align=center style='text-align:center'>4. <i> Pupphavagga</i> </Tit1>
+<p class=Tit2 align=center style='text-align:center'> Flores </Tit2>
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+
+<p class=Normal>&nbsp;</p>
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-44.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Quem irá compreender este mundo,<br>
+o mundo de Yama, e o mundo dos devas?<br>
+Quem irá examinar profundamente o bem exposto Dhamma <br>
+assim como quem é habilidoso escolhe uma flor?<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 44</p>
+</td>
+</tr>
+</table>
+
+
+<p class=Normal>&nbsp;</p>
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-45.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Um nobre aprendiz vai compreender este mundo,<br>
+o mundo de Yama e o mundo dos devas,<br>
+Um nobre aprendiz irá examinar profundamente o bem exposto Dhamma<br>
+assim como quem é habilidoso escolhe uma flor.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 45  
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N1">Nota 1</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.1.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R1></a>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-46.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Conhecendo este corpo como espuma,<br>
+despertando para sua natureza quimérica,<br>
+destruindo as flechas floridas de Mara,<br>
+vá para além da visão do Rei da Morte. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 46</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N2">Nota 2</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.2.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R2></a>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-47.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Com a mente apegada aos prazeres sensuais,<br>
+colhendo apenas as flores do prazer,<br>
+de surpresa a morte o pegará e o arrastará,<br>
+tal como uma grande enchente faz com um vilarejo adormecido.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 47</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N3">Nota 3</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.3.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R3></a>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-48.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Com os desejos insaciáveis,<br>
+colhendo apenas as flores do prazer,<br>
+com uma mente que se apega aos prazeres sensuais,<br>
+será subjugado pelo Senhor da Morte.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 48</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N4">Nota 4</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.4.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R4></a>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-49.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Assim como uma abelha numa flor,<br>
+sem ferir a cor ou o aroma,<br>
+coleta o néctar e vai embora,<br>
+assim, nos vilarejos, perambula o sábio. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 49</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N5">Nota 5</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.5.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R5></a>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-50.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Não procure os defeitos nos outros,<br>
+nem o que eles fizeram ou deixaram de fazer,<br>
+mas em você mesmo examine<br>
+coisas feitas e coisas que deixou de fazer. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 50</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N6">Nota 6</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.6.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R6></a>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-51.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Assim como uma magnífica flor,<br>
+com cores radiantes, mas sem fragrância,<br>
+infrutíferas são as belas palavras<br>
+daquele que não as coloca em prática.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 51</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-52.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Assim como uma magnífica flor,<br>
+com cores radiantes e com fragrância,<br>
+frutíferas são as belas palavras<br>
+daquele que as coloca em prática. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 52</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N7">Nota 7</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.7.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R7></a>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-53.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Tal como de uma massa de flores,<br>
+muitas grinaldas podem ser feitas,<br>
+alguém nascido como humano<br>
+deveria fazer muitas ações benéficas. <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 53</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N8">Nota 8</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.8.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R8></a>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-54.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> A fragrância de nenhuma flor vai contra o vento,<br>
+mesmo a do sândalo, do jasmim ou da lavanda.<br>
+Mas a fragrância dos virtuosos vai contra o vento.<br>
+A virtude dos bons permeia todas as direções.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 54</p>
+</td>
+</tr>
+</table>
+
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-55.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Sândalo ou lavanda,<br>
+lótus ou jasmim,<br>
+de todas essas muitas fragrâncias,<br>
+a fragrância da virtude é suprema.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 55</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-56.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Fraca é esta fragrância<br>
+de lavanda e sândalo,<br>
+mas a fragrância dos virtuosos,<br>
+remonta sublime até o mundo dos devas.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 56</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N9">Nota 9</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.9.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R9></a>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-57.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Aqueles com perfeita virtude,<br>
+que permanecem diligentes,<br>
+libertos através do Conhecimento Supremo:<br>
+Mara não é capaz de encontrar os seus rastros.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 57</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N10">Nota 10</a>] - Para <a href="http://www.acessoaoinsight.net/dhp/mp3/dhp4.10.mp3">ouvir</a>  </p> 
+
+
+<p class=Normal>&nbsp;</p><a name=R10></a>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-58.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> Na beira de uma estrada,<br>
+numa fossa onde é jogado lixo<br>
+ali floresce uma flor de lótus<br>
+perfumada e agradável ...<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 58</p>
+</td>
+</tr>
+</table>
+
+<table class=Dhp>
+<tr>
+<td>
+<ul>
+<img class="expando" src="img/dhp-59.jpg" width=92 height=100></td>
+</ul>
+<td>
+
+<p class=Normal style='margin-left:1.0in'> ... similarmente, em meio à escória dos seres,<br>
+entre os cegos mundanos,<br>
+o discípulo do Supremo Desperto<br>
+resplandece em sabedoria.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dhp 59</p>
+</td>
+</tr>
+</table>
+
+<p class=Normal style='margin-left:2.5in'> [<a href="#N11">Nota 11</a>]  </p> 
+<p class=Normal style='margin-left:2.5in'> <object type="application/x-shockwave-flash" data="player.html" width="200" height="20">      <param name="movie" value="player.html" />      <param name="FlashVars" value="http://www.acessoaoinsight.net/dhp/mp3=mp3/dhp4.11.mp3"/> </object></p>
+
+<p class=Normal>&nbsp;</p><a name=R11></a>
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dhp5.html">5. <i>Balavagga</i></a></p>
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal><b>Notas:</b> 
+
+<p class=Normal><a name=N1></a> <b>[Nota 1 - Versos 44 e 45]</b><i> 
+Loka</i> (mundo): denota os três reinos de existência que compõem o universo, ou seja, (i) o reino da esfera sensual, ou reino dos cinco sentidos; (ii) o reino da matéria sutil, correspondente aos quatro jhanas materiais; (iii) o reino imaterial, correspondente às quatro realizações imateriais. Veja a descrição dos <a href="../caminho_liberdade/mundos.html">31 mundos de existência</a>.</p> 
+
+<p class=Normal><i>Devas</i>: literalmente, luminosos. Eles são uma classe de seres que desfrutam de prazeres resultado de suas ações benéficas passadas. Eles também estão sujeitos à morte. O reino da esfera sensual compreende os infernos, o mundo animal, o mundo dos fantasmas famintos, o mundo dos titãs, o mundo humano e os seis primeiros mundos celestiais. No reino da matéria sutil ainda existem as faculdades de ver e ouvir, que, juntamente com as outras faculdades dos sentidos, são temporariamente suspensas nos quatro jhanas. No reino imaterial não há qualquer tipo de materialidade, apenas quatro agregados mentais (<i>khandas</i>).</p> 
+
+<p class=Normal>Embora o termo <i>loka</i> não seja usado nos suttas para se referir aos três reinos, mas sim o termo <i>bhava</i> (existência), não há dúvidas de que o ensinamento sobre os três reinos pertença ao período mais antigo, ou seja, à época dos suttas das escrituras Budistas, tal como demonstrado em muitos trechos relevantes.</p>
+
+<p class=Normal><i>Yamaloka</i> (o mundo de Yama): pelo termo "mundo de Yama" se entendem os quatro estados miseráveis - os infernos, o mundo animal, o mundo dos fantasmas famintos (peta), e o mundo dos titãs (asura). De acordo com o Budismo, o inferno não é permanente. É um estado miserável pois é um dos mundos em que os seres sofrem pelos resultados de suas ações prejudiciais passadas. </p>
+
+<p class=Normal>Yama é a morte - Yama é quase sinônimo de Mara.</p> 
+
+<p class=Normal><i>Mara</i>: a figura da "Tentação" no Budismo. Ele é frequentemente chamado de "Mara, o Senhor do Mal" ou <i>Namuci</i> ("o não libertador", o adversário da libertação). <i>Mara</i> aparece nos textos tanto como um ser real (um deva) e, como a personificação do mal e das paixões, da existência mundana e da morte. Há cinco conceitos de "Mara" no Budismo: (1) A morte em si (<i>maccu mara</i>); (2) Os cinco agregados (<i>khanda mara</i>); (3) As contaminações mentais (<i>kilesa mara</i>); (4) As fabricações mentais (<i>sankhara mara</i>); (5) Uma divindade chamada Mara, que sempre tenta obstruir o progresso espiritual do mundo (<i>devaputta mara</i>). Mara é igualado à morte na maioria dos casos. "Morte", no uso comum, significa o desaparecimento da faculdade vital de uma única existência, e também do processo vital físico-mental convencionalmente chamado de "Homem, Animal, Personalidade, Ego", etc. No entanto, estritamente falando, a morte é o surgimento, dissolução e desaparecimento, momento a momento, de cada combinação físico-mental. Sobre esta natureza momentânea de existência, é dito:</p>
+
+<p class=Normal>"No sentido absoluto, os seres têm apenas um momento muito curto para viver, a vida dura apenas o único momento de vigência daquela consciência. Assim como a roda de uma carroça, seja em movimento ou parada, o tempo todo está repousando sobre um único ponto em sua  periferia: da mesma forma, a vida dos seres dura apenas a vigência de tempo de um único momento de consciência. Assim que esse momento cessa, o ser também cessa. Pois é dito: O ser do momento passado de consciência viveu, mas não vive agora, nem vai viver no futuro. O ser do momento futuro ainda não viveu, nem vive agora, mas ele vai viver no futuro. O ser do momento presente não viveu, ele vive apenas agora, mas não vai viver no futuro."</p>
+
+<p class=Normal>Em um outro sentido, ao chegar ao fim do processo vital físico-mental do <i>arahant</i>, ou perfeitamente Iluminado, no momento de seu falecimento, pode ser chamado a morte final e última, já que até aquele momento o processo vital físico-mental ainda estava acontecendo. </p>
+
+<p class=Normal>Morte, no sentido comum, combinada com o envelhecimento, forma o décimo segundo elo da Origem Dependente.</p>
+
+<p class=Normal>Morte, de acordo com o Budismo, é a cessação da vida físico-mental de qualquer existência individual. É o cessar da vitalidade, ou seja, da vida físico-mental, do calor e da consciência. A morte não é a aniquilação completa de um ser, pois embora um certo tempo de vida tenha se esgotado, a força que até agora atuou não foi destruída. </p>
+
+<p class=Normal>Tal como a luz de uma lâmpada elétrica é a manifestação externa visível da energia elétrica invisível, nós somos as manifestações exteriores de energia karmica invisível. A lâmpada pode quebrar, e a luz pode ser extinta, mas a corrente elétrica permanece e a luz pode ser gerada em uma outra lâmpada. Da mesma forma, a energia karmica permanece intocada após a desintegração do corpo físico, e o desaparecimento da consciência atual leva ao surgimento de uma nova em um outro nascimento. Mas não há nenhuma entidade imutável ou permanente que "passa" do presente para o futuro.</p>
+
+<p class=Normal><i>Sadevakam</i> (mundo dos devas): esses seres são referidos como "luminosos". Seres celestiais, divindades; seres que vivem em mundos felizes, e que, via de regra, são invisíveis ao olho humano. No entanto, assim como todos os seres humanos e outros seres, eles também estão sujeitos aos repetidos renascimentos, envelhecimento e morte, e portanto, não estão livres do ciclo de existências, e não estão livres do sofrimento. Existem muitas classes de seres celestiais. </p>
+
+<p class=Normal><i>Kusalo</i> (habilidoso): neste contexto, esta expressão se refere a perícia, habilidade. Mas, na literatura Budista, <i>kusala</i> está imbuída de muitos significados. <i>Kusala</i> significa "karmicamente saudável" ou "benéfico", salutar, moralmente bom, hábil. As conotações do termo, de acordo com os comentários são: boa saúde, ausência de remorso, geração de resultados karmicamente favoráveis, hábil. Em termos psicológicos: "karmicamente saudável" são todas aquelas intenções karmicas e as consciências e fatores mentais a elas associadas, que são acompanhadas por duas ou três raízes benéficas, ou seja, pela não-cobiça e não má-vontade e, em alguns casos, também pela não-delusão. Tais estados de consciência são considerados como "karmicamente saudáveis" já que eles são causas para resultados karmicos positivos e contêm as sementes para um destino ou renascimento feliz. A partir desta explicação, dois fatos devem ser levados em conta: (i) é a intenção que faz com que um estado de consciência, ou um ato, seja "bom" ou "ruim"; (ii) o critério moral no Budismo é a presença ou ausência das Três Raízes Benéficas ou Morais. As explicações acima se referem à consciência hábil mundana. Os estados supramundanos saudáveis, ou seja, os quatro caminhos supramundanos, têm como resultados somente os correspondentes frutos supramundanos; eles não são karma, e eles também não levam ao renascimento, e isso também se aplica às ações benéficas de um <i>Arahant</i> e seus estados meditativos, que são todos karmicamente inoperantes. </p>
+
+<p class=Normal><i>Sekho</i> (nobre aprendiz): um discípulo no treinamento superior, ou seja, um dos que são diligentes no tríplice treinamento, um dos sete tipos de nobres discípulos (os que realizaram o primeiro dos quatro caminhos supramundanos ou os três primeiros frutos supramundanos), enquanto que aquele dotado do quarto fruto supramundano, <i>arahatta-phala</i>, é chamado de "alguém além do treinamento". O mundano é chamado de "nem nobre aprendiz, nem perfeito em conhecimento".</p>
+
+
+<p class=Normal><i>Dhammapadam</i> (bem exposto Dhamma): o comentário declara que este termo se aplica às 37 Asas do Despertar. São eles: (i) os Quatro Fundamentos da Atenção Plena - 1. contemplação do corpo, 2. contemplação das sensações, 3. contemplação da mente, e 4. contemplação dos objetos mentais; (ii) os Quatro Esforços Corretos - 1. o esforço para que não surjam os estados mentais prejudiciais que ainda não surgiram, 2. o esforço para abandonar os estados mentais prejudiciais que já surgiram, 3. o esforço para que surjam estados mentais benéficos que ainda não surgiram, e 4. o esforço para a continuidade dos estados mentais benéficos que já surgiram; (iii) as Quatro Bases do Poder Espiritual - desejo, energia, mente e investigação; (iv) as Cinco Faculdades Dominantes - convicção, energia, atenção plena, concentração, sabedoria; (v) os Cinco Poderes (Cinco <i>Indriyas</i>); (vi) os Sete Fatores da Iluminação - atenção plena, investigação dos fenômenos, energia, êxtase, tranquilidade, concentração, equanimidade; (vi) o Nobre Caminho Óctuplo - entendimento correto, pensamento correto, linguagem correta, ação correta, modo de vida correto, esforço correto, atenção plena correta, concentração correta. [<a href="#R1">Retorna</a>]</p>
+
+<p class=Normal><a name=N2></a><b> [Nota 2 - Verso 46] </b><i> Kaya</i> (corpo): literalmente significa "Grupo", "Corpo". Pode se referir tanto ao corpo físico como ao corpo mental. Neste último caso, pode ser um nome coletivo para os quatro agregados mentais (sensações, percepções, formações mentais e consciência) ou apenas para a sensação, percepção e algumas poucas formações mentais. <i>Kaya</i> tem esse mesmo significado, (corpo mental), na descrição padrão do terceiro jhana "ele permeia e impregna, cobre e preenche o corpo com a felicidade despojada do êxtase, de forma que não exista nada em todo o corpo que não esteja permeado com a felicidade despojada do êxtase". <i>Kaya</i> é também o quinto órgão dos sentidos, o corpo.</p>
+
+<p class=Normal><i>Phenupamam</i> (como espuma): o corpo é comparado com espuma e borbulhas, porque ele se desintegra muito rapidamente, assim como espuma e borbulhas. Em muitas ocasiões, a transitoriedade do corpo humano é equiparada à desintegração de uma borbulha.</p>
+
+<p class=Normal><i>Marici dhammam abhisambudhano</i> (despertando para sua natureza quimérica): tornar-se profundamente consciente da quimérica substancialidade e da natureza ilusória da vida. A borbulha e a quimera, juntamente enfatizam a natureza evanescente e ilusória da vida. </p>
+
+<p class=Normal><i>Marici Dhammam</i> (natureza quimérica): a natureza de uma miragem. "<i>Dhamma</i>" tem muitas conotações. Significa literalmente "Portador", Constituição (ou natureza de uma coisa), Norma, Lei, Doutrina; Justiça, Retidão; Qualidade; Coisa, Objeto Mental; "Fenômeno". Todos esses significados para a palavra "<i>Dhamma</i>" são encontrados nos textos. O comentário do Dhammapada dá quatro aplicações deste termo: qualidade, virtude, instrução, texto, insubstancialidade, ou seja, "todos os <i>dhammas</i> são não-eu, etc". O <i>Dhamma</i>, como a lei libertadora, descoberta e proclamada pelo Buda, é resumido nas Quatro Nobres Verdades. O <i>Dhamma</i> é uma das Três Joias e uma das Dez Contemplações.</p>
+
+<p class=Normal>Dhamma, como objeto mental, pode ser qualquer coisa do passado, presente ou futuro, corporal ou mental, condicionada ou não, real ou imaginária. [<a href="#R2">Retorna</a>]</p>
+
+<p class=Normal><a name=N3></a> <b>[Nota 3 - Verso 47] </b> <i> Pupphani' heva pacinantam</i> (colhendo flores): a imagem do fazedor de grinaldas continua sendo usada aqui. O ardente fazedor de grinaldas se absorve na seleção das flores de que ele precisa, em um jardim. Sua principal e mais importante preocupação é a coleta de flores. Ele faz isso ignorando todos os outros pensamentos. Da mesma forma, aqueles que buscam os prazeres sensuais também se concentram em seus prazeres, ignorando todo o resto.</p>
+
+<p class=Normal><i>Mahogo iva maccu adaya gacchati</i> (de surpresa a morte o pegará e o arrastará, tal como uma grande enchente): o vilarejo adormecido não tem conhecimento de que uma enchente está chegando, e, consequentemente, todos os moradores são arrastados até a morte pelas águas da enchente. Aqueles que estão se entregando aos sentidos, também desconhecem as ameaças externas. Aqueles que se entregam aos prazeres sensuais são arrastados pela morte.</p>
+
+<p class=Normal><i>Suttam gamam</i> (um vilarejo adormecido): quem está exclusivamente preocupado com os prazeres sensuais é como aqueles em uma vilarejo adormecido. Eles não têm consciência das ameaças externas. [<a href="#R3">Retorna</a>]</p>
+
+<p class=Normal><a name=N4></a> <b>[Nota 4 - Verso 48] </b><i>Antako</i> (morte): literalmente, o assassino. Este é um outro epíteto para <i>Mara</i> - morte. Nesse verso, o assassino é dito manter sob o seu domínio todos aqueles que estão apegados aos prazeres sensuais e ignoram todas as outras coisas.</p> 
+
+<p class=Normal><i>Kama</i> (prazeres sensuais): pode denotar: 1) sensualidade subjetiva, o desejo sensual; 2) sensualidade objetiva, os objetos dos sentidos.</p>
+
+<p class=Normal>Sensualidade subjetiva ou desejo sensual é direcionado para todos os objetos dos sentidos: é um dos cinco obstáculos, um dos dez grilhões, um dos três tipos desejos, um dos três tipos de pensamentos incorretos. Desejo sensual também é uma das impurezas (<i>asavas</i>) e apegos.</p>
+
+<p class=Normal>"Bhikkhus, existem esses cinco elementos do prazer sensual. Quais são os cinco? Formas conscientizadas pelo olho que são desejáveis, agradáveis e fáceis de serem gostadas, conectadas com o desejo sensual e que provocam a cobiça. Sons conscientizados pelo ouvido ... Aromas conscientizados pelo nariz ... Sabores conscientizados pela língua ... Tangíveis conscientizados pelo corpo que são desejáveis, agradáveis e fáceis de serem gostados, conectados com o desejo sensual e que provocam a cobiça."</p>
+
+<p class=Normal>Os dois tipos de sensualidade são também chamados de: <i>kama</i> como uma impureza mental, como a base objetiva da sensualidade. O desejo sensual é completamente eliminado no estágio de não-retorno. O perigo e o sofrimento dos desejos sensuais são frequentemente descritos nos textos, que muitas vezes, insistem no fato de que aquilo que prende o homem ao mundo dos sentidos não são os órgãos dos sentidos nem os objetos dos sentidos, mas sim o desejo sensual. [<a href="#R4">Retorna</a>]</p>
+
+<p class=Normal><a name=N5></a><b> [Nota 5 - Verso 49]</b> <i>Game muni care</i> (assim, nos vilarejos, perambula o sábio): o sábio tranquilo continua sua ronda de esmolas no vilarejo, de casa em casa, tomando apenas um punhado de cada casa, e somente o que é dado de forma respeitosa e de boa vontade. Os ascetas errantes, e todos os outros religiosos mendicantes, são dependentes do vilarejo para os seus requisitos. Mas, o sábio virtuoso e tranquilo cuida para que o vilarejo não seja explorado de forma alguma. A abelha, ao extrair o mel das flores, as poliniza, sem lhes causar o menor dano. Enquanto em busca de esmolas, o sábio tranquilo também está fazendo, espiritualmente, um favor ao povo. O mérito que ele obtém através de sua prática é compartilhado com as pessoas que sustentam a sua sobrevivência. Os doadores obtêm muitos méritos, o que lhes traz felicidade aqui e no futuro. Um monge Budista, apesar de estar afastado da sociedade, não está trabalhando apenas para seu próprio benefício, como alguns pensam. Ele está trabalhando para o bem de todos. Este verso nos lembra deste fato. [<a href="#R5">Retorna</a>]</p>
+
+<p class=Normal><a name=N6></a><b> [Nota 6 - Verso 50]</b> <i> Paresam katakatam</i> (coisas feitas e coisas que deixou de fazer): este verso pondera sobre uma fraqueza da maioria dos seres humanos. Eles prestam muita atenção aos defeitos dos outros, mas não aos seus próprios defeitos. Isto não se limita aos leigos. Mesmo monges têm esse hábito de observar os defeitos dos outros. Esta atitude de olhar para os outros é um obstáculo ao desenvolvimento espiritual pois atrapalha a introspecção, que é essencial para o progresso espiritual. [<a href="#R6">Retorna</a>]</p>
+
+<p class=Normal><a name=N7></a><b> [Nota 7 - Versos 51 e 52] </b> <i> Agandhakam</i> (sem fragrância): a essência de uma flor é seu aroma adocicado. Uma flor pode ser chamativa aos olhos. Pode ser colorida e brilhante. Mas, se não tem fragrância, ela falha como flor. A analogia aqui é com as palavras do Buda ditas por alguém que não as coloca em prática. As palavras são brilhantes e cheias de cor. Mas o seu aroma adocicado somente aparece quando colocadas em prática.</p>
+
+<p class=Normal><i>Sagandhakam</i> (com fragrância): Se uma flor é colorida, bonita de se ver e tem uma fragrância sedutora, ela cumpriu o seu papel como flor. Assim também é com as palavras do Buda. Elas adquirem seu aroma adocicado quando praticadas.</p>
+
+<p class=Normal><i>Akubbato</i> (aquele que não as coloca em prática), <i>sakubbato</i> (aquele que as coloca em prática): estas duas palavras salientam o verdadeiro caráter do Budismo. O caminho do Buda não é uma religião de mera fé. Se fosse, a pessoa só teria que depender de divindades externas ou salvadoras para a libertação. Mas no caso da palavra do Buda, a coisa mais essencial é a prática. A "beleza" ou o "aroma adocicado" das palavras do Buda vem através da prática. Se uma pessoa meramente fala as palavras do Buda, mas não as pratica - se ele é um <i>akubbato</i> - ele é como uma flor em tons coloridos e brilhantes, mas sem fragrância. Mas, se ele é um <i>sakubbato</i> - uma pessoa que pratica as palavras do Buda - ele se torna uma flor ideal - bonita em cor e aparência, e em seu aroma adocicado. [<a href="#R7">Retorna</a>]</p>
+
+
+<p class=Normal><a name=N8></a><b> [Nota 8 - Verso 53] </b>Neste verso, o artesanato do fazedor de guirlandas é comparado com aqueles que levam uma vida virtuosa. As atividades da vida de uma pessoa são comparadas a uma massa de flores. É um dever de cada pessoa arranjar estas flores em guirlandas de ações saudáveis. Este verso nos lembra que a vida não é um mar de rosas sobre o qual repousar, mas sim, um canteiro de flores no qual crescem belas flores. O propósito da vida é fazer belas guirlandas a partir destas flores que embelezam o mundo. O melhor uso da nossa vida transitória e mortal é fazer boas ações que trazem felicidade para todos. Este verso deixa claro que os Budistas não são pessimistas que lamentam constantemente os espinhos nas rosas. Eles fazem o melhor uso do que é bom no mundo, para torná-lo ainda melhor. [<a href="#R8">Retorna</a>]</p>
+
+<p class=Normal><a name=N9></a><b> [Nota 9 - Versos 54, 55 e 56] </b> <i> Gandho</i> (fragrância): em uma série de versos o Buda coloca a fragrância da virtude, em oposição às fragrâncias convencionais como lavanda, sândalo e jasmim. Em comparação com o aroma adocicado da virtude, o aroma doce de tais fragrâncias convencionais é apenas muito fraco. Essa analogia faz parte das cerimônias devocionais dos Budistas, onde o incenso é oferecido diante do Buda em honra à Sua virtude. [<a href="#R9">Retorna</a>]</p>
+
+<p class=Normal><a name=N10></a><b> [Nota 10 - Verso 57] </b> <i> Sammadaññavimuttanam</i> (libertos através do Conhecimento Supremo): ter realizado a libertação através da sabedoria ou poderíamos dizer do supra-conhecimento. Isso se refere a alguém que realiza a "libertação" (<i>vimutti</i>), tornando-se plenamente consciente da experiência interior. </p>
+
+<p class=Normal><i>Añña</i> (Conhecimento Supremo): realmente significa "supra-conhecimento". Embora seja comumente traduzido como conhecimento, esse supra-conhecimento não é a apreensão de conceitos. É a libertação dos conceitos. É a cessação da visão objetiva e do envolvimento com objetos do conhecimento. É a consciência do processo de cognição, ao invés do objeto conhecido, que leva ao desejo. É o repouso mental. Isso é chamado de "cessação da cognição" (<i>viññassa nirodha</i>). É também chamado de "cognição não-manifesta" (<i>anidassana viññana</i>). Toda a gama de objetos passíveis de cognição cai dentro do alcance de Mara. Esta libertação do objeto de conhecimento, não faz parte do domínio de Mara.</p>
+
+<p class=Normal><i>Maro</i> (Mara): Há cinco conceitos de "Mara" no Budismo: (1) A morte em si (<i>maccu mara</i>); (2) Os cinco agregados (<i>khanda mara</i>); (3) As contaminações mentais (<i>kilesa mara</i>); (4) As fabricações mentais (<i>sankhara mara</i>); (5) Uma divindade chamada Mara, que sempre tenta obstruir o progresso espiritual do mundo (<i>devaputta mara</i>). Neste verso particular, o termo Mara está associado a este ser maléfico chamado Mara. [<a href="#R10">Retorna</a>]</p>
+
+<p class=Normal><a name=N11></a><b> [Nota 11 - Versos 58 e 59] </b> <i> Padumam tattha jayetha</i> (ali floresce uma flor de lótus): o surgimento de alguém excepcional dentre os inferiores e depravados, é um tema recorrente nos discursos do Buda. A pessoa sábia, que venceu o mundo, embora tenha surgido no povo comum, é comparado a uma flor de lótus. Embora tenha saído da lama, o lótus não está contaminado pela lama. Nestes versos, o sábio buscador da verdade é comparado a uma flor de lótus que brota de uma fossa de lixo à beira da estrada. Apesar de ter surgido da lama, o lótus é belo e perfumado, muito parecido com a pessoa santa que emergiu do meio de pessoas depravadas.</p>
+
+<p class=Normal><i>Atirocati paññaya</i> (resplandece em sabedoria): ninguém é condenado no Budismo, pois a grandeza está latente mesmo nos aparentemente mais inferiores, assim como os lótus brotam de lagoas lamacentas. </p>
+
+
+<br>
+<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="dhp5.html">5. <i>Balavagga</i></a></p>
+
+
+
+
+<p class=Normal>&nbsp;</p>
+<p class=Normal>&nbsp;</p>
+
+<!-- FIM DO TEXTO -->
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado: 16 Abril 2013          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp4.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:28 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

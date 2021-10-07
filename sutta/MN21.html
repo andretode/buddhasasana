@@ -1,0 +1,485 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN21.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:06 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - MN21</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("It.1.html","It.2.html","It.3.html","It.4.html","It.5.html","It.6.html","It.7.html","It.8.html","It.9.html","It.10.html","It.11.html","It.12.html","It.13.html","It.14.html","It.15.html","It.16.html","It.17.html","It.18.html","It.19.html","It.20.html","It.21.html","It.22.html","It.23.html","It.24.html","It.25.html","It.26.html","It.27.html","It.28.html","It.29.html","It.30.html","It.31.html","It.32.html","It.33.html","It.34.html","It.35.html","It.36.html","It.37.html","It.38.html","It.39.html","It.40.html","It.41.html","It.42.html","It.43.html","It.44.html","It.45.html","It.46.html","It.47.html","It.48.html","It.49.html","It.50.html","It.51.html","It.52.html","It.53.html","It.54.html","It.55.html","It.56.html","It.57.html","It.58.html","It.59.html","It.60.html","It.61.html","It.62.html","It.63.html","It.64.html","It.65.html","It.66.html","It.67.html","It.68.html","It.69.html","It.70.html","It.71.html","It.72.html","It.73.html","It.74.html","It.75.html","It.76.html","It.77.html","It.78.html","It.79.html","It.80.html","It.81.html","It.82.html","It.83.html","It.84.html","It.85.html","It.86.html","It.87.html","It.88.html","It.89.html","It.90.html","It.91.html","It.92.html","It.93.html","It.94.html","It.95.html","It.96.html","It.97.html","It.98.html","It.99.html","It.100.html","It.101.html","It.102.html","It.103.html","It.104.html","It.105.html","It.106.html","It.107.html","It.108.html","It.109.html","It.110.html","It.111.html","It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="MN21" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_4.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+
+<p class=Tit3 align=center style='text-align:center'><b> Majjhima Nikaya 21 </b></Tit3>
+<p class=Tit1 align=center style='text-align:center'>Kakacupama Sutta </Tit1>
+<p class=Tit1 align=center style='text-align:center'>O Símile da Serra </Tit1>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal style='margin-left:1.0in'>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>1. Assim
+ouvi. Em certa ocasião o Abençoado estava em Savatthi no Bosque de Jeta, no
+Parque de Anathapindika.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>2. Agora, naquela ocasião o venerável Moliya Phagguna estava se
+associando em demasia com as <span class=GramE>bhikkhunis.</span>[</span><a
+href="#N1"><span lang=PT-BR style='mso-ansi-language:PT-BR'>1</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>] <a name=R1></a>Ele estava se
+associando tanto com as bhikkhunis que se algum bhikkhu criticasse aquelas
+bhikkhunis na presença dele, ele ficava furioso e desgostoso e o censurava; e
+se algum bhikkhu criticasse o venerável Moliya Phagguna na presença daquelas
+bikkhunis, elas ficavam furiosas e desgostosas e o censuravam. Esse<span
+class=GramE><span style='mso-spacerun:yes'>  </span></span>tanto era o grau de
+associação do venerável Moliya Phagguna com as bikkhunis.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>3. Então <span
+class=GramE>um certo</span> bhikkhu foi até o Abençoado e depois de
+cumprimentá-lo, sentou a um lado e relatou o que estava acontecendo.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>4. Então o
+Abençoado se dirigiu a <span class=GramE>um certo</span> bhikkhu desta forma:
+“Venha, bhikkhu, diga em meu nome, ao bhikkhu Moliya Phagguna que o Mestre o
+chama.” “Sim, venerável senhor”, ele respondeu e foi até o venerável Moliya
+Phagguna e lhe disse: “O Mestre o chama, amigo Phagguna.” - “Sim, Amigo”, ele
+respondeu, indo até o Abençoado e após cumprimentá-lo, sentou a um lado. O
+Abençoado então perguntou<span class=GramE>:<span style='mso-spacerun:yes'> 
+</span></span><o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>5.
+“Phagguna, é verdade que você está se associando em demasia com as bhikkhunis,
+que você está se associando tanto com as bhikkhunis que se algum bhikkhu
+critica aquelas bhikkhunis na sua presença, você fica furioso e desgostoso e o
+censura; e se algum bhikkhu critica o venerável Phagguna na presença daquelas
+bikkhunis, elas ficam furiosas e desgostosas e o censuram. Você está se
+associando tanto com as bikkhunis quanto parece?” – “Sim venerável senhor.” –
+“Phagguna, você não é um membro de um clã que pela fé deixou a vida em família
+pela vida santa?” – “Sim, venerável senhor.<span class=GramE>”</span><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>6. “Phagguna,
+não é adequado que você, um membro de um clã que pela fé deixou a vida em
+família pela vida santa, se associe em demasia com as bhikkhunis. Então, se
+alguém criticar aquelas bhikkhunis na sua presença, você deve abandonar todos
+os desejos e pensamentos que tomem por base a vida em família. E assim é como
+você deveria treinar: ‘Minha mente não será afetada e eu não direi palavras
+ruins; eu permanecerei compassivo pelo bem-estar dele, com a mente plena de
+amor bondade, sem <span class=GramE>raiva.</span>’ Assim é como você deve
+treinar, Phagguna.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Se alguém
+golpear as bhikkhunis com a mão, com pedras, com um pau ou com uma faca na sua
+presença, você deve abandonar todos os desejos e pensamentos que tomem por base
+a vida em família. E assim é como você deveria treinar: ‘Minha mente não será
+afetada<span class=GramE><span style='mso-spacerun:yes'>  </span>...</span>’ Se
+alguém fizer alguma crítica na sua presença, você deve abandonar todos os
+desejos e pensamentos que tomem por base a vida em família. E assim é como você
+deveria treinar: ‘Minha mente não será afetada ...’ Se alguém golpeá-lo com a
+mão, com pedras, com um pau ou com uma faca, você deve abandonar todos os
+desejos e pensamentos que tomem por base a vida em família. E assim é como você
+deveria treinar: ‘Minha mente não será afetada e eu não direi palavras ruins;
+eu permanecerei compassivo pelo bem-estar dele, com a mente plena de amor
+bondade, sem raiva.’ Assim é como você deve se treinar, Phagguna. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>7. Então o
+Abençoado se dirigiu aos bhikkhus da seguinte forma: “Bhikkhus, houve uma
+ocasião em que os bhikkhus contentavam a minha mente. Eu me dirigia aos
+bhikkhus da seguinte forma: ‘Bhikkhus, eu como uma vez por dia. Fazendo isso,
+eu fico livre de enfermidades e aflições, desfruto de boa saúde, energia e
+permaneço com conforto. Venham, bhikkhus, comam apenas uma vez por dia. Fazendo
+isso, vocês ficarão livres de enfermidades e aflições, <span class=GramE>desfrutarão</span>
+de boa saúde, energia e permanecerão com conforto.’ E eu não precisava ficar
+instruindo aqueles bhikkhus; eu tinha apenas que despertar a atenção plena
+neles.[</span><a href="#N2"><span lang=PT-BR style='mso-ansi-language:PT-BR'>2</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>] <a name=R2></a>Suponham que
+houvesse uma carruagem num terreno plano numa encruzilhada, com puros-sangues
+arreados e a aguilhada preparada, de forma que um adestrador habilidoso, um
+cocheiro domador de cavalos pudesse montar nela e, tomando as rédeas na mão
+esquerda e a aguilhada na mão direita, pudesse ir e regressar por qualquer
+caminho quando ele quisesse. Da mesma forma, eu não precisava ficar instruindo
+aqueles bhikkhus; eu tinha apenas que despertar a atenção plena neles.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>8, “Então,
+bhikkhus, abandonem o que é prejudicial e se dediquem aos estados benéficos,
+pois é assim que vocês <span class=GramE>crescerão,</span> se desenvolverão e
+se realizarão neste Dhamma e Disciplina. Suponham que houvesse um grande bosque
+de árvores Sal próximo a um vilarejo ou cidade e elas estivessem sufocadas com
+ervas daninhas e um homem surgisse desejando o bem, bem-estar e proteção das
+árvores. Ele cortaria e jogaria fora as mudas defeituosas que roubam a
+seiva,<span style='mso-spacerun:yes'>  </span>ele limparia o interior do bosque
+e cuidaria das mudas bem formadas, de forma que mais tarde o bosque de árvores
+Sal pudesse crescer, se desenvolver e se realizar. Da mesma forma, bhikkhus,
+abandonem o que é prejudicial e se dediquem aos estados benéficos, pois é assim
+como vocês crescerão, se desenvolverão e se realizarão neste Dhamma e Disciplina.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>9.
+“Antigamente, bhikkhus, aqui mesmo em Savatthi havia uma dona de casa chamada
+Vedehika. E um bom relato sobre a Senhora Vedehika havia se espalhado: ‘A
+Senhora Vedehika é boa, a Senhora Vedehika é gentil, a Senhora Vedehika é <span
+class=GramE>pacífica.</span>’ Agora a Senhora Vedehika tinha uma empregada
+chamada Kali, que era destra, ágil e perfeita no seu trabalho. A empregada Kali
+pensou: ‘Um bom relato sobre a minha senhora tem se espalhado:<span
+style='mso-spacerun:yes'>  </span>“A Senhora Vedehika é boa, a Senhora Vedehika
+é gentil, a Senhora Vedehika é pacífica,”<span style='mso-spacerun:yes'> 
+</span>Como será isso, embora ela não demonstre raiva, a raiva está na verdade
+presente nela ou está ausente? Ou será que é apenas devido ao meu trabalho
+perfeito que a minha senhora não demonstra a raiva, mas a raiva, no entanto,
+está na verdade presente nela? E se eu testasse a minha senhora.’<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Assim a
+empregada Kali se levantou mais tarde. Então a Senhora Vedehika disse: ‘Ei, <span
+class=GramE>Kali!</span>’ – ‘O que é, senhora?’ – ‘Qual é o problema, por que
+você se levantou tão tarde?’ – ‘Não há nenhum problema, senhora.’ – ‘Não há
+nenhum problema, sua garota má, no entanto você levanta tão tarde!’ e ela ficou
+furiosa e irritada e olhou com cara feia. Então a empregada Kali pensou: ‘O
+fato é que, apesar da minha senhora não demonstrar raiva, a raiva ainda está na
+verdade presente nela, não ausente; e é apenas devido ao meu trabalho perfeito
+que a minha senhora não demonstra raiva, que na verdade está presente nela, não
+ausente. E se eu testasse a minha senhora um pouco mais.’<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Assim a
+empregada Kali se levantou ainda mais tarde. Então a Senhora Vedehika disse:
+‘Ei, <span class=GramE>Kali!</span>’ – ‘O que é, senhora?’ – ‘Qual é o
+problema, por que você se levantou ainda mais tarde?’ – ‘Não há nenhum
+problema, senhora.’ – ‘Não há nenhum problema, sua garota má, no entanto você
+levanta ainda mais tarde!’ e ela ficou furiosa e irritada e disse palavras de
+desaprovação. Então a empregada Kali pensou: ‘O fato é que, apesar da minha
+senhora não demonstrar raiva, a raiva ainda está na verdade presente nela, não
+ausente. E se eu testasse a minha senhora um pouco mais.’<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Assim a
+empregada Kali se levantou ainda mais tarde. Então a Senhora Vedehika disse:
+‘Ei, <span class=GramE>Kali!</span>’ – ‘O que é, senhora?’ – ‘Qual é o
+problema, por que você se levantou ainda mais tarde?’ – ‘Não há nenhum
+problema, senhora.’ – ‘Não há nenhum problema, sua garota má, no entanto você
+levanta ainda mais tarde!’ e ela ficou furiosa e irritada e tomou um rolo para
+massa e golpeou Kali na cabeça, cortando-a.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Então a
+empregada Kali, com o sangue jorrando da cabeça cortada, denunciou a sua
+senhora para os vizinhos: ‘Vejam, senhoras, a obra da bondosa senhora! <span
+class=GramE>Vejam,</span> senhoras, a obra da gentil senhora! Vejam, senhoras,
+a obra da pacífica senhora! Como ela pode ficar furiosa e irritada com a sua
+única empregada por ela se levantar mais tarde? Como ela pode agarrar um rolo
+de massa, golpeá-la na cabeça e cortá-la?’ Então mais tarde um relato ruim
+sobre a Senhora Vedehika havia se espalhado: ‘A Senhora Vedehika é grosseira, a
+Senhora Vedehika é violenta, a Senhora Vedehika é cruel.’<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>10. “Da
+mesma forma, bhikkhus, um bhikkhu é extremamente bom, extremamente gentil,
+extremamente pacífico, contanto que a linguagem desagradável não o toque. Mas é
+quando a linguagem desagradável o toca que se pode reconhecer se aquele bhikkhu
+é realmente bom, gentil e pacífico. Eu não digo que um bhikkhu<span
+class=GramE><span style='mso-spacerun:yes'>  </span></span>seja fácil de ser
+censurado se ele for fácil de ser censurado e aceitar a censura apenas com o
+propósito de obter mantos, comida esmolada, moradia e medicamentos. Por que
+isso?<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Porque esse
+bhikkhu não é fácil de ser censurado e nem aceita a censura quando ele não
+obtém<span class=GramE><span style='mso-spacerun:yes'>  </span></span>mantos,
+comida esmolada, moradia e medicamentos. Mas quando um bhikkhu é fácil de ser
+censurado e aceita a censura porque ele honra, respeita e reverencia o Dhamma,
+eu digo que ele é fácil de ser censurado. Portanto, bhikkhus, vocês devem
+treinar dessa forma: ‘Nós seremos fáceis de ser censurados e aceitaremos a
+censura porque nós honramos, respeitamos e reverenciamos o <span class=GramE>Dhamma.</span>’
+Assim é como vocês deveriam treinar, bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>11.
+“Bhikkhus, existem esses cinco tipos de linguagem que alguém pode usar ao
+se dirigir a vocês: a fala dele poderá ser no
+momento adequado ou inadequado, verdadeira ou falsa, gentil ou grosseira,
+conectada com o benéfico ou com o prejudicial, dita com a mente cheia de amor
+bondade ou com raiva. Quando alguém se dirigir a vocês a fala dele poderá
+ser no momento adequado ou inadequado; quando alguém se dirigir a vocês a
+fala dele poderá ser verdadeira ou falsa; quando alguém se dirigir a
+vocês a fala dele poderá ser gentil ou grosseira; quando alguém se dirigir a vocês a fala dele poderá ser conectada com o benéfico ou com o
+prejudicial; quando alguém se dirigir a vocês a fala dele poderá ser dita
+com a mente cheia de amor bondade ou com raiva. Nesses casos, bhikkhus, assim é
+como vocês deveriam treinar: ‘Nossas mentes não serão afetadas e nós não
+diremos palavras ruins; nós permaneceremos compassivos pelo bem-estar dele, com
+a mente plena de amor bondade, sem raiva. Permaneceremos permeando aquela pessoa
+com a mente imbuída de amor bondade e começando com ela, [</span><a href="#N3"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>3</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>] <a name=R3></a>permaneceremos permeando todo
+o mundo com a mente imbuída de amor bondade, abundante, transcendente,
+imensurável, sem hostilidade e sem má vontade.’ Assim é como vocês deveriam
+treinar, bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>12.
+“Bhikkhus, suponham que um homem viesse com uma enxada e um cesto e dissesse:
+‘Eu farei com que este grande planeta Terra fique sem <span class=GramE>terra.</span>’
+Ele cavaria aqui e ali, espalharia terra por aqui e por ali, cuspiria aqui e
+ali e urinaria aqui e ali, dizendo: ‘Fique sem terra, fique sem terra!’ O que
+vocês pensam, bhikkhus? Esse homem poderia fazer com que este grande planeta
+Terra ficasse sem terra?” – “Não, venerável senhor.” “Por que? Porque este
+planeta Terra é demasiado profundo e imenso, não é possível fazer com que ele
+fique sem terra. No final o homem só iria colher cansaço e desapontamento.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>13. “Da
+mesma forma, bhikkhus, existem esses cinco tipos de <span class=GramE>linguagem
+...</span> (igual ao verso 11) ... Nesses casos, bhikkhus, assim é como vocês
+deveriam treinar: ‘Nossas mentes não serão afetadas ... começando com aquela
+pessoa, permaneceremos permeando todo o mundo com a mente semelhante à Terra,
+abundante, transcendente, imensurável, sem hostilidade e sem má vontade.’ Assim
+é como vocês deveriam se treinar, bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>14.
+“Bhikkhus, suponham que um homem viesse com <span class=GramE>pigmentos
+carmesim</span>, turmérico, índigo ou carmim e dissesse: ‘Eu<span
+style='mso-spacerun:yes'>  </span>esboçarei desenhos e farei pinturas que
+apareçam no espaço vazio.’ O que vocês pensam, bhikkhus? Esse homem poderia
+esboçar desenhos e fazer pinturas que apareçam no espaço vazio?” – “Não,
+venerável senhor.” “ Por que? Porque o espaço vazio não tem forma e é invisível;
+não é possível que ele faça surgir ali desenhos ou pinturas. No final o homem
+só iria colher cansaço e desapontamento.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>15. “Da
+mesma forma, bhikkhus, existem esses cinco tipos de <span class=GramE>linguagem
+...</span> Nesses casos, bhikkhus, assim é como vocês deveriam treinar: ‘Nossas
+mentes não serão afetadas ... começando com aquela pessoa, permaneceremos
+permeando todo o mundo com a mente semelhante ao espaço vazio, abundante,
+transcendente, imensurável, sem hostilidade e sem má vontade.’ Assim é como
+vocês deveriam treinar, bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>16.
+“Bhikkhus, suponham que um homem viesse com uma tocha de capim em chamas e
+dissesse: ‘Eu aquecerei e farei evaporar todo o rio Ganges com esta tocha de
+capim em <span class=GramE>chamas.</span>’ O que vocês pensam, bhikkhus? Esse
+homem poderia aquecer e fazer evaporar todo o rio Ganges com aquela tocha de
+capim em chamas?” – “Não, venerável senhor.” “ Por que? Porque o rio Ganges é
+profundo e imenso; não é possível aquecê-lo e evaporá-lo com uma tocha de capim
+em chamas. No final o homem só iria colher cansaço e desapontamento.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>17. “Da
+mesma forma, bhikkhus, existem esses cinco tipos de <span class=GramE>linguagem
+...</span> Nesses casos, bhikkhus, assim é como vocês deveriam treinar: ‘Nossas
+mentes não serão afetadas ... começando com aquela pessoa, permaneceremos
+permeando todo o mundo com a mente semelhante ao rio Ganges, abundante,
+transcendente, imensurável, sem hostilidade e sem má vontade.’ Assim é como
+vocês deveriam treinar, bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>18.
+“Bhikkhus, suponham que houvesse uma bolsa feita com o couro de gato que fosse
+polida, bem polida, perfeitamente polida, macia, sedosa, sem produzir nenhum
+murmúrio, sem produzir estalos e um homem viesse com uma vareta ou um caco de
+louça e dissesse: ‘Aqui está essa bolsa feita com couro de gato que está <span
+class=GramE>polida …</span> sem produzir nenhum murmúrio, sem produzir estalos.
+Eu farei com que ela murmure e estale.’ O que vocês pensam, bhikkhus? Esse
+homem poderia fazer com que a bolsa murmurasse ou estalasse com a vareta ou o
+caco de louça?” – “Não, venerável senhor.” “ Por que? Porque não é possível
+fazer com que a bolsa feita com couro de gato que tenha sido polida ... sem
+produzir nenhum murmúrio, sem produzir estalos, possa murmurar ou estalar. No
+final o homem só iria colher cansaço e desapontamento.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>19. “Da
+mesma forma, bhikkhus, existem esses cinco tipos de linguagem que alguém
+pode usar ao se dirigir a vocês: a fala dele
+poderá ser no momento adequado ou inadequado, verdadeira ou falsa, gentil ou
+grosseira, conectada com o benéfico ou com o prejudicial, dita com a mente
+cheia de amor bondade ou com raiva. Quando alguém se dirigir a vocês a
+fala deles poderá ser no momento adequado ou inadequado; quando alguém se dirigir a vocês a fala deles poderá ser verdadeira ou falsa; quando alguém se dirigir a vocês a fala deles poderá ser gentil ou grosseira; quando alguém se dirigir a vocês a fala deles poderá ser conectada com o benéfico ou
+com o prejudicial; quando alguém se dirigir a vocês a fala deles poderá
+ser dita com a mente cheia de amor bondade ou com raiva. Nesses casos,
+bhikkhus, assim é como vocês deveriam treinar: ‘Nossas mentes não serão
+afetadas e nós não diremos palavras ruins; nós permaneceremos compassivos pelo
+bem-estar dele, com a mente plena de amor bondade, sem raiva. Permaneceremos
+permeando aquela pessoa com a mente imbuída de amor bondade, e começando com
+aquela pessoa, permaneceremos permeando todo o mundo com a mente semelhante a
+uma bolsa feita com couro de gato, abundante, transcendente, imensurável, sem
+hostilidade e sem má vontade.’ Assim é como vocês deveriam se treinar,
+bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T20></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>20. “Bhikkhus, mesmo se bandidos decepassem com selvageria os seus
+membros, um a um, com uma serra, aquele que fizer surgir uma mente cheia de
+raiva em relação a eles não estará praticando os meus ensinamentos. Neste caso,
+bhikkhus, assim é como vocês deveriam treinar: ‘Nossas mentes não serão
+afetadas e nós não diremos palavras ruins; nós permaneceremos compassivos pelo
+bem-estar dele, com a mente plena de amor bondade, sem raiva. Permaneceremos
+permeando aquela pessoa com a mente imbuída de amor bondade e começando com
+ela, permaneceremos permeando todo o mundo com a mente imbuída de amor bondade,
+abundante, transcendente, imensurável, sem hostilidade e sem má <span
+class=GramE>vontade.</span>’ Assim é como vocês deveriam se treinar, bhikkhus.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T21></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>21. “Bhikkhus, se vocês mantiverem este conselho do símile da serra
+constantemente na mente, <a name=R4></a>vocês vêem algum tipo de linguagem,
+comum ou grosseira, que vocês não possam suportar?” – “Não venerável senhor.” –
+“Portanto, bhikkhus, vocês devem manter este conselho do símile da serra
+constantemente na mente. Isso será para o seu bem-estar e felicidade por muito
+tempo.<span class=GramE>”</span><o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Isso foi o
+que disse o Abençoado. Os bhikkhus ficaram satisfeitos e contentes com as
+palavras do Abençoado. <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>Notas</span></b><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>: <b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=Normal><a name=N1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[1] No <a href="SNXII.12.html">SN XII.12</a>
+Moliya Phagguna formula uma série de questões ao Buda que ele rejeita por
+estarem formuladas de forma incorreta. Mais tarde é relatado que ele regressou
+à vida em família (<a href="SNXII.32.html">SN XII.32</a>). [</span><a href="#R1"><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[2] De acordo com MA, o Buda disse isto porque Phagguna ainda não queria
+seguir a recomendação dele e continuava a se opor e isso induziu o Buda a
+elogiar os bhikkhus obedientes de um período anterior do seu ministério. Com
+respeito ao trecho sobre comer apenas uma vez por dia veja o <a
+href="MN65.html#T2">MN 65.2</a> e <a href="MN70.html#T2">MN 70.2</a>. [</span><a
+href="#R2"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=N3></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>[3] <i>Tadarammanam</i>, em sentido literal “com ela como
+objeto.” MA: Primeiro a pessoa desenvolve o amor bondade em relação à pessoa
+que está empregando um ou outro dos cinco tipos de linguagem, depois ela dirige
+a mente cheia de amor bondade para todos os seres, convertendo o mundo todo no
+objeto. [</span><a href="#R3"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Retorna</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>]<o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  2 Setembro 2006         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN21.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:57:06 GMT -->
+</html>
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

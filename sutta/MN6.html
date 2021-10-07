@@ -1,0 +1,337 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN6.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:56:34 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - MN6</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("It.1.html","It.2.html","It.3.html","It.4.html","It.5.html","It.6.html","It.7.html","It.8.html","It.9.html","It.10.html","It.11.html","It.12.html","It.13.html","It.14.html","It.15.html","It.16.html","It.17.html","It.18.html","It.19.html","It.20.html","It.21.html","It.22.html","It.23.html","It.24.html","It.25.html","It.26.html","It.27.html","It.28.html","It.29.html","It.30.html","It.31.html","It.32.html","It.33.html","It.34.html","It.35.html","It.36.html","It.37.html","It.38.html","It.39.html","It.40.html","It.41.html","It.42.html","It.43.html","It.44.html","It.45.html","It.46.html","It.47.html","It.48.html","It.49.html","It.50.html","It.51.html","It.52.html","It.53.html","It.54.html","It.55.html","It.56.html","It.57.html","It.58.html","It.59.html","It.60.html","It.61.html","It.62.html","It.63.html","It.64.html","It.65.html","It.66.html","It.67.html","It.68.html","It.69.html","It.70.html","It.71.html","It.72.html","It.73.html","It.74.html","It.75.html","It.76.html","It.77.html","It.78.html","It.79.html","It.80.html","It.81.html","It.82.html","It.83.html","It.84.html","It.85.html","It.86.html","It.87.html","It.88.html","It.89.html","It.90.html","It.91.html","It.92.html","It.93.html","It.94.html","It.95.html","It.96.html","It.97.html","It.98.html","It.99.html","It.100.html","It.101.html","It.102.html","It.103.html","It.104.html","It.105.html","It.106.html","It.107.html","It.108.html","It.109.html","It.110.html","It.111.html","It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="MN6" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_41.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+
+<p class=Tit3 align=center style='text-align:center'><b> Majjhima Nikaya 6</b></Tit3>
+<p class=Tit1 align=center style='text-align:center'>Akankheyya Sutta </Tit1>
+<p class=Tit1 align=center style='text-align:center'>Se um Bhikkhu Desejar </Tit1>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>1. </span>Assim
+ouvi. Em certa ocasião o Abençoado estava em Savatthi no Bosque de Jeta, no
+Parque de Anathapindika<span lang=PT-BR style='mso-ansi-language:PT-BR'>. </span>Lá
+ele se dirigiu aos monges desta forma: “Bhikkhus” – “Venerável Senhor,” eles
+responderam. O Abençoado disse o seguinte<span lang=PT-BR style='mso-ansi-language:
+PT-BR'>:<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>2.
+“Bhikkhus, permaneçam possuídos pela virtude, possuídos pelo Patimokkha, contidos
+pelas regras do Patimokkha, sejam perfeitos na conduta e na sua esfera de
+atividades, temendo a menor falha, treinem adotando os preceitos de virtude.[<a href="#N1">1</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=R1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>3. “Se um bhikkhu desejar: ‘Que eu seja querido e agradável para os meus
+companheiros na vida santa, respeitado e benquisto por eles,’ que ele cumpra os
+preceitos, seja dedicado à tranqüilidade da mente, não negligencie a meditação que conduz aos jhanas,
+cultive o insight e habite cabanas vazias.[<a href="#N2">2</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=R2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>4. “Se um bhikkhu desejar: ‘Que eu obtenha mantos, comida esmolada,
+moradia e medicamentos,’ que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>5. “Se um
+bhikkhu desejar: ‘Que as oferendas daqueles cujos mantos, comida esmolada,
+moradia e medicamentos eu uso, lhes traga grandes frutos e benefícios,’ que ele
+cumpra os preceitos...<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>6. “Se um
+bhikkhu desejar: ‘Quando os meus pares e parentes, que faleceram, se recordarem
+de mim com confiança nas suas mentes, que isso lhes traga grandes frutos e
+grandes benefícios,’ que ele cumpra os preceitos ... [<a href="#N3">3</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=R3></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>7. “Se um bhikkhu desejar: ‘Que eu me torne um conquistador do
+descontentamento e do deleite, e que o descontentamento e o deleite não me
+conquistem; que eu permaneça transcendendo o descontentamento e o deleite
+sempre que estes surgirem,’ que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>8. “Se um
+bhikkhu desejar: ‘Que eu me torne um conquistador do medo e do terror,[<a href="#N3a">3a</a>] <a name=R3a></a>e que o
+medo e o terror não me conquistem; que eu permaneça transcendendo o medo e o
+terror sempre que estes surgirem,’que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>9. “Se um
+bhikkhu desejar: ‘Que eu me torne um daqueles que obtém de acordo com a
+vontade, sem problemas ou dificuldades, os quatro jhanas que constituem a mente
+superior e que proporcionam uma estada prazerosa aqui e agora,’ que ele cumpra
+os preceitos... .<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>10. “Se um
+bhikkhu desejar: ‘Que eu toque com o corpo, e permaneça, naquelas libertações que
+são pacíficas e imateriais que transcendem as formas,’ que ele cumpra os
+preceitos... [<a href="#N4">4</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R4></a><a name=T11></a><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>11. “Se um bhikkhu desejar: ‘Que eu, através da
+destruição dos três grilhões, me torne um que entrou na correnteza, </span>não
+mais destinado aos mundos inferiores, com o destino fixo, tendo a iluminação
+como destino<span lang=PT-BR style='mso-ansi-language:PT-BR'>,’ que ele cumpra
+os preceitos... [<a href="#N5">5</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R5></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>12. “Se um bhikkhu desejar: ‘Que eu, através da destruição dos três
+grilhões e com a atenuação da cobiça, raiva e delusão, me torne um que retorna
+apenas uma vez, retornando a este mundo apenas uma vez para dar um fim ao
+sofrimento,’ que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>13. “Se um
+bhikkhu desejar: ‘Que eu, através da destruição dos cinco primeiros grilhões,
+renasça espontaneamente [nas Moradas Puras] e lá realize o parinibbana, sem
+nunca mais retornar daquele mundo,’ que ele cumpra os preceitos ... [<a
+href="#N6">6</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R6></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>14. “Se um bhikkhu desejar:[<a href="#N7">7</a>] <a name=R7></a>‘Que eu
+possa exercer os vários tipos de poderes supra-humanos: sendo um, que eu me
+torne vários; sendo vários, que eu me torne um; que eu apareça e desapareça;
+que eu cruze uma parede sem nenhum problema, cruze um cercado, uma montanha,
+como se cruzasse o espaço; que eu mergulhe e saia da terra como se fosse água;
+caminhe sobre a água sem afundar, como se fosse terra; sentado de pernas
+cruzadas, que eu cruze o espaço como se fosse um pássaro; com a minha mão toque
+e acaricie a lua e o sol tão forte e poderoso; que eu exerça poderes corporais
+até mesmo nos distantes mundos de Brahma,' que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>15. “Se um
+bhikkhu desejar: ‘Que eu, com o elemento do ouvido divino, que é purificado e
+sobrepuja o humano, ouça tanto os sons divinos como os humanos, aqueles que
+estão distantes bem como os que estão próximos,’ que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>16. “Se um
+bhikkhu desejar: ‘Que eu compreenda as mentes de outros seres, de outras
+pessoas, abarcando-as com a minha própria mente. Que eu compreenda uma mente
+afetada pelo desejo como afetada pelo desejo e uma mente não afetada pelo
+desejo como não afetada pelo desejo; Que eu compreenda uma mente afetada pela
+raiva como afetada pela raiva e uma mente não afetada pela raiva como não
+afetada pela raiva; Que eu compreenda uma mente afetada pela delusão como
+afetada pela delusão e uma mente não afetada pela delusão como não afetada pela
+delusão; Que eu compreenda uma mente contraída como contraída e uma mente
+distraída como distraída; Que eu compreenda uma mente transcendente como
+transcendente e uma mente não transcendente como não transcendente; Que eu
+compreenda uma mente superável como superável e uma mente não superável como
+não superável; Que eu compreenda uma mente concentrada como concentrada e uma
+mente não concentrada como não concentrada; Que eu compreenda uma mente
+libertada como libertada e uma mente não libertada como não libertada,' que ele
+cumpra os preceitos...<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>17. “Se um
+bhikkhu desejar: ‘Que eu me recorde das minhas muitas vidas passadas, isto é,
+um nascimento, dois nascimentos ... (igual ao <a href="MN4.html#T27">MN 4.27</a>)
+... Que assim eu me recorde das minhas muitas vidas passadas nos seus modos e
+detalhes,’ que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>18. “Se um
+bhikkhu desejar: ‘Que eu, por meio do olho divino, que é purificado e sobrepuja
+o humano, veja seres falecendo e renascendo, inferiores e superiores, bonitos e
+feios, afortunados e desafortunados. Que eu compreenda como os seres prosseguem
+de acordo com as suas ações desta forma: ... (igual ao <a href="MN4.html#T29">MN
+4.29</a>) ... que ele cumpra os preceitos...<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>19. “Se um
+bhikkhu desejar: ‘Que eu, compreendendo por mim mesmo com conhecimento direto,
+aqui e agora, entre e permaneça na libertação da mente e na libertação através
+da sabedoria, que são imaculadas, com a destruição de todas as impurezas,’ [<a
+href="#N8">8</a>] <a name=R8></a>que ele cumpra os preceitos, seja dedicado à
+tranqüilidade da mente, não negligencie a meditação que conduz aos jhanas, cultive o insight
+ e habite
+cabanas vazias.<o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>20.
+“Portanto, foi com referência a isso que foi dito: ‘Bhikkhus, permaneçam
+possuídos pela virtude, possuídos pelo Patimokkha, </span>contidos pelas regras
+do Patimokkha, sejam perfeitos na conduta e na sua esfera de atividades,
+temendo a menor falha, treinem adotando os preceitos de virtude<span
+lang=PT-BR style='mso-ansi-language:PT-BR'>.’”<o:p></o:p></span></p>
+
+
+<p class=Normal>Isso foi o que disse o Abençoado. Os bhikkhus ficaram
+satisfeitos e contentes com as palavras do Abençoado<span lang=PT-BR
+style='mso-ansi-language:PT-BR'>.<o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>Notas</span></b><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>: <o:p></o:p></span></p>
+
+<p class=Normal><a name=N1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[1] MA diz que a expressão <i>sampannasila</i>,
+traduzida aqui como “possuído pela virtude,” pode significar tanto “perfeito em
+virtude”, (<i>paripunnasila</i>), como “dotado de virtude”, (<i>silasamangino</i>).
+O Patimokkha é o código de disciplina monástica que na versão em Pali consiste
+de 227 regras. “Esfera de Atividades”, (<i>gocara</i>), implica um local
+apropriado para esmolar alimentos, embora também possa significar o
+comportamento apropriado de um monge, a sua postura serena e controlada. Os
+termos deste trecho são analisados no Vsm I, 43-52. [<a href="#R1">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[2] MA: A frase que começa com “</span><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>que ele cumpra os preceitos ...”
+repetida em cada uma das seções seguintes até o final do sutta, compreende o
+treinamento tríplice completo. O trecho sobre cumprir os preceitos significa o
+treinamento na virtude superior,<span style='mso-bidi-font-weight:bold'> (<i>adhisilasikkha</i>);
+o trecho,“</span>seja dedicado à tranqüilidade da mente, não negligencie a meditação que conduz aos jhanas” 
+indica o treinamento em concentração ou mente superior, <span
+style='mso-bidi-font-weight:bold'>(<i>adhicittasikkha</i>); e o trecho “</span>cultive
+o insight” aponta para o treinamento na sabedoria superior,<span
+style='mso-bidi-font-weight:bold'> (<i>adhipaññasikkha</i>). O trecho “</span>habite
+cabanas vazias” combina os últimos dois treinamentos, visto que uma pessoa
+busca a cabana vazia para desenvolver a tranqüilidade e o insight<span
+style='mso-bidi-font-weight:bold'>. [<a href="#R2">Retorna</a>]<o:p></o:p></span></span></p>
+
+
+<p class=Normal><a name=N3></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[3] Isto é, se os pares e parentes, que renasceram no
+mundo dos fantasmas, <i> (petas)</i>, ou em algum mundo inferior dos devas, se recordarem dos
+bhikkhus virtuosos com confiança, essa confiança se tornará uma fonte de mérito
+para eles, protegendo-os de renascimentos ruins e tornando-se uma condição
+positiva para a realização de Nibbana. [<a href="#R3">Retorna</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=N3a></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[3a] De acordo com MA, medo tem o sentido subjetivo e objetivo, enquanto que
+ terror tem o sentido apenas objetivo, 
+isto é a pessoa ou coisa que amedronta, aterroriza. [<a href="#R3a">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N4></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[4] Essas são as quatro realizações imateriais
+cujas fórmulas são encontradas no <a href="MN8.html#T8">MN 8.8-11</a>, <a
+href="MN25.html#T16">MN 25.16-19</a>, etc. MA observa que “corpo” se refere a
+“corpo mental”, (<i>namakaya</i>). Veja também o <a href="MN70.html#T17">MN 70.17</a> sobre o significado de “tocar com o corpo.”[<a href="#R4">Retorna</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=N5></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[5] Os três grilhões destruídos por aquele que
+entra na correnteza são, a idéia da existência de um eu, a dúvida e o apego 
+a preceitos e rituais, tal como mencionado no <a href="MN2.html#T11">MN 2.11</a>.
+[<a href="#R5">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N6></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[6] Em adição aos três primeiros grilhões,
+aquele que não retorna destrói os outros dois “primeiros grilhões” do desejo
+sensual e da má vontade. Aquele que não retorna renasce numa região especial do
+mundo de Brahma chamada Moradas Puras e lá dá um fim ao sofrimento. [<a
+href="#R6">Retorna</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=N7></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[7] Os versos 14-19 apresentam os seis tipos
+de conhecimentos supra-humanos resultantes do conhecimentos direto, (<i>abhiñña</i>). Mais detalhes podem ser encontrados
+no Vsm XII e XIII. [<a href="#R7">Retorna</a>]<o:p></o:p></span></p>
+
+<p class=Normal><a name=N8></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[8] MA: Neste trecho, “mente” e “sabedoria”
+significam, respectivamente, a concentração e a sabedoria associadas ao fruto
+de arahant. A concentração é chamada de “libertação da mente”, (<i>cetovimutti</i>),
+porque está libertada da cobiça; a sabedoria é chamada de “libertação através da
+sabedoria”, (<i>paññavimutti</i>), porque está libertada da ignorância. A primeira
+normalmente é o resultado da tranqüilidade, a última é o resultado do insight.
+Mas quando elas são combinadas e descritas como imaculadas, (<i>anasava</i>),
+elas unidas são o resultado da destruição das impurezas através do caminho
+supramundano do arahant. [<a href="#R8">Retorna</a>]</span><b style='mso-bidi-font-weight:
+normal'><span lang=PT-BR style='mso-ansi-language:PT-BR'><o:p></o:p></span></b></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  23 Fevereiro 2008          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN6.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:56:34 GMT -->
+</html>
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

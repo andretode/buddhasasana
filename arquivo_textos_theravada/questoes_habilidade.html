@@ -1,0 +1,334 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/questoes_habilidade.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:03 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada -  questoes_habilidade</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value=" questoes_habilidade" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_14.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1 align=center style='text-align:center'>Questões de Habilidade</Tit1>
+<p class=Tit3 align=center style='text-align:center'> Por  </Tit3>
+<p class=Tit2 align=center style='text-align:center'>Ajaan Thanissaro</Tit2>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O Buda não
+era o tipo de mestre que apenas respondia às perguntas. Ele também ensinava o
+que perguntar. Ele compreendia o poder das perguntas: elas formatam a nossa
+ignorância e forçam esse formato, válido ou não, sobre as respostas que,
+esperamos, darão um fim à nossa ignorância. Mesmo que usemos uma informação
+correta para responder a uma pergunta incorreta, aquela poderá assumir um
+formato incorreto. Assim, se você usar essa resposta como uma ferramenta, ela
+com certeza será aplicada nas situações incorretas, obtendo resultados
+equivocados.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>É por isso
+que o Buda foi muito cuidadoso ao mapear um sistema de perguntas, mostrando
+quais perguntas, em que ordem, conduzem à libertação e quais não conduzem. Ao
+mesmo tempo, ele proferia os seus discursos sob a forma de perguntas e
+respostas, de modo a deixar perfeitamente claro qual o formato das questões que
+ele estava respondendo.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Portanto,
+se você procurar respostas nos ensinamentos e quiser obter o máximo delas, você
+deveria, primeiro, ter bem claro em mente que perguntas formular e verificar se
+elas estão de acordo com as perguntas que os ensinamentos pretendem responder.
+Assim, as respostas não o colocarão na direção equivocada.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Um exemplo
+que suporta esse argumento é o ensinamento sobre o não-eu. Muitos estudantes
+interpretam esse<span style="mso-spacerun: yes">  </span>ensinamento como a
+resposta do Buda a duas das questões perguntadas com mais freqüência na
+história do pensamento crítico: “Quem sou eu?” e “Tenho um verdadeiro eu?” Sob
+a luz dessas questões, o ensinamento aparenta ser uma doutrina sobre a não
+existência de um eu dizendo ou um Não sem restrições: não existe um eu; ou um
+Não com restrições: não existe um eu <i>separado. </i>Mas na única vez em que o
+Buda foi perguntado de forma direta se existe um eu, ele se recusou a
+responder, fundamentado em que uma resposta Sim ou Não à pergunta conduziria a
+formas extremas de entendimento incorreto que bloqueariam o caminho para a
+libertação. Um Sim ou um Não com restrições conduziriam ao apego: você ficaria
+apegado à noção de um eu, não<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>importa
+como você definisse isso. Um Não sem restrições conduziria à confusão e
+alienação, pois você sentiria que a sua noção mais profunda de auto estima
+teria sido negada.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Quanto à
+questão, “Quem sou eu?” o Buda a incluiu numa lista de perguntas que conduzem a
+um beco sem saída que levam a “um emaranhado de idéias, uma confusão de idéias,
+uma contorção, uma entortadura, um grilhão de idéias. Aprisionado pelo grilhão
+de idéias, vocês não irão obter a libertação do nascimento, envelhecimento e morte,
+da tristeza, lamentação, dor, angústia ou desespero.” Em outras palavras, todo
+o esforço para responder a esse tipo de questão é karma inábil, que bloqueia o
+caminho para a verdadeira libertação.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Portanto,
+se o ensinamento sobre o não-eu não tem a intenção de responder a essas
+questões, quais questões ele <i>sim </i>responde? Uma questão básica é: “O que
+é hábil?” Na verdade, <i>todos </i>os<i> </i>ensinamentos do Buda são respostas
+diretas ou indiretas a essa questão. O grande insight que ele obteve foi que
+todo o nosso conhecimento e ignorância, todo nosso prazer e dor, têm origem nas
+nossas ações, nosso karma, portanto, a busca pelo verdadeiro conhecimento e
+verdadeira felicidade se resumem numa questão de habilidade. Neste caso, a
+pergunta precisa é : “A identificação com um eu é hábil?” E a resposta é:
+“Apenas até certo ponto.” Nas áreas em que você necessite de uma noção saudável
+de um eu para agir com habilidade é sábio manter essa noção. Mas com o tempo, à
+medida que o comportamento hábil se transforme num hábito e você
+desenvolva<span style="mso-spacerun: yes">  </span>mais sensibilidade, verá que
+a identificação com um eu, mesmo do tipo mais sutil, é prejudicial e
+estressante. Você tem que se soltar dela.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Então, tal
+como com uma outra habilidade qualquer, existem passos definidos ao longo do
+caminho para se obter a maestria. E visto que, fazer uma pergunta é um tipo de
+karma, as perguntas que você fizer devem não somente começar com o tema da
+habilidade, mas elas devem também ser hábeis em si mesmas, abordar o tema com
+habilidade. Cada passo na habilidade do Buda é portanto definido por uma série
+de questões que focam a sua atenção e moldam a sua forma de pensar na direção
+mais estratégica. Na verdade, as perguntas que ele recomenda podem ser tomadas
+como um mapa para a prática: você começa com perguntas que presumem um eu e
+usam essa pressuposição para motivá-lo a agir de<span style="mso-spacerun:
+yes">  </span>forma cada vez mais hábil. Somente quando você alcança um nível
+apropriado de habilidade as perguntas passam a desmontar a sua noção do eu,
+selecionando as coisas que você identifica como sendo o seu eu e mostrando que
+elas na verdade não o são. Quando a ação de auto-identificação esgota os locais
+onde possa aportar, ela fica suspensa no ar – e a mente se abre para a
+libertação. Portanto, se você colocar o ensinamento sobre o não-eu no seu
+contexto correto – esse sistema de perguntas – verá que não se trata de uma
+resposta estéril para uma questão estéril. Ao invés disso, é uma ferramenta de
+vanguarda para produzir a libertação.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Para
+iniciar esse sistema, o Buda recomenda que ao visitar um mestre, as primeiras
+perguntas que você deve fazer são estas: “O que é hábil? O que é inábil? O que,
+se eu fizer, trará meu sofrimento e dano por um longo tempo? Ou o que, se eu
+fizer, trará minha felicidade e bem estar por um longo tempo?” Embora essas
+duas últimas perguntas contenham os conceitos de “eu” e “meu,” estes não são o
+foco da questão. O foco está na ação, no desenvolvimento da habilidade, em usar
+a sua preocupação com o “eu” e “meu bem estar” para treinar as suas ações para
+que elas se dirijam para a verdadeira felicidade.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>As
+respostas do Buda para essas questões preliminares se parecem a um curso de
+sobrevivência na selva. Primeiro vem o que deve e o que não deve ser feito. Um instrutor
+de selva lhe diria: “Se um alce vier no seu encalço, corra. Se um urso vier no
+seu encalço, não corra.” As instruções equivalentes do Buda sobre o que fazer e
+o que não fazer são dez regras que dizem respeito ao corpo, linguagem e mente.
+As regras para o corpo são: não mate, não roube, não pratique atos sexuais impróprios.
+Para a linguagem: não fale mentiras, não fale com malícia, não fale de forma grosseira,
+não fale frivolidades. E para a mente: abandone a cobiça, abandone a má
+vontade, cultive o entendimento correto. Essas são as regras básicas do Buda
+para a sobrevivência da sua felicidade e muitos dos seus ensinamentos
+simplesmente elaboram sobre esses dez pontos.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Mas
+qualquer instrutor de selva lhe dirá que a sobrevivência exige mais do que
+essas regras gerais. Você tem que estar alerta para as lacunas não cobertas
+pelas regras. Você tem que aprender a usar os seus poderes de observação,
+imaginação e perspicácia para desenraizar hábitos inábeis e desenvolver novos
+hábitos para preencher esses espaços. Dessa forma você será capaz de viver com
+conforto na selva, respeitando os alces e os ursos e outros perigos que se
+encontrem à sua volta sem ser derrotado por eles.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O mesmo se
+aplica à habilidade do Buda: além de seguir as regras sobre o que deve e não
+deve ser feito, você precisa aprender a desenterrar as raízes do comportamento
+inábil de forma que você possa se tornar um perito em todas as áreas da sua
+vida, incluindo aquelas áreas onde as regras sobre o que deve e não deve ser
+feito não se apliquem. As raízes do comportamento inábil são três: cobiça,
+raiva e delusão. Dessas três, a delusão é a mais insidiosa, pois quando você
+está deludido você não <i>sabe </i>que está deludido. A única forma de super­á-la
+é sendo um observador incansável, olhando para as suas ações em termos de causa
+e efeito, avaliando as suas conseqüências no curto e longo prazo para si mesmo
+e para os outros. <o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Outra vez,
+isto envolve aprender a fazer as perguntas corretas. Cada vez antes de agir,
+pergunte a si mesmo: 'Esta ação que quero praticar: conduzirá à minha própria
+aflição, à aflição de outros, ou ambos? É uma ação sem habilidade, com
+conseqüências dolorosas, resultados dolorosos?' Se você concluir que ela
+conduzirá à aflição, não a pratique. Se não, vá em frente, pratique-a. <span
+style="mso-spacerun: yes"> </span>Enquanto estiver agindo, pergunte a si mesmo
+se existem conseqüências ruins inesperadas surgindo. Se existirem, pare. Se não
+existirem, continue com o que você estava fazendo. Ao concluir a ação, analise
+as suas conseqüências no curto e longo prazo. Se uma ação com a linguagem ou
+com o corpo acabou produzindo aflição, informe um companheiro praticante
+experiente (é por essa razão que o Buda estabeleceu a Sangha) e ouça o conselho
+que essa pessoa lhe der. Se a ação equivocada for apenas um ato mental, tente
+desenvolver o desgosto por esse tipo de pensamento. Em ambos os casos decida
+nunca mais repetir o mesmo erro novamente e empregue a sua perspicácia para
+fazer com que essa determinação seja lograda. Se, no entanto, as conseqüências
+no longo prazo da ação original forem inócuas, sinta-se feliz e satisfeito por
+estar no caminho correto e continue com o seu treinamento.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A
+perseverança nessa linha de interrogação estimula dois resultados principais.
+Para começar, você se torna mais sensível às suas ações e com mais respeito
+pelas suas conseqüências, tanto no presente como ao longo do tempo. Ao
+contrário da criança que diz, “Já estava quebrado quando eu pisei,” você tem
+consciência quando quebra as coisas – físicas ou mentais – e quando não as
+quebra. Ao mesmo tempo, você obtém maestria nos padrões de causa e efeito. Você
+se torna cada vez melhor no lidar com as coisas sem que elas se quebrem. Isto
+por outro lado estimula uma saudável noção de “eu” baseada na competência e
+habilidade. A sua noção de eu se torna bem humorada o suficiente para
+espontaneamente admitir erros, madura o suficiente para aprender com eles, ágil
+o suficiente para notar os efeitos imediatos das suas ações, enquanto que
+paciente o suficiente para se esforçar por metas a longo prazo. Confiante no
+seu próprio poder de observação, esse “eu” também tem a humildade necessária
+para aprender com a experiência e aconselhamento dos outros. <o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Esses dois
+resultados – sensibilidade para com as conseqüências das suas próprias ações e
+uma adequada noção de um eu – permitem que você se acomode num nível de
+concentração mental que é sólida e nutritiva. Você elimina o obstáculo da
+incerteza quanto ao que é hábil e inábil e é capaz de desenvolver as qualidades
+hábeis necessárias para centrar a mente. A medida que esse foco centralizado se
+desenvolve, uma coisa interessante ocorre: a sua sensibilidade com relação às
+ações e a noção de um eu se encontram cara a cara. Você começa a ver aquele eu
+não como uma coisa, mas como uma atividade, um processo de “fazer um eu” e
+“fazer o meu” no qual você repetidamente cria e recria a noção de quem você é.
+Você também começa a notar que fazer um eu, mesmo quando isso produz o mais
+hábil eu possível, inevitavelmente resulta em sofrimento.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Porque?
+Porque toda noção de “eu” ou “meu” envolve apego – mesmo se a sua concentração
+estiver sintonizada com a noção de um eu universal – e todo apego produz
+sofrimento. Portanto, para conduzir o desenvolvimento da habilidade até o seu
+último grau, você tem que desaprender o hábito de fazer o eu e fazer o meu. E
+para realizar isso, um outro conjunto de perguntas se faz necessário.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Essas são
+as questões que introduzem a estratégia do não-eu. O Buda recomenda que você
+foque em qualquer fenômeno à sua volta em relação ao qual você<span
+style="mso-spacerun: yes">  </span>sinta como “eu” ou “meu” e faça uma série de
+perguntas, começando com: “Isso é permanente ou impermanente?” Se você se
+identifica com o seu corpo, olhe para ele. Verá que ele sente fome e sede, que
+está envelhecendo, destinado a ficar enfermo e morrer. “E aquilo que é impermanente
+é </span>sofrimento ou felicidade<span lang=PT-BR style='mso-ansi-language:
+PT-BR'>?” Veja o esforço para encontrar a felicidade estável baseada no corpo e
+você verá o quanto isso é estressante. “E é adequado considerar o que é
+impermanente, sofrimento, sujeito a mudanças como: 'Isso é meu. Isso sou eu.
+Isso é o meu eu’?” Responda o que você crê ser adequado.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Continue
+nessa linha de questionamento em direção ao seu interior, através de camadas e
+mais camadas de eventos físicos e mentais, até que você encontre o alto comando:
+o eu que está gerenciando não só a estabilidade da sua concentração, mas também
+o seu diálogo interno de perguntas e respostas. Fortificado com a sensação de
+estabilidade e calma que surgem com a intensa concentração, você poderá começar
+a desmontar aquele eu sem ansiedade em relação a o que irá ocorrer quando ele
+desaparecer. E quando as intenções que compõem aquele eu são desmontadas, uma
+coisa estranha acontece. É como se você puxasse o fio estratégico que mantém
+unido todo um tapete e todo o conjunto se desmancha por si mesmo. Tudo aquilo
+que possa estar pegado se solta. O que resta é a completa e absoluta liberdade
+– livre do tempo e espaço, de ambos, eu e não-eu, pois ambos “eu” e “não-eu”
+são percepções transcendidas por aquela liberdade.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Mesmo que
+você tenha experimentado apenas um primeiro gosto sutil dessa liberdade, você
+poderá apreciar a destreza com a qual o ensinamento sobre o não-eu responde à
+questão “O que é hábil?” E você compreenderá porque o Buda recomenda deixar de
+lado a questão “Quem sou eu?” Para começar, ela não o teria conduzido a esta
+liberdade e poderia muito bem atrapalhar o caminho. Como o seu “eu” é um
+processo, qualquer tentativa de fazer com que ele se fixe antes que você tenha
+obtido a maestria sobre esse processo é igual a ficar golpeando sombras,
+distraído da verdadeira tarefa a ser feita. Qualquer tentativa de desmontar o
+seu “eu” antes que ele tenha se tornado saudável e maduro resultaria numa
+libertação neurótica e insegura: você estaria apenas fugindo daquelas partes
+desordenadas e mal cuidadas da sua vida. Além disso, qualquer resposta à
+pergunta “Quem sou eu?” seria totalmente <a name=PVW>inapropriada</a> para
+descrever a liberdade recém-descoberta, pois esta é uma outra dimensão, onde os
+conceitos de “eu,” “não-eu,” “sou,” “não sou” não se aplicam.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A única
+questão que ainda o preocuparia é como desenraizar as raízes inábeis ainda
+latentes na mente. Uma vez que elas tenham sido desenraizadas, o Buda promete
+que não haverá obstáculo para a realização plena e completa da libertação. E
+com essa liberdade, a mente não carece de nada, não possui nada em excesso. Não
+existe mais delusão ou cobiça, ou raiva que possam dar origem a questões
+urgentes. As únicas questões que permanecem equivalem a um bônus: qual a melhor
+forma de tomar as habilidades desenvolvidas ao longo do caminho e empregá-las
+em benefício do mundo.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>E o que
+mais haveria para ser perguntado?<o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  15 Abril 2005         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/questoes_habilidade.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:03 GMT -->
+</html>
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

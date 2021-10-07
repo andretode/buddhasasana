@@ -1,0 +1,376 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN37.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:56:59 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - MN37</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("It.1.html","It.2.html","It.3.html","It.4.html","It.5.html","It.6.html","It.7.html","It.8.html","It.9.html","It.10.html","It.11.html","It.12.html","It.13.html","It.14.html","It.15.html","It.16.html","It.17.html","It.18.html","It.19.html","It.20.html","It.21.html","It.22.html","It.23.html","It.24.html","It.25.html","It.26.html","It.27.html","It.28.html","It.29.html","It.30.html","It.31.html","It.32.html","It.33.html","It.34.html","It.35.html","It.36.html","It.37.html","It.38.html","It.39.html","It.40.html","It.41.html","It.42.html","It.43.html","It.44.html","It.45.html","It.46.html","It.47.html","It.48.html","It.49.html","It.50.html","It.51.html","It.52.html","It.53.html","It.54.html","It.55.html","It.56.html","It.57.html","It.58.html","It.59.html","It.60.html","It.61.html","It.62.html","It.63.html","It.64.html","It.65.html","It.66.html","It.67.html","It.68.html","It.69.html","It.70.html","It.71.html","It.72.html","It.73.html","It.74.html","It.75.html","It.76.html","It.77.html","It.78.html","It.79.html","It.80.html","It.81.html","It.82.html","It.83.html","It.84.html","It.85.html","It.86.html","It.87.html","It.88.html","It.89.html","It.90.html","It.91.html","It.92.html","It.93.html","It.94.html","It.95.html","It.96.html","It.97.html","It.98.html","It.99.html","It.100.html","It.101.html","It.102.html","It.103.html","It.104.html","It.105.html","It.106.html","It.107.html","It.108.html","It.109.html","It.110.html","It.111.html","It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="MN37" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_138.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+
+<p class=Tit3 align=center style='text-align:center'><b> Majjhima Nikaya 37 </b></Tit3>
+<p class=Tit1 align=center style='text-align:center'>Culatanhasankhaya Sutta </Tit1>
+<p class=Tit1 align=center style='text-align:center'>O Pequeno Discurso sobre a
+Destruição do Desejo </Tit1>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal style='margin-left:1.0in'>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>1. Assim
+ouvi. Em certa ocasião o Abençoado estava em Savatthi, no palácio da mãe de
+Migara, no Parque do Oriente.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>2. Então,
+Sakka, o senhor dos devas, foi até o Abençoado e depois de cumprimentá-lo ficou
+em pé a um lado e disse: “Venerável senhor, como em resumo um bhikkhu é
+libertado através da destruição do desejo, aquele que alcançou o objetivo
+último, a suprema segurança contra o cativeiro, a vida santa consumada, o
+objetivo supremo, aquele que é o líder entre devas e humanos?” [<a href="#N1">1</a>]<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=R1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>3. “Aqui, senhor dos devas, um bhikkhu ouviu que não vale a pena se
+apegar a nada. Quando um bhikkhu ouve que não vale a pena se apegar a nada, ele
+compreende tudo de modo direto; compreendendo tudo de modo direto, ele
+compreende tudo completamente; tendo compreendido tudo completamente, qualquer
+coisa que ele sinta, quer seja prazerosa, dolorosa ou nem dolorosa, nem
+prazerosa, ele permanece contemplando a impermanência nessas sensações, contemplando
+o desaparecimento, contemplando a cessação, contemplando a renúncia.
+Contemplando desse modo, ele não se apega a nada no mundo. Não se apegando, ele
+não fica agitado. Sem estar agitado, ele realiza Nibbana. [<a href="#N2">2</a>]
+<a name=R2></a>Ele compreende que: ‘O nascimento foi destruído, a vida santa
+foi vivida, o que deveria ser feito foi feito, não há mais vir a ser a nenhum
+estado.’ Em resumo, dessa forma, senhor dos devas, aquele bhikkhu é libertado
+através da destruição do desejo, aquele que alcançou o objetivo último, a
+suprema segurança contra o cativeiro, a vida santa consumada, o objetivo
+supremo, aquele que é o líder entre devas e humanos.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>4. Então,
+Sakka, o senhor dos devas, satisfeito e contente com as palavras do Abençoado,
+homenageou o Abençoado e mantendo-o à sua direita, desapareceu de uma vez. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>5. Agora,
+naquela ocasião o venerável Maha Moggallana estava sentado não muito distante
+do Abençoado. Ele então pensou: “Aquele deva, ao demonstrar satisfação,
+penetrou o significado das palavras do Abençoado, ou não? Suponhamos que eu
+descobrisse se ele compreendeu ou não.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>6. Então,
+com a mesma rapidez com que um homem forte pode estender o seu braço flexionado
+ou flexionar o seu braço estendido, o venerável Maha Moggallana desapareceu do palácio
+da mãe de Migara no Parque do Oriente e apareceu entre os devas do Trinta e
+Três.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>7. Agora,
+naquela ocasião Sakka, o senhor dos devas, desfrutava dos prazeres dos cinco
+tipos de música divina, e ele assim desfrutava no Parque das Delícias da Única
+Flor de Lótus. Ao ver o venerável Maha Moggallana vindo à distância, ele
+dispensou a música e foi até o venerável Maha Moggallana e disse: “Venha
+estimado senhor Moggallana! Bem vindo estimado senhor Moggallana! Já faz muito
+tempo desde a última vez que o estimado senhor Moggallana encontrou uma
+oportunidade para vir aqui. Que o estimado senhor Moggallana sente; este
+assento está preparado”. O venerável Maha Moggallana sentou no assento que
+havia sido preparado e Sakka tomou um assento mais baixo e sentou a um lado. O
+venerável Maha Moggallana então perguntou:<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>8.
+“Kosiya,[<a href="#N3">3</a>] <a name=R3></a>como o Abençoado explicou de forma
+resumida a libertação através da destruição do desejo? Seria bom se também
+pudéssemos ouvir esse relato.” <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Estimado
+senhor Moggallana, estamos tão ocupados, temos muito que fazer, não somente com
+os nossos próprios afazeres, mas também com os afazeres dos devas do Trinta e
+Três. Além disso, estimado senhor Moggallana, aquilo que é bem ouvido, bem
+aprendido, bem cuidado, bem lembrado, não desaparece de repente. Estimado
+senhor Moggallana, certa vez ocorreu que irrompeu uma guerra entre os devas e
+os asuras. [<a href="#N4">4</a>] <a name=R4></a>Nessa guerra, os devas venceram
+e os asuras foram derrotados. Quando venci essa guerra e retornei como
+conquistador, fiz com que se construísse o Palácio Vejayanta. Estimado senhor
+Moggallana, o Palácio Vejayanta possui cem torres, e cada torre possui
+setecentos cômodos, e em cada cômodo há sete ninfas, e com cada ninfa há sete
+donzelas. Você gostaria de ver o encantamento que é o Palácio Vejayanta, bom
+senhor Moggallana ?” O venerável Maha Moggallana concordou em silêncio.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>9. Então,
+Sakka, o senhor dos devas e o rei divino Vessavana [<a href="#N5">5</a>] <a
+name=R5></a>foram até o Palácio Vejayanta, dando precedência ao venerável Maha
+Moggallana. Quando as donzelas de Sakka viram o venerável Maha Moggallana vindo
+à distância, elas ficaram desconcertadas e envergonhadas e foram cada uma para
+os seus quartos. Tal como uma nora fica desconcertada e envergonhada ao ver o
+sogro, assim também, quando as donzelas de Sakka viram o venerável Maha
+Moggallana vindo à distância elas ficaram desconcertadas e envergonhadas e
+foram cada uma para os seus quartos.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>10. Então, Sakka,
+o senhor dos devas e o rei divino Vessavana fizeram com que o venerável Maha
+Moggallana andasse por todas partes e explorasse o Palácio Vejayanta: “Veja,
+estimado senhor Moggallana, o encantamento deste Palácio Vejayanta! Veja,
+estimado senhor Moggallana, o encantamento deste Palácio Vejayanta!”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Isto faz
+justiça ao venerável Kosiya, como alguém que no passado realizou méritos; e
+sempre que os seres humanos vêm algo encantador, eles dizem: ‘Senhores, isso
+faz justiça aos devas do Trinta e Três!’ Isso faz justiça ao venerável Kosiya,
+como alguém que no passado realizou méritos.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T11></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>11. Então, o venerável Maha Moggallana pensou o seguinte: “Esse deva
+está vivendo de forma muito negligente. E se eu criasse nele um senso de
+urgência?” Então, o venerável Maha Moggallana realizou uma grande façanha com
+os seus poderes supra-humanos, com a ponta do dedo ele fez com que o Palácio
+Vejayanta balançasse e tremesse. [<a href="#N6">6</a>] <a name=R6></a>Sakka e o
+rei divino Vessavana e os devas do Trinta e Três ficaram assombrados e
+surpresos e disseram: “Senhores, é maravilhoso, é admirável, que poder e força
+o contemplativo possui, que apenas com a ponta do dedo ele faz com que o
+paraíso balance e trema!” <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T12></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>12. Quando o venerável Maha Moggallana percebeu que Sakka, o senhor dos
+devas, estava estimulado com um senso de urgência com os cabelos em pé, ele
+perguntou: “Kosiya, como o Abençoado explicou de forma sumária a libertação
+através da destruição do desejo? Seria bom se também pudéssemos ouvir esse
+relato.” <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Estimado
+venerável Moggallana, eu fui até o Abençoado e depois de cumprimentá-lo fiquei em
+pé a um lado e disse: ‘Venerável senhor, ... [igual ao verso 2] ... entre devas
+e humanos?’ Quando isso foi dito, estimado venerável Moggallana, o Abençoado me
+disse: “Aqui. senhor dos devas,<span style='mso-spacerun:yes'>  </span>...
+[igual ao verso 3] ... entre devas e humanos.’ Assim foi como o Abençoado me
+explicou de modo sumário a libertação através da destruição do desejo, estimado
+venerável Moggallana.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>13. Assim,
+o venerável Maha Moggallana ficou satisfeito e contente com as palavras de
+Sakka, o senhor dos devas. Então, com a mesma rapidez com que um homem forte
+pode estender o seu braço flexionado ou flexionar o seu braço estendido, ele
+desapareceu dos devas do Trinta e Três e apareceu no palácio da mãe de Migara
+no Parque do Oriente.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>14. Então,
+logo depois que o venerável Maha Moggallana partiu, os acompanhantes de Sakka,
+o senhor dos devas, perguntaram: “Estimado senhor, esse foi o seu mestre, o
+Abençoado?” – “Não, estimados senhores, ele não é o meu mestre, o Abençoado.
+Ele é um dos meus companheiros na vida santa, o venerável Maha Moggallana.” [<a
+href="#N7">7</a>] <a name=R7></a>– “Muito bem senhor, é um ganho para você que
+o seu companheiro na vida santa tenha tanto poder e força. Oh, quanto mais
+então não terá o Abençoado que é o seu mestre!”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>15. Então o
+venerável Maha Moggallana foi até o Abençoado e depois de cumprimentá-lo sentou
+a um lado e perguntou: “Venerável senhor, o Abençoado se recorda haver explicado
+de forma sumária – para um dos devas renomados que possui um grande séquito – a
+libertação através da destruição do desejo?”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Eu me
+lembro ter feito isso, Moggallana. Aqui Sakka, o senhor do devas, veio até mim
+e depois de me cumprimentar, ficou em pé <span
+style='mso-spacerun:yes'> </span>a um lado e perguntou: ‘Venerável senhor, como
+em resumo um bhikkhu é libertado através da destruição do desejo, aquele que
+alcançou o objetivo último, a suprema segurança contra o cativeiro, a vida
+santa consumada, o objetivo supremo, aquele que é o líder entre devas e
+humanos?’ Quando isso foi dito, eu respondi: ‘Aqui, senhor dos devas, um
+bhikkhu ouviu que não vale a pena se apegar a nada. Quando um bhikkhu ouviu que
+não vale a pena se apegar a nada, ele compreende tudo de modo direto;
+compreendendo tudo de modo direto, ele compreende tudo completamente; tendo
+compreendido tudo completamente, qualquer coisa que ele sinta, quer seja
+prazerosa, dolorosa ou nem dolorosa, nem prazerosa, ele permanece contemplando
+a impermanência nessas sensações, contemplando o desaparecimento, contemplando
+a cessação, contemplando a renúncia. Contemplando desse modo, ele não se apega
+a nada no mundo. Não se apegando, ele não fica agitado. Sem estar agitado, ele
+realiza Nibbana. Ele compreende que: “O nascimento foi destruído, a vida santa
+foi vivida, o que deveria ser feito foi feito, não há mais vir a ser a nenhum
+estado.” Em resumo, dessa forma, senhor dos devas, aquele bhikkhu é libertado
+através da destruição do desejo, aquele que alcançou o fim último, a suprema
+segurança contra o cativeiro, a vida santa consumada, o objetivo último, aquele
+que é o líder entre devas e humanos.’ Assim é como me lembro haver explicado de
+forma resumida para Sakka, o senhor dos devas, a libertação através da destruição
+do desejo.”<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Isso foi o
+que disse o Abençoado. O venerável Maha Moggallana ficou satisfeito e contente
+com as palavras do Abençoado.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<p class=Normal><b style='mso-bidi-font-weight:normal'><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>Notas</span></b><span lang=PT-BR
+style='mso-ansi-language:PT-BR'>: <o:p></o:p></span></p>
+
+<p class=Normal><a name=N1></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[1] MA: Sakka pergunta sobre a prática de um
+bhikkhu arahant, por meio da qual ele se liberta através da destruição do
+desejo. [<a href="#R1">Retorna</a>] <o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N2></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[2] MA explica este trecho da seguinte forma:
+“Tudo” (<i>sabbe dhamma</i>) são os cinco agregados, as doze bases, os dezoito
+elementos. A eles “não vale a pena se apegar ”, através do desejo e idéias,
+porque eles se revelam na verdade diferentes do que imaginamos ao agarrá-los:
+nós nos apegamos a eles como se fossem permanentes, prazerosos e como ‘eu’, e
+eles se revelam impermanentes, insatisfatórios e não-eu. Ele “compreende</span><span
+lang=PT-BR style='mso-ansi-language:PT-BR'> tudo de modo direto” que eles são
+impermanentes, insatisfatórios e não-eu, e “compreende tudo completamente” ao
+analisá-los do mesmo modo. “Contemplando a impermanência,” etc., é realizado
+através do insight do surgimento e origem e da destruição e cessação. “Ele não
+se apega” a nenhuma formação através do desejo e das idéias, ele não se agita
+devido ao desejo, e realiza Nibbana através da destruição de todas as impurezas<span
+style='mso-bidi-font-weight:bold'>. [<a href="#R2">Retorna</a>]<o:p></o:p></span></span></p>
+
+
+<p class=Normal><a name=N3></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[3] Um dos nomes de Sakka, que significa “a
+coruja.” [<a href="#R3">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N4></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[4] Os devas e os asuras, são
+retratados no Cânone em Pali como seres que estão num contínuo estado de guerra
+uns com os outros. Veja em particular o <a href="samyutta_nikaya.html#RXI">Sakkasamyutta</a>
+no Samyutta Nikaya. [<a href="#R4">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N5></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[5] Um dos Quatro Grandes Reis, os governantes
+dos <i>yakkhas</i>, o reino deste era o norte. [<a href="#R5">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N6></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[6] MA: Ele fez isso meditando sobre uma
+kasina de água e depois determinando: “Que as fundações do palácio sejam
+como a água.” [<a href="#R6">Retorna</a>]<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=N7></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold'>[7] Sakka pode se referir ao ven. Maha
+Moggallana como “companheiro na vida santa” porque ele mesmo havia realizado
+anteriormente o nível de entrar na correnteza (<a href="DN21.html#T2_10">DN 21.2.10</a>), e, portanto, era um nobre discípulo destinado à mesma
+libertação que Maha Moggallana já havia realizado. [<a href="#R7">Retorna</a>]</span><b
+style='mso-bidi-font-weight:normal'><span lang=PT-BR style='mso-ansi-language:
+PT-BR'><o:p></o:p></span></b></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  12 Junho 2005         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/sutta/MN37.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:56:59 GMT -->
+</html>
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

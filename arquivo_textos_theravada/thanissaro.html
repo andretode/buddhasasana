@@ -1,0 +1,664 @@
+<!-- DEFINE PARAMETROS -->
+
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/thanissaro.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:52:06 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - thanissaro</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="thanissaro" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_150.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1 align=center style='text-align:center'>Ajaan Thanissaro (Thanissaro Bhikkhu)</Tit1>
+
+<p class=Normal>Ajaan Thanissaro (Geoffrey DeGraff) é um monge Budista Americano nascido em 1949. Depois de se formar no Oberlin College com um 
+diploma em História Intelectual da Europa, ele começou a praticar meditação com o seu mestre, Ajaan Fuang Jotiko - 
+um membro da tradição de florestas da Tailândia e discípulo de Ajaan Lee - em 1974, tendo se ordenado como 
+monge em 1976, continuando a estudar com Ajaan Fuang até a sua morte em 1986. Em 1991 ele foi para o sul da 
+California para ajudar no estabelecimento do Monastério de Floresta Metta nas montanhas do norte do condado de 
+San Diego. Ele se tornou o abade do monastério em 1993 e foi formalmente nomeado preceptor em 1995. Ele regularmente 
+ensina no John Wayne Dhamma Center no condado de Orange e também faz parte do corpo de professores visitantes do BCBS – Barre Center of Buddhist Studies em Barre/MA, EUA.<o:p></o:p></span></p>
+
+<p class=Normal>Ajaan Geoff, como é conhecido pelos seus alunos, é o autor de <i> The Mind Like Fire Unbound, The Buddhist Monastic Code</i> e <i>The Wings to Awakening</i>. Ele também traduziu vários guias de meditação de mestres Tailandeses, incluindo as obras completas de Ajaan Lee Dhammadharo que foi o mestre de Ajaan Fuang.<o:p></o:p></span></p>
+
+<p  class=Normal><img src="img/globe.gif" border=0> <a href= http://watmetta.org/index.html> http://watmetta.org</a>
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'> <a href="estrategia_naoeu.html"><b>A Estratégia do
+     não Eu</a></span></b> (1993; 25k/11pag.) </span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>O ensinamento principal do Budismo anatta (não-eu) é uma afirmação de
+uma verdade metafísica, ou é uma estratégia para conquistar a libertação do
+sofrimento? Neste ensaio o autor demonstra, através de uma cuidadosa leitura de
+trechos chave do Cânone em Pali sobre o tema de anatta, que o segundo, pode na
+verdade ser o caso. (Este é o primeiro ensaio do Ven. Thanissaro sobre este
+assunto, contendo citações do Cânone em Pali para suportar o seu argumento.
+Originalmente foi publicado na revista &quot;Insight&quot; em 1994. Uma
+abordagem mais concisa pode ser encontrada no seu ensaio de 1996, Não-eu)<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'> <a
+     href="instrucoes_basicas_meditacao_respiracao.html"><b>Instruções Básicas
+     para Meditação da Respiração</b></a> (1994; 8k/3pag.) </span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Uma meditação guiada<o:p></o:p></span></li>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><a href="nibbana.html"><b>Nibbana</b></a>
+     (1996; 9k/2pag.) </span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Este breve ensaio delineia o uso da imagem
+do fogo no Budismo antigo para descrever Nibbana, o objetivo da prática Budista.
+<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><a href="naoeu.html">Não Eu</a></span></b> (1996; 7k/2pag.) </span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Os ensinamentos Budistas acerca de não-eu (anatta) devem ser interpretados
+     como afirmações metafísicas ou como um artifício de ensino para auxiliar o
+     praticante a alcançar o objetivo máximo? Veja o que os ensinamentos do
+     Cânone em Pali revelam acerca deste tema. <o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="karma.html">Karma</a></span></b> (1996; 8k/2pag.) </span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Este breve ensaio explica a natureza de karma (Pali: kamma), ou ação
+     intencional. O processo de karma é resultado da interação complexa entre
+     os frutos de ações passadas (sobre as quais não temos controle no
+     presente) e as escolhas que fazemos no momento presente.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="jhanas.html">Jhanas,
+     Concentração e Sabedoria</a> </span></b>(1996; 11k/3pág.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>O papel de
+jhana como uma condição para a sabedoria transcendente é um dos temas mais
+controversos na tradição Theravada..<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="vazio.html">Vazio</a> </span></b>(1997; 11k/3 pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Neste breve
+ensaio o autor explica o papel do vazio na prática de meditação.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="despertar_buda.html">O
+     Significado do Despertar do Buda</a></span></b> (1997;17k/3pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Embora o Despertar do Buda tenha ocorrido há muito tempo na antiga Índia,
+     o fato do Despertar está muito vivo na atualidade e tem implicações
+     profundas sobre a forma como abordamos a prática Budista. Neste ensaio o
+     autor explora ambos O Que e Como do Despertar do Buda; para o que ele
+     despertou e como ele fez isso. <o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="preceitos.html">O Poder
+     Curativo dos Preceitos</a></span></b>(1997; 18k/4pág.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Muitas pessoas na atualidade procuram os ensinamentos Budistas na busca
+por uma cura emocional e espiritual. Neste breve ensaio o autor nos recorda que
+a ferramenta mais simples e efetiva para curar um coração ferido pode ser
+encontrada no cultivo de sila, ou uma conduta virtuosa.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a
+     href="concentracao_atencao_plena.html">O Caminho da Concentração e Atenção
+     Plena</a> </span></b>(1997;
+     21k/7pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     O Buda ensinou que a concentração e atenção plena são dois caminhos
+     distintos de meditação - como geralmente é entendido - ou que elas são
+     duas partes inseparáveis de um único caminho de prática? Neste artigo,
+     adaptado de uma palestra dada no CIMC em 1996, Thanissaro Bhikkhu sugere
+     que o núcleo da prática de insight, tal como ensinado pelo Buda, consiste
+     no desenvolvimento hábil de ambos a concentração dos jhanas e a atenção
+     plena. <o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="samvega_pasada.html">Afirmando
+     as Verdades do Coração: Os Ensinamentos Budistas acerca de Samvega e
+     Pasaada</a> </b>(1997; 13k/4pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Interpretações populares do Budismo na atualidade freqüentemente ignoram a
+     importância de duas poderosas emoções. Emoções que propulsaram o Buda - e
+     todos aqueles que buscaram o Despertar desde então - em busca do objetivo
+     do Despertar: <i>samvega</i>, o sentimento de urgência em escapar do ciclo sem
+     sentido da existência; e <i>pasaada</i>, a claridade e serena confiança que
+     permite com que alguém prossiga confiante em direção ao objetivo sem cair
+     em desespero. Neste breve ensaio o autor explora o significado dessas
+     emoções básicas e como podemos encorajá-las a florescer em nossas vidas.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="uma_ferramenta.html">Uma
+     Ferramenta entre muitas: O papel de Vipassana dentro da Prática Budista<span
+     style='font-weight:normal'> </span></a></span></b>(1998; 28k/7pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Qual é a relação que existe entre a tranquilidade (samatha) e o insight (vipassana)
+     na prática de meditação Budista? Uma leitura cuidadosa dos suttas do
+     Cânone em Pali sugere que os dois não são métodos distintos de meditação
+     (como muitos comentaristas - clássicos e contemporâneos - sugerem), mas
+     dois aspectos da mesma prática. De acordo com os suttas, a correta prática
+     de meditação requer que ambos aspectos sejam desenvolvidos em equilíbrio.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="doce_ouro.html">Trocando Doce
+     por Ouro: A Renúncia como uma habilidade</a></span></b> (1999; 19k/4pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     O que você prefere ter: uma sede insaciável pela gratificação sensual, ou
+     uma felicidade estável, verdadeira e duradoura? A escolha é sua.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="linguagem_correta.html">Linguagem
+     Correta</a></span></b> (1999;
+     8k/2pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Para muitos de nós a linguagem correta é um dos preceitos mais difíceis de
+     ser mantido. No entanto a prática da linguagem correta é fundamental tanto
+     para que nos tornemos pessoas nas quais se pode confiar como também para
+     auxiliar-nos a obter o controle sobre as nossas mentes. Portanto escolha
+     as suas palavras – e os motivos para dizê-las – com cuidado.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="costumes_nobres.html">Os
+     Costumes dos Nobres</a></span></b> (1999; 25k/7pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Uma teoria popular, nos dias de hoje, sustenta que os ensinamentos do Buda
+     sobreviveram durante tanto tempo graças à habilidade do Budismo em se
+     adaptar aos costumes de qualquer cultura com a qual tenha se encontrado em
+     um momento particular da história. A história da tradição de florestas da
+     Tailândia <i style='mso-bidi-font-style:normal'>Kammatthana</i>, no
+     entanto, apresenta uma forte oposição a essa noção. Na verdade, como
+     argumenta o autor neste ensaio, a história sugere que o Dhamma verdadeiro
+     sobrevive somente quando as pessoas estão dispostas a adaptar os seus
+     costumes e hábitos de forma a ir de encontro ao Dhamma cara a cara, de
+     acordo com as suas próprias condições, nas florestas.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="caminho_nibbana.html">O
+     Caminho para Nibbana está Pavimentado com Intenções Hábeis</a></span></b> (1999; 23k/6pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>     De acordo com o princípio básico de karma, as nossas intenções subjacentes
+     desempenham um papel fundamental na determinação dos frutos das nossas
+     ações. O autor explica neste ensaio que se estivermos genuinamente
+     interessados em aspirar ao objetivo dos ensinamentos Budistas, não é
+     suficiente agir com boas intenções; de preferência, precisamos aprender,
+     através da auto reflexão honesta e associação com amigos virtuosos e
+     sábios, a cultivar a habilidade nas nossas intenções. <o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="samsara_zero.html">Samsara
+     Dividido por Zero</a></span></b>
+     (2000; 8k/2pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Como podemos ter a esperança de que o caminho da prática, que é fabricado,
+     nos possa conduzir ao objetivo final - nibbana - que é não fabricado? Uma
+     analogia impressionante com a moderna teoria do caos ajuda a desembaraçar
+     esse antigo paradoxo.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="vida_sofrimento.html">A Vida
+     não é apenas Sofrimento</a></span></b> (2000; 19k/5pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>O Buda focava o sofrimento porque ele era um pessimista? Ele realmente
+disse que a vida é sofrimento? Ou ele era na verdade um realista com uma
+mensagem muito mais proveitosa?<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="questoes_habilidade.html">Questões
+     de Habilidade</a></span></b>
+     (2001; 24k/5pag) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     ”O Buda não era o tipo de mestre que apenas respondia perguntas. Ele
+     também ensinava o que perguntar.” Assim começa o autor que explica neste ensaio
+     que a essência da prática Budista consiste em aprender como fazer
+     perguntas com habilidade.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="peso_montanhas.html">O Peso
+     das Montanhas</a></span></b>
+     (2001; 18k/6pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Porque criamos sofrimento para nós mesmos? Como podemos dar um fim a isso?
+     A chave está em aprender melhores hábitos de como alimentar a mente.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="porta_dhamma.html">Abrindo a
+     Porta para o Dhamma: O Respeito no Pensamento e Prática Budista</a></span></b> (2001; 40k/6pag.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Para obter êxito no aprendizado de qualquer habilidade, é necessário ter
+     respeito por si mesmo, pelo assunto objeto de estudo e pelo mestre. Neste
+     ensaio o autor demonstra que o mesmo se aplica ao se acercar dos
+     ensinamentos do Buda. A habilidade em aprender depende do respeito
+     apropriado para com três coisas: você mesmo, o princípio de kamma e os
+     insights de outras pessoas com relação a esse princípio.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="samsara.html">Samsara</a></span></b> (2002; 5k/2pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>O samsara é um lugar ou é o processo através do qual criamos e recriamos
+o nosso próprio sofrimento? Neste ensaio o autor compara samsara a um vício que
+pode ser abandonado – ou não. Qual será a sua escolha?<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="medo.html">Libertação do Medo</a></span></b> (2002; 19k/6pág.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Desde o início do tempo os seres humanos têm vivido sob o medo: o medo
+da mudança, da perda, da morte. Infelizmente, como temos testemunhado no
+cenário mundial, as pessoas aprenderam um sem número de formas inábeis sobre
+como lidar com o medo. O autor escreve: “A resposta mais inábil ao medo é
+quando, percebendo que a nossa vida ou posses estão em perigo, acreditamos que
+podemos obter força e segurança destruindo as vidas e posses dos outros.” Neste
+ensaio o autor descreve a prescrição do Buda para superar o medo de uma vez por
+todas, eliminando-o pela raiz.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="des_percepcao.html">Des-percepção</a></span></b> (2002; 22k/5pág.) <o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+     Quando sentamos para meditar em geral trazemos conosco um número de
+     suposições acerca do que são as nossas percepções, como é e como deveria
+     ser a nossa experiência de meditação. Como meditadores a nossa tarefa é
+     aprender a formular as perguntas corretas – perguntas que nos ajudem a
+     romper os estratos dessas noções falsas pré-concebidas. Este artigo,
+     baseado em uma palestra do Dhamma, contém conselhos práticos para
+     meditadores de todos os níveis.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="khandhas.html">Cinco Amontoados
+     de Tijolos: Os Khandhas como Fardo e Caminho</a></span></b> (2002; 26k/6pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Quando perguntados, “O que sou?”, os estudiosos Budistas e professores
+de meditação, da mesma forma, em geral afirmam que aquilo que convencionalmente
+chamamos de uma “pessoa” é melhor compreendido em termos dos cinco khandhas:
+forma, sensação, percepção, fabricações mentais e consciência. Esse
+entendimento dos khandhas, que surgiu pela primeira vez alguns séculos depois
+da morte do Buda nos Comentários, difere de modo significativo do papel dos
+khandhas tal como apresentado no Cânone em Pali. Neste ensaio o autor mostra
+que o Buda empregava o ensinamento dos khandhas não para definir aquilo que
+somos, mas ao invés disso como uma ferramenta para nos ajudar a dar um fim ao
+nosso sofrimento.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="agendas_sati.html">As Agendas
+     da Atenção Plena</a> </span></b>(2002;
+     16K/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+A meditação da atenção plena é algumas vezes descrita como um tipo de
+“aceitação passiva universal” daquilo que estiver ocorrendo na experiência no
+momento. Mas, como lembrado pelo autor neste ensaio, os textos em Pali
+delineiam um quadro bastante distinto do que é a meditação: esta é, na verdade,
+um processo bastante pró-ativo com uma claro objetivo.<o:p></o:p></span></p>
+<p class=Normal>&nbsp;</p>
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="voce_mesmo.html">Vendo por Si
+     Mesmo</a></span></b> (2004; 20k/4pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+O autor descreve o método de prática dos jhanas ensinado pelo seu mestre
+Ajaan Fuang.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="verbo_nibbana.html">Um Verbo
+     para Nibbana</a></span></b>
+     (2005; 68k/13pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Enquanto pensarmos em Nibbana como um lugar – um destino localizado no
+tempo e espaço – estaremos equivocados com relação ao seu significado
+fundamental. Neste ensaio, suportado por uma seleção de trechos de vários
+suttas, o autor mostra que Nibbana é o fim do processo samsárico de vir a ser
+que é aquilo que cria o tempo e espaço. Com a iluminação não “entramos” ou
+“alcançamos” Nibbana; simplesmente “Nibbanamos.” <o:p></o:p></span></p>
+</ul>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="fe.html">Fé na Iluminação</a></span></b>
+     (2006; 35k/9pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+A fé é necessária? Neste ensaio o autor questiona três mal-entendidos comuns sobre o papel da fé no Budismo. <o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="desembaracando.html">Desembaraçando o Presente - O Papel da Atenção com Sabedoria</a></span></b>
+     (2006; 22k/7pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Nenhuma outra qualidade interior é tão importante na elucidação do problema do sofrimento quanto a atenção com 
+sabedoria, <i>yoniso-manasikara</i>.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="atencao_sabedoria.html">Alimento para a Iuminação - O Papel da Atenção com Sabedoria</a></span></b>
+     (2006; 40k/15pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+ A prática de meditação consiste na mera observação do fluxo dos fenômenos mentais e corporais, sem qualquer tipo de interferência?<o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="vacuidade.html">A Integridade da Vacuidade</a></span></b>
+     (2006; 32k/11pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Qual o significado de vacuidade nos ensinamentos originais do Buda?<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="madhupindika.html">Madhupindika Sutta – MN 18</a></span></b>
+     (2008; 11k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Uma análise sobre como os conflitos são tratados no Budismo, qual é a sua origem e como podem ser evitados, tomando por base o Madhupindika Sutta – MN 18.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="sammaditthi.html">Sammaditthi Sutta – MN 9</a></span></b>
+     (2008; 11k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Uma análise sobre o entendimento correto tomando por base o 
+Sammaditthi Sutta – MN 9.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="potthapada.html">Potthapada Sutta – DN 9 </a></span></b>
+     (2008; 11k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Ajaan Thanissaro faz uma análise do Potthapada Sutta do Digha Nikaya. Este sutta é bastante incomum pelos termos empregados pelo Buda e também apresenta uma interessante análise sobre as aquisições de um eu.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="ignorancia.html">Ignorância</a></span></b>
+     (2008; 11k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Somos ignorantes não por falta de informação ou de conhecimento, mas devido ao modo inábil com que lidamos com o 
+sofrimento. Se as habilidades corretas forem desenvolvidas, com certeza o Despertar virá em seguida.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="definindo_sati.html">Definindo a Atenção Plena</a></span></b>
+     (2008; 18k/6pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Ao longo dos anos, a palavra <i> sati</i> tem acumulado uma série de significados que vão muito além da definição original do Buda. A prática da meditação exige uma compreensão clara do que é <i>sati</i> e como usá-la com habilidade em conjunto com outras qualidades mentais.    <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="cabeca_coracao.html">Cabeça & Coração Juntos</a></span></b>
+     (2009; 27k/10pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>Amor bondade, compaixão, alegria altruista e equanimidade são qualidades que podem ser desenvolvidas com a prática. No entanto, para elevá-las totalmente até o nível de <i>brahma-viharas</i>, requer o duro trabalho de combinar inteligência real com o coração.    <o:p></o:p></span></p>
+
+
+
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="devadaha.html">Devadaha Sutta - MN 101</a></span></b>
+     (2010; 11k/2pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Ajaan Thanissaro faz uma análise do Devadaha Sutta. Tomando como base a filosofia dos Jainistas o Buda transmite um importante ensinamento sobre o funcionamento de karma, 
+que por sinal responde a um freqüente mal-entendido sobre karma, comum mesmo nos dias de hoje.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="mahasatipatthana.html">Maha-satipatthana Sutta – DN 22</a></span></b>
+     (2010; 23k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Os quatro fundamentos da atenção plena são bem conhecidos por todos meditadores - o corpo, as sensações, a mente e os 
+objetos mentais. Nesta análise Ajaan Thanissaro aborda o processo da prática meditativa ou o modo como os fundamentos são estabelecidos.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="mahasunnata.html">Maha-suññata Sutta – MN 122</a></span></b>
+     (2011; 23k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Uma breve análise do significado de vacuidade no Cânone.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=Normal style='mso-list:l34 level1 lfo2;tab-stops:list .5in'><span
+     lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:
+     ;mso-ansi-language:PT-BR'><b><a href="alagaddupama.html">Alagaddupama Sutta – MN 22</a></span></b>
+     (2011; 23k/3pág.)<o:p></o:p></span></li>
+</ul>
+
+<p class=Normal style='margin-right:.5in;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:.75in'>
+Ajaan Thanissaro faz uma análise do Alagaddupama Sutta focando nos belos símiles da cobra e da balsa e no ensinamento sobre não-eu.<o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  1 Março 2014          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/thanissaro.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:52:06 GMT -->
+</html>
+
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

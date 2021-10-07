@@ -1,0 +1,647 @@
+<!-- DEFINE PARAMETROS -->
+
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/podcast.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:48:55 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - podcast</title>
+<link REL="SHORTCUT ICON" href="img/favicon.ico"><!-- Jquery e Bootstrap --><script src="bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="bootstrap/bootstrap-theme-3.3.7.min.css"><script src="bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="insightf195.css?v=2.1"><script language="JavaScript" src="func.js"> </script><script type="text/javascript" src="expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("dhp/dhp1.1.html","dhp/dhp1.3.html","dhp/dhp1.5.html","dhp/dhp1.6.html","dhp/dhp1.13.html","dhp/dhp1.15.html","dhp/dhp1.17.html","dhp/dhp1.19.html","dhp/dhp2.21.html","dhp/dhp2.25.html","dhp/dhp2.26.html","dhp/dhp2.27.html","dhp/dhp2.28.html","dhp/dhp2.29.html","dhp/dhp2.31.html","dhp/dhp3.33.html","dhp/dhp3.35.html","dhp/dhp3.36.html","dhp/dhp3.37.html","dhp/dhp3.38.html","dhp/dhp3.40.html","dhp/dhp3.42.html","dhp/dhp3.43.html","dhp/dhp4.44.html","dhp/dhp4.46.html","dhp/dhp4.47.html","dhp/dhp4.48.html","dhp/dhp4.50.html","dhp/dhp4.51.html","dhp/dhp4.54.html","dhp/dhp4.58.html","dhp/dhp5.60.html","dhp/dhp5.61.html","dhp/dhp5.62.html","dhp/dhp5.63.html","dhp/dhp5.64.html","dhp/dhp5.66.html","dhp/dhp5.71.html","dhp/dhp5.75.html","dhp/dhp6.76.html","dhp/dhp6.78.html","dhp/dhp6.80.html","dhp/dhp6.81.html","dhp/dhp6.85.html","dhp/dhp7.92.html","dhp/dhp8.102.html","dhp/dhp8.111.html","dhp/dhp8.113.html","dhp/dhp9.118.html","dhp/dhp9.121.html","dhp/dhp9.126.html","dhp/dhp9.127.html","dhp/dhp10.129.html","dhp/dhp10.130.html","dhp/dhp10.145.html","dhp/dhp11.146.html","dhp/dhp11.147.html","dhp/dhp11.151.html","dhp/dhp11.153.html","dhp/dhp11.155.html","dhp/dhp12.1.html","dhp/dhp12.2.html","dhp/dhp12.3.html","dhp/dhp12.4.html","dhp/dhp12.5.html","dhp/dhp12.6.html","dhp/dhp12.7.html","dhp/dhp12.8.html","dhp/dhp13.1.html","dhp/dhp13.2.html","dhp/dhp13.3.html","dhp/dhp13.4.html","dhp/dhp13.5.html","dhp/dhp13.6.html","dhp/dhp13.7.html","dhp/dhp13.8.html","dhp/dhp13.9.html","dhp/dhp13.10.html","dhp/dhp13.11.html","dhp/dhp14.1.html","dhp/dhp14.2.html","dhp/dhp14.3.html","dhp/dhp14.4.html","dhp/dhp14.5.html","dhp/dhp14.6.html","dhp/dhp14.7.html","dhp/dhp15.1.html","dhp/dhp15.2.html","dhp/dhp15.3.html","dhp/dhp15.4.html","dhp/dhp15.5.html","dhp/dhp15.6.html","dhp/dhp15.7.html","dhp/dhp15.8.html","dhp/dhp15.9.html","dhp/dhp15.10.html","dhp/dhp16.1.html","dhp/dhp16.2.html","dhp/dhp16.3.html","dhp/dhp16.4.html","dhp/dhp16.5.html","dhp/dhp16.6.html","dhp/dhp16.7.html","dhp/dhp17.1.html","dhp/dhp17.2.html","dhp/dhp17.3.html","dhp/dhp17.4.html","dhp/dhp17.5.html","dhp/dhp18.1.html","dhp/dhp18.2.html","dhp/dhp18.3.html","dhp/dhp18.4.html","dhp/dhp18.5.html","dhp/dhp18.6.html","dhp/dhp18.7.html","dhp/dhp18.8.html","dhp/dhp19.1.html","dhp/dhp19.2.html","dhp/dhp20.1.html","dhp/dhp20.2.html","dhp/dhp20.3.html","dhp/dhp20.4.html","dhp/dhp20.5.html","dhp/dhp21.1.html","dhp/dhp21.2.html","dhp/dhp21.3.html","dhp/dhp21.4.html","dhp/dhp21.5.html","dhp/dhp22.1.html","dhp/dhp23.1.html","dhp/dhp23.2.html","dhp/dhp24.1.html","dhp/dhp24.2.html","dhp/dhp24.3.html","dhp/dhp24.4.html","dhp/dhp24.5.html","dhp/dhp24.6.html","dhp/dhp24.7.html","dhp/dhp24.8.html","dhp/dhp25.1.html","dhp/dhp25.2.html","dhp/dhp25.3.html","dhp/dhp25.4.html","dhp/dhp25.5.html","dhp/dhp25.6.html","dhp/dhp25.7.html","dhp/dhp25.8.html","dhp/dhp25.9.html","dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("sutta/It.1.html","sutta/It.2.html","sutta/It.3.html","sutta/It.4.html","sutta/It.5.html","sutta/It.6.html","sutta/It.7.html","sutta/It.8.html","sutta/It.9.html","sutta/It.10.html","sutta/It.11.html","sutta/It.12.html","sutta/It.13.html","sutta/It.14.html","sutta/It.15.html","sutta/It.16.html","sutta/It.17.html","sutta/It.18.html","sutta/It.19.html","sutta/It.20.html","sutta/It.21.html","sutta/It.22.html","sutta/It.23.html","sutta/It.24.html","sutta/It.25.html","sutta/It.26.html","sutta/It.27.html","sutta/It.28.html","sutta/It.29.html","sutta/It.30.html","sutta/It.31.html","sutta/It.32.html","sutta/It.33.html","sutta/It.34.html","sutta/It.35.html","sutta/It.36.html","sutta/It.37.html","sutta/It.38.html","sutta/It.39.html","sutta/It.40.html","sutta/It.41.html","sutta/It.42.html","sutta/It.43.html","sutta/It.44.html","sutta/It.45.html","sutta/It.46.html","sutta/It.47.html","sutta/It.48.html","sutta/It.49.html","sutta/It.50.html","sutta/It.51.html","sutta/It.52.html","sutta/It.53.html","sutta/It.54.html","sutta/It.55.html","sutta/It.56.html","sutta/It.57.html","sutta/It.58.html","sutta/It.59.html","sutta/It.60.html","sutta/It.61.html","sutta/It.62.html","sutta/It.63.html","sutta/It.64.html","sutta/It.65.html","sutta/It.66.html","sutta/It.67.html","sutta/It.68.html","sutta/It.69.html","sutta/It.70.html","sutta/It.71.html","sutta/It.72.html","sutta/It.73.html","sutta/It.74.html","sutta/It.75.html","sutta/It.76.html","sutta/It.77.html","sutta/It.78.html","sutta/It.79.html","sutta/It.80.html","sutta/It.81.html","sutta/It.82.html","sutta/It.83.html","sutta/It.84.html","sutta/It.85.html","sutta/It.86.html","sutta/It.87.html","sutta/It.88.html","sutta/It.89.html","sutta/It.90.html","sutta/It.91.html","sutta/It.92.html","sutta/It.93.html","sutta/It.94.html","sutta/It.95.html","sutta/It.96.html","sutta/It.97.html","sutta/It.98.html","sutta/It.99.html","sutta/It.100.html","sutta/It.101.html","sutta/It.102.html","sutta/It.103.html","sutta/It.104.html","sutta/It.105.html","sutta/It.106.html","sutta/It.107.html","sutta/It.108.html","sutta/It.109.html","sutta/It.110.html","sutta/It.111.html","sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="podcast" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('img/topo/new_35.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="livros.html">Livros</a></li>									<li><a href="audiobook.html">Audiobook</a></li>									<li><a href="podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1>Podcast - Sangiti Sutta</p>
+
+<p class=Normal>Enquanto o Buda estava vivo, e mesmo após a sua morte, durante muito tempo, os seus ensinamentos foram 
+transmitidos oralmente. Nos monastérios Budistas essa tradição milenar se mantém viva na atualidade.</p>
+
+<p class=Normal>Fiel a essa tradição oral, o Acesso ao Insight deu início ao Projeto Sangiti Sutta. Os suttas, ou discursos do Buda, 
+já estão disponibilizados no web site sob a forma escrita faz vários anos, e através desse projeto 
+será oferecida uma outra opção, trata-se de palestras com a leitura e a análise dos suttas.</p>
+
+<p class=Normal>&nbsp;</p>
+<div class=Normal align=center style='text-align:center'>
+<hr size=2 width="100%" align=center>
+</div>
+
+<p class=Normal>Veja também os <a href="audiobook.html">Audiobooks</a> disponíveis.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="salayatana"></a><b>13 Dezembro 2014</b></p>
+
+<p class=Normal><b>Salayatana Samyutta</b><br> Um apanhado geral sobre os ensinamentos dos suttas do <a href="sutta/samyutta_nikaya.html#RXXXV"> Salayatana Samyutta</a>.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/salayatana.mp3">ouvir</a> a palestra (51 minutos).</p>
+
+<p class=Normal>Suttas do Salayatana Samyutta mencionados no podcast, na ordem em que foram mencionados:<br>
+23, 107, 1 até 22, 25, 26, 27, 233, 234, 74, 75, 85, 146, 97, 247, 99, 160, 118, 95  </p>
+
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="nidana"></a><b>23 Agosto 2014</b></p>
+
+<p class=Normal><b>Nidana Samyutta</b><br> Um apanhado geral sobre os ensinamentos dos suttas do <a href="sutta/samyutta_nikaya.html#RXII">Nidana Samyutta</a>.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/nidana.mp3">ouvir</a> a palestra (50 minutos).</p>
+
+<p class=Normal>Suttas do Nidana Samyutta mencionados no podcast, na ordem em que foram mencionados:<br>
+15, 2, 43, 52, 61, 16, 18, 37, 51, 38, 23 </p>
+
+<p class=Normal>Textos mencionados no podcast, na ordem em que foram mencionados:<br>
+<a href="arquivo_textos_theravada/paticca_samuppada.html">Origem Dependente - Paticca-samuppada</a> - Ajaan Brahmavamso<br>
+<a href="arquivo_textos_theravada/fe.html">Fé na Iluminação</a> - Ajaan Thanissaro</p>
+
+<p class=Normal>Veja também o <a href="origem_dependente.html">Guia de Estudos sobre a Origem Dependente</a>.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="itivuttaka"></a><b>5 Julho 2014</b></p>
+
+<p class=Normal><b>Itivuttaka</b><br> Um apanhado geral sobre os ensinamentos dos suttas do <a href="sutta/itivuttaka.html">Itivuttaka</a>.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/itivuttaka.mp3">ouvir</a> a palestra (54 minutos).</p>
+
+<p class=Normal>Suttas do Itivuttaka mencionados no podcast, na ordem em que foram mencionados:<br>
+14, 40, 42, 39, 88, 87, 110, 38, 82, 35, 36, 22, 23, 25, 26, 45, 72, 73, 77, 85, 90, 92, 17, 16, 49, 52, 7, 102</p>
+
+<p class=Normal>Veja também o ensaio <a href="arquivo_textos_theravada/pasada.html">Pasaada</a>.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="khandha"></a><b>3 Maio 2014</b></p>
+
+<p class=Normal><b>Khandha Samyutta</b><br> Um apanhado geral sobre os ensinamentos dos suttas do <a href="sutta/samyutta_nikaya.html#RXXII">Khandha Samyutta</a>.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/khandha.mp3">ouvir</a> a palestra (66 minutos).</p>
+
+<p class=Normal>Suttas do Khandha Samyutta mencionados no podcast, na ordem em que foram mencionados:<br>
+48, 60, 26, 2, 40, 52, 9, 5, 45, 97, 100, 101, 44, 53, 1, 58, 59, 86.</p>
+
+<p class=Normal>Veja também o ensaio <a href="arquivo_textos_theravada/pasada.html">Pasaada</a>.</p>
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="nibbana.sem.jhanas"></a><b>18 Maio 2013</b></p>
+
+<p class=Normal><b>Nibbana sem Jhanas</b><br> Uma nova perspectiva com base em novas revelações dos suttas do Anguttara Nikaya.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/nibbana.sem.jhanas.mp3">ouvir</a> a palestra (40 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="sutta/ANIV.169.html">Sasankhara Sutta</a> (AN IV.169) - Através do Esforço<br>
+<a href="sutta/ANVI.50.html">Indriyasamvara Sutta</a> (AN VI.50) - Contenção das Faculdades <br>
+<a href="sutta/ANV.24.html">Dussila Sutta</a> (AN V.24) - Sem virtude<br>
+<a href="sutta/SNXII.23.html">Upanisa Sutta</a> (SN XII.23) - Condição<br>
+<a href="sutta/ANX.2.html">Cetanakaraniya Sutta </a> (AN X.2) - Intenção Correta <br>
+<a href="sutta/SNXXV.1.html">Cakkhu Sutta </a> (SN XXV.1) - O Olho<br>
+<a href="sutta/MN13.html">Mahadukkhakkhandha Sutta  </a> (MN 13) - O Grande Discurso da Massa de Sofrimento <br>
+<a href="sutta/ANV.121.html">Gilana Sutta </a> (AN V.121) - Enfermo<br>
+<a href="sutta/ANVI.56.html">Phagguna Sutta</a> (AN VI.56) - Phagguna<br>
+<a href="sutta/ANV.69.html">Nibbida Sutta </a> (AN V.69) - Desencantamento </p>
+
+<p class=Normal>Veja também o ensaio <a href="arquivo_textos_theravada/bardo.theravada.html">Os Bardos e o Theravada</a>.</p>
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="lakhana"></a><b>4 Agosto 2012</b></p>
+
+<p class=Normal><b>As Três Características</b><br> Análise de <i>dukkha, anicca e anatta</i>. Este é o último podcast na série de podcasts temáticos com base nos suttas mais curtos do Anguttara Nikaya, Samyutta Nikaya e Khuddaka Nikaya.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/lakhana.mp3">ouvir</a> a palestra (34 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="sutta/SNLVI.11.html">Dhammacakkapavatana Sutta</a> (SN LVI.11) - Colocando a roda do Dhamma em movimento<br>
+<a href="sutta/SNXXII.86.html">Anuradha Sutta</a> (SN XXII.86) - Para Anuradha<br>
+<a href="sutta/ANIV.49.html">Vipallasa Sutta</a> (AN IV.49) - Distorções<br>
+<a href="sutta/DN9.html">Potthapada Sutta </a> (DN 9) - Estados de Consciência <br>
+<a href="sutta/SNXXII.7.html">Upadaparitassana Sutta</a> (SNXXII.7) - Agitação devido ao Apego<br>
+<a href="sutta/SNXXII.63.html">Upadiyamana Sutta </a> (SNXXII.63) - Com Apego<br>
+<a href="sutta/It.16.html">Sekha Sutta </a> (It 16) - Treinando<br>
+<a href="sutta/SNXXII.122.html">Silavant Sutta</a> (SNXXII.122) - Virtuoso<br>
+<a href="sutta/SNXLVIII.10.html">Indriya-vibhanga Sutta</a> (SNXLVIII.10) - Análise das Faculdades Mentais<br>
+<a href="sutta/SNXXII.51.html">Nandikkhaya Sutta</a> (SN XXII.51) - Destruição do Prazer <br>
+<a href="sutta/SNXXII.59.html">Anatta-lakkhana Sutta </a> (SNXXII.59) - As Características do Não-Eu <br>
+<a href="sutta/ANIII.134.html">Dhamma-niyama Sutta</a> (AN III.134) - A Regularidade do Dhamma<br>
+<a href="sutta/ANIV.182.html">Patibhoga Sutta </a> (AN IV.182) - Sem Proteção</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="Kalama"></a><b>9 Junho 2012</b></p>
+
+<p class=Normal><b>Kalama Sutta</b><br> Este sutta tem sido com freqüência empregado para justificar que apenas aquilo que pode ser comprovado através da propria experiência  deve ser aceito como verdade e todo o restante deve ser rejeitado ou no mínimo colocado sob suspeita. Foi isso mesmo que o Buda ensinou?</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/kalama.mp3">ouvir</a> a palestra (25 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="sutta/ANIII.65.html">Kalama Sutta</a> (AN III.65) - Para os Kalamas<br>
+<a href="sutta/UdV3.html">Kutthi Sutta</a> (Ud V.3) - O Leproso</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="Kamma"></a><b>28 Abril 2012</b></p>
+
+<p class=Normal><b>Kamma</b><br> A palavra em Pali kamma (karma em Sânscrito) significa ação, sendo que na doutrina Budista o seu significado é mais específico: significa apenas as ‘ações volitivas ou intencionais,’ não todo tipo de ação. Nem significa apenas o resultado das ações, como muitas pessoas pensam. A doutrina de kamma expressa a lei da natureza de causa e efeito, ação e reação.  Na noite da sua iluminação o Buda obteve o conhecimento direto do Renascimento, Kamma e as Quatro Nobres Verdades. Todos os ensinamentos do Buda derivam dessa experiência. O Buda disse que o primeiro elemento do Nobre Caminho Óctuplo, o Entendimento Correto, é o precursor de todo o caminho da prática Budista. O Entendimento Correto mundano compreende as Quatro Nobres Verdades e Kamma. A compreensão da doutrina de Kamma é portanto um elemento chave para aqueles que queiram compreender corretamente o caminho Budista.  O tema é analisado com base nos suttas mais curtos do Anguttara Nikaya, Samyutta Nikaya e Khuddaka Nikaya.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/kamma.mp3">ouvir</a> a palestra (40 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="arquivo_textos_theravada/karma.html">Karma</a> - Ajaan Thanissaro <br>
+<a href="sutta/ANV.57.html">Upajjhatthana Sutta</a> (AN V.57) - Temas para Contemplação<br>
+<a href="sutta/ANVI.63.html">Nibbedhika Sutta </a> (AN VI.63) - Penetrante <br>
+<a href="sutta/ANIII.99.html">Lonaphala Sutta </a> (AN III.99) - O Punhado de Sal  <br>
+<a href="sutta/SNXII.37.html">Natumha Sutta </a> (SN XII.37) - Não lhes Pertence<br>
+<a href="sutta/SNXXXV.146.html">Kamma Sutta </a> (SN XXXV.146) - Kamma<br>
+<a href="sutta/SNXXXVI.21.html">Moliyasivaka Sutta</a> (SN XXXVI.21) - Para Sivaka<br>
+<a href="sutta/SNI.53.html">Mitta Sutta</a> (SN I.53) - O Amigo<br>
+<a href="sutta/ANIV.235.html">Ariyamagga Sutta</a> (AN IV.235) - O Nobre Caminho<br>
+<a href="sutta/MN56.html">Upali Sutta</a> (MN 56) - Para Upali</p>
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="Mettaa"></a><b>30 Março 2012</b></p>
+
+<p class=Normal><b>Amor Bondade (<i>Mettaa</i>)</b><br>O amor bondade é uma importante qualidade mental pois além dos óbvios benefícios na vida diária, serve também como contraponto à raiva e má vontade que para a maioria das pessoas são obstáculos importantes no desenvolvimento da mente. O tema é analisado com base nos suttas mais curtos do Anguttara Nikaya, Samyutta Nikaya e Khuddaka Nikaya.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/mettaa.mp3">ouvir</a> a palestra (28 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="sutta/ANIII.133.html">Lekha Sutta</a> (AN III.133) - Inscrições<br>
+<a href="sutta/ANV.161.html">Aghatapativinaya Sutta </a> (AN V.161) - Subjugando a Raiva<br>
+<a href="sutta/ANV.198.html">Vaca Sutta </a> (AN V.198) - Um Enunciado<br>
+<a href="arquivo_textos_theravada/metta_bhanteg.html">Meditação de Metta (Amor bondade) </a> - Bhante Gunaratana<br>
+<a href="arquivo_textos_theravada/conselhos_praticos_meditacao.html#ch4">Conselhos Práticos para Meditação </a> - Bhikkhu Khantipalo <br>
+<a href="sutta/DN13.html">Tevijja Sutta </a> (DN 13) - O Conhecimento Tríplice - O Caminho para Brahma<br>
+<a href="sutta/SnpI8.html">Karaniya Metta Sutta </a> (Snp I.8) - Amor Bondade<br>
+<a href="arquivo_textos_theravada/raiva.html">Neste Mundo,
+o ódio nunca, até agora, dissipou o ódio </a> - Sarah Doering <br>
+<a href="sutta/SNXLVII.19.html">Sedaka Sutta </a> (SN XLVII.19) - Em Sedaka<br>
+<a href="sutta/ANIV.125.html">Puggala Sutta </a> (AN IV.125) - Pessoas<br>
+<a href="sutta/ANIX.11.html">Sihanada Sutta </a> (AN IX.11) - O Rugido do Leão <br>
+<a href="sutta/It.27.html">Mettaabhavana Sutta </a> (It 27) - Cultivo do Amor Bondade </p>
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="Virtude"></a><b>21 Janeiro 2012</b></p>
+
+<p class=Normal><b>Virtude (<i>Sila</i>)</b><br>
+O ensinamento mais central do Buda, que inclusive foi o foco do seu primeiro discurso, foram as quatro nobres verdades. A quarta nobre verdade descreve o caminho para realizar a verdadeira felicidade e o fim de toda insatisfação e sofrimento que é experimentado no mundo. Esse caminho pode ser dividido em 3 partes: virtude, meditação e sabedoria. A virtude é considerada como elemento essencial para a prática da meditação. Por outro lado o desenvolvimento da virtude depende de uma certa dose de sabedoria. Ou seja, o caminho de prática exposto pelo Buda pode ser melhor descrito como um processo circular ao invés de linear. O tema é analisado com base nos suttas mais curtos do Anguttara Nikaya, Samyutta Nikaya e Khuddaka Nikaya.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/virtude.mp3">ouvir</a> a palestra (32 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="sutta/MN41.html">Saleyyaka Sutta</a> (MN 41) - Os Brâmanes de Sala<br>
+<a href="sutta/ANV.177.html">Vanijja Sutta</a> (AN V.177) - Negócios (Modo de Vida Incorreto) <br>
+<a href="sutta/ANIV.28.html">Ariya-vamsa Sutta</a> (AN IV.28) - O Discurso das Tradições dos Nobres <br>
+<a href="sutta/ANXI.12.html">Mahanama Sutta </a> (AN XI.12) - Para Mahanama<br>
+<a href="sutta/ANXI.1.html">Kimattha Sutta </a> (AN XI.1) - Qual é o Propósito? <br>
+<a href="sutta/ANIII.123.html">Moneyya Sutta </a> (AN III.123) - Sagacidade<br>
+<a href="arquivo_textos_theravada/dignidade_vida.html">Dando Dignidade à Vida </a> - Bhikkhu Bodhi<br>
+<a href="sutta/ANIII.78.html">Silabbata Sutta </a> (AN III.78) - Preceito e Prática<br>
+<a href="sutta/ANIV.183.html">Suta Sutta </a> (AN IV.183) - Aquilo que é Ouvido<br>
+<a href="sutta/ANIV.12.html">Sila Sutta </a> (AN IV.12) - Virtude<br>
+<a href="sutta/ANV.2.html">Vitthara Sutta</a> (AN V.2) - Em Detalhe<br>
+<a href="sutta/ANVI.50.html">Indriyasamvara Sutta</a> (AN VI.50) - Contenção das Faculdades</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="Generosidade"></a><b>3 Dezembro 2011</b></p>
+
+<p class=Normal><b>Generosidade (<i>Dana</i>)</b><br>
+Em geral a Generosidade ocupa um lugar de destaque encabeçando a lista do <a href="caminho_liberdade/dharma.html">treinamento gradual</a>. O tema é analisado com base nos suttas mais curtos do Anguttara Nikaya, Samyutta Nikaya e Khuddaka Nikaya. </p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/generosidade.mp3">ouvir</a> a palestra (31 minutos).</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+<a href="sutta/UdV3.html">Kutthi Sutta</a> (Ud V.3) - O Leproso<br>
+<a href="arquivo_textos_theravada/generosidade.html">Generosidade:</a> Praticando o Dhamma no dia a dia<br>
+<a href="sutta/ANVII.6.html">Dhana Sutta</a> (AN VII.6) - Tesouro<br>
+<a href="sutta/SNIII.24.html">Issattha Sutta</a> (SN III.24) - Habilidades com o Arco<br>
+<a href="sutta/ANIII.57.html">Vaccha Sutta </a> (AN III.57) - Vaccha<br>
+<a href="sutta/ANVII.49.html">Dana Sutta </a> (AN VII.49) - Generosidade<br>
+<a href="sutta/ANV.34.html">Siha Sutta </a> (AN V.34) - Para o General Siha<br>
+<a href="sutta/It.26.html">Dana Sutta </a> (It.26) - Generosidade<br>
+Veja também o <a href="sutta/MN142.html">Dakkhinavibhanga Sutta</a> (MN 142) - A Análise das Oferendas</p>
+
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="PS118"></a><b>13 Agosto 2011</b></p>
+
+<p class=Normal><b>Anapanasati Sutta (MN 118) - A Atenção Plena na Respiração </b><br>
+Comemoramos os 11 anos do Acesso ao Insight com o Podcast do Anapanasati Sutta que sem dúvida é o sutta mais importante sobre a prática de meditação.<br> 
+Os comentários no podcast foram baseados nos ensinamentos de Ajaan Brahm e Ajaan Thanissaro.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS118.mp3">ouvir</a> a palestra (49 minutos).</p>
+
+<p class=Normal>Acompanhe com o <a href="podcast/PS118.html">texto</a> da palestra.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="PS89"></a><b>23 Julho 2011</b></p>
+
+<p class=Normal><b>Dhammacetiya Sutta (MN 89) - Monumentos ao Dhamma </b><br>
+Um belo e inspirador exemplo do respeito, admiração e veneração que o Buda despertava nas pessoas.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS89.mp3">ouvir</a> a palestra (27 minutos).</p>
+
+<p class=Normal>Acompanhe com o <a href="podcast/PS89.html">texto</a> da palestra.</p>
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="PS16"></a><b>23 Abril 2011</b></p>
+
+<p class=Normal><b>Mahaparinibbana Sutta (DN 16) - O Grande Discurso do Parinibbana</b><br>
+Um dos mais importantes suttas do Cânone bem como o mais longo, que narra os últimos meses da vida do Buda e em particular os ensinamentos que ele deu durante esse período.
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS16_1.mp3">ouvir</a> a primeira parte (80 minutos).</p>
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS16_2.mp3">ouvir</a> a segunda parte (67 minutos).</p>
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS16_3.mp3">ouvir</a> a terceira parte (55 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS16.html">texto</a> da palestra.</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+
+<a href="sutta/ANX.60.html">Girimananda Sutta</a> (AN X.60) - Para Girimananda<br>
+<a href="sutta/MN10.html">Satipatthana Sutta</a> (MN 10) - Fundamentos da Atenção Plena<br>
+<a href="sutta/MN118.html">Anapanasati Sutta</a> (MN 118) - A Atenção Plena na Respiração<br>
+<a href="sutta/samyutta_nikaya.html#RXLVI">Bojhanga Samyutta</a> (SN XLVI)<br>
+<a href="sutta/DN28.html">Sampasadaniya Sutta</a> (DN 28) - Serena Convicção<br>
+<a href="sutta/MN152.html">Indriyabhavana Sutta</a> (MN 152) - O Desenvolvimento das Faculdades<br>
+<a href="sutta/MN56.html">Upali Sutta</a> (MN 56) - Para Upali</p>
+
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b>22 Janeiro 2011</b></p>
+
+<p class=Normal><b>Bhumija Sutta (MN 126) - Bhumija</b><br>
+Como ser bem sucedido na prática do Dhamma.
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS126.mp3">ouvir</a> a palestra (30 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS126.html">texto</a> da palestra.</p>
+
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b>22 Maio 2010</b></p>
+
+<p class=Normal><b>Mahasalayatanika Sutta (MN 149) - O Grande Discurso das Seis Bases</b><br>
+O Buda analisa as seis bases ou meios dos sentidos.
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS149.mp3">ouvir</a> a palestra (25 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS149.html">texto</a> da palestra.</p>
+
+<p class=Normal>Textos mencionados no podcast:<br>
+
+<a href="glossario.html#bodhi_pakkhiya">Apoios para a iluminação </a><br>
+<a href="sutta/SNLVI.11.html">Dhammacakkapavattana Sutta</a> (SN LVI.11) - Colocando a Roda do Dhamma em Movimento</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b>20 Março 2010</b></p>
+
+<p class=Normal><b>Culasaccaka Sutta (MN 35) - O Pequeno Discurso para Saccaka</b><br>
+Numa discussão com um discípulo Jainista o Buda transmite um ensinamento sobre não-eu, <i>anatta</i>, simples porém profundo.
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS35.mp3">ouvir</a> a palestra (48 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS35.html">texto</a> da palestra.</p>
+
+<p class=Normal>Suttas mencionados no podcast:<br>
+
+<a href="sutta/SNXXII.59.html">Anatta-lakkhana Sutta </a> (SN XXII.59) - As Características do Não Eu<br>
+<a href="sutta/It.112.html">Loka Sutta</a> (It.112) - O Mundo<br>
+<a href="sutta/MN142.html">Dakkhinavibhanga Sutta </a> (MN 142) - A Análise das Oferendas</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+
+<p class=Normal><b>23 de Janeiro 2010</b></p>
+
+<p class=Normal><b>Mahapunnama Sutta (MN 109) - O Grande Discurso na Noite de Lua Cheia </b><br>
+O Buda dá um ensinamento completo sobre os agregados: o que são, porque são importantes, como eles surgem, qual a sua gratificação, 
+qual o seu perigo e como libertar-se deles.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS109.mp3">ouvir</a> a palestra (44 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS109.html">texto</a> da palestra.</p>
+
+<p class=Normal>Suttas mencionados no podcast:<br>
+
+<a href="sutta/SNXXXV.93.html">Dvaya Sutta</a> (SN XXXV.93) - A Díade<br>
+<a href="sutta/SNXXII.95.html">Phena Sutta</a> (SN XXII.95) - Espuma</p>
+
+ 
+<p class=Normal>Leia mais sobre os agregados no <a href="sutta/samyutta_nikaya.html#RXXII">Khandha Samyutta</a>.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="PS9"></a><b>31 de Outubro de 2009</b></p>
+
+<p class=Normal><b>Sammaditthi Sutta (MN 9) - Entendimento Correto</b><br>
+O Venerável Sariputta explica o Entendimento Correto que é o primeiro elemento do Nobre Caminho Óctuplo. 
+Sendo o primeiro elemento, a sua manifestação é o que possibilita que a prática Budista tenha início; 
+por outro lado, o amadurecimento do entendimento correto permeia toda a evolução do caminho Budista e 
+por fim, se manifesta como o ápice do caminho, caracterizado pela perfeição da sabedoria realizada pelo ser iluminado.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS9.mp3">ouvir</a> a palestra (81 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS9.html">texto</a> da palestra.</p>
+
+<p class=Normal>Suttas e textos mencionados, na ordem em que aparecem no podcast:<br>
+
+<a href="sutta/ANIV.49.html">Vipallasa Sutta</a> (AN IV.49) - Distorções<br>
+<a href="sutta/DN9.html#R7">Potthapada Sutta</a> (DN 9) - Potthapada<br>
+<a href="sutta/DN15.html#T21">Nidana Sutta</a> (DN 15) - O Grande Discurso da Origem Dependente<br>
+<a href="sutta/SNXXXV.116.html">Lokantagamana Sutta</a> (SN XXXV.116) - O Fim do Mundo<br>
+<a href="sutta/MN41.html#T8">Saleyyaka Sutta</a> (MN 41) - Os Brâmanes de Sala<br>
+<a href="sutta/SNXII.63.html">Puttamansa Sutta</a> (SN XII.63) - A Carne do Filho<br>
+<a href="sutta/MN141.html">Saccavibhanga Sutta</a> (MN 141) - A Análise das Verdades<br>
+<a href="sutta/SNLVI.11.html#N1">Dhammacakkapavattana Sutta</a> (SN LVI.11) - Colocando a Roda do Dhamma em Movimento<br>
+<a href="caminho_liberdade/mundos.html">Os três reinos e os trinta e um mundos de existência</a><br>
+<a href="sutta/SnpII.1.html">Snp II.1 - Ratana Sutta</a> (Snp II.1) - Tesouros<br> 
+<a href="sutta/SNXII.67.html">Nalakalapiyo Sutta SNXII.67</a> (SN XII.67) - Feixes de Junco</p>
+
+ 
+<p class=Normal>Mais informações sobre a Origem Dependente no <a href="origem_dependente.html">guia de estudo sobre a Origem Dependente</a>.</p>
+
+<br>
+<hr size=1 width="100%" align=center> 
+
+<p class=Normal><b>5 de Setembro de 2009</b></p>
+
+<p class=Normal><b>Mahadukkhakkhandha Sutta (MN 13) - O Grande Discurso da Massa de Sofrimento</b><br>
+Um ensinamento completo sobre os prazeres sensuais - qual a gratificação proporcionada pelos prazeres sensuais, 
+quais são os seus perigos e qual é a sua escapatória.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS13.mp3">ouvir</a> a palestra (35 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS13.html">texto</a> da palestra.</p>
+
+<p class=Normal>Outros Suttas que tratam dos prazeres sensuais e das sensações:<br>
+<a href="sutta/MN14.html">Culadukkhakkhandha Sutta</a> (MN 14) - O Pequeno Discurso da Massa de Sofrimento<br>
+<a href="sutta/MN45.html">Culadhammasamadana Sutta</a> (MN 45) - O Pequeno Discurso de Como Fazer as Coisas<br>
+<a href="sutta/MN59.html">Bahuvedaniya Sutta</a> (MN 59) - Os Muitos Tipos de Sensações<br>
+<a href="sutta/MN75.html">Magandiya Sutta</a> (MN 75) - Para Magandiya</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b>25 de Julho de 2009</b></p>
+
+<p class=Normal><b>Ratthapala Sutta (MN 82) - Ratthapala</b><br>
+A história de Ratthapala que foi um dos mais destacados discípulos do Buda, com um exemplo inusitado do ensino do Dhamma.</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS82.mp3">ouvir</a> a palestra (54 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS82.html">texto</a> da palestra.</p>
+
+<p class=Normal>Suttas mencionados durante a palestra:<br>
+<a href="sutta/MN13.html">Mahadukkhakkhandha</a> Sutta (MN 13) - O Grande Discurso da Massa de Sofrimento<br>
+<a href="sutta/MN25.html">Nivapa Sutta</a> (MN 25) - O Engodo<br>
+<a href="sutta/DN16.html">Mahaparinibbana Sutta</a> (DN 16) - O Grande Discurso do Parinibbana</p>
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="PS133"></a><b>23 de Maio de 2009</b></p>
+
+<p class=Normal><b>Mahakaccanabhaddekaratta Sutta (MN 133) - Maha Kaccana
+e Uma Única Noite Excelente</b><br>
+Um sutta simples, porém com um ensinamento poderoso sobre como praticar o Dhamma.</p> 
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS133.mp3">ouvir</a> a palestra (27 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS133.html">texto</a> da palestra.</p>
+
+<p class=Normal>Veja também o <b><a href="sutta/MN131.html">Bhaddekaratta Sutta (MN 131) - Uma Única Noite Excelente</a></b> no qual o Buda desenvolve 
+o mesmo tema deste podcast tomando a perspectiva dos cinco agregados.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+
+<p class=Normal><a name="PS18"></a><b>25 de Abril de 2009</b></p>
+
+<p class=Normal><b>Madhupindika Sutta (MN 18) - A Bola de Mel</b> e <b>Dvedhavitakka Sutta (MN 19) - 
+Dois Tipos de Pensamento</b><br>
+Como lidar com os pensamentos? Quem já meditou sabe que os pensamentos nunca param, 
+a mente está constantemente em atividade produzindo pensamentos. Para a maioria dos professores da 
+meditação Vipassana o meditador deve apenas observar os pensamentos surgirem e desaparecerem, sem 
+interferência. Para os Ajaans da tradição das florestas da Tailândia os pensamentos são considerados 
+um obstáculo na meditação e devem ser postos de lado. O que o Buda tem a dizer a respeito de tudo isso?<br>
+Este Podcast está dividido em duas partes. Na primeira parte estudaremos o Madhupindika Sutta - MN 18 e na segunda parte 
+estudaremos o Dvedhavitakka Sutta - MN 19.</p> 
+
+<p class=Normal>Para ouvir a primeira parte da palestra - <a href="http://www.acessoaoinsight.net/podcast/PS18.mp3">Madhupindika Sutta - (MN 18)</a> (26 minutos).</p>
+<p class=Normal>Acompanhe com o texto <a href="podcast/PS18.html">primeira parte</a> da palestra.</p>
+
+<p class=Normal>Para ouvir a segunda parte da palestra - <a href="http://www.acessoaoinsight.net/podcast/PS19.mp3">Dvedhavitakka Sutta - (MN 19)</a> (29 minutos).</p>
+<p class=Normal>Acompanhe com o texto da <a href="podcast/PS19.html">segunda parte</a> da palestra.</p>
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b>28 de Março de 2009</b></p>
+
+<p class=Normal><b>Upali Sutta (MN 56) - Para Upali</b>.<br> 
+Neste sutta o Buda apresenta o treinamento gradual para uma pessoa leiga. O sutta também contém um importante 
+ensinamento sobre kamma.<p> 
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS56.mp3">ouvir</a> a palestra (52 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS56.html">texto</a> da palestra.</p>
+
+<p class=Normal>Suttas mencionados durante a palestra:<br>
+<a href="sutta/MN9.html">Sammaditthi Sutta</a> (MN 9) - Entendimento Correto<br>
+<a href="sutta/MN13.html">Mahadukkhakkhandha</a> Sutta (MN 13) - O Grande Discurso da Massa de Sofrimento<br>
+<a href="sutta/MN21.html">Kakacupama Sutta</a> (MN 21) - O Símile da Serra</p>
+
+<p class=Normal>Outros Suttas que descrevem o treinamento gradual para uma pessoa leiga:<br>
+<a href="sutta/DN3.html">Ambattha Sutta</a> (DN 3) - Ambattha e o Orgulho Ferido<br>
+<a href="sutta/DN5.html">Kutadanta Sutta</a> (DN 5) - Um Sacrifício sem Sangue<br>
+<a href="sutta/DN14.html">Mahapadana Sutta</a> (DN 14) - O Grande Discurso sobre a Linhagem</p>
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><b>28 de Fevereiro de 2009</b></p>
+
+<p class=Normal><b>Culahatthipadopama Sutta (MN 27) - O Pequeno Discurso sobre o Símile da Pegada do Elefante</b>.<br> 
+Continuamos com o estudo do treinamento gradual neste sutta que tem uma importância histórica pois foi 
+o sutta discursado pelo Venerável Mahinda ao chegar no Sri Lanka.<p> 
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS27.mp3">ouvir</a> a palestra (65 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS27.html">texto</a> da palestra.</p>
+
+<p class=Normal>Suttas mencionados durante a palestra:<br>
+<a href="sutta/MN95.html">Canki Sutta</a> (MN 95) - Com Canki<br>
+<a href="sutta/ANX.2.html">Cetanakaraniya Sutta</a> (AN X.2) - Intenção Correta<br>
+<a href="sutta/MN43.html">Mahavedalla Sutta</a> (MN 43) - A Grande Seqüência de Perguntas e Respostas<br>
+<a href="sutta/MN39.html">Maha-Assapura Sutta</a> (MN 39) - O Grande Discurso em Assapura<p>
+
+<p class=Normal>Outros Suttas que descrevem o treinamento gradual:<br>
+<a href="sutta/DN2.html">Samaññaphala Sutta</a> (DN 2) - Os Frutos da Vida Contemplativa<br>
+<a href="sutta/MN6.html">Akankheyya Sutta</a> (MN 6) - Se um Bhikkhu Desejar<br>
+<a href="sutta/MN33.html">Mahagopalaka Sutta</a> (MN 33) - O Grande Discurso sobre o Pastor<br>
+<a href="sutta/MN29.html">Mahasaropama Sutta</a> (MN 29) - O Grande Discurso sobre o Símile do Cerne<br>
+<a href="sutta/MN38.html">Mahatanhasankhaya Sutta</a> (MN 38) - O Grande Discurso sobre a Destruição do Desejo<br>
+<a href="sutta/MN51.html">Kandaraka Sutta</a> (MN 51) - Para Kandaraka<br>
+<a href="sutta/MN52.html">Atthakanagara Sutta</a> (MN 52) - O Homem de Atthakanagara<br>
+<a href="sutta/MN53.html">Sekha Sutta</a> (MN 53 ) - O Discípulo em Treinamento Superior<br>
+<a href="sutta/MN64.html">Mahamalunkya Sutta</a> (MN 64) - O Grande Discurso para Malunkyaputta<br>
+<a href="sutta/MN77.html">Mahasakuludayi Sutta</a> (MN 77) - O Grande Discurso para Sakuludayin<br>
+<a href="sutta/MN79.html">Culasakuludayi Sutta</a>  (MN 79) - O Pequeno Discurso para Sakuludayin<br>
+<a href="sutta/MN108.html">Gopakamoggalana Sutta</a> (MN 108) - Com Gopaka Moggalana<br>
+<a href="sutta/MN121.html">Culasuññata Sutta</a> (MN 121) - O Pequeno Discurso sobre o Vazio<br>
+<a href="sutta/MN125.html">Dantabhumi Sutta</a>  (MN 125) - O Grau dos Domados<br>
+<a href="sutta/MN151.html">Pindapataparisuddhi Sutta</a> (MN 151) - A Purificação das Esmolas</p>
+
+
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="24jan"> </a><b>24 de Janeiro de 2009</b></p>
+
+<p class=Normal>Esta palestra toma por base o <b>Ganakamoggallana Sutta (MN 107) - O Discurso para Ganaka-Moggallana</b>. 
+Este é um discurso interessante pois descreve de forma sucinta qual deve ser o treinamento para o desenvolvimento da mente.<br> 
+Além disso, o sutta aborda duas questões que ao longo da evolução do Budismo acabaram se convertendo em pontos de controvérsia. 
+Essas duas questões são: o despertar ocorre de forma gradual ou súbita e o papel do Buda, e por extensão dos Bodisatvas, é de 
+“salvar” todos os seres sencientes?</p>
+
+<p class=Normal>Para <a href="http://www.acessoaoinsight.net/podcast/PS107.mp3">ouvir</a> a palestra (32 minutos).</p>
+<p class=Normal>Acompanhe com o <a href="podcast/PS107.html">texto</a> da palestra.</p>
+
+
+
+<br>
+<hr size=1 width="100%" align=center>
+
+<p class=Normal><a name="ariya"></a><b>25 de Novembro de 2008</b></p>
+
+<p class=Normal>A primeira palestra tem como título <b>“Porque a Iluminação? O Buda responde”</b> no <b>Ariyapariyesana 
+Sutta (MN 26) - A Busca Nobre</b> e no <b>Mahasaccaka Sutta (MN 36) - O Grande Discurso para Saccaka</b>. Estes dois suttas tratam da motivação do Buda ao empenhar-se 
+pela busca espiritual e quais caminhos ele tentou, culminando com a iluminação e o ensino do Dhamma.
+
+<p class=Normal>Para ouvir a palestra:<br>
+<a href="http://www.acessoaoinsight.net/podcast/PS26Intro.mp3">Introdução</a> (4 minutos)<br>
+<a href="http://www.acessoaoinsight.net/podcast/PS26.mp3">Primeira</a> Parte (62 minutos) <br>
+<a href="http://www.acessoaoinsight.net/podcast/PS26Parte2.mp3">Segunda</a> Parte (32 minutos)<br>
+ e <a href="podcast/PS26.html">clique aqui</a> para acompanhar 
+com o texto da palestra.</p>
+
+<p class=Normal>Outros Suttas relacionados com a Iluminação:<br>
+<a href="sutta/MN4.html">Bhayabherava Sutta </a> (MN 4) - Medo e Terror<br>
+<a href="sutta/MN12.html">Mahasihanada Sutta</a> (MN 12) - O Grande Discurso do Rugido do Leão<br>
+<a href="sutta/MN85.html">Bodhirajakumara Sutta</a> (MN 85) - Para o Príncipe Bodhi<br>
+<a href="sutta/MN100.html">Sangarava Sutta </a> (MN 100) - Para Sangarava</p>
+
+<p class=Normal>Estas informações também ajudarão a aproveitar melhor a palestra:
+
+<ul type=disc>
+
+
+
+<li class=Normal>Buddha de <a href="podcast/img/taxila.jpg">Taxila</a> - a prática de austeridades</li>
+
+<li class=Normal><a href="sutta/SNLVI.11.html">Dhammacakkapavattana Sutta</a> - Colocando a
+Roda do Dhamma em Movimento (SN LVI.11) - o primeiro discurso do Buda</li>
+
+<li class=Normal>
+<a href="India.jpg">Mapa da India</a></li> 
+
+<br>
+<br>
+
+<!-- Counter/Statistics -->
+<script language="JavaScript"
+src="../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
+</script>
+<script language="javascript">geovisit();</script>
+<noscript><img src="../visit.webhosting.yahoo.com/visit07cc.html?time"
+alt="setstats" border="0" width="1" height="1"></noscript>
+
+ 
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+           19 Dezembro 2015          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         <span style="float:right;">
+            
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/podcast.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:49:57 GMT -->
+</html>
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

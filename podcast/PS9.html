@@ -1,0 +1,864 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/podcast/PS9.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:04 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - PS9</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="PS9" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_136.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+
+<p class=Tit3 align=center style='text-align:center'><b> Majjhima Nikaya 9 </b></Tit3>
+<p class=Tit1 align=center style='text-align:center'>Sammaditthi Sutta </Tit1>
+<p class=Tit1 align=center style='text-align:center'>Entendimento Correto </Tit1>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal style='margin-left:1.0in'>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>1. Assim ouvi.
+Em certa ocasião, o Abençoado estava em Savathi, no Bosque de Jeta, no Parque
+de Anathapindika. Lá o venerável Sariputta dirigiu-se aos monges desta forma:
+&quot;Amigos bhikkhus.&quot; – &quot;Amigo,&quot; eles responderam. O venerável
+Sariputta disse o seguinte: <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>2.
+&quot;’Alguém que possui o entendimento correto, alguém que possui o
+entendimento correto’, assim é dito, amigos. De que forma um nobre discípulo é
+uma pessoa com entendimento correto, cujo entendimento é reto, que possui
+perfeita confiança no Dhamma e que penetrou este verdadeiro Dhamma?&quot;&quot;De fato, amigo, nós viríamos de uma
+longa distância para aprender do venerável Sariputta qual o significado dessa
+frase. Seria bom se o venerável Sariputta pudesse explicar o significado dessa
+frase. Tendo ouvido dele, os bhikkhus o recordarão.&quot; &quot;Então, amigos,
+ouçam e prestem muita atenção àquilo que eu vou dizer.&quot; &quot;Sim,
+amigo&quot os bhikkhus responderam. O venerável Sariputta disse o seguinte: <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><a name="T3")</a><b>(O Benéfico
+e o Prejudicial) </b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>3.
+&quot;Quando, amigos, um nobre discípulo compreende o que é prejudicial e a
+raiz do que é prejudicial, compreende o que é benéfico e a raiz do que é benéfico, dessa
+forma ele é alguém que possui o entendimento correto, cujo entendimento é reto,
+possui perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T4></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>4. &quot;E o que, amigos, é prejudicial, a raiz do que é prejudicial, o
+que é benéfico, a raiz do que é benéfico? Matar seres vivos é prejudicial;
+tomar o que não seja dado é prejudicial; a conduta imprópria em relação aos
+prazeres sensuais é prejudicial; a linguagem mentirosa é prejudicial; a
+linguagem maliciosa é prejudicial; a linguagem grosseira é prejudicial; a
+linguagem frívola é prejudicial; a cobiça é prejudicial; a má vontade é
+prejudicial; o entendimento incorreto é prejudicial. A isto se denomina aquilo
+que é prejudicial. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>5. &quot;E
+qual é a raiz do que é prejudicial? O desejo é a raiz do que é prejudicial; a
+raiva é a raiz do que é prejudicial; a delusão é a raiz do que é prejudicial. A
+isto se denomina a raiz do que é prejudicial. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T6></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>6. &quot;E o que é benéfico? A abstenção de matar seres vivos é
+benéfica; a abstenção de tomar o que não seja dado é benéfica; a abstenção da
+conduta imprópria em relação aos prazeres sensuais é benéfica; a abstenção da
+linguagem mentirosa é benéfica; a abstenção da linguagem maliciosa é benéfica;
+a abstenção da linguagem grosseira é benéfica; a abstenção da linguagem frívola
+é benéfica; não cobiçar é benéfico; não ter má vontade é benéfico; o
+entendimento correto é benéfico. A isto se denomina aquilo que é benéfico. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><a
+name=R4></a>7. &quot;E
+qual é a raiz do que é benéfico? O não desejo é a raiz do que é benéfico; a não
+raiva é a raiz do que é benéfico; a não delusão é a raiz do que é benéfico. A
+isto se denomina a raiz do que é benéfico.</span><span lang=PT-BR
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:PT-BR'> <o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>8.
+&quot;Quando um nobre discípulo compreendeu dessa forma o que é prejudicial e a
+raiz do que é prejudicial, o que é benéfico e a raiz do que é benéfico, 
+ ele abandona completamente a tendência subjacente ao desejo
+sensual, ele abole a tendência subjacente à aversão, ele extirpa a tendência
+subjacente em relação à idéia e presunção  ‘eu sou’, abandonando a ignorância
+e fazendo surgir o verdadeiro conhecimento, ele aqui e agora, dá um fim ao
+sofrimento.  Desta forma, também, um nobre discípulo
+possui o entendimento correto, possui o entendimento que é reto, possui
+perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot; &nbsp;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Alimento)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T9></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>9. Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes
+e satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram
+uma outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma pela qual
+um nobre discípulo é aquele que possui entendimento correto … e penetrou este
+verdadeiro Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>10.
+&quot;Quando, amigos, um nobre discípulo compreende o alimento, a origem do
+alimento, a cessação do alimento e o caminho que conduz à cessação do alimento,
+dessa forma ele é alguém que possui entendimento correto … e penetrou este
+verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>11. &quot;E
+o que é o alimento, o que é a origem do alimento, o que é a cessação do
+alimento e o que é o caminho que conduz à cessação do alimento? Existem quatro
+tipos de alimentos para a manutenção dos seres que já nasceram e para o
+sustento daqueles que estão em busca de um nascimento. Quais quatro? O alimento comida, grosseira ou sutil, o contato como
+o segundo, a volição mental como o terceiro e a consciência como o quarto. Com
+o surgimento do desejo surge o alimento. Com a cessação do desejo cessa o
+alimento. O caminho que conduz à cessação do alimento é exatamente este Nobre
+Caminho Óctuplo; isto é, entendimento correto, pensamento correto, linguagem correta,
+ação correta, modo de vida correto, esforço correto, atenção plena correta,
+concentração correta. <o:p></o:p></span></p>
+
+
+
+<p class=Normal style='tab-stops:7.25in'><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>12. &quot;Quando um nobre discípulo compreendeu dessa forma o alimento, a
+origem do alimento, a cessação do alimento e o caminho que conduz à cessação do
+alimento ele abandona completamente a tendência subjacente ao desejo sensual,
+ele abole a tendência subjacente à aversão, ele extirpa a tendência subjacente
+em relação à idéia e presunção  ‘eu sou’, abandonando a ignorância e fazendo
+surgir o verdadeiro conhecimento ele aqui e agora dá um fim ao sofrimento.
+Desta forma, também, um nobre discípulo possui o entendimento correto, possui o
+entendimento que é reto, possui perfeita confiança no Dhamma e penetrou este
+verdadeiro Dhamma &quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(As Quatro
+Nobres Verdades)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>13.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma pela qual um
+nobre discípulo é aquele que possui entendimento correto … e penetrou este
+verdadeiro Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T14></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>14. &quot;Quando, amigos, um nobre discípulo compreende o sofrimento, a
+origem do sofrimento, a cessação do sofrimento e o caminho que conduz à
+cessação do sofrimento, dessa forma ele é uma pessoa que possui entendimento
+correto … e penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T15></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>15. &quot;E o que é sofrimento, a origem do sofrimento, a cessação do
+sofrimento e o caminho que conduz à cessação do sofrimento? Nascimento é
+sofrimento; envelhecimento é sofrimento; enfermidade é sofrimento; morte é
+sofrimento; tristeza, lamentação, dor, angústia e desespero são sofrimento; não
+obter o que se deseja é sofrimento; em resumo, os cinco agregados influenciados
+pelo apego são sofrimento. A isto se denomina sofrimento.<span
+style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>16. &quot;E
+qual é a origem do sofrimento? É este desejo que conduz a uma renovada existência, 
+acompanhado pela cobiça e pelo prazer, buscando o prazer aqui e ali; isto é, o desejo 
+pelos prazeres sensuais, o desejo por ser/existir, o desejo por não ser/existir. 
+A isto se denomina a origem do sofrimento.<span
+style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>17. &quot;E
+o que é a cessação do sofrimento? É o desaparecimento e cessação sem deixar
+nenhum vestígio daquele mesmo desejo, abrir mão, descartar, libertar-se, despegar desse mesmo desejo.
+A isto se denomina a cessação do sofrimento. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>18. &quot;E
+o que é o caminho que conduz à cessação do sofrimento? É exatamente este Nobre
+Caminho Óctuplo; isto é, entendimento correto … concentração correta. A isto se
+denomina o caminho que conduz à cessação do sofrimento. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>19.
+&quot;Quando um nobre discípulo compreendeu dessa forma o sofrimento, a origem do
+sofrimento, a cessação do sofrimento e o caminho que conduz à cessação do
+sofrimento … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto,<span style="mso-spacerun: yes"> 
+</span>possui o entendimento que é reto, possui perfeita confiança no Dhamma e
+penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T20></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'><b>(Envelhecimento e Morte)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>20.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma pela qual um
+nobre discípulo é aquele que possui entendimento correto … penetrou este
+verdadeiro Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T21></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>21. &quot;Quando, amigos, um nobre discípulo compreende o envelhecimento e
+a morte, a origem do envelhecimento e da morte, a cessação do envelhecimento e
+da morte e o caminho que conduz à cessação do envelhecimento e da morte, dessa
+forma ele é uma pessoa que possui entendimento correto … e penetrou este
+verdadeiro Dhamma.&quot;</span> </span><span lang=PT-BR
+style='mso-ansi-language:PT-BR'> <a name=R8></a><o:p></o:p></span></p>
+
+
+
+<p class=Normal><a name=T22></a><span lang=PT-BR style='mso-ansi-language:
+PT-BR'>22. &quot;E o que é envelhecimento e morte, qual é a origem do
+envelhecimento e morte, qual é a cessação do envelhecimento e morte, qual é o
+caminho que conduz à cessação do envelhecimento e morte? O envelhecimento dos
+seres nas diversas classes de seres, a sua idade avançada, os dentes
+quebradiços, os cabelos grisalhos, a pele enrugada, o declínio da vida, o
+enfraquecimento das faculdades - a isto se chama envelhecimento. O falecimento
+dos seres nas várias classes de seres, a sua morte, a dissolução, o
+desaparecimento, o morrer, a finalização do tempo, a dissolução dos agregados, <a name=R9></a>o cadáver descartado - a isto se denomina morte.
+Portanto, esse envelhecimento e essa morte é que se denomina envelhecimento e
+morte. Com o surgimento do nascimento existe o surgimento do envelhecimento e
+da morte. Com a cessação do nascimento ocorre a cessação do envelhecimento e da
+morte. O caminho que conduz à cessação do envelhecimento e da morte é exatamente
+este Nobre Caminho Óctuplo; isto é, entendimento correto … concentração correta. <o:p></o:p></span></p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>23.
+&quot;Quando um nobre discípulo compreendeu dessa forma o envelhecimento e morte,
+a origem do envelhecimento e morte, a cessação do envelhecimento e morte e o
+caminho que conduz à cessação do envelhecimento e morte … ele aqui e agora dá
+um fim ao sofrimento. Desta forma, também, um nobre discípulo possui o
+entendimento correto, possui o entendimento que é reto, possui perfeita
+confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Nascimento)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>24.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma pela qual um nobre
+discípulo é aquele que possui entendimento correto … e penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>25.
+&quot;Quando, amigos, um nobre discípulo compreende o nascimento, a origem do
+nascimento, a cessação do nascimento e o caminho que conduz à cessação do
+nascimento, dessa forma ele é uma pessoa que possui entendimento correto … e
+penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>26. &quot;E
+o que é o nascimento, qual é a origem do nascimento, qual é a cessação do
+nascimento, qual é o caminho que conduz à cessação do nascimento? O nascimento
+dos seres nas várias classes de seres, o próximo nascimento, o estabelecimento
+[num ventre], a geração, a manifestação dos agregados, a obtenção das bases
+para contato  - <a name=R10></a>a isto se denomina nascimento.
+Com o surgimento do ser/existir existe o surgimento do nascimento. Com a
+cessação do ser/existir ocorre a cessação do nascimento. O caminho que conduz à
+cessação do nascimento é exatamente este Nobre Caminho Óctuplo; isto é,
+entendimento correto … concentração correta. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>27.
+&quot;Quando um nobre discípulo compreendeu dessa forma o nascimento, a origem do
+nascimento, a cessação do nascimento e o caminho que conduz à cessação do
+nascimento … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto, possui o entendimento que é
+reto, possui perfeita confiança no Dhamma e penetrou este verdadeiro
+Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Ser/existir)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>28.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma pela qual um
+nobre discípulo é aquele que possui entendimento correto … e penetrou este
+verdadeiro Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>29.
+&quot;Quando, amigos, um nobre discípulo compreende o ser/existir, a origem do
+ser/existir, a cessação do ser/existir e o caminho que conduz à cessação do
+ser/existir, dessa forma ele é uma pessoa que possui entendimento correto … e
+penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>30. &quot;E
+o que é ser/existir, qual é a origem do ser/existir, qual é a cessação do
+ser/existir, qual é o caminho que conduz à cessação do ser/existir? Existem
+esses três tipos de seres: seres do reino sensual, seres do reino da matéria
+sutil e seres do reino imaterial. Com o
+surgimento do apego existe o surgimento do ser/existir. Com a cessação do apego
+ocorre a cessação do ser/existir. O caminho que conduz à cessação do
+ser/existir é exatamente este Nobre Caminho Óctuplo; isto é, entendimento
+correto … concentração correta. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>31.
+&quot;Quando um nobre discípulo compreendeu dessa forma o ser/existir, a origem do
+ser/existir, a cessação do ser/existir e o caminho que conduz à cessação do
+ser/existir … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto, possui o entendimento que é
+reto, possui perfeita confiança no Dhamma e penetrou este verdadeiro
+Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Apego)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>32.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma pela qual um
+nobre discípulo é aquele que possui entendimento correto … e penetrou este
+verdadeiro Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>33.
+&quot;Quando, amigos, um nobre discípulo compreende o apego, a origem do apego, a
+cessação do apego e o caminho que conduz à cessação do apego, dessa forma ele é
+uma pessoa que possui entendimento correto … e penetrou este verdadeiro
+Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>34. &quot;E
+o que é o apego, qual é a origem do apego, qual é a cessação do apego, qual é o
+caminho que conduz à cessação do apego? Existem esses quatro tipos de apego:
+apego a prazeres sensuais, apego a idéias, apego a preceitos e rituais e apego
+à doutrina de um eu. Com o surgimento
+do desejo existe o surgimento do apego. Com a cessação do desejo ocorre a
+cessação do apego. O caminho que conduz à cessação do apego é exatamente este
+Nobre Caminho Óctuplo; isto é, entendimento correto … concentração correta. <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>35.
+&quot;Quando um nobre discípulo compreendeu dessa forma o apego, a origem do
+apego, a cessação do apego e o caminho que conduz à cessação do apego … ele aqui
+e agora dá um fim ao sofrimento. Desta forma, também, um nobre discípulo possui
+o entendimento correto, possui o entendimento que é reto, possui perfeita
+confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Desejo)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>36.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>37. &quot;Quando,
+amigos, um nobre discípulo compreende o desejo, a origem do desejo, a cessação do
+desejo e o caminho que conduz à cessação do desejo, dessa forma ele é uma
+pessoa que possui entendimento correto … e penetrou este verdadeiro Dhamma.
+&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>38. &quot;E
+o que é o desejo, qual é a origem do desejo, qual é a cessação do desejo, qual
+é o caminho que conduz à cessação do desejo ? Existem essas seis classes de
+desejo: desejo por formas, desejo por sons, desejo por aromas, desejo por
+sabores, desejo por tangíveis, desejo por objetos mentais. 
+<a name=R13></a>Com o surgimento da sensação existe o surgimento do desejo. Com
+a cessação da sensação ocorre a cessação do desejo. O caminho que conduz à
+cessação do desejo é exatamente este Nobre Caminho Óctuplo; isto é,
+entendimento correto … concentração correta. <o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R22></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>39.
+&quot;Quando um nobre discípulo compreendeu dessa forma o desejo, a origem do
+desejo, a cessação do desejo e o caminho que conduz à cessação do desejo … ele
+aqui e agora dá um fim ao sofrimento. Desta forma, também, um nobre discípulo
+possui o entendimento correto, possui o entendimento que é reto, possui
+perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Sensação)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>40.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma<span
+style="mso-spacerun: yes">  </span>em que um nobre discípulo é aquele que
+possui entendimento correto … e penetrou este verdadeiro Dhamma?&quot; -
+&quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R23></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>41.
+&quot;Quando, amigos, um nobre discípulo compreende a sensação, a origem da
+sensação, a cessação da sensação e o caminho que conduz à cessação da sensação,
+dessa forma ele é uma pessoa que possui entendimento correto … e penetrou este
+verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+<p class=Normal><a name=T42></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>42. &quot;E
+o que é a sensação, qual é a origem da sensação, qual é a cessação da sensação,
+qual é o caminho que conduz à cessação da sensação ? Existem essas seis classes
+de sensações: sensações que surgem do contato no olho, sensações que surgem do
+contato no ouvido, sensações que surgem do contato no nariz, sensações que
+surgem do contato na língua, sensações que surgem do contato no corpo,
+sensações que surgem do contato na mente. Com o surgimento do contato existe o
+surgimento da sensação. Com a cessação do contato ocorre a cessação da
+sensação. O caminho que conduz à cessação da sensação é exatamente este Nobre
+Caminho Óctuplo; isto é, entendimento correto … concentração correta.<o:p></o:p></span></p>
+
+<p class=Normal><a name=R25></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>43.
+&quot;Quando um nobre discípulo compreendeu dessa forma a sensação, a origem da
+sensação, a cessação da sensação e o caminho que conduz à cessação da sensação
+… ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um nobre
+discípulo possui o entendimento correto, possui o entendimento que é reto,
+possui perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Contato)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>44.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>45.
+&quot;Quando, amigos, um nobre discípulo compreende o contato, a origem do
+contato, a cessação do contato e o caminho que conduz à cessação do contato,
+dessa forma ele é uma pessoa que possui entendimento correto … e penetrou este
+verdadeiro Dhamma. &quot;<o:p></o:p></span></p>
+
+<p class=Normal><a name=R26></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>46. &quot;E
+o que é o contato, qual é a origem do contato, qual é a cessação do contato,
+qual é o caminho que conduz à cessação do contato ? Existem essas seis classes
+de contato: contato no olho, contato no ouvido, contato no nariz, contato na
+língua, contato no corpo, contato na mente.  <a
+name=R14></a>Com o surgimento das seis bases existe o surgimento do contato.
+Com a cessação das seis bases ocorre a cessação do contato. O caminho que
+conduz à cessação do contato é exatamente este Nobre Caminho Óctuplo; isto é,
+entendimento correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>47.
+&quot;Quando um nobre discípulo compreendeu dessa forma o contato, a origem do
+contato, a cessação do contato e o caminho que conduz à cessação do contato …
+ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um nobre
+discípulo possui o entendimento correto, possui o entendimento que é reto,
+possui perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>( As Seis
+Bases)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>48.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e satisfeitos
+com as palavras do venerável Sariputta. Então eles lhe fizeram uma outra
+pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … e penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>49.
+&quot;Quando, amigos, um nobre discípulo compreende as seis bases, a origem das
+seis bases, a cessação das seis bases e o caminho que conduz à cessação das
+seis bases, dessa forma ele é uma pessoa que possui entendimento correto … e
+penetrou este verdadeiro Dhamma. &quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>50. &quot;E
+o que são as seis bases, qual é a origem das seis bases, qual é a cessação das
+seis bases, qual é o caminho que conduz à cessação das seis bases ? Existem
+essas seis bases: a base do olho, a base do ouvido, a base do nariz, a base da
+língua, a base do corpo, a base da mente. Com
+o surgimento da mentalidade-materialidade existe o surgimento das seis bases.
+Com a cessação da mentalidade-materialidade ocorre a cessação das seis bases. O
+caminho que conduz à cessação das seis bases é exatamente este Nobre Caminho
+Óctuplo; isto é, entendimento correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>51.
+&quot;Quando um nobre discípulo compreendeu dessa forma as seis bases, a origem
+das seis bases, a cessação das seis bases e o caminho que conduz à cessação das
+seis bases … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto, possui o entendimento que é
+reto, possui perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><a name="T52")</a><b>(Mentalidade-materialidade)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>52.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … e penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>53.
+&quot;Quando, amigos, um nobre discípulo compreende a mentalidade-materialidade, a
+origem da mentalidade-materialidade, a cessação da mentalidade-materialidade e
+o caminho que conduz à cessação da mentalidade-materialidade, dessa forma ele é
+uma pessoa que possui entendimento correto … e penetrou este verdadeiro Dhamma.
+&quot;<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R16></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>54. &quot;E
+o que é mentalidade-materialidade, qual é a origem da
+mentalidade-materialidade, qual é a cessação da mentalidade-materialidade,
+qual é o caminho que conduz à cessação da mentalidade-materialidade? Sensação,
+percepção, volição, contato e atenção - esses são chamados mentalidade. Os
+quatro grandes elementos e a forma material derivada dos quatro grandes
+elementos - esses são chamados de materialidade. Dessa forma, essa mentalidade
+e materialidade é o que se denomina mentalidade-materialidade. Com o surgimento
+da consciência existe o surgimento da materialidade-mentalidade. Com a cessação
+da consciência ocorre a cessação da mentalidade-materialidade. O caminho que
+conduz à cessação da mentalidade-materialidade é exatamente este Nobre Caminho
+Óctuplo; isto é, entendimento correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>55.
+&quot;Quando um nobre discípulo compreendeu dessa forma a
+mentalidade-materialidade, a origem da mentalidade-materialidade, a cessação da
+mentalidade-materialidade e o caminho que conduz à cessação da
+mentalidade-materialidade … ele aqui e agora dá um fim ao sofrimento. Desta
+forma, também, um nobre discípulo possui o entendimento correto, possui o
+entendimento que é reto, possui perfeita confiança no Dhamma e penetrou este
+verdadeiro Dhamma.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Consciência)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>56.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … penetrou este verdadeiro Dhamma?&quot;
+- &quot;Sim, pode haver, amigos.&quot;<o:p></oo:p></spann></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>57.
+&quot;Quando, amigos, um nobre discípulo compreende a consciência, a origem da
+consciência, a cessação da consciência e o caminho que conduz à cessação da
+consciência, dessa forma ele é uma pessoa que possui entendimento correto … e
+penetrou este verdadeiro Dhamma. &quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>58. &quot;E
+o que é consciência, qual é a origem da consciência, qual é a cessação da
+consciência, qual é o caminho que conduz à cessação da consciência? Existem
+essas seis classes de consciência: consciência no olho, consciência no ouvido,
+consciência no nariz, consciência na língua, consciência no corpo, consciência
+na mente. Com o surgimento das formações
+existe o surgimento da consciência. Com a cessação das formações ocorre a
+cessação da consciência. O caminho que conduz à cessação da consciência é
+exatamente este Nobre Caminho Óctuplo; isto é, entendimento
+correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>59.
+&quot;Quando um nobre discípulo compreendeu dessa forma a consciência, a origem da
+consciência, a cessação da consciência e o caminho que conduz à cessação da
+consciência … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto, possui o entendimento que é
+reto, possui perfeita confiança no Dhamma e penetrou este verdadeiro
+Dhamma.&quot;&nbsp;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Formações)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>60.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>61.
+&quot;Quando, amigos, um nobre discípulo compreende as formações, a origem das
+formações, a cessação das formações e o caminho que conduz à cessação das
+formações, dessa forma ele é uma pessoa que possui entendimento correto … e penetrou este verdadeiro
+Dhamma. &quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>62. &quot;E
+o que são formações, qual é a origem das formações, qual é a cessação das
+formações, qual é o caminho que conduz à cessação das formações? Existem esses
+três tipos de formações: a formação corporal, a formação verbal e a formação
+mental. Com o surgimento da ignorância
+existe o surgimento das formações. Com a cessação da ignorância ocorre a
+cessação das formações. O caminho que conduz à cessação das formações é
+exatamente este Nobre Caminho Óctuplo; isto é, entendimento
+correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>63.
+&quot;Quando um nobre discípulo compreendeu dessa forma as formações, a origem das
+formações, a cessação das formações e o caminho que conduz à cessação das
+formações … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto, possui o entendimento que é
+reto, possui perfeita confiança no Dhamma e penetrou este verdadeiro
+Dhamma.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Ignorância)</b><o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>64.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … e penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>65.
+&quot;Quando, amigos, um nobre discípulo compreende a ignorância, a origem da
+ignorância, a cessação da ignorância e o caminho que conduz à cessação da
+ignorância, dessa forma, ele é uma pessoa que possui entendimento correto … e
+penetrou este verdadeiro Dhamma. &quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>66. &quot;E
+o que é ignorância, qual é a origem da ignorância, qual é a cessação da ignorância,
+qual é o caminho que conduz à cessação da ignorância? Não ter o conhecimento do
+sofrimento, não ter o conhecimento da origem do sofrimento, não ter o
+conhecimento da cessação do sofrimento, não ter o conhecimento do caminho que
+conduz à cessação do sofrimento - a isto se denomina ignorância. Com o
+surgimento das impurezas existe o surgimento da ignorância. Com a cessação das
+impurezas ocorre a cessação da ignorância. O caminho que conduz à cessação da
+ignorância é exatamente este Nobre Caminho Óctuplo; isto é, entendimento
+correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>67.
+&quot;Quando um nobre discípulo compreendeu dessa forma a ignorância, a origem da
+ignorância, a cessação da ignorância e o caminho que conduz à cessação da
+ignorância … ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um
+nobre discípulo possui o entendimento correto, possui o entendimento que é
+reto, possui perfeita confiança no Dhamma e penetrou este verdadeiro
+Dhamma.&quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><b>(Impurezas)</b>
+<o:p></o:p></span></p>
+
+
+<p class=Normal><a name=R27></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>68.
+Dizendo, &quot;Muito bem, amigo&quot; os bhikkhus ficaram contentes e
+satisfeitos com as palavras do venerável Sariputta. Então eles lhe fizeram uma
+outra pergunta: &quot;Mas, amigo, pode haver alguma outra forma em que um nobre
+discípulo é aquele que possui entendimento correto … penetrou este verdadeiro
+Dhamma?&quot; - &quot;Sim, pode haver, amigos.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>69.
+&quot;Quando, amigos, um nobre discípulo compreende as impurezas, a origem das
+impurezas, a cessação das impurezas e o caminho que conduz à cessação das
+impurezas, dessa forma ele é uma pessoa que possui entendimento correto … e
+penetrou este verdadeiro Dhamma. &quot;<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>70. &quot;E
+o que são impurezas, qual é a origem das impurezas, qual é a cessação das
+impurezas, qual é o caminho que conduz à cessação das impurezas? Existem essas
+três impurezas: a impureza do desejo sensual, a impureza de ser/existir e a
+impureza da ignorância. Com o surgimento da ignorância existe o surgimento das
+impurezas. Com a cessação da ignorância
+ocorre a cessação das impurezas. O caminho que conduz à cessação das impurezas
+é exatamente este Nobre Caminho Óctuplo; isto é, entendimento
+correto … concentração correta.<o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>71.
+&quot;Quando um nobre discípulo compreendeu dessa forma as impurezas, a origem das
+impurezas, a cessação das impurezas e o caminho que conduz à cessação das impurezas
+… ele aqui e agora dá um fim ao sofrimento. Desta forma, também, um nobre
+discípulo possui o entendimento correto, possui o entendimento que é reto,
+possui perfeita confiança no Dhamma e penetrou este verdadeiro Dhamma.&quot; <o:p></o:p></span></p>
+
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Isso foi o
+que disse o venerável Sariputta. Os bhikkhus ficaram satisfeitos e contentes
+com as palavras do venerável Sariputta.<o:p></o:p></span></p>
+
+
+
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  8 Setembro 2012         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/podcast/PS9.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:04 GMT -->
+</html>
+
+
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

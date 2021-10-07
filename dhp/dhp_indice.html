@@ -1,0 +1,167 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp_indice.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:07:05 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada - dhp</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("dhp1.1.html","dhp1.3.html","dhp1.5.html","dhp1.6.html","dhp1.13.html","dhp1.15.html","dhp1.17.html","dhp1.19.html","dhp2.21.html","dhp2.25.html","dhp2.26.html","dhp2.27.html","dhp2.28.html","dhp2.29.html","dhp2.31.html","dhp3.33.html","dhp3.35.html","dhp3.36.html","dhp3.37.html","dhp3.38.html","dhp3.40.html","dhp3.42.html","dhp3.43.html","dhp4.44.html","dhp4.46.html","dhp4.47.html","dhp4.48.html","dhp4.50.html","dhp4.51.html","dhp4.54.html","dhp4.58.html","dhp5.60.html","dhp5.61.html","dhp5.62.html","dhp5.63.html","dhp5.64.html","dhp5.66.html","dhp5.71.html","dhp5.75.html","dhp6.76.html","dhp6.78.html","dhp6.80.html","dhp6.81.html","dhp6.85.html","dhp7.92.html","dhp8.102.html","dhp8.111.html","dhp8.113.html","dhp9.118.html","dhp9.121.html","dhp9.126.html","dhp9.127.html","dhp10.129.html","dhp10.130.html","dhp10.145.html","dhp11.146.html","dhp11.147.html","dhp11.151.html","dhp11.153.html","dhp11.155.html","dhp12.1.html","dhp12.2.html","dhp12.3.html","dhp12.4.html","dhp12.5.html","dhp12.6.html","dhp12.7.html","dhp12.8.html","dhp13.1.html","dhp13.2.html","dhp13.3.html","dhp13.4.html","dhp13.5.html","dhp13.6.html","dhp13.7.html","dhp13.8.html","dhp13.9.html","dhp13.10.html","dhp13.11.html","dhp14.1.html","dhp14.2.html","dhp14.3.html","dhp14.4.html","dhp14.5.html","dhp14.6.html","dhp14.7.html","dhp15.1.html","dhp15.2.html","dhp15.3.html","dhp15.4.html","dhp15.5.html","dhp15.6.html","dhp15.7.html","dhp15.8.html","dhp15.9.html","dhp15.10.html","dhp16.1.html","dhp16.2.html","dhp16.3.html","dhp16.4.html","dhp16.5.html","dhp16.6.html","dhp16.7.html","dhp17.1.html","dhp17.2.html","dhp17.3.html","dhp17.4.html","dhp17.5.html","dhp18.1.html","dhp18.2.html","dhp18.3.html","dhp18.4.html","dhp18.5.html","dhp18.6.html","dhp18.7.html","dhp18.8.html","dhp19.1.html","dhp19.2.html","dhp20.1.html","dhp20.2.html","dhp20.3.html","dhp20.4.html","dhp20.5.html","dhp21.1.html","dhp21.2.html","dhp21.3.html","dhp21.4.html","dhp21.5.html","dhp22.1.html","dhp23.1.html","dhp23.2.html","dhp24.1.html","dhp24.2.html","dhp24.3.html","dhp24.4.html","dhp24.5.html","dhp24.6.html","dhp24.7.html","dhp24.8.html","dhp25.1.html","dhp25.2.html","dhp25.3.html","dhp25.4.html","dhp25.5.html","dhp25.6.html","dhp25.7.html","dhp25.8.html","dhp25.9.html","dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value="dhp" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_94.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central"><!-- INICIO DO TEXTO -->
+
+
+
+<p class=Tit1 align=center style='text-align:center'> Dhammapada  </Tit1>
+<p class=Tit2 align=center style='text-align:center'>Versos do Dhamma </Tit2>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+
+
+<p class=Normal> Desde tempos remotos até os dias de hoje o Dhammapada tem sido considerado como a expressão mais sucinta dos ensinamentos do Buda encontrados no Cânone em Pali. Nos países do Budismo Theravada a influência do Dhammapada está em todos os lugares. É uma fonte fecunda para sermões e discussões, um guia para resolver os incontáveis problemas da vida do dia a dia, uma cartilha para a instrução de noviços nos monastérios.</p>
+
+<p class=Normal>A versão do Dhammapada publicada no Acesso ao Insight foi traduzida do livro "Treasury of Truth - Illustrated Dhammapada" de autoria do Venerável Weragoda Sarada Maha Thero. Nesse livro o Venerável oferece uma cuidadosa tradução dos versos em Pali  bem como copiosas notas explicativas que  auxiliam no entendimento dos versos que em alguns casos podem parecer um tanto abstrusos, principalmente para os novatos no Budismo. Cada verso é ilustrado com uma imagem que foi obtida do livro original. O livro também traz as histórias que criaram a situação para que os versos fossem recitados pelo Buda. Essas histórias, que constituem o comentário Canônico do Dhammapada, devido ao seu volume, não foram traduzidas para o português. </p>
+
+<p class=Normal>Para facilitar a consulta e estudo, cada capítulo do Dhammmapada será colocado numa página e um índice geral guiará o leitor ao capítulo desejado. As notas explicativas de cada capítulo encontram-se ao final de cada página e também existe a opção de ouvir os versos com as as respectivas notas em áudio. Como se tratam de arquivos pequenos, os versos com as notas poderão ser ouvidos no modo streaming sem necessitar baixar os arquivos. Para quem preferir baixar os arquivos em áudio basta clicar <a href="mp3/index.html">aqui</a>.</p>
+
+<p class=Normal>A tradução dos versos e das notas, do cap. 1 ao 10, bem como a solução técnica para a inclusão das ilustrações foi feita por Raryel Costa Souza, a quem agradecemos por essa inestimável contribuição ao Dhamma. As ilustrações expandem ao passar o mouse.</p>
+
+<p class=Normal>Os versos do Dhammapada também estão disponíveis em <a href="../livros1.html#dhammapada">livros</a> ebook gratuitos. </p>
+
+
+<p class=Normal>&nbsp;</p>
+<hr size=2 width="100%" align=center>
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal><b><i>CONTEÚDO:</b></i></p>
+
+<p class=Normal style='margin-left:1.0in'><a href="intro.html">&nbsp;&nbsp;&nbsp;&nbsp;Introdução</a>  ...  Bhikkhu Bodhi
+
+<p class=Normal style='margin-left:1.0in'>1. <i><a href="dhp1.html">Yamakavagga </a></i>  ... Versos Gêmeos ... 1-20 </p>
+
+<p class=Normal style='margin-left:1.0in'>2. <i><a href="dhp2.html"> Appamadavagga </a></i>  ... Diligência ... 21-32 </p>
+
+<p class=Normal style='margin-left:1.0in'>3. <i><a href="dhp3.html"> Cittavagga </a></i>  ... Mente ... 33-43</p>
+
+<p class=Normal style='margin-left:1.0in'>4. <i><a href="dhp4.html"> Pupphavagga </a></i>  ... Flores ... 44-59</p>
+
+<p class=Normal style='margin-left:1.0in'>5. <i><a href="dhp5.html"> Balavagga </a></i>  ... Tolos ... 60-75</p>
+
+<p class=Normal style='margin-left:1.0in'>6. <i><a href="dhp6.html"> Panditavagga </a></i>  ... Sábios ... 76-89</p>
+
+<p class=Normal style='margin-left:1.0in'>7. <i><a href="dhp7.html"> Arahantavagga </a></i>  ... Arahants ... 90-99</p>
+
+<p class=Normal style='margin-left:1.0in'>8. <i><a href="dhp8.html"> Sahassavagga </a></i>  ... Milhares ... 100-115</p>
+
+<p class=Normal style='margin-left:1.0in'>9. <i><a href="dhp9.html"> Papavagga </a></i>  ... O Mal ... 116-128</p>
+
+<p class=Normal style='margin-left:1.0in'>10. <i><a href="dhp10.html"> Dandavagga </a></i>  ... Punição ... 129-145</p>
+
+<p class=Normal style='margin-left:1.0in'>11. <i><a href="dhp11.html"> Jaravagga </a></i>  ... Velhice ... 146-156</p>
+
+<p class=Normal style='margin-left:1.0in'>12. <i><a href="dhp12.html"> Attavagga </a></i>  ... O Eu ... 157-166</p>
+
+<p class=Normal style='margin-left:1.0in'>13. <i><a href="dhp13.html"> Lokavagga </a></i>  ... O Mundo ... 167-178</p>
+
+<p class=Normal style='margin-left:1.0in'>14. <i><a href="dhp14.html"> Buddhavagga </a></i>  ... O Buda ... 179-196</p>
+
+<p class=Normal style='margin-left:1.0in'>15. <i><a href="dhp15.html"> Sukkhavagga </a></i>  ... Felicidade ... 197-208</p>
+
+<p class=Normal style='margin-left:1.0in'>16. <i><a href="dhp16.html"> Piyavagga </a></i>  ... Afeição ... 209-220</p>
+
+<p class=Normal style='margin-left:1.0in'>17. <i><a href="dhp17.html">Kodhavagga</a></i> ... Raiva ... 221-234</p>
+
+<p class=Normal style='margin-left:1.0in'>18. <i><a href="dhp18.html">Malavagga</a></i> ... Impurezas ... 235-255</p>
+
+<p class=Normal style='margin-left:1.0in'>19. <i><a href="dhp19.html">Dhammatthavagga</a></i> ... Justo ... 256-272</p>
+
+<p class=Normal style='margin-left:1.0in'>20. <i><a href="dhp20.html">Maggavagga</a></i> ... O Caminho ... 273-289</p>
+
+<p class=Normal style='margin-left:1.0in'>21. <i><a href="dhp21.html">Pakinnavagga</a></i> ... Miscelânea ... 290-305</p>
+
+<p class=Normal style='margin-left:1.0in'>22. <i><a href="dhp22.html">Nirayavagga</a></i> ... Inferno ... 306-319</p>
+
+<p class=Normal style='margin-left:1.0in'>23. <i><a href="dhp23.html">Nagavagga</a></i> ... O Elefante ... 320-333</p>
+
+<p class=Normal style='margin-left:1.0in'>24. <i><a href="dhp24.html">Tanhavagga</a></i> ... O Desejo ... 334-359</p>
+
+<p class=Normal style='margin-left:1.0in'>25. <i><a href="dhp25.html">Bhikkhuvagga</a></i> ... O Monge ... 360-382</p>
+
+<p class=Normal style='margin-left:1.0in'>26. <i><a href="dhp26.html">Brahmanavagga</a></i> ... O Brâmane ... 383-423</p>
+
+<p class=Normal>&nbsp;</p>
+<p class=Normal>&nbsp;</p>
+
+<!-- Counter/Statistics -->
+<script language="JavaScript"
+src="../../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
+</script>
+<script language="javascript">geovisit();</script>
+<noscript><img src="../../visit.webhosting.yahoo.com/visit07cc.html?time"
+alt="setstats" border="0" width="1" height="1"></noscript>
+<!-- FIM DO TEXTO -->
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  26 Setembro 2015          </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp_indice.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:07:05 GMT -->
+</html>
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

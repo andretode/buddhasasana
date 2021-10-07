@@ -1,0 +1,267 @@
+<!-- DEFINE PARAMETROS -->
+<!--INCLUI TOPO-->
+<!-- TOPO DE TODAS AS PÁGINAS -->
+<!DOCTYPE html><html lang="pt-bt">
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/simile_balsa.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:02 GMT -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
+vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
+<title>Acesso ao Insight - Budismo Theravada -  simile_balsa</title>
+<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
+</script>
+<script>
+$(document).ready(function() {
+var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
+});
+
+//var enderecoBase = "http://www.acessoaoinsight.net";
+var enderecoBase = "";
+var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
+function dhpAleatorio(){
+ aleat = Math.random() * enderecos1.length;
+ aleat = Math.floor(aleat);
+ window.location.href = enderecoBase + enderecos1[aleat];
+}
+var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
+function suttaAleatorio(){
+ aleat = Math.random() * enderecos.length;
+ aleat = Math.floor(aleat);
+ window.location= enderecoBase + enderecos[aleat];
+}
+</script>
+</head>
+<body><input id="php-var-pagina" type="hidden" value=" simile_balsa" /><div class="container fullwidth">
+<a name=Top></a>   <div id="principal">
+      <div class="imagem-topo" style="background-image: url('../img/topo/new_176.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
+<!-- INICIO DO TEXTO -->
+
+<p class=Tit1 align=center style='text-align:center'>Os Símiles da Balsa e do<br>
+Caçador de Serpentes</Tit1>
+<p class=Tit3 align=center style='text-align:center'> Por  </Tit3>
+<p class=Tit2 align=center style='text-align:center'>Bhante Henepola Gunaratana</Tit2>
+
+<p class=Normal align=center style='text-align:center'><span lang=PT-BR style='font-size:
+7.0pt;mso-ansi-language:PT-BR'><b> Somente para distribuição gratuita.</b><br>
+<i>Este trabalho pode ser impresso para distribuição gratuita.<br>
+Este trabalho pode ser re-formatado e distribuído para uso em computadores e redes de computadores<br>
+contanto que nenhum custo seja cobrado pela distribuição ou uso.<br>
+De outra forma todos os direitos estão reservados. </i> <o:p></o:p></span></p>
+
+<p class=Normal>&nbsp;</p>
+
+<hr size=2 width="100%" align=center>
+
+<p class=Normal>&nbsp;</p>
+
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Qual a
+utilidade de uma balsa? Usá-la para cruzar uma grande extensão d´água, o que
+seria difícil sem ela. O exame detalhado da aplicação deste símile empregado
+pelo Buda, no <i style='mso-bidi-font-style:normal'><a href="../sutta/MN22.html">Alagaddupama
+Sutta</a>,</i> no Majjhima Nikaya, elucida a habilidade que ele teve em
+escolhê-lo para ilustrar de forma precisa o que as pessoas, que não
+compreendem<span style="mso-spacerun: yes">  </span>completamente o significado
+das religiões, têm feito ao longo da história. Nesse símile o Buda indica que
+se um homem, depois de cruzar uma grande extensão d´água sobre uma balsa,
+estivesse determinado a carregá-la sobre os ombros, pensando que ao assim fazer
+estaria demonstrando para a balsa a sua gratidão por tê-lo ajudado a salvar a
+sua vida, ele estaria agindo como um tolo.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O símile do caçador de
+serpentes empregado pelo Buda no mesmo Sutta, mencionado anteriormente, também
+é indispensável para ilustrar o perigo de se compreender uma religião da forma
+incorreta. Se uma pessoa que não sabe como pegar uma cobra venenosa tentasse
+segurar a cobra pelo corpo ou pela cauda a pessoa poderia ser picada e como
+conseqüência teria um grave ferimento ou poderia até morrer. A mensagem desses
+dois símiles, uma vez compreendida plenamente, facilitaria a melhor compreensão
+da tensão derivada do aumento da violência e criminalidade em nome da religião
+na sociedade moderna.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A compreensão incorreta da
+religião pode conduzir o homem a justificar a sua cobiça, raiva e tolice. As
+suas idéias distorcidas, percepções distorcidas e consciência distorcida fazem
+com que ele entenda a religião de forma incorreta minando a própria
+infra-estrutura dela, causando mais dor e sofrimento – exatamente como quando
+ele agarra a cobra de forma incorreta.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A compreensão incorreta de
+uma religião pode também ser o caminho direto para anular o propósito da
+religião e encorajar as pessoas a cometerem atrocidades em nome da própria fé.
+Algumas vezes as pessoas não só se apegam à religião mas, de forma ingênua
+obedecem a qualquer um, homem ou mulher que, por ser um orador persuasivo, é
+capaz de promover e justificar a violência e práticas não éticas em nome da
+religião. Ao dar apoio para tais pessoas através de dedicação de tempo,
+habilidade, ou recursos, elas apenas contribuirão para<span
+style="mso-spacerun: yes">  </span>aumentar sua cobiça, raiva e ignorância. Cegas
+devido às crenças religiosas, elas podem até mesmo tentar com zelo exagerado
+proteger as suas religiões, não apenas inculcando o raiva e o medo em muitos
+dos fiéis crédulos, mas também defendendo até mesmo o assassinato em nome das
+suas crenças.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Se uma pessoa simplesmente
+se agarrar à balsa depois de usá-la para cruzar a grande extensão d´água, ao
+invés de deixá-la na margem para que outra pessoa a use, ela tampouco estará
+agindo de forma sábia. Ao invés disso ela faz com que a balsa se torne um pesado
+fardo sobre os seus ombros. A balsa foi feita com capim, gravetos, galhos e
+folhas que foram amarrados com uma corda ou com a casca de uma árvore. Da mesma
+forma este corpo é composto de forma, sensação, percepção, formação mental e
+consciência que estão atados juntos pela ignorância e desejo, compondo o
+complexo mentalidade-materialidade (nome e forma). Assim como aquela pessoa se agarra à balsa
+composta de capim, gravetos, galhos e folhas nós nos agarramos ao corpo e mente
+composto de forma, sensação, percepção, formação mental e consciência atadas
+pela ignorância e desejo. A pessoa agarrada à balsa que a ajudou a cruzar a
+grande extensão d´água continuará a carregar o fardo daquela mesma balsa. Do
+mesmo modo, ao nos agarrarmos ao nosso complexo de mentalidade-materialidade (nome e forma) e
+às nossas crenças religiosas continuamos a carregar o nosso fardo. Ela
+permanece atada à balsa e nós à mente-corpo. Ela está na<span
+style="mso-spacerun: yes">   </span>margem e nós estamos no Samsara. Este corpo
+e mente, juntamente com as sensações, percepções e formações mentais, não existe
+para que nos apeguemos a ele, mas para que obtenhamos o conhecimento e o
+insight necessários para alcançar a libertação do Samsara. “Bhikkhus,” disse o
+Buda, “vocês devem abandonar até mesmo os bons ensinamentos, mais ainda os
+falsos.” Os bons ensinamentos nos beneficiam apenas se os usamos. Igual à
+balsa. Nenhum ensinamento, não importa quão bom seja, poderá nos ajudar se nós
+simplesmente nos apegarmos a ele. O apego até mesmo ao bom ensinamento pode
+causar dor e sofrimento. Imagine quanto mais doloroso pode ser o apego a coisas
+ruins! A pessoa que emprega a balsa para cruzar a grande extensão d´água tem
+que ser sábia. A pessoa que emprega este complexo mente-corpo para cruzar o
+oceano do Samsara também tem que ser sábia. Portanto, ela não irá se apegar de
+nenhuma forma a este complexo mente-corpo. Se ela assim o fizer não será capaz
+de alcançar a Libertação.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O apego a idéias, sem a
+prática, também pode com facilidade converter as pessoas em fanáticos
+religiosos que irão buscar refúgio na violência para solucionar problemas, pois
+elas desconhecem completamente aquilo que a sua religião lhes ensina. As
+pessoas não familiarizadas com a mensagem da sua religião vivem constantemente
+atemorizadas pelas críticas dirigidas a ela, e desejando protegê-la querem destruir
+as pessoas que possuam crenças diferentes. O temor da crítica surge na mente
+mal direcionada pelo sistema de crença ambivalente que não é capaz de atestar
+pela segurança e realidade. O Buda disse: “A sua mente mal direcionada pode
+causar-lhes mais dano que todos os seus inimigos juntos no mundo . Da mesma
+maneira, ele disse: “Uma mente guiada corretamente pode trazer-lhes mais
+benefício do que os seus pais, amigos e parentes, todos juntos.” O verdadeiro
+conquistador não é aquele que conquista milhares e milhares de pessoas em um
+campo de batalha mas aquele que conquista a si mesmo. <o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Embora o Buda não tenha
+sequer indiretamente causado dano a qualquer pessoa que seja, existem até mesmo
+entre os Budistas aqueles que acreditam que devem proteger o seu país, matando
+tantos quanto sejam necessários de forma a proteger o Budismo, a religião da
+paz, harmonia, compaixão e amor bondade. Matar, ou mesmo o pensamento de matar
+qualquer ser vivo, sem falar de seres humanos, é diametralmente oposto ao
+ensinamento do Buda compassivo, que disse: “Ele é chamado sábio e virtuoso,
+aquele que desejando o sucesso, não comete crimes em benefício próprio, em
+benefício dos próprios filhos, em benefício de outros para obter riqueza, ou
+mesmo pelo seu país.” Os ensinamentos do Buda estão acima de todas as noções de
+país, cultura, linguagem, afiliações étnicas e todo o demais, pois ele apenas
+ensinou a verdade que é permanente, eterna e que não está atada a nada no
+mundo.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Ao embarcar na balsa você
+deve inspecioná-la com cuidado para verificar se ela é segura e construída da
+forma correta para que você não se afogue pelo fato de usar uma balsa
+defeituosa. Da mesma forma, você deve cuidadosamente aprender e examinar de
+forma crítica qualquer religião antes de aceitá-la ou rejeitá-la. Ouvir com
+paciência alguém que critique o Buda, Dhamma ou a Sangha é altamente
+recomendado nos ensinamentos do Buda.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>“Se alguém insulta, ofende,
+xinga e molesta o Tathagata por isso, o Tathagata, por conta disso, não sente
+nenhuma contrariedade, amargura ou tristeza no seu coração. E se alguém honra,
+respeita, reverencia e venera o Tathagata por isso, o Tathagata, por conta
+disso, não sente prazer, alegria ou exaltação no seu coração. Se alguém honra,
+respeita, reverencia e venera o Tathagata por isso, o Tathagata, por conta
+disso, pensa da seguinte forma: ‘Eles realizam esse tipo de cerimônias por
+aquilo (o agregado mente-corpo) que já foi plenamente compreendido.’<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Portanto, bhikkhus, se
+alguém os insultar, ofender, xingar e molestar, vocês não deverão, por conta
+disso,<span style="mso-spacerun: yes">  </span>dar lugar a nenhuma
+contrariedade, amargura ou tristeza no seu coração. E se alguém os honrar,
+respeitar, reverenciar e venerar, vocês não deverão, por conta disso, dar lugar
+a nenhum prazer, alegria ou exaltação no seu coração. Se alguém os honrar,
+respeitar, reverenciar e venerar, por conta disso, vocês devem pensar da
+seguinte forma: ‘Eles realizam esse tipo de cerimônias por aquilo (o agregado
+mente-corpo) que já foi plenamente compreendido.’”<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>No Budismo, a investigação
+analítica e o conhecimento crítico do Dhamma são fatores essenciais para a
+Libertação. Pois, se você tem certeza que aquilo que você pratica é verdadeiro
+não deveria ficar alarmado com a crítica. Ao invés disso, você deveria<span
+style="mso-spacerun: yes">  </span>receber com prazer a investigação crítica
+pois assim você poderá olhar para a sua prática por ângulos distintos. Se você
+sabe que um pedaço de ouro é ouro, por exemplo, você permitiria sem hesitação
+que qualquer ourives treinado testasse o pedaço cortando, fundindo, esfregando
+e martelando, pois você está seguro que ele não irá concluir que o seu ouro na
+verdade é cobre. Somente se você lhe desse um pedaço de chumbo banhado de ouro
+você teria motivo para temer o teste.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O Buda nos aconselhou a não
+ficarmos alarmados pela crítica, mas a ouvir a crítica com cuidado e atenção
+plena sem ficarmos perturbados por aquilo que estamos ouvindo e que na nossa
+avaliação nos atenhamos ao que foi dito. Após uma investigação detalhada, com
+certeza não encontraremos defeito no Buda, Dhamma ou Sangha. No entanto, descobriremos
+que a crítica foi feita devido à raiva, preconceito, frustração, temor,
+neurose, paranóia, etc. Então, é claro, ao invés de sentirmos raiva da pessoa
+que tem todos esses problemas, deveríamos tentar ajudá-la com amor bondade. Ela
+merece o nosso amor bondade e compaixão ao invés da raiva. Não existe raiva que
+possa resolver ou que tenha resolvido qualquer tipo de problema no mundo, pois
+neste mundo a raiva nunca é aplacada com a raiva, mas apenas com o amor.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Nos ensinamentos do Buda
+não há espaço para resolver qualquer tipo de problema através de meios
+violentos. Um Budista que esteja repleto de cobiça, raiva e delusão e desatento
+à verdadeira mensagem do Buda, exercendo a sua completa liberdade de escolha e
+responsabilidade asseguradas no Budismo, poderá matar alguém, mas ele nunca
+será capaz de citar algum texto Budista que justifique e apóie o seu ato.<o:p></o:p></span></p>
+
+<p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Supostamente devemos usar o
+Dhamma do Buda sem nos apegarmos a ele, mas apenas para cruzar a torrente deste
+ciclo de nascimento e morte – Samsara. Ele nos aconselhou a empregar o
+ensinamento como se fosse uma balsa que é utilizada apenas para cruzar uma
+extensão d´água e não para ser agarrada. É o apego apaixonado àquilo que
+acreditamos, ao invés da compreensão de como devemos usá-lo para guiar a nossa vida
+diária na direção correta, que estimula a raiva enraizada profundamente que
+pode nos forçar a solucionar nossos problemas através de meios violentos. É o
+apego apaixonado às coisas que cria todo tipo de problemas.<o:p></o:p></span></p>
+
+
+<p class=Normal>&nbsp;</p>
+
+<p class=Normal>&nbsp;</p>
+
+
+
+<!-- FIM DO TEXTO -->
+
+<!-- INCLUI BASE -->
+<!-- BASE DE TODAS AS Pï¿½GINAS -->
+
+     </div>
+
+     <div id="rodape">
+     <span style="float:right;">
+         <p class=Rodape>
+         Revisado:  27 Julho 2002         </p>
+     </span>
+     </div>
+
+     <div id="institucional">
+         <p class=Institucional>
+         Copyright &copy; 2000 - 2019,
+         <a href="../index.html">Acesso ao Insight</a> -
+         Michael Beisert: editor, Flavio Maia: designer.</p>
+     </div>
+
+     <div id="powered">
+         
+            <br><br>
+         <span>
+     </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/simile_balsa.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:58:02 GMT -->
+</html>
+
+<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>
