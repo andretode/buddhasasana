@@ -3,6 +3,7 @@ body{
      bgcolor:"#FFFFFF";
      background-color: #C9993E;
      text-align:center;
+	 padding-top:120px;
 }
 p.{
      margin:0in;
@@ -58,6 +59,11 @@ p.Menu{
      font-size: 12px;
      background-color: #B86B31;
      height: 100px;
+	 position: absolute;
+	 left: 0px;
+	 right: 0px;
+	 top: 0px;
+	 box-shadow: 0px 1px 1px 1px;
 }
 a:link {
   color: white;
@@ -353,4 +359,5 @@ table.indice-sutta > tbody > tr > td{
          height: auto;
          margin-left: -20px;
     }
+	
 }
