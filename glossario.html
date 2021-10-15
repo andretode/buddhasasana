@@ -1,39 +1,4 @@
-<!-- DEFINE PARAMETROS -->
 
-<!--INCLUI TOPO-->
-<!-- TOPO DE TODAS AS PÁGINAS -->
-<!DOCTYPE html><html lang="pt-bt">
-<!-- Mirrored from www.acessoaoinsight.net/glossario.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:06:46 GMT -->
-<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
-vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
-<title>Acesso ao Insight - Budismo Theravada - glossario</title>
-<link REL="SHORTCUT ICON" href="img/favicon.ico"><!-- Jquery e Bootstrap --><script src="bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="bootstrap/bootstrap-theme-3.3.7.min.css"><script src="bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="insightf195.css?v=2.1"><script language="JavaScript" src="func.js"> </script><script type="text/javascript" src="expando.js">
-</script>
-<script>
-$(document).ready(function() {
-var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
-});
-
-//var enderecoBase = "http://www.acessoaoinsight.net";
-var enderecoBase = "";
-var enderecos1 = new Array("dhp/dhp1.1.html","dhp/dhp1.3.html","dhp/dhp1.5.html","dhp/dhp1.6.html","dhp/dhp1.13.html","dhp/dhp1.15.html","dhp/dhp1.17.html","dhp/dhp1.19.html","dhp/dhp2.21.html","dhp/dhp2.25.html","dhp/dhp2.26.html","dhp/dhp2.27.html","dhp/dhp2.28.html","dhp/dhp2.29.html","dhp/dhp2.31.html","dhp/dhp3.33.html","dhp/dhp3.35.html","dhp/dhp3.36.html","dhp/dhp3.37.html","dhp/dhp3.38.html","dhp/dhp3.40.html","dhp/dhp3.42.html","dhp/dhp3.43.html","dhp/dhp4.44.html","dhp/dhp4.46.html","dhp/dhp4.47.html","dhp/dhp4.48.html","dhp/dhp4.50.html","dhp/dhp4.51.html","dhp/dhp4.54.html","dhp/dhp4.58.html","dhp/dhp5.60.html","dhp/dhp5.61.html","dhp/dhp5.62.html","dhp/dhp5.63.html","dhp/dhp5.64.html","dhp/dhp5.66.html","dhp/dhp5.71.html","dhp/dhp5.75.html","dhp/dhp6.76.html","dhp/dhp6.78.html","dhp/dhp6.80.html","dhp/dhp6.81.html","dhp/dhp6.85.html","dhp/dhp7.92.html","dhp/dhp8.102.html","dhp/dhp8.111.html","dhp/dhp8.113.html","dhp/dhp9.118.html","dhp/dhp9.121.html","dhp/dhp9.126.html","dhp/dhp9.127.html","dhp/dhp10.129.html","dhp/dhp10.130.html","dhp/dhp10.145.html","dhp/dhp11.146.html","dhp/dhp11.147.html","dhp/dhp11.151.html","dhp/dhp11.153.html","dhp/dhp11.155.html","dhp/dhp12.1.html","dhp/dhp12.2.html","dhp/dhp12.3.html","dhp/dhp12.4.html","dhp/dhp12.5.html","dhp/dhp12.6.html","dhp/dhp12.7.html","dhp/dhp12.8.html","dhp/dhp13.1.html","dhp/dhp13.2.html","dhp/dhp13.3.html","dhp/dhp13.4.html","dhp/dhp13.5.html","dhp/dhp13.6.html","dhp/dhp13.7.html","dhp/dhp13.8.html","dhp/dhp13.9.html","dhp/dhp13.10.html","dhp/dhp13.11.html","dhp/dhp14.1.html","dhp/dhp14.2.html","dhp/dhp14.3.html","dhp/dhp14.4.html","dhp/dhp14.5.html","dhp/dhp14.6.html","dhp/dhp14.7.html","dhp/dhp15.1.html","dhp/dhp15.2.html","dhp/dhp15.3.html","dhp/dhp15.4.html","dhp/dhp15.5.html","dhp/dhp15.6.html","dhp/dhp15.7.html","dhp/dhp15.8.html","dhp/dhp15.9.html","dhp/dhp15.10.html","dhp/dhp16.1.html","dhp/dhp16.2.html","dhp/dhp16.3.html","dhp/dhp16.4.html","dhp/dhp16.5.html","dhp/dhp16.6.html","dhp/dhp16.7.html","dhp/dhp17.1.html","dhp/dhp17.2.html","dhp/dhp17.3.html","dhp/dhp17.4.html","dhp/dhp17.5.html","dhp/dhp18.1.html","dhp/dhp18.2.html","dhp/dhp18.3.html","dhp/dhp18.4.html","dhp/dhp18.5.html","dhp/dhp18.6.html","dhp/dhp18.7.html","dhp/dhp18.8.html","dhp/dhp19.1.html","dhp/dhp19.2.html","dhp/dhp20.1.html","dhp/dhp20.2.html","dhp/dhp20.3.html","dhp/dhp20.4.html","dhp/dhp20.5.html","dhp/dhp21.1.html","dhp/dhp21.2.html","dhp/dhp21.3.html","dhp/dhp21.4.html","dhp/dhp21.5.html","dhp/dhp22.1.html","dhp/dhp23.1.html","dhp/dhp23.2.html","dhp/dhp24.1.html","dhp/dhp24.2.html","dhp/dhp24.3.html","dhp/dhp24.4.html","dhp/dhp24.5.html","dhp/dhp24.6.html","dhp/dhp24.7.html","dhp/dhp24.8.html","dhp/dhp25.1.html","dhp/dhp25.2.html","dhp/dhp25.3.html","dhp/dhp25.4.html","dhp/dhp25.5.html","dhp/dhp25.6.html","dhp/dhp25.7.html","dhp/dhp25.8.html","dhp/dhp25.9.html","dhp/dhp26.1.html");
-function dhpAleatorio(){
- aleat = Math.random() * enderecos1.length;
- aleat = Math.floor(aleat);
- window.location.href = enderecoBase + enderecos1[aleat];
-}
-var enderecos = new Array("sutta/It.1.html","sutta/It.2.html","sutta/It.3.html","sutta/It.4.html","sutta/It.5.html","sutta/It.6.html","sutta/It.7.html","sutta/It.8.html","sutta/It.9.html","sutta/It.10.html","sutta/It.11.html","sutta/It.12.html","sutta/It.13.html","sutta/It.14.html","sutta/It.15.html","sutta/It.16.html","sutta/It.17.html","sutta/It.18.html","sutta/It.19.html","sutta/It.20.html","sutta/It.21.html","sutta/It.22.html","sutta/It.23.html","sutta/It.24.html","sutta/It.25.html","sutta/It.26.html","sutta/It.27.html","sutta/It.28.html","sutta/It.29.html","sutta/It.30.html","sutta/It.31.html","sutta/It.32.html","sutta/It.33.html","sutta/It.34.html","sutta/It.35.html","sutta/It.36.html","sutta/It.37.html","sutta/It.38.html","sutta/It.39.html","sutta/It.40.html","sutta/It.41.html","sutta/It.42.html","sutta/It.43.html","sutta/It.44.html","sutta/It.45.html","sutta/It.46.html","sutta/It.47.html","sutta/It.48.html","sutta/It.49.html","sutta/It.50.html","sutta/It.51.html","sutta/It.52.html","sutta/It.53.html","sutta/It.54.html","sutta/It.55.html","sutta/It.56.html","sutta/It.57.html","sutta/It.58.html","sutta/It.59.html","sutta/It.60.html","sutta/It.61.html","sutta/It.62.html","sutta/It.63.html","sutta/It.64.html","sutta/It.65.html","sutta/It.66.html","sutta/It.67.html","sutta/It.68.html","sutta/It.69.html","sutta/It.70.html","sutta/It.71.html","sutta/It.72.html","sutta/It.73.html","sutta/It.74.html","sutta/It.75.html","sutta/It.76.html","sutta/It.77.html","sutta/It.78.html","sutta/It.79.html","sutta/It.80.html","sutta/It.81.html","sutta/It.82.html","sutta/It.83.html","sutta/It.84.html","sutta/It.85.html","sutta/It.86.html","sutta/It.87.html","sutta/It.88.html","sutta/It.89.html","sutta/It.90.html","sutta/It.91.html","sutta/It.92.html","sutta/It.93.html","sutta/It.94.html","sutta/It.95.html","sutta/It.96.html","sutta/It.97.html","sutta/It.98.html","sutta/It.99.html","sutta/It.100.html","sutta/It.101.html","sutta/It.102.html","sutta/It.103.html","sutta/It.104.html","sutta/It.105.html","sutta/It.106.html","sutta/It.107.html","sutta/It.108.html","sutta/It.109.html","sutta/It.110.html","sutta/It.111.html","sutta/It.112.html");
-function suttaAleatorio(){
- aleat = Math.random() * enderecos.length;
- aleat = Math.floor(aleat);
- window.location= enderecoBase + enderecos[aleat];
-}
-</script>
-</head>
-<body><input id="php-var-pagina" type="hidden" value="glossario" /><div class="container fullwidth">
-<a name=Top></a>   <div id="principal">
-      <div class="imagem-topo" style="background-image: url('img/topo/new_144.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="livros.html">Livros</a></li>									<li><a href="audiobook.html">Audiobook</a></li>									<li><a href="podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
-<!-- INICIO DO TEXTO -->
 
 <a name=Top></a>
 
@@ -72,10 +37,10 @@ lang=PT-BR ><o:p></o:p></span></p>
 <p class="Normal"><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>abhidhamma:</span></b><span lang=PT-BR style='font-family:Verdana;
 mso-ansi-language:PT-BR'> (1) nos discursos do Cânone em Pali, este termo
-simplesmente significa &quot;Dhamma mais elevado ou superior.&quot;<a href="sutta/MN32.html#T8"><b>[Mais]</b></a> (2) Uma
+simplesmente significa &quot;Dhamma mais elevado ou superior.&quot;<a href='javascript:loadContent("sutta/MN32.html#T8")'><b>[Mais]</b></a> (2) Uma
 coleção de tratados analíticos baseados em listas de categorias extraídas dos
 ensinamentos dos discursos, adicionado ao Cânone vários séculos após a morte do
-Buda.<a href="abhidhamma_pitaka.html"><b>[Mais]</b></a> <o:p></o:p></span></p>
+Buda.<a href='javascript:loadContent("abhidhamma_pitaka.html")'><b>[Mais]</b></a> <o:p></o:p></span></p>
 
 <p class="Normal"><a name=abhijanati><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>abhijanati</span></b></a><span style='mso-bookmark:
@@ -103,7 +68,7 @@ lang=PT-BR >.</span></i></p>
 <p class="Normal"><span
 lang=PT-BR ><a name=adinava></a><b>adinava</b>: perigo, desvantagem.
       O perigo é o contínuo aprisionamento ao ciclo de samsara através por exemplo
-      dos prazeres sensuais.<a href="caminho_liberdade/desvantagens.html"><b>[Mais]</b></a> <o:p></o:p></span></p>
+      dos prazeres sensuais.<a href='javascript:loadContent("caminho_liberdade/desvantagens.html")'><b>[Mais]</b></a> <o:p></o:p></span></p>
 <p class="Normal"><a name=adhitthana></a><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>adhitthana:</span></b><span lang=PT-BR style='font-family:Verdana;
 mso-ansi-language:PT-BR'> determinação; decisão. Uma das dez perfeições <i>(</i></span><span
@@ -124,7 +89,7 @@ sensação, a volição mental para a consciência e a consciência para a
 mentalidade-materialidade (nome e forma), o organismo psicofísico na sua totalidade. O desejo
 é denominado a origem do alimento no sentido de que o desejo na existência
 anterior é a fonte da presente individualidade que depende e consome
-continuamente os quatro alimentos nesta existência.<a href="sutta/SNXII.63.html"><b>[Mais]</b></a>
+continuamente os quatro alimentos nesta existência.<a href='javascript:loadContent("sutta/SNXII.63.html")'><b>[Mais]</b></a>
 </span></p>
 <p class="Normal"><span lang=PT-BR
 ><b>ajaan:</b> (Tailandês; também &quot;Ajarn&quot;, &quot;Ajahn&quot;, etc.).
@@ -159,8 +124,8 @@ lang=PT-BR >, nunca mais
 lang=PT-BR >  <a name=anapanasati></a><b>anapanasati:</b> atenção plena na respiração. É uma
               das práticas de meditação mais importantes para alcançar a concentração <i>(<a
 href="#samadhi">samadhi)</a> </i>e as quatro absorções <i>(<a href="#jhana">jhana</a>).
-              </i>O método é descrito no <i>Anapanasati Sutta (<a href="sutta/MN118.html">MN
-  118</a>)</i>; no <i>Satipatthana Sutta(<a href="sutta/MN10.html">MN 10</a>)</i> e <i>(<a href="sutta/DN22.html">DN 22</a>)</i>; no <i>Kayagatasati Sutta (<a href="sutta/MN119.html">MN 119</a>)</i>. </span></p>
+              </i>O método é descrito no <i>Anapanasati Sutta (<a href='javascript:loadContent("sutta/MN118.html")'>MN
+  118</a>)</i>; no <i>Satipatthana Sutta(<a href='javascript:loadContent("sutta/MN10.html")'>MN 10</a>)</i> e <i>(<a href='javascript:loadContent("sutta/DN22.html")'>DN 22</a>)</i>; no <i>Kayagatasati Sutta (<a href='javascript:loadContent("sutta/MN119.html")'>MN 119</a>)</i>. </span></p>
 <p class="Normal"><span
 lang=PT-BR >
   </span><span
@@ -174,21 +139,21 @@ lang=PT-BR ><a name=anatta></a><b>anatta:</b> não-eu, ausência de um eu, é a últ
                   impessoalidade de toda a existência e não compreenda que na realidade apenas
                   existe esse contínuo processo de surgimento e desaparecimento de fenômenos
                   mentais e corporais e de que não existe um eu separado como parte ou fora desse
-    processo, não será capaz de compreender o Budismo. <a href="arquivo_textos_theravada/naoeu.html"><b>[Mais]</b></a><a href="arquivo_textos_theravada/majjhima_intro.html#T4"><b>[Mais]</b></a><span
+    processo, não será capaz de compreender o Budismo. <a href='javascript:loadContent("arquivo_textos_theravada/naoeu.html")'><b>[Mais]</b></a><a href='javascript:loadContent("arquivo_textos_theravada/majjhima_intro.html#T4")'><b>[Mais]</b></a><span
 style='mso-spacerun:yes'>  </span><i><span style='mso-spacerun:yes'> </span></i><span
 style='mso-spacerun:yes'> </span></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=anicca></a><b>anicca:</b> impermanente, inconstante, instável, incerto, é a
                     primeira das três características da existência <i>(<a href="#ti_lakkhana">ti-lakkahana</a>).</i> É a partir da impermanência que, na maioria dos suttas, as outras duas
       características, sofrimento <i>(<a href="#dukkha">dukkha</a>)</i> e não-eu <i>(<a
-href="#anatta">anatta</a>),</i> são derivadas. <a href="arquivo_textos_theravada/majjhima_intro.html#anicca"><b>[Mais]</b></a></span></p>
+href='javascript:loadContent("#anatta">anatta</a>),</i> são derivadas. <a href='javascript:loadContent("arquivo_textos_theravada/majjhima_intro.html#anicca")')'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >      <b>anupadisesa-nibbana:</b> </span><span style='font-family:Verdana'><a
 href="#nibbana"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>nibbana</span></i></a></span><span
 lang=PT-BR > sem restar nenhum
         combustível (a analogia é um fogo que foi extinto cujas brasas estão frias) - o </span><span style='font-family:Verdana'><a href="#nibbana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>nibbana</span></i></a></span><span lang=PT-BR
-> do arahant após a sua morte. <a href="sutta/It.44.html"><b>[Mais]</b></a></span></p>
+> do arahant após a sua morte. <a href='javascript:loadContent("sutta/It.44.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <a name="anupubbi_katha"></a><a name=anupasati></a><b>anupassana: </b>(<i>passana</i> - ver; <i>anu</i> - continuar, sustentar), portanto <i>anupassana</i> significa ver repetidas vezes ou ver de perto. <o:p></o:p></span></p>
 <p class="Normal"><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
@@ -202,15 +167,15 @@ mso-ansi-language:PT-BR'>), virtude (veja </span><span style='font-family:Verdan
 href="#sila"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>sila</span></i></a></span><span
 lang=PT-BR >), paraísos,
 desvantagens (dos prazeres sensuais), vantagens da renúncia, e por fim
-culminando com as quatro nobres verdades.<a href="caminho_liberdade/dharma.html"><b>[Mais]</b></a><o:p></o:p></span></p>
+culminando com as quatro nobres verdades.<a href='javascript:loadContent("caminho_liberdade/dharma.html")'><b>[Mais]</b></a><o:p></o:p></span></p>
 
 <p class="Normal"><a name=anusaya></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>anusaya: </span></b><span lang=PT-BR
 >inclinações,
-tendências latentes ou subjacentes, ou obsessões que em geral são 7 em número (<a href="sutta/ANVII.11.html">AN VII.11</a>): desejo sensual <i>(kama-raga),
+tendências latentes ou subjacentes, ou obsessões que em geral são 7 em número (<a href='javascript:loadContent("sutta/ANVII.11.html")'>AN VII.11</a>): desejo sensual <i>(kama-raga),
 </i>aversão <i>(patigha), </i>idéias <i>(dithi), </i>dúvida <i>(vicikiccha), </i>presunção
-<i>(mana), </i>desejo por ser/existir <i>(bhavaraga), </i>ignorância <i>(avija)</i>. No <a href="sutta/MN64.html">MN 64</a> são identificadas 5 
-tendências subjacentes idênticas aos cinco primeiros grilhões, (<a href="#samyojana"><i>samyojana</i></a>); no <a href="sutta/MN148.html">MN 148</a> são 
+<i>(mana), </i>desejo por ser/existir <i>(bhavaraga), </i>ignorância <i>(avija)</i>. No <a href='javascript:loadContent("sutta/MN64.html")'>MN 64</a> são identificadas 5 
+tendências subjacentes idênticas aos cinco primeiros grilhões, (<a href='javascript:loadContent("#samyojana"><i>samyojana</i></a>); no <a href='javascript:loadContent("sutta/MN148.html")')'>MN 148</a> são 
 identificadas 3 tendências subjacentes, (desejo, aversão, ignorância), que têm as sensações como condição.
 </i>Nos comentários as impurezas são identificadas como ocorrendo em três
 níveis: nível <i>anusaya, </i>no qual elas permanecem como inclinações latentes
@@ -234,7 +199,7 @@ lang=PT-BR > ou como um animal
 comum. Nenhum desses estados é permanente. Compare com </span><span
 style='font-family:Verdana'><a href="#sugati"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>sugati</span></i></a></span><i><span
-lang=PT-BR >.</span></i><a href="caminho_liberdade/mundos.html"><b>[Mais]</b></a></p>
+lang=PT-BR >.</span></i><a href='javascript:loadContent("caminho_liberdade/mundos.html")'><b>[Mais]</b></a></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>apaya-mukha:</b> caminho para um destino infeliz – relações sexuais extra
   conjugais; entregar-se a substâncias embriagantes; entregar-se ao jogo;
@@ -248,7 +213,7 @@ Verdana;mso-ansi-language:PT-BR'>appamada:</span></b><span lang=PT-BR
 > aplicação, zelo, diligência,
 seriedade, é considerado como a base para todo progresso. O seu oposto é a
 negligência <i>(pamada)</i>. “Dessa forma, bhikkhus, eu os encorajo: todas as coisas condicionadas estão sujeitas à 
-dissolução. Esforçem-se pelo objetivo com diligência.” Essas foram as <a href="sutta/DN16.html#T6_7">últimas palavras</a> do Tathagata.<o:p></o:p></i><a href="sutta/SNIII.17.html"><b>[Mais]</b></a></span></p>
+dissolução. Esforçem-se pelo objetivo com diligência.” Essas foram as <a href='javascript:loadContent("sutta/DN16.html#T6_7")'>últimas palavras</a> do Tathagata.<o:p></o:p></i><a href='javascript:loadContent("sutta/SNIII.17.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>  <a name=arahant></a><b>arahant:</b> &quot;digno&quot; ou &quot;puro&quot;;
     uma pessoa cuja mente está livre de contaminações (veja </span><span
@@ -263,7 +228,7 @@ lang=PT-BR >), cujo coração
 href="#asava"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>asava</span></i></a></span><span
 lang=PT-BR >), e que dessa
     forma não está destinado a um futuro renascimento. Um título para o Buda e o nível
-    mais alto dos seus Nobre Discípulos.<a href="caminho_liberdade/sangha.html"><b>[Mais]</b></a></span></p>
+    mais alto dos seus Nobre Discípulos.<a href='javascript:loadContent("caminho_liberdade/sangha.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >    <b>arammana:</b> objeto. Podem ser de seis tipos: forma visível, som, aroma,
       sabor, tangível e objeto mental.</span></p>
@@ -302,12 +267,12 @@ style='mso-ansi-language:PT-BR'>phala</span></i></a></span><i><span lang=PT-BR
 >.</span></i><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'> Compare com </span><span style='font-family:Verdana'><a href="#puthujjana"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>puthujjana</span></i></a></span><span
-lang=PT-BR > (mundano).<a href="caminho_liberdade/sangha.html"><b>[Mais]</b></a></span></p>
+lang=PT-BR > (mundano).<a href='javascript:loadContent("caminho_liberdade/sangha.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >            <a name="ariya_sacca"></a><b>ariya-sacca:</b> nobre verdade. A palavra &quot;ariya&quot; (nobre) também pode significar ideal ou padrão, e nesse
               contexto significa verdade &quot;objetiva&quot; ou &quot;universal&quot;. &quot;Sacca&quot; também pode significar realidade ou atual.
               Existem quatro: sofrimento, a origem do sofrimento, a cessação do sofrimento, e
-              o caminho da prática que conduz à cessação do sofrimento.<a href="arquivo_textos_theravada/nobreza_das_verdades.html"><b>[Mais]</b></a></span></p>
+              o caminho da prática que conduz à cessação do sofrimento.<a href='javascript:loadContent("arquivo_textos_theravada/nobreza_das_verdades.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=assada></a><b>assada</b>: gratificação, prazer, gozo. O sentido literal de <i>assada</i> é 'doce sabor'. A gratificação é
   a satisfação que é proporcionada para as necessidades psicológicas, por exemplo
@@ -319,7 +284,7 @@ corrupção. Quatro tipos – <u>desejo sensual</u>, <i>(<a href="#kama">kamasava</a
 e cobiça pelos cinco elementos do prazer sensual; <u>entendimento incorreto</u> ou
 idéias incorretas, <i>(<a href="#ditthi">ditthasava</a>), </i></span><span
 lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:Verdana;mso-ansi-language:
-PT-BR'>os 62 tipos de idéias descritas no <a href="sutta/DN1.html">Brahmajala Sutta (DN 1)</a>; </span><span
+PT-BR'>os 62 tipos de idéias descritas no <a href='javascript:loadContent("sutta/DN1.html")'>Brahmajala Sutta (DN 1)</a>; </span><span
 lang=PT-BR ><u>desejo por
 ser/existir</u>, <i>(<a href="#bhava">bhavasava</a>), </i>desejo </span><span
 lang=PT-BR style='mso-bidi-font-size:10.0pt;font-family:Verdana;mso-ansi-language:
@@ -344,14 +309,14 @@ estados “que contaminam, resultam na renovação dos seres, trazem problemas,
 causam sofrimento e conduzem a um futuro nascimento, envelhecimento e morte”.
 Dessa forma outros tradutores, deixando de lado o sentido literal, utilizam a
 interpretação de máculas, corrupções ou impurezas. Também traduzido com
-“venenos da mente” principalmente em textos Mahayana. <a href="sutta/MN2.html"><b>[Mais]</b></a><span
+“venenos da mente” principalmente em textos Mahayana. <a href='javascript:loadContent("sutta/MN2.html")'><b>[Mais]</b></a><span
 style='mso-spacerun:yes'>  </span></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'><a name=PVW></a><a name=asubha></a><span style='mso-bookmark:PVW'><b>asubha</b></span><b>:</b> não atraente, repulsivo, nojento. O Buda recomenda contemplação desse aspecto
   do corpo como antídoto para luxúria e complacência. Veja também </span><span
 style='font-family:Verdana'><a href="#kayagata_sati"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>kayagata-sati</span></i></a></span><i><span
-lang=PT-BR >.</i><a href="sutta/MN119.html#repulsa"><b>[Mais]</b></a></span></p>
+lang=PT-BR >.</i><a href='javascript:loadContent("sutta/MN119.html#repulsa")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=asura></a><b>asura:</b> seres divinos que, tal como os Titãs da
     mitologia grega, lutaram contra os devas pela superioridade sobre os paraísos e
@@ -381,12 +346,12 @@ mso-ansi-language:PT-BR'>), é a principal causa de todo o mal e sofrimento no
   eles vejam que na realidade ela é impermanente, insatisfatória e desprovida de
   um eu. A Ignorância é definida como o desconhecimento das Quatro Nobres
   Verdades, isto é, o sofrimento, a sua origem, a sua cessação e o caminho para a
-  sua cessação. A ignorância é uma das impurezas, <i>(<a href="#asava">asava</a>)</i>.<a href="caminho_liberdade/ignorancia.html"><b>[Mais]</b></a> <o:p></o:p></span></p>
+  sua cessação. A ignorância é uma das impurezas, <i>(<a href='javascript:loadContent("#asava">asava</a>)</i>.<a href='javascript:loadContent("caminho_liberdade/ignorancia.html")')'><b>[Mais]</b></a> <o:p></o:p></span></p>
 <p class="Normal"><a name=ayatna></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>ayatana:</span></b><span lang=PT-BR
 > base ou meio dos sentidos ou
 sensuais. As bases internas são os órgãos dos sentidos – olhos, ouvidos, nariz,
-língua, corpo e mente. As bases externas são os seus respectivos objetos.<a href="sutta/samyutta_nikaya.html#XXXV"><b>[Mais]</b></a> </span><span
+língua, corpo e mente. As bases externas são os seus respectivos objetos.<a href='javascript:loadContent("sutta/samyutta_nikaya.html#XXXV")'><b>[Mais]</b></a> </span><span
 lang=PT-BR style='font-size:10.0pt;font-family:Verdana;mso-ansi-language:PT-BR'>&nbsp;<o:p></o:p></span></p>
 
 <p class="Normal"><b>ayoniso-manasikara: </b>veja <i><a href="#manasikara">manasikara</a></i></i></p>
@@ -427,7 +392,7 @@ PT-BR'>dana</span></i></a></span><i><span style='font-family:Verdana;mso-ansi-la
 PT-BR'> </span></i><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>e </span><span style='font-family:Verdana'><a href="#sila"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>sila</span></i></a></span><i><span
-lang=PT-BR >.</span></i><a href="meditacao.html"><b>[Mais]</b></a><span
+lang=PT-BR >.</span></i><a href='javascript:loadContent("meditacao.html")'><b>[Mais]</b></a><span
 lang=PT-BR ><o:p></o:p></span></p>
 <p class="Normal"><a name=bhavanga></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>bhavanga-sota e bhavanga-citta:</span></b><span
@@ -472,21 +437,21 @@ lang=PT-BR >  <a name="bodhi_pakkhiya"></a><b>bodhi-pakkhiya-dhamma:</b> &quot;a
     despertar&quot; ou apoios para a iluminação – sete conjuntos que conduzem à iluminação e que, de acordo com o Buda, formam o núcleo do seu ensinamento: [1]
     os quatro fundamentos da atenção plena (</span><span style='font-family:Verdana'><a
 href="#satipatthana"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>satipatthana</span></i></a></span><span
-lang=PT-BR >)<a href="sutta/samyutta_nikaya.html#XLVII"><b> [Mais]</b></a>; [2] os quatro
+lang=PT-BR >)<a href='javascript:loadContent("sutta/samyutta_nikaya.html#XLVII")'><b> [Mais]</b></a>; [2] os quatro
     esforços corretos (<a href="#padhana"><i>sammappadhana</i></a>) – o esforço para prevenir que estados
     prejudiciais surjam na mente, de abandonar quaisquer estados prejudiciais que
     já surgiram, fazer com que estados benéficos surjam, e manter os estados
     benéficos que já surgiram; [3] as quatro bases do poder espiritual (<i>iddhipada</i>)
-– desejo, energia, mente, investigação <a href="sutta/samyutta_nikaya.html#LI"><b>[Mais]</b></a>; [4] cinco faculdades dominantes (<i>indriya</i>)
-– convicção, energia, atenção plena, concentração, sabedoria <a href="arquivo_textos_theravada/ensaio22.html"><b>[Mais]</b></a>; [5] cinco poderes
+– desejo, energia, mente, investigação <a href='javascript:loadContent("sutta/samyutta_nikaya.html#LI")'><b>[Mais]</b></a>; [4] cinco faculdades dominantes (<i>indriya</i>)
+– convicção, energia, atenção plena, concentração, sabedoria <a href='javascript:loadContent("arquivo_textos_theravada/ensaio22.html")'><b>[Mais]</b></a>; [5] cinco poderes
     (<i>bala</i>) – idêntico ao [4]; [6] sete fatores da Iluminação (<i><a
 href="#bojjhannga">bojjhanga</a></i>) – atenção plena, investigação dos
-    fenômenos, energia, êxtase, tranqüilidade, concentração, equanimidade <a href="sutta/samyutta_nikaya.html#XLVI"><b>[Mais]</b></a>; e [7] o
+    fenômenos, energia, êxtase, tranqüilidade, concentração, equanimidade <a href='javascript:loadContent("sutta/samyutta_nikaya.html#XLVI")'><b>[Mais]</b></a>; e [7] o
     Nobre Caminho Óctuplo (</span><span style='font-family:Verdana'><a href="#magga"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>magga</span></i></a></span><span
 lang=PT-BR >) – Entendimento
     Correto, Pensamento Correto, Linguagem Correta, Ação Correta, Modo de Vida
-    Correto, Esforço Correto, Atenção Plena Correta, Concentração Correta. <a href="sutta/samyutta_nikaya.html#XLV"><b>[Mais]</b></a></span></p>
+    Correto, Esforço Correto, Atenção Plena Correta, Concentração Correta. <a href='javascript:loadContent("sutta/samyutta_nikaya.html#XLV")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >    <a name=bodhisatta></a><b>bodhisatta:</b> bodisatva, &quot;Um ser empenhando-se
       pela iluminação&quot;; o termo utilizado para descrever o Buda antes de ele se
@@ -496,11 +461,11 @@ lang=PT-BR >    <a name=bodhisatta></a><b>bodhisatta:</b> bodisatva, &quot;Um se
 lang=PT-BR >  <a name=bojjhannga></a><b>bojjhanga: </b>os sete fatores da iluminação são:
         atenção plena <i>(<a href="#sati">sati</a>),</i> investigação dos fenômenos <i>(<a href="#dhamma_vicaya">dhamma-vicaya</a>)</i>,
       </i>energia <i>(<a href="#viriya">viriya</a>)</i>, êxtase <i>(<a href="#piti">piti</a>),</i> tranqüilidade <i>(<a href="#passaddhi">passaddhi</a>),</i> concentração <i>(<a
-href="#samadhi">samadhi</a>), </i>equanimidade <i>(<a href="#upekkha">upekkha</a>)</i>.<a href="sutta/samyutta_nikaya.html#XLVI"><b>[Mais]</b></a><o:p></o:p></span></p>
+href='javascript:loadContent("#samadhi">samadhi</a>), </i>equanimidade <i>(<a href='javascript:loadContent("#upekkha">upekkha</a>)</i>.<a href='javascript:loadContent("sutta/samyutta_nikaya.html#XLVI")')')'><b>[Mais]</b></a><o:p></o:p></span></p>
 <p class="Normal"><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>brahma:</span></b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'> &quot;aquele que é grande&quot; – habitante dos mundos de Brahma no reino da 
-matéria sutil.<a href="caminho_liberdade/mundos.html"><b>[Mais]</b></a></span></p>
+matéria sutil.<a href='javascript:loadContent("caminho_liberdade/mundos.html")'><b>[Mais]</b></a></span></p>
 
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'><a name="brahma_cariya"></a><b>brahma-cariya:</b> vida santa, vida pura ou casta, é um termo 
@@ -529,21 +494,21 @@ style='mso-ansi-language:PT-BR'>mudita</span></i></a></span><span lang=PT-BR
 > (alegria altruísta), e </span><span
 style='font-family:Verdana'><a href="#upekkha"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>upekkha</span></i></a></span><span lang=PT-BR
-> (equanimidade).<a href="sutta/DN13.html"><b>[Mais]</b></a></span></p>
+> (equanimidade).<a href='javascript:loadContent("sutta/DN13.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <b>brâmane:</b> a casta de brâmanes na Índia que defende que os seus membros,
     pelo seu nascimento, são dignos do maior respeito. O Budismo emprestou o termo
     brâmane aplicando-o aos <i><a href="#arahant">arahants</a></i>, para mostrar
     que o respeito não é obtido pelo nascimento, raça, ou casta, mas pela
     realização espiritual. Em muitos suttas este termo aparece como sinônimo de
-    arahant.<a href="sutta/MN98.html"><b>[Mais]</b></a></span></p>
+    arahant.<a href='javascript:loadContent("sutta/MN98.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <b>buddho:</b> desperto; iluminado. Um epíteto para o Buda.</span></p>
 <p class="Normal"><span lang=PT-BR
 >  <a name=buddha></a><b>Buddha:</b> Buda. O nome dado a alguém que redescobre por
         si mesmo o Dhamma, o caminho da libertação, após um longo período em que ele
-        tenha sido esquecido pelo mundo.<a href="sutta/SNXII.65.html#trilha"><b>[Mais]</b></a> De acordo com a tradição, existe uma longa
-        seqüência de Budas que se estende ao passado distante.<a href="sutta/DN14.html"><b>[Mais]</b></a> O mais recente Buda que
+        tenha sido esquecido pelo mundo.<a href='javascript:loadContent("sutta/SNXII.65.html#trilha")'><b>[Mais]</b></a> De acordo com a tradição, existe uma longa
+        seqüência de Budas que se estende ao passado distante.<a href='javascript:loadContent("sutta/DN14.html")'><b>[Mais]</b></a> O mais recente Buda que
         nasceu foi Siddhattha Gotama na Índia no sexto século antes da era cristã. Um
         jovem bem educado e rico, ele abandonou sua família e herança real no auge da
         sua vida em busca da verdadeira felicidade e do fim do sofrimento, <i>(</i></span><span
@@ -551,8 +516,8 @@ style='font-family:Verdana'><a href="#dukkha"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>dukkha</span></i></a></span><i><span
 lang=PT-BR >). </span></i><span
 lang=PT-BR >Após seis anos de
-        austeridades na floresta, ele redescobriu o <a href="sutta/SNLVI.11.html">&quot;caminho do
-        meio&quot</a>; e atingiu o seu objetivo, tornando-se um Buda.<a href="caminho_liberdade/buda.html"><b>[Mais]</b></a><o:p></o:p></span></p>
+        austeridades na floresta, ele redescobriu o <a href='javascript:loadContent("sutta/SNLVI.11.html")'>&quot;caminho do
+        meio&quot</a>; e atingiu o seu objetivo, tornando-se um Buda.<a href='javascript:loadContent("caminho_liberdade/buda.html")'><b>[Mais]</b></a><o:p></o:p></span></p>
 <div class="Normal" align=center style='text-align:center'><span
 style='font-family:Verdana'>
 
@@ -569,7 +534,7 @@ lang=PT-BR ><o:p></o:p></span></p>
 <p class="Normal"><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>cankama:</span></b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'> meditação andando, em geral na forma de caminhar indo e voltando ao
-longo de um trecho predeterminado.<a href="arquivo_textos_theravada/meditacao_andando.html"><b>[Mais]</b></a></span></p>
+longo de um trecho predeterminado.<a href='javascript:loadContent("arquivo_textos_theravada/meditacao_andando.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'><a name=cetana></a><b>cetana:</b> intenção, volição.</span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
@@ -589,7 +554,7 @@ href="#citta">citta</a>)</i>, fatores mentais (<i style='mso-bidi-font-style:
 normal'>cetasika)</i> e forma <i style='mso-bidi-font-style:normal'>(<a
 href="#rupa">rupa</a>)</i>. Dessa forma, os fatores mentais compreendem a
     sensação, percepção e 50 outros fatores, o que no todo resulta em 52 fatores
-    mentais.<a href="arquivo_textos_theravada/Abhidhamma_2.html"><b>[Mais]</b></a><span style='mso-spacerun:yes'>  </span></span></p>
+    mentais.<a href='javascript:loadContent("arquivo_textos_theravada/Abhidhamma_2.html")'><b>[Mais]</b></a><span style='mso-spacerun:yes'>  </span></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>  <a name=chanda></a><a name=chanda></a><b style='mso-bidi-font-weight:normal'>chanda:</b> aspiração, desejo. 1 - Como um termo psicológico neutro sob o ponto de vista
 ético, com o sentido de ‘intenção,’ é um dos fatores mentais gerais <i
@@ -642,7 +607,7 @@ href="#mano">mano</a></i></span><i><span lang=PT-BR style='mso-bidi-font-size:
 style='mso-bidi-font-size:10.0pt;font-family:Verdana;mso-ansi-language:PT-BR;
 mso-bidi-font-style:italic'>O Dhammasangani divide todos os fenômenos em
 consciência (<i>citta=viññana</i>), fatores mentais (<i><a href="#cetasika">cetasika</a></i>)
-e forma <i>(<a href="#rupa">rupa</a></i>).<a href="arquivo_textos_theravada/Abhidhamma_1.html"><b>[Mais]</b></a></span><span lang=PT-BR
+e forma <i>(<a href='javascript:loadContent("#rupa">rupa</a></i>).<a href='javascript:loadContent("arquivo_textos_theravada/Abhidhamma_1.html")')'><b>[Mais]</b></a></span><span lang=PT-BR
 ><o:p></o:p></span></p>
 
 <div class="Normal" align=center style='text-align:center'><span
@@ -678,7 +643,7 @@ Verdana'><a href="#sila"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>sil
 lang=PT-BR > e </span><span
 style='font-family:Verdana'><a href="#bhavana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>bhavana</span></i></a></span><span lang=PT-BR
->).<a href="caminho_liberdade/dana.html"><b>[Mais]</b></a></span></p>
+>).<a href='javascript:loadContent("caminho_liberdade/dana.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 ><a name=deva></a><b>deva (devata):</b> tradução literal: &quot;luminoso&quot; –
   divindades habitantes dos paraísos que como regra são invisíveis aos seres
@@ -689,7 +654,7 @@ style='mso-ansi-language:PT-BR'>sagga</span></i></a></span><span lang=PT-BR
 > e </span><span
 style='font-family:Verdana'><a href="#sugati"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>sugati</span></i></a></span><i><span
-lang=PT-BR >)</i>.<a href="caminho_liberdade/paraiso.html"><b>[Mais]</b></a></span></p>
+lang=PT-BR >)</i>.<a href='javascript:loadContent("caminho_liberdade/paraiso.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>devadatta:</b> um primo do Buda que tentou criar um cisma na Sangha e que
     desde então se tornou emblemático para todos Budistas que atuam consciente ou
@@ -710,7 +675,7 @@ lang=PT-BR >  <a name="dhamma_vicaya"></a><b>dhamma-vicaya:</b> investigação dos
 da iluminação sugere que apesar da “investigação dos fenômenos” ser identificada sob o ponto de vista técnico 
 com a sabedoria, <i>pañña</i>, a função inicial de <i>pañña</i> como fator da iluminação não é discernir as três características, 
 (sofrimento, etc.), mas simplesmente discriminar entre as qualidades mentais benéficas e prejudiciais que se tornam 
-aparentes com o aprofundamento da atenção plena. <a href="sutta/SNXLVI.2.html"><b>[Mais]</b></a></p> 
+aparentes com o aprofundamento da atenção plena. <a href='javascript:loadContent("sutta/SNXLVI.2.html")'><b>[Mais]</b></a></p> 
 
 <p class="Normal"><span
 lang=PT-BR >  <a name="dhamma_vinaya"></a><b>dhamma-vinaya:</b> &quot;doutrina (</span><span
@@ -747,7 +712,7 @@ lang=PT-BR >  <a name=dhutanga></a><b>dhutanga:</b> práticas ascéticas voluntári
               qualquer alimento oferecido depois da coleta de esmola de alimentos; (8) morar
               na floresta; (9) morar sob uma árvore; (10) viver a céu aberto; (11) viver em
               um cemitério; (12) estar satisfeito com qualquer moradia que tenha; (13) dormir
-              sentado e nunca se deitar.<a href="sutta/SNXVI.5.html"><b>[Mais]</b></a><o:p></o:p></span></p>
+              sentado e nunca se deitar.<a href='javascript:loadContent("sutta/SNXVI.5.html")'><b>[Mais]</b></a><o:p></o:p></span></p>
 <p class="Normal"><a name=ditthi></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>ditthi:</span></b><span lang=PT-BR
 > (tradução literal: visão).
@@ -777,7 +742,7 @@ lang=PT-BR >  <a name=dukkha></a><b>dukkha:</b> (1) sensação <i>(<a href="#vedan
     condicionados que por conta da sua impermanência, estão todos sujeitos ao
     sofrimento e isso inclui também as experiências agradáveis. Dessa forma a
     primeira verdade não nega a existência das experiências agradáveis o que é às
-    vezes erroneamente assumido. Dukkha tem o sentido literal de algo duro de aguentar. Talvez uma expressão que diz respeito a pessoas mas que captura bem a noção de dukkha seja mala-sem-alça.<a href="caminho_liberdade/dukkha.html"><b>[Mais]</b></a><o:p></o:p></span></p>
+    vezes erroneamente assumido. Dukkha tem o sentido literal de algo duro de aguentar. Talvez uma expressão que diz respeito a pessoas mas que captura bem a noção de dukkha seja mala-sem-alça.<a href='javascript:loadContent("caminho_liberdade/dukkha.html")'><b>[Mais]</b></a><o:p></o:p></span></p>
 <div class="Normal" align=center style='text-align:center'><span
 style='font-family:Verdana'>
 
@@ -807,7 +772,7 @@ style='mso-ansi-language:PT-BR'>jhana</span></i></a></span><i><span lang=PT-BR
 <p class="Normal"><span lang=PT-BR
 >  <b>ekayana-magga:</b> um caminho unificado; um caminho direto. Um epíteto para
   a prática de estar plenamente atento nos quatro fundamentos: corpo, sensações,
-  mente e objetos mentais (<i><a href="#satipatthana">satipatthana</a></i>).<a href="sutta/MN10.html#T2"><b>[Mais]</b></a></span></p>
+  mente e objetos mentais (<i><a href='javascript:loadContent("#satipatthana">satipatthana</a></i>).<a href='javascript:loadContent("sutta/MN10.html#T2")')'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <b>evam:</b> assim; dessa forma. Este termo é usado na Tailândia para o
     encerramento formal de um sermão e é empregado no início de muitos suttas – <i>evam
@@ -893,7 +858,7 @@ por isso ele os confiou a serpentes subterrâneas.</span></p>
 entre os dois com o símile de uma barra de ferro besuntada com excremento em uma das pontas e quente como 
 uma brasa na outra ponta: <i>hiri</i> é a repulsa em agarrar a barra pela ponta besuntada com excremento,<i> ottappa </i>é 
 o medo de agarrar a barra pela ponta que está em brasa.</span><span style='font-family:Verdana'> Veja <a
-href="#kamma"><i>kamma</i></a>.<a href="sutta/MN39.html#T3"><b>[Mais]</b></a> <o:p></o:p></span></p>
+href='javascript:loadContent("#kamma"><i>kamma</i></a>.<a href='javascript:loadContent("sutta/MN39.html#T3")')'><b>[Mais]</b></a> <o:p></o:p></span></p>
 <div class="Normal" align=center style='text-align:center'><a name=I></a><span
 style='font-family:Verdana'>
 
@@ -926,7 +891,7 @@ href="#saddha">(saddha)</a></i>, energia <i><a
 href="#viriya">(viriya)</a></i>, atenção plena <i><a
 href="#sati">(sati)</a></i>, concentração <i><a
 href="#samadhi">(samadhi)</a></i>, sabedoria <i><a
-href="#panna">(pañña)</a></i>.<a href="sutta/samyutta_nikaya.html#XLVIII"><b>[Mais]</b></a>
+href='javascript:loadContent("#panna">(pañña)</a></i>.<a href='javascript:loadContent("sutta/samyutta_nikaya.html#XLVIII")')'><b>[Mais]</b></a>
 
 
 <div class="Normal" align=center style='text-align:center'><span
@@ -975,7 +940,7 @@ style='mso-ansi-language:PT-BR'>ekaggatarammana</span></i></a></span><span
 lang=PT-BR > (unicidade
 mental). Nos comentários as realizações meditativas imateriais também são
 chamadas de jhanas imateriais. Isso no entanto não ocorre nos suttas. Esses estados são chamados de imateriais devido
-à caracteristica do objeto empregado para a concentração.<a href="caminho_liberdade/jhana.html"><b>[Mais]</b></a></span><span
+à caracteristica do objeto empregado para a concentração.<a href='javascript:loadContent("caminho_liberdade/jhana.html")'><b>[Mais]</b></a></span><span
 lang=PT-BR style='font-size:10.0pt;font-family:Verdana;mso-ansi-language:PT-BR'><o:p></o:p></span></p>
 
 <div class="Normal" align=center style='text-align:center'><span
@@ -996,7 +961,7 @@ lang=ES style='font-family:Verdana;mso-ansi-language:ES'><o:p></o:p></span></p>
 lang=PT-BR > amigo
 admirável. O bom amigo ou nobre amigo é um bhikkhu mais sênior que é o mentor e
 amigo do seu pupilo, que deseja o bem-estar e progresso deste, guiando-o na
-meditação. Em particular o mestre de meditação é assim denominado.<a href="caminho_liberdade/amizade_admiravel.html"><b>[Mais]</b></a><o:p></o:p></span></p>
+meditação. Em particular o mestre de meditação é assim denominado.<a href='javascript:loadContent("caminho_liberdade/amizade_admiravel.html")'><b>[Mais]</b></a><o:p></o:p></span></p>
 
 <p class="Normal"><a name=kama></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>kama: </span></b><span lang=PT-BR
@@ -1015,7 +980,7 @@ completamente eliminado no estado de ‘não retorno’ <i>(<a href="#anagami">anagam
 <p class="Normal"><a name=kamaguna></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>kamaguna:</b> elementos do prazer sensual. Os objetos externos 
 dos cinco sentidos: formas visíveis, sons, aromas, sabores e tangíveis. 
-Também são chamados de bases externas <i>(<a href="#ayatna">ayatana</a>)</i>. <a href="sutta/MN13.html#T7"><b>[Mais]</b></a></p>
+Também são chamados de bases externas <i>(<a href='javascript:loadContent("#ayatna">ayatana</a>)</i>. <a href='javascript:loadContent("sutta/MN13.html#T7")')'><b>[Mais]</b></a></p>
 
 <p class="Normal"><a name=kamma></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>kamma (Skt. karma):</span></b><span lang=PT-BR
@@ -1024,7 +989,7 @@ href="#cetana">cetana</a>) </i>benéfica <i>(<a href="#kusala">kusala</a>)</i>
 ou prejudicial <i>(<a href="#akusala">akusala</a>) </i>e os seus
 fatores mentais concomitantes que causam o renascimento e moldam o destino dos
 seres. As intenções se manifestam como ações benéficas<i> </i>ou
-prejudiciais com o corpo, linguagem e a mente.<a href="kamma_karma.html"><b>[Mais]</b></a></span></p>
+prejudiciais com o corpo, linguagem e a mente.<a href='javascript:loadContent("kamma_karma.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><a name=kammatthana></a><span lang=PT-BR
 ><b>kammatthana</b> tradução literal: &quot;base de trabalho&quot; ou &quot;lugar de
   trabalho&quot;. A palavra se refere à &quot;ocupação&quot; de um monge
@@ -1049,7 +1014,7 @@ lang=PT-BR > possam ser
   inclui todos os quarenta temas clássicos de meditação. Embora se possa dizer
   que cada praticante de meditação se dedica a <i>kammatthana,</i> o termo é mais
   freqüentemente usado para identificar em particular a tradição das florestas
-  da Tailândia que foi estabelecida por Phra Ajaan Mun e Phra Ajaan Sao. <a href="arquivo_textos_theravada/tradicao_de_florestas.html"><b>[Mais]</b></a> </span></p>
+  da Tailândia que foi estabelecida por Phra Ajaan Mun e Phra Ajaan Sao. <a href='javascript:loadContent("arquivo_textos_theravada/tradicao_de_florestas.html")'><b>[Mais]</b></a> </span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=karuna></a><b>karuna:</b> compaixão; simpatia; a empatia com o
   sofrimento dos outros. Uma das dez perfeições <i>(</i></span><span
@@ -1080,7 +1045,7 @@ lang=PT-BR >  <a name="kayagata_sati"></a><b>kayagata-sati:</b> atenção plena no
 Verdana'><a href="#dhatu"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>dhatu</span></i></a></span><span
 lang=PT-BR >); contemplar o
     fato de que o corpo está inevitavelmente sujeito à morte e a desintegração.
-    <a href="sutta/MN119.html"><b>[Mais]</b></a></span></p>
+    <a href='javascript:loadContent("sutta/MN119.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >    <a name=khandha></a><b>khandha:</b> agregado; amontoado; grupo (veja <i><a
 href="#sakkaya">sakkaya</a>). </i>Componentes físicos e mentais da identidade e
@@ -1108,7 +1073,7 @@ style='mso-ansi-language:PT-BR'>sankhara</span></i></a></span><i><span
 style='font-family:Verdana'><a href="#vinnana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>viññana</span></i></a></span><i><span
 > </span></i><span lang=PT-BR
->(consciência). <a href="sutta/samyutta_nikaya.html#XXII"><b>[Mais]</b></a></span></p>
+>(consciência). <a href='javascript:loadContent("sutta/samyutta_nikaya.html#XXII")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >      <a name=khanti></a><b>khanti:</b> paciência; autodomínio. Uma das dez
         perfeições <i>(</i></span><span style='font-family:Verdana'><a href="#parami"><i><span
@@ -1152,7 +1117,7 @@ style='mso-spacerun:yes'> </span>e em alguns casos também ausência de delusão <i
             semente de um renascimento feliz. Veja seu oposto <i><a href="#akusala">akusala</a></i>.
   Veja </span><span style='font-family:Verdana'><a href="#kamma"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>kamma</span></i></a></span><span lang=PT-BR
->. <a href="sutta/MN9.html#T3"><b>[Mais]</b></a></span><span lang=PT-BR
+>. <a href='javascript:loadContent("sutta/MN9.html#T3")'><b>[Mais]</b></a></span><span lang=PT-BR
 style='font-size:10.0pt;font-family:Verdana;mso-ansi-language:PT-BR'>&nbsp;<o:p></o:p></span></p>
 
 
@@ -1194,7 +1159,7 @@ Verdana;mso-ansi-language:PT-BR'>loka: </span></b><span lang=PT-BR
 >mundo. Denota as três esferas
 de existência que compreendem todo o universo, isto é, (1) o reino da esfera
 sensual (<i>kama-loka), </i>ou o mundo dos cinco sentidos; (2) o reino da
-esfera da matéria sutil <i>(rupa-loka)</i>; (3) o reino da esfera imaterial <i>(arupa-loka).</i> <a href="caminho_liberdade/mundos.html"><b>[Mais]</b></a></span></p>
+esfera da matéria sutil <i>(rupa-loka)</i>; (3) o reino da esfera imaterial <i>(arupa-loka).</i> <a href='javascript:loadContent("caminho_liberdade/mundos.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><a name=loka_dhamma></a><span lang=PT-BR
 ><b>loka-dhamma:</b> condições do mundo ou assuntos, fenômenos do mundo. A lista
   padrão indica oito: ganho e perda, elogio e crítica, fama e má reputação, alegria e tristeza.</span></p>
@@ -1235,7 +1200,7 @@ Caminho Óctuplo compreende três grupos: Sabedoria <i>(<a href="#panna">pañña</a>
 Correto, Pensamento Correto; Virtude <i>(<a href="#sila">sila</a>) </i>–
 Linguagem Correta, Ação Correta, Modo de Vida Correto; Concentração <i>(<a
 href="#samadhi">samadhi</a>) – </i>Esforço Correto, Atenção Plena Correta,
-Concentração Correta.<a href="caminho_liberdade/dukkha_caminho.html"><b>[Mais]</b></a> <o:p></o:p></span></p>
+Concentração Correta.<a href='javascript:loadContent("caminho_liberdade/dukkha_caminho.html")'><b>[Mais]</b></a> <o:p></o:p></span></p>
 
 <p class="Normal"><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'><a
@@ -1287,7 +1252,7 @@ coisas externas às quais nos apegamos, em particular os próprios cinco
 agregados. Mas é evidente que a linha de pensamento dos suttas não concebe Mara
 apenas como uma representação das fraquezas morais humanas mas o vê como uma
 divindade maléfica real cujo objetivo é frustrar os esforços daqueles que têm
-como meta alcançar o objetivo supremo.<a href="sutta/SnpIII2.html"><b>[Mais]</b></a></span></p>
+como meta alcançar o objetivo supremo.<a href='javascript:loadContent("sutta/SnpIII2.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 ><a name=metta></a><b>metta:</b> amor bondade; boa vontade, o desejo de bem-estar e felicidade para os outros. 
 Uma das dez perfeições <i>(</i></span><span
@@ -1297,7 +1262,7 @@ lang=PT-BR >)</span></i><span
 lang=PT-BR > e uma das quatro
 &quot;moradas divinas&quot; <i>(</i></span><span style='font-family:Verdana'><a
 href="#brahma_vihara"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>brahma-vihara</span></i></a></span><span
-lang=PT-BR >). No Visudhimagga Buddhaghosa diz o seguinte: "<i>Metta</i> é caracterizado como a promoção do bem-estar dos outros, e sua função é se concentrar no bem-estar deles. Manifesta-se como a remoção da irritação e a sua causa imediata é ver a natureza amável dos seres. Sucede quando faz diminuir a má vontade e fracassa quando dá origem ao apego". (Vsm 318)<br> Uma definição alternativa para <i>metta</i> pode ser encontrada na Bíblia Cristã. Na epístola aos Corinthianos São Paulo usa a palavra grega <i>agape</i>, que tem o mesmo significado de <i>metta</i> no Budismo, descrevendo-a desta forma: "O amor é paciente, o amor é bondoso. Não sente inveja, não se vangloria, não é orgulhoso. Não é rude, não é egoísta, não se irrita, não guarda rancor. O amor não se deleita com o mal mas se rejubila com a verdade." </span></i><a href="sutta/SnpI8.html"><b>[Mais]</b></a></p>
+lang=PT-BR >). No Visudhimagga Buddhaghosa diz o seguinte: "<i>Metta</i> é caracterizado como a promoção do bem-estar dos outros, e sua função é se concentrar no bem-estar deles. Manifesta-se como a remoção da irritação e a sua causa imediata é ver a natureza amável dos seres. Sucede quando faz diminuir a má vontade e fracassa quando dá origem ao apego". (Vsm 318)<br> Uma definição alternativa para <i>metta</i> pode ser encontrada na Bíblia Cristã. Na epístola aos Corinthianos São Paulo usa a palavra grega <i>agape</i>, que tem o mesmo significado de <i>metta</i> no Budismo, descrevendo-a desta forma: "O amor é paciente, o amor é bondoso. Não sente inveja, não se vangloria, não é orgulhoso. Não é rude, não é egoísta, não se irrita, não guarda rancor. O amor não se deleita com o mal mas se rejubila com a verdade." </span></i><a href='javascript:loadContent("sutta/SnpI8.html")'><b>[Mais]</b></a></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=moha></a><b>moha:</b> delusão; ignorância (sinônimo de </span><span
 style='font-family:Verdana'><a href="#avijja"><i><span lang=PT-BR
@@ -1409,7 +1374,7 @@ lang=PT-BR >e que é um elo
 crucial na cadeia causal da origem dependente <i>(</i></span><span
 style='font-family:Verdana'><a href="#paticca_samuppada"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>paticca-samuppada</span></i></a></span><i><span
-lang=PT-BR >).</i><a href="sutta/MN9.html#T52"><b>[Mais]</b></a> <o:p></o:p></span></p>
+lang=PT-BR >).</i><a href='javascript:loadContent("sutta/MN9.html#T52")'><b>[Mais]</b></a> <o:p></o:p></span></p>
 
 <p class="Normal"><a name=nana></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>ñana: </span></b><span lang=PT-BR
@@ -1422,7 +1387,7 @@ Verdana;mso-ansi-language:PT-BR'>nekkhamma:</span></b><span lang=PT-BR
 > renúncia; tradução literal:
 &quot;liberdade do desejo sensual&quot;. Um dos dez </span><span
 style='font-family:Verdana'><a href="#parami"><i><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>paramis.</span></i></a><a href="caminho_liberdade/renuncia.html"><b>[Mais]</b></a></span></p>
+style='mso-ansi-language:PT-BR'>paramis.</span></i></a><a href='javascript:loadContent("caminho_liberdade/renuncia.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <a name=nibbana></a><b>nibbana (Skt. nirvana):</b> libertação; em termos
   literais o &quot;desatamento&quot; da mente das impurezas mentais (<a href="#asava"><i><span lang=PT-BR
@@ -1440,7 +1405,7 @@ lang=PT-BR >e de tudo que pode
   ser descrito ou definido. Como este termo também denota a extinção de um fogo,
   carrega a conotação de acalmar, esfriar e pacificar. De acordo com a física
   que se ensinava nos tempos do Buda, o fogo se agarra ou adere ao seu
-  combustível; quando extinto, ele está desatado.<a href="caminho_liberdade/nibbana.html"><b>[Mais]</b></a> </p>
+  combustível; quando extinto, ele está desatado.<a href='javascript:loadContent("caminho_liberdade/nibbana.html")'><b>[Mais]</b></a> </p>
 <p class="Normal"><span
 lang=PT-BR > <a name=nibbida></a><b>nibbida: </b>desencantamento. O
     desencantamento representa o distanciamento de toda existência condicionada
@@ -1449,7 +1414,7 @@ href="#ayatna">ayatanas</a></i> e a <a href="#ariya_sacca">primeira nobre verdad
     e surge do conhecimento e visão de como as coisas na verdade são, (<a href="#yatha"><i>yatha butha ñanadassana</a></i>). De
 acordo com os comentários, desencantamento, (também
 interpretado como “náusea”, “nojo” ou “repulsa”), significa o estágio máximo de insight. <i>Nibbida</i> conduz ao
-    desapego, <i><a href="#viraga">viraga</a></i>, a realização do caminho supramundano, que por sua vez conduz a <i><a href="#vimutti">vimutti</a></i>, o fruto do caminho supramundano. <a href="sutta/ANX.2.html"><b>[Mais]</b></a> <o:p></o:p></span></p>
+    desapego, <i><a href='javascript:loadContent("#viraga">viraga</a></i>, a realização do caminho supramundano, que por sua vez conduz a <i><a href='javascript:loadContent("#vimutti">vimutti</a></i>, o fruto do caminho supramundano. <a href='javascript:loadContent("sutta/ANX.2.html")')')'><b>[Mais]</b></a> <o:p></o:p></span></p>
 <p class="Normal"><a name=nimitta></a><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'>nimitta:</span></b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'> marca, sinal, imagem, objeto. Esses significados aparecem em vários
@@ -1468,9 +1433,9 @@ style='mso-bidi-font-style:normal'>nimitta</i> é a aparência através da qual os
 objetos externos são apreendidos, as qualidades mais distintas de um objeto que
 quando agarradas sem atenção plena, podem dar origem a pensamentos com
 contaminações. Os detalhes podem em seguida serem agarrados pela atenção depois
-que o primeiro contato perceptivo não tenha sido acompanhado pela contenção.<a href="sutta/MN39.html#T8"><b>[Mais]</b></a></span></p>
+que o primeiro contato perceptivo não tenha sido acompanhado pela contenção.<a href='javascript:loadContent("sutta/MN39.html#T8")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
-PT-BR'><a name=nirodha></a><b>nirodha:</b> cessação; dispersão; interrupção. A mente em suspensão nos intervalos da percepção dualista, como um objeto arremessado no ar que permanece imóvel no ápice da sua trajetória. <a href="arquivo_textos_theravada/origem_dependente_10.html#T4"><b>[Mais]</b></a>
+PT-BR'><a name=nirodha></a><b>nirodha:</b> cessação; dispersão; interrupção. A mente em suspensão nos intervalos da percepção dualista, como um objeto arremessado no ar que permanece imóvel no ápice da sua trajetória. <a href='javascript:loadContent("arquivo_textos_theravada/origem_dependente_10.html#T4")'><b>[Mais]</b></a>
 </p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'><a name=nissarana></a><b>nissarana</b>: escapatória, estar
@@ -1544,10 +1509,10 @@ surgem quando os ensinamentos de um Buda tiverem desaparecido por completo.</spa
 mso-ansi-language:PT-BR'><b>paccattam:</b> pessoal; individual<o:p></o:p></span></p>
 
 <p class="Normal"><b><a name="padhana"> </a>padhana</b>: intento, empenho, esforço energético, concentração da mente. 
-O <a href="sutta/DN33.html#R25">DN 33.1.11 (10)</a> menciona estes quatro tipos de esforço: (a) contenção, 
+O <a href='javascript:loadContent("sutta/DN33.html#R25")'>DN 33.1.11 (10)</a> menciona estes quatro tipos de esforço: (a) contenção, 
 (<i>samvara-padhanam</i>), (b) abandono, (<i>pahana-padhanam</i>), (c) desenvolvimento da mente, 
 (<i>bhavana-padhanam</i>), (d) preservação, (<i>anurakkharana-padhanam</i>). Padhana como sinônimo de 
-<a href="#vayama "><i>vayama</i></a> também aparece no <a href="sutta/DN33.html#R19">DN 33.1.11(2)</a>. <a href="sutta/MN26.html#R7"><b>[Mais]</b></a> 
+<a href='javascript:loadContent("#vayama "><i>vayama</i></a> também aparece no <a href='javascript:loadContent("sutta/DN33.html#R19")')'>DN 33.1.11(2)</a>. <a href='javascript:loadContent("sutta/MN26.html#R7")'><b>[Mais]</b></a> 
 
 <p class="Normal"><a name=pajanati></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>pajanati</span></b><span lang=PT-BR
@@ -1559,7 +1524,7 @@ lang=PT-BR >.</span></i></p>
 lang=PT-BR ><b>pali:</b> o cânone de textos preservado pela escola Theravada e por extensão
   o idioma em que esses textos foram compostos.</span></p>
 <p class="Normal"><span
-lang=PT-BR >  <a name=pamujja></a><b>pamujja (ou pamojja): </b>satisfação, contentamento, alegria. <a href="sutta/SNXII.23.html#pamujja"><b>[Mais]</b></a> <i><o:p></o:p></i></span></p>
+lang=PT-BR >  <a name=pamujja></a><b>pamujja (ou pamojja): </b>satisfação, contentamento, alegria. <a href='javascript:loadContent("sutta/SNXII.23.html#pamujja")'><b>[Mais]</b></a> <i><o:p></o:p></i></span></p>
 <p class="Normal"><a name=panna></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>pañña:</span></b><span lang=PT-BR
 > sabedoria, insight;
@@ -1576,7 +1541,7 @@ Este termo com freqüência acompanha <i><a href="#ceto_vimutti">cetto-vimutti</a>
 lang=PT-BR ><a name=papanca></a><b>papañca:</b> complicação, proliferação. A tendência da
   mente para proliferar assuntos a partir da noção de &quot;eu&quot;. Este termo
   também pode ser traduzido como pensamento auto reflexivo, reificação,
-  falsificação, distorção, elaboração ou exageração. <a href="sutta/MN18.html"><b>[Mais]</b></a><span
+  falsificação, distorção, elaboração ou exageração. <a href='javascript:loadContent("sutta/MN18.html")'><b>[Mais]</b></a><span
 style='mso-spacerun:yes'>  </span></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=parami></a><b>parami</b> (também <b>paramita</b>): perfeição de
@@ -1624,7 +1589,7 @@ lang=PT-BR > e equanimidade </span><span
 style='font-family:Verdana'><a href="#upekkha"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>(upekkha</span></i></a></span><i><span
 lang=PT-BR >).</span></i><span
-lang=PT-BR > <o:p></o:p></span><a href="arquivo_textos_theravada/parami.html"><b>[Mais]</b></a></p>
+lang=PT-BR > <o:p></o:p></span><a href='javascript:loadContent("arquivo_textos_theravada/parami.html")'><b>[Mais]</b></a></p>
 <p class="Normal"><a name=parinna></a><a name=parijanati></a><b><span
 lang=PT-BR >parijanati: </span></b><span
 lang=PT-BR >compreensão
@@ -1676,13 +1641,13 @@ style='mso-ansi-language:PT-BR'>pativedha</span></i></a></span><i><span
 lang=PT-BR >.<o:p></o:p></span></i></p>
 
 <p class="Normal"><span lang=PT-BR
->  <a name=pasada></a><b>pasada:</b> claridade e serena confiança. Uma atitude mental e emotiva que compreende um sentimento profundo abrangendo ao mesmo tempo o apreço intelectual, a satisfação, a claridade de pensamentos, a serenidade e a confiança. <a href="arquivo_textos_theravada/pasada.html"><b>[Mais]</b></a></p>
+>  <a name=pasada></a><b>pasada:</b> claridade e serena confiança. Uma atitude mental e emotiva que compreende um sentimento profundo abrangendo ao mesmo tempo o apreço intelectual, a satisfação, a claridade de pensamentos, a serenidade e a confiança. <a href='javascript:loadContent("arquivo_textos_theravada/pasada.html")'><b>[Mais]</b></a></p>
 
 <p class="Normal"><a name=passaddhi></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>passaddhi:</b> tranquilidade, calma, serenidade. </span><span lang=PT-BR
 > Consiste na tranqüilidade
 do corpo e a pacificação dos meios dos sentidos, e como conseqüência a tranqüilidade da mente. É um dos sete fatores da iluminação (<a href="#bojjhannga"><i>bojjhanga</i></a>). 
-Com freqüência é combinado com <i><a href="#pamujja">pamujja</a></i> e <i><a href="#piti">piti</a></i>.<a href="sutta/ANX.2.html"><b>[Mais]</b></a></span></p>
+Com freqüência é combinado com <i><a href='javascript:loadContent("#pamujja">pamujja</a></i> e <i><a href='javascript:loadContent("#piti">piti</a></i>.<a href='javascript:loadContent("sutta/ANX.2.html")')')'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 ><a name="paticca_samuppada"></a><b>paticca-samuppada:</b> origem dependente;
   surgimento co-dependente. Um mapa mostrando a forma como os agregados <i>(</i></span><span
@@ -1704,7 +1669,7 @@ href="#dukkha"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>dukkha</span>
 lang=PT-BR >).</span></i><span
 lang=PT-BR > Como as
   interações são complexas, existem várias versões diferentes do
-  paticca-samuppada nos suttas. No mais comum, o mapa inicia com a ignorância.<a href="origem_dependente.html"><b>[Mais]</b></a></span></p>
+  paticca-samuppada nos suttas. No mais comum, o mapa inicia com a ignorância.<a href='javascript:loadContent("origem_dependente.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=patimokkha></a><b>patimokkha:</b> o código básico de disciplina monástica
     que consiste de 227 regras para monges <i>(</i></span><span style='font-family:
@@ -1743,7 +1708,7 @@ lang=PT-BR >  <a name=peta></a><b>peta:</b> um fantasma faminto - uma classe de 
         de um dos mundos inferiores, às vezes capazes de aparecer para os seres humanos. Os
         petas são freqüentemente representados na arte Budista como seres famintos com
         bocas do tamanho de um alfinete através da qual eles nunca conseguem fazer
-    passar alimento suficiente para saciar a sua fome.<a href="caminho_liberdade/mundos.html"><b>[Mais]</b></a></span></p>
+    passar alimento suficiente para saciar a sua fome.<a href='javascript:loadContent("caminho_liberdade/mundos.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=phala></a><b>phala:</b> fruto, fruição. Especificamente, o fruto ou
           estado mental que segue após realizar um dos quatro caminhos supramundanos
@@ -1759,7 +1724,7 @@ href="#bojjhannga">bojjhanga</a>). </i>Na meditação, uma sensação prazerosa sent
 style='font-family:Verdana'><a href="#jhana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>jhana</span></i></a></span><i><span lang=PT-BR
 >.</span></i><span lang=PT-BR
-> Veja <i><a href="#sukha">sukha</a>.</i><a href="sutta/ANX.2.html"><b>[Mais]</b></a></span></p>
+> Veja <i><a href='javascript:loadContent("#sukha">sukha</a>.</i><a href='javascript:loadContent("sutta/ANX.2.html")')'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >            <b>puja:</b> honra; respeito; observância devocional. Mais comumente, as
               observâncias devocionais que são praticadas nos monastérios diariamente (pela
@@ -1846,10 +1811,10 @@ PT-BR'><br>
 verdade do <i>sofrimento (<a href="#dukkha">dukkha</a>)</i>, da <i>origem (<a
 href="#tanha">tanha</a>)</i> do sofrimento, da <i>cessação (<a href="#nibbana">nibbana</a>)
 </i>do sofrimento e do <i>caminho (<a href="#magga">magga</a>) </i>que conduz à
-cessação do sofrimento.<a href="caminho_liberdade/quatro_nobres_verdades.html"><b>[Mais]</b></a></span></p>
+cessação do sofrimento.<a href='javascript:loadContent("caminho_liberdade/quatro_nobres_verdades.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
 PT-BR'><a name=saddha></a><b>saddha:</b> convicção, fé confiança, apreço. É dito que um Budista tem fé
-  se “ele acredita na iluminação do Buda” (<a href="sutta/MN53.html#T11">MN 53</a>);
+  se “ele acredita na iluminação do Buda” (<a href='javascript:loadContent("sutta/MN53.html#T11")'>MN 53</a>);
   ou nas três jóias (</span><i><span style='font-family:Verdana'><a href="#tiratana"><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>tiratana</span></a></span></i><span
 lang=PT-BR >), através da toma
@@ -1857,7 +1822,7 @@ lang=PT-BR >), através da toma
 lang=PT-BR style='mso-ansi-language:PT-BR'>tisarana</span></a></span></i><span
 lang=PT-BR >) nelas. A sua fé
   no entanto deve ser “equilibrada e fundamentada no entendimento” e ele deve
-  investigar e testar o objeto da sua fé (<a href="sutta/MN47.html#T4">MN 47</a>). A
+  investigar e testar o objeto da sua fé (<a href='javascript:loadContent("sutta/MN47.html#T4")'>MN 47</a>). A
   fé no Budismo não está em conflito com o espírito inquisitivo e a “dúvida com
   respeito a coisas duvidosas” é admitida e a sua investigação é encorajada. A
 “faculdade da fé” <i>(saddhindriya) </i>deve ser equilibrada com a da
@@ -1871,7 +1836,7 @@ lang=PT-BR >) nelas. A sua fé
 href="#sotapanna"><span lang=PT-BR style='mso-ansi-language:PT-BR'>sotapanna</span></a></span></i><i><span
 lang=PT-BR >) </span></i><span
 lang=PT-BR >no qual o grilhão
-  da dúvida é erradicado.<a href="sutta/SNLV.1.html"><b>[Mais]</b></a></span></p>
+  da dúvida é erradicado.<a href='javascript:loadContent("sutta/SNLV.1.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>sadhu:</b> (exclamação) &quot;isso é bom&quot;; uma expressão que demonstra
     apreciação ou concordância.</span></p>
@@ -1892,7 +1857,7 @@ lang=PT-BR >,</span></i><span
 lang=PT-BR > o renascimento no
       paraíso é temporário. Veja também </span><span style='font-family:Verdana'><a
 href="#sugati"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>sugati</span></i></a></span><i><span
-lang=PT-BR >.</span></i><a href="caminho_liberdade/paraiso.html"><b>[Mais]</b></a></p>
+lang=PT-BR >.</span></i><a href='javascript:loadContent("caminho_liberdade/paraiso.html")'><b>[Mais]</b></a></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=sakadagami></a><b>sakadagami:</b> ‘que retorna uma vez’. Uma pessoa que
         abandonou os primeiros três grilhões que aprisionam a mente ao ciclo de
@@ -1929,7 +1894,7 @@ lang=PT-BR > Existem 20 tipos
   como sendo o eu; considerar o eu como possuído de forma material;<span
 style='mso-spacerun:yes'>  </span>considerar a forma material como estando no
   eu; considerar o eu como estando na forma material. O mesmo com as sensações,
-  percepções, formações mentais e consciência.<a href="sutta/SNXXII.47.html"><b>[Mais]</b></a></span></p>
+  percepções, formações mentais e consciência.<a href='javascript:loadContent("sutta/SNXXII.47.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>sakyamuni:</b> &quot;sábio dos Sakyas&quot;; um epíteto para o Buda.</span></p>
 <p class="Normal"><span
@@ -1941,7 +1906,7 @@ lang=PT-BR >  <b>salekha-dhamma:</b> tópicos para obliteração (obliterando as co
         com companhias, energia, virtude (veja </span><span style='font-family:Verdana'><a
 href="#sila"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>sila</span></i></a></span><span
 lang=PT-BR >), concentração,
-        sabedoria, libertação, e o conhecimento e visão da libertação.<a href="sutta/MN8.html"><b>[Mais]</b></a></span></p>
+        sabedoria, libertação, e o conhecimento e visão da libertação.<a href='javascript:loadContent("sutta/MN8.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >        <a name=samadhi></a><b>samadhi:</b> concentração, tranqüilidade, calma, aquietação; 
 a prática de aquietar a mente. É um dos sete fatores da iluminação <i>(<a
@@ -1950,7 +1915,7 @@ href="#bojjhannga">bojjhanga</a>). </i>A Concentração Correta <i>(samma-samadhi)
           e está associada a todos os estados de consciência com kamma benéfico <i>(<a
 href="#kusala">kusala</a>).</i> A concentração incorreta <i>(miccha-samadhi) </i>é
   a concentração associada com todos os estados de consciência com kamma
-          prejudicial <i>(<a href="#akusala">akusala</a>).</i><a href="caminho_liberdade/concentracao_correta.html"><b>[Mais]</b></a> <a href="sutta/ANX.2.html"><b>[Mais]</b></a></span></p>
+          prejudicial <i>(<a href='javascript:loadContent("#akusala">akusala</a>).</i><a href='javascript:loadContent("caminho_liberdade/concentracao_correta.html")')'><b>[Mais]</b></a> <a href='javascript:loadContent("sutta/ANX.2.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=samana></a><b>samana:</b> contemplativo. Em termos literais, uma pessoa que
             abandona as obrigações convencionais da vida social de forma a encontrar uma
@@ -1977,9 +1942,9 @@ style='mso-ansi-language:PT-BR'>pabbajja</span></i></a></span><span lang=PT-BR
 >  <a name=sapajanna></a><b>sampajañña:</b> plena consciência; clara compreensão.
                     Também poder ser interpretado como introspecção – o contínuo exame minucioso dos fenômenos mentais e corporais. 
 Os suttas identificam três tipos de aplicacão da plena consciência. (1) Como um dos componentes para a prática da meditação <a href="#satipatthana"><i>satipatthana</i></a>
-significa a qualidade mental do conhecimento, saber com clareza (<a href="sutta/MN10.html#T3">MN 10</a>); (2) Plena consciência ao caminhar, olhar, movimentar-se, comer, 
-etc. (<a href="sutta/SNXLVII.2.html"> SN XLVII.2</a>);  (3) As sensações, percepções e objetos mentais são compreendidos 
-quando surgem, compreendidos enquanto estão presentes, compreendidos quando desaparecem (<a href="sutta/SNXLVII.35.html"> 
+significa a qualidade mental do conhecimento, saber com clareza (<a href='javascript:loadContent("sutta/MN10.html#T3")'>MN 10</a>); (2) Plena consciência ao caminhar, olhar, movimentar-se, comer, 
+etc. (<a href='javascript:loadContent("sutta/SNXLVII.2.html")'> SN XLVII.2</a>);  (3) As sensações, percepções e objetos mentais são compreendidos 
+quando surgem, compreendidos enquanto estão presentes, compreendidos quando desaparecem (<a href='javascript:loadContent("sutta/SNXLVII.35.html")'> 
 SN XLVII.35</a>).
 Os comentários analisam quatro tipos de plena consciência: (1) do propósito,
                     discernir um propósito benéfico na ação intencionada; (2) da
@@ -1995,13 +1960,13 @@ mso-ansi-language:PT-BR'>.</span></i></p>
 mso-ansi-language:PT-BR'>  <a name=samsara></a><b>samsara:</b> transmigração e perambulação; o ciclo de morte e
 renascimento. Veja </span><span style='font-family:Verdana'><a href="#vatta"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>vatta</span></i></a></span><span
-lang=PT-BR >.<a href="caminho_liberdade/ciclo_de_renascimentos.html"><b>[Mais]</b></a></span></p>
+lang=PT-BR >.<a href='javascript:loadContent("caminho_liberdade/ciclo_de_renascimentos.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >                      <a name=samvega></a><b>samvega:</b> a opressiva sensação de choque, e a emoção,
                         que surgem ao se dar conta da futilidade e falta de sentido da vida da forma
                         como ela é normalmente vivida; uma sensação de culpa pela própria complacência
                         e tolice em ter se permitido viver de maneira tão cega; e um senso de urgência
-  em encontrar uma saída desse ciclo sem sentido.<a href="arquivo_textos_theravada/samvega_pasada.html"><b>[Mais]</b></a></span></p>
+  em encontrar uma saída desse ciclo sem sentido.<a href='javascript:loadContent("arquivo_textos_theravada/samvega_pasada.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=samyojana></a><b>samyojana (sanyojana):</b> grilhões que aprisionam a
                           mente ao ciclo de renascimentos (veja </span><span style='font-family:Verdana'><a
@@ -2021,7 +1986,7 @@ style='mso-ansi-language:PT-BR'>avijja</span></i></a></span><i><span
 lang=PT-BR >).</span></i><span
 lang=PT-BR > Os cinco
                           primeiros grilhões são também chamados grilhões inferiores porque levam ao
-    renascimento no reino da esfera sensual.<a href="arquivo_textos_theravada/majjhima_intro.html#T9"><b>[Mais]</b></a></span></p>
+    renascimento no reino da esfera sensual.<a href='javascript:loadContent("arquivo_textos_theravada/majjhima_intro.html#T9")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >                          <b>sanditthiko:</b> óbvio; aparente imediatamente; visível no aqui e agora. Um
       epíteto para o Dhamma.</span></p>
@@ -2048,7 +2013,7 @@ lang=PT-BR >. Recentemente,
                               Pali. O termo &quot;</span><span style='font-family:Verdana'><a href="#parisa"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>parisa</span></i></a></span><span
 lang=PT-BR >&quot; pode ser mais
-        adequado para esse significado muito mais amplo.<a href="caminho_liberdade/sangha.html"><b>[Mais]</b></a></span></p>
+        adequado para esse significado muito mais amplo.<a href='javascript:loadContent("caminho_liberdade/sangha.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >                              <a name=sankhara></a><b>sankhara:</b> formação, composto, criação, fabricação –
   as forças e fatores que criam as coisas (física ou mental), o processo de
@@ -2059,7 +2024,7 @@ lang=PT-BR >                              <a name=sankhara></a><b>sankhara:</b> 
           mentais, como um dos cinco </span><span style='font-family:Verdana'><a
 href="#khandha"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>khandhas</span></i></a></span><i><span
 lang=PT-BR ></span></i><span
-lang=PT-BR >. <a href="arquivo_textos_theravada/aniccavata.html"><b>[Mais]</b></a></span></p>
+lang=PT-BR >. <a href='javascript:loadContent("arquivo_textos_theravada/aniccavata.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >                                <a name=sanna></a><b>sañña:</b> percepção; alusão; ato da memória ou
                                   reconhecimento; interpretação. Veja <i><a href="#khandha">khandha</a>.</i> </p>
@@ -2080,18 +2045,18 @@ lang=PT-BR >                                    <a name=sati></a><b>sati:</b> at
   inseparável com toda consciência com kamma benéfico <i>(<a href="#kusala">kusala</a>).</i> Em alguns contextos, a palavra <i>sati, </i>quando usada só, também abrange plena consciência
                 <i>(</i></span><span style='font-family:Verdana'><a href="#sapajanna"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>sampajañña</a>).</span></i></span><i><span
-lang=PT-BR ></span></i><a href="sutta/SNXLVII.35.html"> 
+lang=PT-BR ></span></i><a href='javascript:loadContent("sutta/SNXLVII.35.html")'> 
 <b>[Mais]</b></a></p>
 <p class="Normal"><span
 lang=PT-BR >                                      <a name=satipatthana></a><b>satipatthana:</b> fundamentos da atenção plena;
                                         estrutura de referência – corpo, sensações, mente e objetos mentais, vistos em
                                         e por si mesmos à medida em que ocorrem. A descrição detalhada deste tema, tão
                                         importante na prática da cultura mental Budista pode ser encontrada nos dois
-                  <i>Satipatthana Suttas </i>(<a href="sutta/DN22.html">DN 22</a> e <a href="sutta/MN10.html">MN 10</a>).</span></p>
+                  <i>Satipatthana Suttas </i>(<a href='javascript:loadContent("sutta/DN22.html")'>DN 22</a> e <a href='javascript:loadContent("sutta/MN10.html")'>MN 10</a>).</span></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>sa-upadisesa-nibbana:</b> nibbana com combustível restando (a analogia é com
                                           um fogo extinto cujas brasas ainda estão incandescentes) – libertação
-experimentada nesta vida por um <i><a href="#arahant">arahant</a></i>.<a href="sutta/It.44.html"><b>[Mais]</b></a></span></p>
+experimentada nesta vida por um <i><a href='javascript:loadContent("#arahant">arahant</a></i>.<a href='javascript:loadContent("sutta/It.44.html")')'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>savaka:</b> tradução literal: ouvinte. Um discípulo do Buda,
   especialmente um discípulo nobre (</span><span style='font-family:Verdana'><a
@@ -2106,7 +2071,7 @@ Verdana;mso-ansi-language:PT-BR'>sekha: </span></b><span lang=PT-BR
 discípulo no treinamento superior, isto é um discípulo que se dedica ao
 treinamento tríplice (virtude, concentração e sabedoria). Sete tipos
 de discípulos: que alcançaram um dos quatro caminhos supramundanos ou um dos
-três frutos, aquele que alcançou o quarto fruto, que é o arahant, se diz estar além do treinamento.<a href="sutta/SNXLVIII.53.html"><b>[Mais]</b></a></span></p>
+três frutos, aquele que alcançou o quarto fruto, que é o arahant, se diz estar além do treinamento.<a href='javascript:loadContent("sutta/SNXLVIII.53.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 ><a name=sila></a><a name=sikkhati></a><b>sikkhati</b>: aprender, treinar<o:p></o:p></span></p>
 <p class="Normal"><b><span lang=PT-BR style='font-family:Verdana;mso-ansi-language:
@@ -2128,7 +2093,7 @@ Verdana'><a href="#dana"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>dan
 lang=PT-BR > e </span><span
 style='font-family:Verdana'><a href="#bhavana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>bhavana</span></i></a></span><span lang=PT-BR
->).<a href="caminho_liberdade/virtude.html"><b>[Mais]</b></a></span></p>
+>).<a href='javascript:loadContent("caminho_liberdade/virtude.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 ><a name=sotapanna></a><b>sotapanna:</b> aquele que entrou na correnteza ou
   venceu a correnteza. Uma pessoa que abandonou os primeiros três grilhões (</span><span
@@ -2140,7 +2105,7 @@ lang=PT-BR >) que
 style='font-family:Verdana'><a href="#nibbana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>nibbana</span></i></a></span><span lang=PT-BR
 >, com a garantia de que a
-  pessoa terá no máximo mais sete renascimentos.<a href="arquivo_textos_theravada/sotapanna.html"><b>[Mais]</b></a></span></p>
+  pessoa terá no máximo mais sete renascimentos.<a href='javascript:loadContent("arquivo_textos_theravada/sotapanna.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <b>stupa (Pali: thupa):</b> originalmente, um túmulo ou colina com uma
     sepultura guardando as relíquias de uma pessoa santa – tal como o Buda – ou
@@ -2170,7 +2135,7 @@ lang=PT-BR >  <a name=sukha></a><b>sukha:</b> felicidade. Na meditação, uma sens
 style='font-family:Verdana'><a href="#jhana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>jhana</span></i></a></span><i><span lang=PT-BR
 >.</span></i><span lang=PT-BR
-> Veja <i><a href="#piti">piti</a></i>.<a href="sutta/ANX.2.html"><b>[Mais]</b></a>
+> Veja <i><a href='javascript:loadContent("#piti">piti</a></i>.<a href='javascript:loadContent("sutta/ANX.2.html")')'><b>[Mais]</b></a>
           <o:p></o:p></span></p>
 <p class="Normal"><a name=sunnata></a><b><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>suññata: </span></b><span lang=PT-BR
@@ -2186,7 +2151,7 @@ doutrinário, no Theravada, se refere exclusivamente à doutrina de <i>anatta </i>
   Sri Lanka por volta de 100 AC. Mais de 10.000 suttas estão contidos no Sutta
   Pitaka, o principal conjunto de escrituras do Budismo Theravada. Os suttas em
   Pali são amplamente considerados como o registro mais antigo dos ensinamentos
-  do Buda.<a href="sutta_pitaka.html"><b>[Mais]</b></a> </span><span lang=PT-BR style='font-size:10.0pt;font-family:Verdana;
+  do Buda.<a href='javascript:loadContent("sutta_pitaka.html")'><b>[Mais]</b></a> </span><span lang=PT-BR style='font-size:10.0pt;font-family:Verdana;
 mso-ansi-language:PT-BR'>&nbsp;<o:p></o:p></span></p>
 <div class="Normal" align=center style='text-align:center'><span
 style='font-family:Verdana'>
@@ -2215,10 +2180,10 @@ lang=PT-BR > É a causa
 href="#sacca">sacca</a>.</i> Veja os sinônimos </span><span style='font-family:
 Verdana'><a href="#lobha"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>lobha</span></i></a></span><span
 lang=PT-BR > e <i><a
-href="#raga">raga</a>.</i><a href="caminho_liberdade/desejo.html"><b>[Mais]</b></a> </span></p>
+href='javascript:loadContent("#raga">raga</a>.</i><a href='javascript:loadContent("caminho_liberdade/desejo.html")')'><b>[Mais]</b></a> </span></p>
 <p class="Normal"><span
 lang=PT-BR >  <b><a name=tathagata></a>tathagata:</b> este é o epíteto que o Buda empregava com mais freqüência
-      para referir a si mesmo. <a href="sutta/It.112.html"><b>[Mais]</b></a> <i style='mso-bidi-font-style:normal'>Tatha</i> significa assim ou tal; a segunda parte <i style='mso-bidi-font-style:normal'>agata</i> significa vir. No entanto a palavra <i style='mso-bidi-font-style:normal'>gata</i> significa ir. Há muito debate se o significado de tathagata é &quot;assim ido <i>(tatha-gata)&quot;
+      para referir a si mesmo. <a href='javascript:loadContent("sutta/It.112.html")'><b>[Mais]</b></a> <i style='mso-bidi-font-style:normal'>Tatha</i> significa assim ou tal; a segunda parte <i style='mso-bidi-font-style:normal'>agata</i> significa vir. No entanto a palavra <i style='mso-bidi-font-style:normal'>gata</i> significa ir. Há muito debate se o significado de tathagata é &quot;assim ido <i>(tatha-gata)&quot;
     ou</i> &quot; assim vindo <i>(tatha-agata)&quot;. </i><span style='mso-bidi-font-style:
 italic'>O tathagata está totalmente presente ou ele se foi totalmente? Ele é
     completamente imanente ou transcendente? Talvez a melhor interpretação é que
@@ -2226,13 +2191,13 @@ italic'>O tathagata está totalmente presente ou ele se foi totalmente? Ele é
       todas as coisas, completamente atento e ao mesmo tempo transcendente, dotado da
       sabedoria transcendente. Por outro lado, os comentadores em Pali explicam o
       tathagata como aquele que veio para o nosso meio trazendo a mensagem do
-      imortal, para o qual ele “foi” através da sua própria prática do caminho.<a href="sutta/DN11.html#T85"><b>[Mais]</b></a></span>
+      imortal, para o qual ele “foi” através da sua própria prática do caminho.<a href='javascript:loadContent("sutta/DN11.html#T85")'><b>[Mais]</b></a></span>
   <o:p></o:p></span></p>
 <p class="Normal"><a name="te_vijjha"></a><b><span lang=PT-BR
 >te-vijja: </span></b><span
 lang=PT-BR >os três
 conhecimentos verdadeiros: conhecimento das vidas passadas, olho divino e
-destruição das impurezas.<a href="sutta/MN36.html#T38"><b>[Mais]</b></a><span style='mso-spacerun:yes'>  </span></span></p>
+destruição das impurezas.<a href='javascript:loadContent("sutta/MN36.html#T38")'><b>[Mais]</b></a><span style='mso-spacerun:yes'>  </span></span></p>
 <p class="Normal"><span
 lang=PT-BR ><b>than:</b> (Tailandês; também &quot;tan&quot;) reverendo, venerável.</span></p>
 <p class="Normal"><span
@@ -2249,14 +2214,14 @@ lang=PT-BR >    <b>theravada:</b> a &quot;doutrina dos anciãos&quot; – a única d
 Budismo dominante na Tailândia, Sri Lanka e Birmânia. Veja também </span><span
 style='font-family:Verdana'><a href="#hinayana"><i><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>Hinayana</span></i></a></span><span lang=PT-BR
->.<a href="theravada.html"><b>[Mais]</b></a></span></p>
+>.<a href='javascript:loadContent("theravada.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >      <a name="ti_lakkhana"></a><b>ti-lakkhana:</b> três características inerentes a
   todos fenômenos condicionados – impermanência, sofrimento e não-eu.</span></p>
 <p class="Normal"><span lang=PT-BR
 >  <b>tipitaka (Skt. tripitaka):</b> o Cânone Budista; tradução literal: os três
 cestos – regras de disciplina (Vinaya), discursos (Sutta) e
-    tratados de filosofia (Abhidhamma).<a href="tipitaka.html"><b>[Mais]</b></a></span></p>
+    tratados de filosofia (Abhidhamma).<a href='javascript:loadContent("tipitaka.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR
 >  <a name=tiratana></a><b>tiratana:</b> a &quot;Jóia Tríplice&quot; consistindo
             do Buda, Dhamma e Sangha – ideais nos quais todos Budistas buscam refúgio. Veja
@@ -2265,7 +2230,7 @@ style='mso-ansi-language:PT-BR'>tisarana</span></i></a></span><span lang=PT-BR
 >.</span></p>
 <p class="Normal"><span lang=PT-BR
 >            <a name=tisarana></a><b>tisarana:</b> o &quot;Refúgio Tríplice&quot; – o Buda,
-              Dhamma e Sangha. <a href="caminho_liberdade/refugio_triplice.html"><b>[Mais]</b></a>
+              Dhamma e Sangha. <a href='javascript:loadContent("caminho_liberdade/refugio_triplice.html")'><b>[Mais]</b></a>
         <a name=U></a><o:p></o:p></span></p>
 <div class="Normal" align=center style='text-align:center'><span
 style='font-family:Verdana'>
@@ -2315,7 +2280,7 @@ sentido de imperfeições da meditação de concentração; algumas vezes
 com o sentido de  imperfeições no insight (veja <i><a
 href="#vipassanupakkilesa">vipassanupakkilesa</a>)</i>; e algumas vezes
 significando corrupções que surgem à partir das três raízes prejudiciais –
-desejo, raiva e delusão – nessas formas ou nos seus desdobramentos.<a href="sutta/MN7.html"><b>[Mais]</b></a></span></p>
+desejo, raiva e delusão – nessas formas ou nos seus desdobramentos.<a href='javascript:loadContent("sutta/MN7.html")'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:Verdana;
 mso-ansi-language:PT-BR'><a name=upasampada></a><b>upasampada:</b> aceitação; ordenação completa como um
   </span><span style='font-family:Verdana'><a href="#bhikkhu"><i><span lang=PT-BR
@@ -2349,7 +2314,7 @@ lang=PT-BR >  <a name=uposatha></a><b>uposatha:</b> dia de observância, correspo
         observar preceitos especiais. Nos dias de uposatha da lua nova e lua cheia os
         monges se reúnem para recitar as regras do </span><span style='font-family:
 Verdana'><a href="#patimokkha"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>Patimokkha</span></i></a></span><i><span
-lang=PT-BR >.</span></i><a href="caminho_liberdade/uposatha.html"><b>[Mais]</b></a><span
+lang=PT-BR >.</span></i><a href='javascript:loadContent("caminho_liberdade/uposatha.html")'><b>[Mais]</b></a><span
 lang=PT-BR > </span><span
 lang=PT-BR style='font-size:10.0pt;font-family:Verdana;mso-ansi-language:PT-BR'>&nbsp;<o:p></o:p></span></p>
 <div class="Normal" align=center style='text-align:center'><span
@@ -2381,12 +2346,12 @@ lang=PT-BR >. <o:p></o:p></span></p>
 <p class="Normal"><a name=vayama></a><b style='mso-bidi-font-weight:normal'><span
 lang=PT-BR >vayama:</span></b><span
 lang=PT-BR > esforço, empenho.
-Veja também <i style='mso-bidi-font-style:normal'><a href="#viriya">viriya</a> e <a href="#padhana">padhana</a>. </i><a href="caminho_liberdade/esforco.html"><b>[Mais]</b></a></span></p>
+Veja também <i style='mso-bidi-font-style:normal'><a href='javascript:loadContent("#viriya">viriya</a> e <a href='javascript:loadContent("#padhana">padhana</a>. </i><a href='javascript:loadContent("caminho_liberdade/esforco.html")')')'><b>[Mais]</b></a></span></p>
 <p class="Normal"><span
 lang=PT-BR ><a name=vedana></a><b>vedana:</b> sensação – a qualidade de prazer, desprazer, ou neutra, que ocorre com cada contato nos sentidos.
 Em cada órgão do sentido essa qualidade recebe um nome distinto, por exemplo, aquilo que é visto como prazeroso é chamado de belo, o desprazeroso de feio; aquilo que é ouvido como prazeroso é chamado de melodioso, o desprazeroso de ruidoso; aquilo que é cheirado como prazeroso é chamado de perfumado, o desprazeroso de malcheiroso e assim por diante. Veja </span><span style='font-family:Verdana'><a href="#khandha"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>khandha</span></i></a></span><i><span
-lang=PT-BR >.</span></i><a href="sutta/samyutta_nikaya.html#XXXVI"><b>[Mais]</b></a></p>
+lang=PT-BR >.</span></i><a href='javascript:loadContent("sutta/samyutta_nikaya.html#XXXVI")'><b>[Mais]</b></a></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=vicara></a><b>vicara:</b> avaliação; investigação; deliberação; pensamento sustentado; pensamento
     discursivo. Na meditação, </span><span style='font-family:Verdana'><a
@@ -2453,7 +2418,7 @@ style='mso-ansi-language:PT-BR'>Dhamma</span></i></a></span><span lang=PT-BR
 href="#dhamma_vinaya"><i><span lang=PT-BR style='mso-ansi-language:PT-BR'>Dhamma-vinaya</span></i></a></span><span
 lang=PT-BR >&quot; - &quot;a
   doutrina e disciplina&quot; – é o nome que o Buda deu ao movimento que ele
-  fundou.<a href="vinaya_pitaka.html"><b>[Mais]</b></a</span></p>
+  fundou.<a href='javascript:loadContent("vinaya_pitaka.html")'><b>[Mais]</b></a</span></p>
 <p class="Normal"><span
 lang=PT-BR >  <a name=vinnana></a><b>viññana:</b> consciência; o ato de notar os objetos
     sensoriais e idéias na medida em que eles ocorrem; a cognição mais elementar
@@ -2473,7 +2438,7 @@ alucinações que podem ocorrer na percepção, <i>(sañña-vipallasa), </i>na mente,
 <i>(citta-vipallasa), </i>ou nas idéias, <i>(ditthi-vipallasa).</i> As
 distorções podem ser de quatro tipos: considerar o <span style='mso-bidi-font-weight:
 bold'>impermanente como permanente, o doloroso como prazeroso, aquilo que não é
-o eu como o eu, e aquilo que é feio ou impuro como belo</span> ou puro.<a href="sutta/ANIV.49.html"><b>[Mais]</b></a<span
+o eu como o eu, e aquilo que é feio ou impuro como belo</span> ou puro.<a href='javascript:loadContent("sutta/ANIV.49.html")'><b>[Mais]</b></a<span
 style='mso-spacerun:yes'>  </span></span></p>
 <p class="Normal"><span lang=PT-BR
 ><a name=vipaka></a><b>vipaka:</b> a conseqüência, resultado ou fruto de cada ação
@@ -2501,7 +2466,7 @@ livro <i>In this very life</i> explica que a palavra <i>vipassana</i> tem duas p
 de vários modos.” Os vários modos no caso são a impermanência, o sofrimento e o não-eu, <i><a href="#anicca">anicca</a>, 
 <a href="#dukkha">dukkha</a>, <a href="#anatta">anatta</a></i>. 
 Veja também <span
-style='mso-spacerun:yes'></span><i><a href="#abhijanati">abhijanati</i></a>.  </span><a href="meditacao.html"><b>[Mais]</b></a</p> 
+style='mso-spacerun:yes'></span><i><a href='javascript:loadContent("#abhijanati">abhijanati</i></a>.  </span><a href='javascript:loadContent("meditacao.html")')'><b>[Mais]</b></a</p> 
 <p class="Normal"><span
 lang=PT-BR >    <a name=vipassanupakkilesa></a><b>vipassanupakkilesa:</b> máculas ou
       imperfeições no insight; experiências intensas que podem ocorrer ao longo da
@@ -2522,7 +2487,7 @@ lang=PT-BR >),</span></i><span
 lang=PT-BR > um dos sete
   fatores da iluminação <i>(<a href="#bojjhannga">bojjhanga</a>). </i><span
 style='mso-bidi-font-style:italic'>Veja também <i><a href="#vayama">vayama</a></i>.
-  <i><span style='mso-spacerun:yes'> </span></i></span></span><a href="sutta/SNXLVIII.10.html"><b>[Mais]</b></a></p>
+  <i><span style='mso-spacerun:yes'> </span></i></span></span><a href='javascript:loadContent("sutta/SNXLVIII.10.html")'><b>[Mais]</b></a></p>
 <p class="Normal"><span
 lang=PT-BR >  <b>visakha (também Vesakha, Vesak, Wesak, etc.):</b> o antigo nome para o mês
     lunar Indiano da primavera correspondendo ao nosso Abril-Maio. De acordo com a
@@ -2530,7 +2495,7 @@ lang=PT-BR >  <b>visakha (também Vesakha, Vesak, Wesak, etc.):</b> o antigo nome
 PT-BR'>Parinibbana</span></i></a></span><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'> ocorreram todos na noite de lua cheia do mês de
     Visakha. Esses eventos são comemorados nesse dia no festival do Visakha que é
-    celebrado anualmente em todo o mundo do Budismo Theravada.<a href="caminho_liberdade/uposatha.html"><b>[Mais]</b></a> </span></p>
+    celebrado anualmente em todo o mundo do Budismo Theravada.<a href='javascript:loadContent("caminho_liberdade/uposatha.html")'><b>[Mais]</b></a> </span></p>
 <p class="Normal"><span lang=PT-BR style='font-family:
 Verdana;mso-ansi-language:PT-BR'>  <a name=vitakka></a><b>vitakka:</b> pensamento aplicado. Nos suttas, <i>vitakka</i> é 
 com freqüência usado como sinônimo para pensamento. <i>Vitakka</i> também é chamado <i>sankappa</i>, e <i>sammasankappa</i>, (pensamento correto), 
@@ -2540,7 +2505,7 @@ com freqüência usado como sinônimo para pensamento. <i>Vitakka</i> também é cham
 normal'>akusala)</i>: pensamentos sensuais, pensamentos com raiva e pensamentos
     com crueldade. Existem três tipos de pensamentos benéficos ou hábeis:
     pensamentos de renúncia, de não raiva e não crueldade. Estes últimos três
-    constituem o ‘Pensamento Correto’ que é o segundo elemento do Nobre Caminho Óctuplo.<a href="caminho_liberdade/pensamento_correto.html"><b>[Mais]</b></a>
+    constituem o ‘Pensamento Correto’ que é o segundo elemento do Nobre Caminho Óctuplo.<a href='javascript:loadContent("caminho_liberdade/pensamento_correto.html")'><b>[Mais]</b></a>
     Na meditação, <i>vitakka</i> é dirigir a mente para o objeto de meditação.  <i>Vitakka</i> e o seu fator
     acompanhante </span><span style='font-family:Verdana'><a href="#vicara"><i><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>vicara</span></i></a></span><span
@@ -2604,57 +2569,20 @@ mso-ansi-language:PT-BR'>yoniso manasikara: </span></b><span lang=PT-BR
 >atenção com sabedoria ou hábil, também pode ser reflexão com sabedoria ou reflexão hábil, é descrita como a atenção com os meios corretos <i>(upaya) </i>e na direção
 correta <i>(patha)</i>. Significa dar atenção, considerar e refletir de maneira cuidadosa, equilibrada e analítica, empregando a capacidade de investigação para reconhecer como as coisas na verdade funcionam, pensar em termos de relações causais e de acordo com a verdade, isto é, aquilo que é impermanente como impermanente, sofrimento como sofrimento, etc.<br> 
  
-No <a href="sutta/MN2.html#T3">MN 2</a> é descrita
+No <a href='javascript:loadContent("sutta/MN2.html#T3")'>MN 2</a> é descrita
 como um antídoto contra as impurezas (<i><a href="#asava">asava</a></i>);
 é uma das condições para o surgimento do entendimento correto (<a
-href="sutta/MN43.html#R12">MN 43</a>); conduz ao fruto de ‘entrar na correnteza’ (<a
-href="sutta/SNLV.55.html">SN LV.55</a>); ao surgimento e desenvolvimento dos
+href='javascript:loadContent("sutta/MN43.html#R12")'>MN 43</a>); conduz ao fruto de ‘entrar na correnteza’ (<a
+href='javascript:loadContent("sutta/SNLV.55.html")'>SN LV.55</a>); ao surgimento e desenvolvimento dos
 fatores da iluminação (<i><a href="#bojjhannga">bojjhanga</a></i>), (<a
-href="sutta/SNXLVI.24.html">SN XLVI.24</a>).
+href='javascript:loadContent("sutta/SNXLVI.24.html")'>SN XLVI.24</a>).
 A atenção sem sabedoria <i>(ayoniso-manasikara) </i>conduz ao surgimento das
-impurezas (<a href="sutta/MN2.html#t3">MN 2</a>); ao surgimento e expansão dos cinco obstáculos (<i><a
+impurezas (<a href='javascript:loadContent("sutta/MN2.html#t3")'>MN 2</a>); ao surgimento e expansão dos cinco obstáculos (<i><a
 href="#nivarana">nivarana</a></i>), (<a
-href="sutta/SNXLVI.24.html">SN XLVI.24</a>). <a href="sutta/It.16.html"><b>[Mais]</b></a> <o:p></o:p></span></p>
+href='javascript:loadContent("sutta/SNXLVI.24.html")'>SN XLVI.24</a>). <a href='javascript:loadContent("sutta/It.16.html")'><b>[Mais]</b></a> <o:p></o:p></span></p>
 
 <br>
 <!-- Counter/Statistics -->
-<script language="JavaScript"
-src="../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
-</script>
-<script language="javascript">geovisit();</script>
-<noscript><img src="../visit.webhosting.yahoo.com/visit07cc.html?time"
-alt="setstats" border="0" width="1" height="1"></noscript> 
+ 
 
 
-<!-- FIM DO TEXTO -->
-
-<!-- INCLUI BASE -->
-<!-- BASE DE TODAS AS Pï¿½GINAS -->
-
-     </div>
-
-     <div id="rodape">
-     <span style="float:right;">
-         <p class=Rodape>
-         Revisado:  15 Novembro 2014          </p>
-     </span>
-     </div>
-
-     <div id="institucional">
-         <p class=Institucional>
-         Copyright &copy; 2000 - 2019,
-         <a href="index.html">Acesso ao Insight</a> -
-         Michael Beisert: editor, Flavio Maia: designer.</p>
-     </div>
-
-     <div id="powered">
-         
-            <br><br>
-         <span>
-     </div>
-  </div>
-</body>
-
-<!-- Mirrored from www.acessoaoinsight.net/glossario.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:06:47 GMT -->
-</html>
-<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

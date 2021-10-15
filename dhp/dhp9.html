@@ -1,39 +1,6 @@
-<!-- DEFINE PARAMETROS -->
-<!--INCLUI TOPO-->
-<!-- TOPO DE TODAS AS PÁGINAS -->
-<!DOCTYPE html><html lang="pt-bt">
-<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp9.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:59:52 GMT -->
-<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
-vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
-<title>Acesso ao Insight - Budismo Theravada - dhp9</title>
-<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
-</script>
-<script>
-$(document).ready(function() {
-var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
-});
 
-//var enderecoBase = "http://www.acessoaoinsight.net";
-var enderecoBase = "";
-var enderecos1 = new Array("dhp1.1.html","dhp1.3.html","dhp1.5.html","dhp1.6.html","dhp1.13.html","dhp1.15.html","dhp1.17.html","dhp1.19.html","dhp2.21.html","dhp2.25.html","dhp2.26.html","dhp2.27.html","dhp2.28.html","dhp2.29.html","dhp2.31.html","dhp3.33.html","dhp3.35.html","dhp3.36.html","dhp3.37.html","dhp3.38.html","dhp3.40.html","dhp3.42.html","dhp3.43.html","dhp4.44.html","dhp4.46.html","dhp4.47.html","dhp4.48.html","dhp4.50.html","dhp4.51.html","dhp4.54.html","dhp4.58.html","dhp5.60.html","dhp5.61.html","dhp5.62.html","dhp5.63.html","dhp5.64.html","dhp5.66.html","dhp5.71.html","dhp5.75.html","dhp6.76.html","dhp6.78.html","dhp6.80.html","dhp6.81.html","dhp6.85.html","dhp7.92.html","dhp8.102.html","dhp8.111.html","dhp8.113.html","dhp9.118.html","dhp9.121.html","dhp9.126.html","dhp9.127.html","dhp10.129.html","dhp10.130.html","dhp10.145.html","dhp11.146.html","dhp11.147.html","dhp11.151.html","dhp11.153.html","dhp11.155.html","dhp12.1.html","dhp12.2.html","dhp12.3.html","dhp12.4.html","dhp12.5.html","dhp12.6.html","dhp12.7.html","dhp12.8.html","dhp13.1.html","dhp13.2.html","dhp13.3.html","dhp13.4.html","dhp13.5.html","dhp13.6.html","dhp13.7.html","dhp13.8.html","dhp13.9.html","dhp13.10.html","dhp13.11.html","dhp14.1.html","dhp14.2.html","dhp14.3.html","dhp14.4.html","dhp14.5.html","dhp14.6.html","dhp14.7.html","dhp15.1.html","dhp15.2.html","dhp15.3.html","dhp15.4.html","dhp15.5.html","dhp15.6.html","dhp15.7.html","dhp15.8.html","dhp15.9.html","dhp15.10.html","dhp16.1.html","dhp16.2.html","dhp16.3.html","dhp16.4.html","dhp16.5.html","dhp16.6.html","dhp16.7.html","dhp17.1.html","dhp17.2.html","dhp17.3.html","dhp17.4.html","dhp17.5.html","dhp18.1.html","dhp18.2.html","dhp18.3.html","dhp18.4.html","dhp18.5.html","dhp18.6.html","dhp18.7.html","dhp18.8.html","dhp19.1.html","dhp19.2.html","dhp20.1.html","dhp20.2.html","dhp20.3.html","dhp20.4.html","dhp20.5.html","dhp21.1.html","dhp21.2.html","dhp21.3.html","dhp21.4.html","dhp21.5.html","dhp22.1.html","dhp23.1.html","dhp23.2.html","dhp24.1.html","dhp24.2.html","dhp24.3.html","dhp24.4.html","dhp24.5.html","dhp24.6.html","dhp24.7.html","dhp24.8.html","dhp25.1.html","dhp25.2.html","dhp25.3.html","dhp25.4.html","dhp25.5.html","dhp25.6.html","dhp25.7.html","dhp25.8.html","dhp25.9.html","dhp26.1.html");
-function dhpAleatorio(){
- aleat = Math.random() * enderecos1.length;
- aleat = Math.floor(aleat);
- window.location.href = enderecoBase + enderecos1[aleat];
-}
-var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
-function suttaAleatorio(){
- aleat = Math.random() * enderecos.length;
- aleat = Math.floor(aleat);
- window.location= enderecoBase + enderecos[aleat];
-}
-</script>
-</head>
-<body><input id="php-var-pagina" type="hidden" value="dhp9" /><div class="container fullwidth">
-<a name=Top></a>   <div id="principal">
-      <div class="imagem-topo" style="background-image: url('../img/topo/new_66.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="../arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central"><!-- INICIO DO TEXTO -->
 
-<script type="text/javascript" src="../expando.js"></script>
+
 
 
 
@@ -360,7 +327,7 @@ onde alguém possa permanecer e não ser subjugado pela morte.<br>
 <p class=Normal>&nbsp;</p>
 <hr size=2 width="100%" align=center>
 <p class=Normal>&nbsp;</p>
-<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dhp10.html">10. <i>Dandavagga</i></a></p>
+<p class=Normal><a href='javascript:loadContent("dhp_indice.html")'>Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:loadContent("dhp10.html")'>10. <i>Dandavagga</i></a></p>
 
 
 <p class=Normal>&nbsp;</p>
@@ -374,7 +341,7 @@ Abhittharetha kalyane</i> (apresse em praticar o bem): dedique-se à prática de a
 
 <p class=Normal><a name=N2></a><b> [Nota 2 - Verso 117] </b><i> Papa</i> (mal): ações inábeis ou prejudiciais, <i>akusala</i>. Prejudiciais são aquelas volições karmicas, as consciências e os outros fatores mentais concomitantes a elas associadas, que são acompanhadas pela cobiça (<i>lobha</i>), ou aversão (<i>dosa</i>), ou apenas delusão (<i>moha</i>); e todos esses fenômenos são causas para resultados karmicos desfavoráveis e contêm as sementes de destinos e renascimentos infelizes.
 
-<p class=Normal><i>Akusala-sadharana-cetasika</i> (fatores mentais associados com todas as ações prejudiciais): são quatro: (1) não ter vergonha de cometer transgressões (<i>akirika</i>); (2) não temer cometer transgressões (<i>anottapa</i>); (3) inquietação (<i>uddhacca</i>); (4) delusão (<i>moha</i>). Veja mais no Glossário sobre a vergonha e temor em cometer transgressões, <a href="../glossario.html#hiri_ottappa"><i> hiri-ottapa </i></a>.</p>
+<p class=Normal><i>Akusala-sadharana-cetasika</i> (fatores mentais associados com todas as ações prejudiciais): são quatro: (1) não ter vergonha de cometer transgressões (<i>akirika</i>); (2) não temer cometer transgressões (<i>anottapa</i>); (3) inquietação (<i>uddhacca</i>); (4) delusão (<i>moha</i>). Veja mais no Glossário sobre a vergonha e temor em cometer transgressões, <a href='javascript:loadContent("../glossario.html#hiri_ottappa")'><i> hiri-ottapa </i></a>.</p>
 
 <p class=Normal><i>Mula</i> (raiz): também chamadas de <i>hetu</i>, são aquelas condições que pela sua presença na mente determinam a qualidade moral - benéfica (<i>kusala</i>) ou prejudicial (<i>akusala</i>) – de uma volição ou intenção (<i>cetana</i>) e a consciência (<i>citta</i>) e os fatores mentais (<i>cetasika</i>) associados a esta, em outras palavras, a qualidade do kamma. Há seis raízes, três kammicamente benéficas e três kammicamente prejudiciais, a saber, respectivamente, cobiça, aversão e delusão (<i>lobha, dosa, moha</i>) e não-cobiça, não-aversão e não-delusão (<i>alobha, adosa, amoha</i>).</p>
 
@@ -382,11 +349,11 @@ Abhittharetha kalyane</i> (apresse em praticar o bem): dedique-se à prática de a
 
 <p class=Normal>Encantado com a luxúria (cobiça), enfurecido com o ódio, cego pela delusão, dominado completamente, com a mente agrilhoada, o homem almeja sua própria ruína, a ruína dos outros, a ruína de ambos, e ele experimenta o sofrimento mental e a tristeza. E ele segue maus caminhos em suas ações, palavras e pensamentos, e ele realmente não entende o que é benéfico para ele mesmo, o que é benéfico para os outros, nem o que é benéfico para ambos. Essas coisas o tornam cego e ignorante, obstruem sua sabedoria, são dolorosas, e não o conduzem à paz. [<a href="#R2">Retorna</a>]</p>
 
-<p class=Normal><a name=N3></a> <b>[Nota 3 - Verso 118] </b> <i> Puñña</i> (bem): ações meritórias. <i>Kusala</i> é outro termo para designar tais tipos de ações. Veja no glossário a definição de <a href="../glossario.html#punna"><i>puñña</i></a> e <a href="../glossario.html#kusala"><i>kusala</i></a>. [<a href="#R3">Retorna</a>]</p>
+<p class=Normal><a name=N3></a> <b>[Nota 3 - Verso 118] </b> <i> Puñña</i> (bem): ações meritórias. <i>Kusala</i> é outro termo para designar tais tipos de ações. Veja no glossário a definição de <a href='javascript:loadContent("../glossario.html#punna")'><i>puñña</i></a> e <a href='javascript:loadContent("../glossario.html#kusala")'><i>kusala</i></a>. [<a href="#R3">Retorna</a>]</p>
 
 <p class=Normal><a name=N4></a> <b>[Nota 4 - Versos 119 e 120] </b> Esses dois versos foram ditos pelo Buda no decorrer de um evento em que o tesoureiro Anathapindika estava presente. Anathapindika, um milionário, era o principal discípulo leigo e patrocinador do Buda. Seu nome, Anathapindika, significa "alimentador dos desamparados". Seu nome original era Sudatta. Devido à sua generosidade ímpar ele recebeu o novo nome. Sua terra natal era Savatthi.</p>
 
-<p class=Normal><i>Atha papo papa ni passati</i> (o malfeitor verá maus resultados): uma pessoa má pode levar uma vida próspera como resultado de suas ações benéficas passadas. Ela irá experienciar a felicidade devido ao potencial das suas ações benéficas passadas superarem as ações prejudiciais do presente - uma aparente injustiça que muitas vezes prevalece neste mundo. Quando, numa ocasião, de acordo com a inevitável lei de kamma, suas ações prejudiciais frutificarem, então ela verá os resultados dolorosos de sua maldade. Veja mais sobre kamma no <a href="../kamma_karma.html">guia de estudo sobre kamma</a></p>  
+<p class=Normal><i>Atha papo papa ni passati</i> (o malfeitor verá maus resultados): uma pessoa má pode levar uma vida próspera como resultado de suas ações benéficas passadas. Ela irá experienciar a felicidade devido ao potencial das suas ações benéficas passadas superarem as ações prejudiciais do presente - uma aparente injustiça que muitas vezes prevalece neste mundo. Quando, numa ocasião, de acordo com a inevitável lei de kamma, suas ações prejudiciais frutificarem, então ela verá os resultados dolorosos de sua maldade. Veja mais sobre kamma no <a href='javascript:loadContent("../kamma_karma.html")'>guia de estudo sobre kamma</a></p>  
 
 <p class=Normal><i>Atha bhadro bhadra ni passati </i>(o benfeitor verá bons resultados): uma pessoa virtuosa, como muitas vezes acontece, pode se deparar com adversidades, devido ao potencial de suas ações prejudiciais passadas superarem suas ações benéficas do presente. Ela somente se convence da eficácia de suas ações benéficas do presente quando, no momento oportuno, elas frutificarem, trazendo felicidade abundante. O fato de que às vezes os maus são prósperos e os virtuosos são desafortunados, é em si, uma forte evidência que apoia a crença na lei kamma e renascimento. [<a href="#R4">Retorna</a>]</p>
 
@@ -399,19 +366,19 @@ Abhittharetha kalyane</i> (apresse em praticar o bem): dedique-se à prática de a
 <p class=Normal><a name=N7></a><b> [Nota 7 - Verso 124] </b> <i>Visam</i> (veneno): Se um homem que não tem feridas em sua mão toca em veneno, este não o afetará. Da mesma forma, o mal não vai afetar alguém que não pratica ações prejudiciais. </p>
 
 <p class=Normal>No comentário desse verso conta-se a história de uma discípula leiga que tinha alcançado o primeiro estágio de iluminação (<i>sotapanna</i>) e era casada com um caçador. Depois do Buda relatar a história dela aos monges eles lhe perguntaram: "Venerável, a esposa do caçador, que é uma <i>sotapanna</i>, não é também culpada por matar seres vivos, já que ela pega coisas como redes, arcos e flechas para o seu marido quando ele vai caçar?" E o Buda responde: "Monges, os <i>sotapannas</i> não matam, nem desejam que os outros morram. A esposa do caçador estava somente obedecendo a seu marido ao pegar coisas para ele. Assim como uma mão sem feridas não é afetada pelo veneno, assim também, como ela não tem nenhuma intenção de praticar o mal ela não está praticando nenhum mal".
-Veja o <a href="../arquivo_textos_theravada/sotapanna.html">guia de estudo sobre sotapanna</a>.  [<a href="#R7">Retorna</a>]</p>
+Veja o <a href='javascript:loadContent("../arquivo_textos_theravada/sotapanna.html")'>guia de estudo sobre sotapanna</a>.  [<a href="#R7">Retorna</a>]</p>
 
 
 <p class=Normal><a name=N8></a><b> [Nota 8 - Verso 125] </b> <i> Ananganassa </i>(livre das impurezas): alguém desprovido de impurezas (<i>anganas</i>). <i>Anganas</i> são impurezas que surgem de <i>raga</i> (paixão), <i>dosa</i> (aversão) e <i>moha</i> (delusão). Estas são descritas como <i>anganas</i> (literalmente, espaços abertos, playgrounds), porque o mal surge a partir delas sem inibição. Às vezes o termo "mácula" também é usado com referência aos <i>anganas</i>. Etimologicamente, <i>anganas</i> também significa a capacidade de depravar uma pessoa contaminada por máculas. Em alguns contextos, <i>anganas</i> significa sujeira. Um indivíduo que é desprovido de impurezas é referido como <i>anangana</i>. [<a href="#R8">Retorna</a>]</p>
 
 <p class=Normal><a name=N9></a><b> [Nota 9 - Verso 126] </b><i> Sagga</i> (paraíso): nos comentários tradicionais, <i>sagga</i> é definido como se segue: <i>rupadihi pañca kama gunehi sutthu aggoti - saggo</i>. Que significa: o lugar onde os prazeres dos cinco sentidos aparecem com a maior intensidade possível. Aqueles que vivem nos paraísos são chamados de devas.</p>
 
-<p class=Normal><i>Gabbham eke uppajjanti</i> (nascem no ventre): de acordo com o Budismo existem quatro tipos de geração, a saber: geração em um ovo (<i>andaja</i>), geração em um ventre (<i>jalabuja</i>), geração na umidade (<i>samsedaja</i>), geração espontânea (<i>opapatika</i>). Veja mais no <a href="../sutta/MN12.html"> MN12</a>.</p>
+<p class=Normal><i>Gabbham eke uppajjanti</i> (nascem no ventre): de acordo com o Budismo existem quatro tipos de geração, a saber: geração em um ovo (<i>andaja</i>), geração em um ventre (<i>jalabuja</i>), geração na umidade (<i>samsedaja</i>), geração espontânea (<i>opapatika</i>). Veja mais no <a href='javascript:loadContent("../sutta/MN12.html")'> MN12</a>.</p>
 
 <p class=Normal><i>Nirayam pa pakammino</i> (malvados no inferno): <i>niraya = ni + aya</i> = desprovido de felicidade. Existem quatro tipos de <i>nirayas</i> - ou seja, os estados de privação (<i>apaya</i>), o reino animal (<i>tiracchanayoni</i>), o reino dos petas (<i>petayoni</i>), e o reino dos demônios-asuras (<i>asurayoni</i>). Nenhum desses estados é eterno. De acordo com seus kammas prejudiciais os seres podem renascer nesses mundos de existência miseráveis. Depois de morrerem nesses mundos eles podem renascer em mundos mais felizes de acordo com seus kammas benéficos passados.<p>
 
 <p class=Normal><i>Parinibbanti anasava</i> (aqueles sem impurezas: Nibbana): os arahants, após a morte, não renascem, mas sim realizam o <i>parinibbana</i>.
-Veja no glossário a definição de <a href="../glossario.html#parinibbana"><i>parinibbana</i></a>. [<a href="#R9">Retorna</a>]</p>
+Veja no glossário a definição de <a href='javascript:loadContent("../glossario.html#parinibbana")'><i>parinibbana</i></a>. [<a href="#R9">Retorna</a>]</p>
 
 <p class=Normal><a name=N10></a><b> [Nota 10 - Verso 127] </b> <i> Na vijjati so jagatippadeso</i> (não se conhece nenhum lugar no mundo): a implicação aqui é que não há nenhum lugar, quer seja na terra, no mar, ou no céu, onde um malfeitor possa escapar das consequências de suas ações prejudiciais. O verso menciona alguns dos lugares que poderiam ser considerados seguros: <i>antalikkhe</i> (espaço ou céu); <i>samuddamajjhe</i> (no meio do mar); <i>pabbatanam vivaram</i> (caverna numa montanha). [<a href="#R10">Retorna</a>]</p>
 
@@ -420,7 +387,7 @@ Veja no glossário a definição de <a href="../glossario.html#parinibbana"><i>pari
 
 
 <br>
-<p class=Normal><a href="dhp_indice.html">Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dhp10.html"> 10. <i>Dandavagga </i></a></p>
+<p class=Normal><a href='javascript:loadContent("dhp_indice.html")'>Índice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:loadContent("dhp10.html")'> 10. <i>Dandavagga </i></a></p>
 
 
 
@@ -428,34 +395,3 @@ Veja no glossário a definição de <a href="../glossario.html#parinibbana"><i>pari
 <p class=Normal>&nbsp;</p>
 <p class=Normal>&nbsp;</p>
 
-<!-- FIM DO TEXTO -->
-<!-- INCLUI BASE -->
-<!-- BASE DE TODAS AS Pï¿½GINAS -->
-
-     </div>
-
-     <div id="rodape">
-     <span style="float:right;">
-         <p class=Rodape>
-         Revisado: 12 Janeiro 2013          </p>
-     </span>
-     </div>
-
-     <div id="institucional">
-         <p class=Institucional>
-         Copyright &copy; 2000 - 2019,
-         <a href="../index.html">Acesso ao Insight</a> -
-         Michael Beisert: editor, Flavio Maia: designer.</p>
-     </div>
-
-     <div id="powered">
-         
-            <br><br>
-         <span>
-     </div>
-  </div>
-</body>
-
-<!-- Mirrored from www.acessoaoinsight.net/dhp/dhp9.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 17:00:09 GMT -->
-</html>
-<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>
