@@ -201,6 +201,13 @@ table.Dhp p {
   margin-left: 0 !important;
 }
 
+/* Translation credits */
+#translation-credits {
+  margin: 0 auto 50px;
+  max-width: 700px;
+  font-size: 14px;
+}
+
 /* Footer */
 .footer {
   padding: 10px;
