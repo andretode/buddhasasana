@@ -163,10 +163,6 @@ div#menu-responsivo li a:hover {
   border-color: #b46626;
 }
 
-#menu-responsivo {
-  margin-top: 48px;
-}
-
 @media screen and (max-width: 985px) {
   #menu-responsivo > ul {
     margin-left: -10px;
