@@ -1,0 +1,186 @@
+/* General */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.beisert-translate p{
+  text-align: center;
+  color: black !important;
+}
+hr { 
+	display: block; 
+	height: 1px;
+    border: 0; 
+	border-top: 1px solid #ccc;
+    margin: 1em 0; 
+	padding: 0; 
+	border-color:black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ede7d1;
+  font-family: "Source Serif Pro", serif;
+}
+
+.Tit1{
+	font-weight: bold;
+	font-size:17pt;
+	
+}
+
+.dropdown-menu{
+  background-color:#b46626;
+
+}
+
+#menu-responsivo a{
+
+font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #b46626;
+ 
+}
+p {
+  color: black;
+  font-size: 14pt;
+  
+}
+
+#body-placeholder {
+  margin: 50px auto;
+  padding: 0px 3rem;
+  max-width: 700px;
+}
+
+#central {
+  margin: 0;
+  padding: 0;
+}
+
+/* General but shouldn't be */
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #b46626;
+  border: none;
+  border-radius: 0;
+  color: white !important;
+  box-shadow: 0px 1px 3px 3px #8a5e3d83;
+  
+}
+.navbar-collapse{
+	
+}
+.navbar-brand {
+ 
+  display: flex;
+  color: #fff !important;
+ 
+}
+ #tradution-credits {
+  margin: 50px auto;
+  padding: 0px 3rem;
+  max-width: 700px;
+}
+
+#nav-placeholder ul > li > a {
+  color: #fff !important;
+
+}
+
+ #menu-responsivo > ul {
+        text-align:center;
+		
+ }
+.navbar-toggle{
+	margin: 0;
+  position: absolute;
+  right:0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+margin-right:10px;
+	
+}
+
+
+
+
+.brand-image {
+  max-width: 70px;
+  max-height: 70px;
+  margin-top: 0px;
+  margin-left: 2rem;
+  display:flex;
+}
+
+.brand-name {
+  margin-top: 0.4rem;
+}
+
+#menu-responsivo {
+  margin-top: 2.5rem;
+  background-color:#b46626;
+  justify-content: center;
+
+}
+div#menu-responsivo li a:hover{
+color: black;
+
+}
+
+
+
+.nav .navbar-nav {
+ 
+  justify-content: center;
+
+}
+
+.container-fluid{
+	
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-header{
+		width:100%;
+		
+	}
+	
+ 
+}
+
+.link-estoria{
+	font-size:13pt;
+}
+
+table.Dhp img{
+	display:none;
+	
+	
+}
+
+table.Dhp p{
+	margin-left:0 !important;
+	
+	
+}
+
+
+/* Footer */
+.footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #d6ceb1;
+}
