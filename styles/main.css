@@ -1,19 +1,20 @@
 /* General */
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-.beisert-translate p{
+.beisert-translate p {
   text-align: center;
   color: black !important;
 }
-hr { 
-	display: block; 
-	height: 1px;
-    border: 0; 
-	border-top: 1px solid #ccc;
-    margin: 1em 0; 
-	padding: 0; 
-	border-color:black;
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  border-color: black;
 }
 
 body {
@@ -24,30 +25,25 @@ body {
   font-family: "Source Serif Pro", serif;
 }
 
-.Tit1{
-	font-weight: bold;
-	font-size:17pt;
-	
+.Tit1 {
+  font-weight: bold;
+  font-size: 17pt;
 }
 
-.dropdown-menu{
-  background-color:#b46626;
-
+.dropdown-menu {
+  background-color: #b46626;
 }
 
-#menu-responsivo a{
-
-font-family: 'Montserrat', sans-serif;
+#menu-responsivo a {
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
   color: #b46626;
- 
 }
 p {
   color: black;
   font-size: 14pt;
-  
 }
 
 #body-placeholder {
@@ -75,52 +71,52 @@ p {
   border-radius: 0;
   color: white !important;
   box-shadow: 0px 1px 3px 3px #8a5e3d83;
-  
-}
-.navbar-collapse{
-	
 }
 .navbar-brand {
- 
   display: flex;
   color: #fff !important;
- 
 }
- #tradution-credits {
+#tradution-credits {
   margin: 50px auto;
   padding: 0px 3rem;
   max-width: 700px;
 }
 
 #nav-placeholder ul > li > a {
+  margin: 0.4rem 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
   color: #fff !important;
-
 }
 
- #menu-responsivo > ul {
-        text-align:center;
-		
- }
-.navbar-toggle{
-	margin: 0;
+/* Changes default gray color from dropdowns of bootstrap */
+#nav-placeholder ul > li > a:hover,
+#nav-placeholder ul > li > a:active,
+#nav-placeholder ul > li > a:visited,
+#nav-placeholder ul > li > a:focus-within,
+#nav-placeholder ul > li > a:focus-visible {
+  background: #d68e53 !important;
+}
+
+#menu-responsivo > ul {
+  text-align: center;
+}
+.navbar-toggle {
+  margin: 0;
   position: absolute;
-  right:0;
+  right: 0;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-margin-right:10px;
-	
+  margin-right: 10px;
 }
-
-
-
 
 .brand-image {
   max-width: 70px;
   max-height: 70px;
   margin-top: 0px;
   margin-left: 2rem;
-  display:flex;
+  display: flex;
 }
 
 .brand-name {
@@ -129,52 +125,74 @@ margin-right:10px;
 
 #menu-responsivo {
   margin-top: 2.5rem;
-  background-color:#b46626;
+  background-color: #b46626;
   justify-content: center;
-
-}
-div#menu-responsivo li a:hover{
-color: black;
-
 }
 
-
+div#menu-responsivo li a:hover {
+  color: black;
+}
 
 .nav .navbar-nav {
- 
   justify-content: center;
-
 }
 
-.container-fluid{
-	
+/* Menu button when responsive */
+.navbar-default .navbar-toggle .icon-bar {
+  background: #ede7d1;
+}
+#nav-placeholder > nav > div:nth-child(2) > div.navbar-header > button {
+  margin-right: 2rem;
+}
+
+#nav-placeholder
+  > nav
+  > div:nth-child(2)
+  > div.navbar-header
+  > button:focus-within,
+#nav-placeholder
+  > nav
+  > div:nth-child(2)
+  > div.navbar-header
+  > button:not(:focus-visible) {
+  background: inherit;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #b46626;
+}
+
+#menu-responsivo {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 985px) {
+  #menu-responsivo > ul {
+    margin-left: -10px;
+    padding: 1rem 0;
+    padding-top: 30px;
+    box-shadow: 0px 1px 3px -2px #8a5e3d83;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-header{
-		width:100%;
-		
-	}
-	
- 
+  .navbar-header {
+    width: 100%;
+  }
 }
 
-.link-estoria{
-	font-size:13pt;
+.link-estoria {
+  font-size: 13pt;
 }
 
-table.Dhp img{
-	display:none;
-	
-	
+table.Dhp img {
+  display: none;
 }
 
-table.Dhp p{
-	margin-left:0 !important;
-	
-	
+table.Dhp p {
+  margin-left: 0 !important;
 }
-
 
 /* Footer */
 .footer {
