@@ -193,10 +193,12 @@ div#menu-responsivo li a:hover {
   }
   #menu-responsivo {
     margin-top: 4.8rem;
+    padding-top: 0;
   }
-  
+
   #menu-responsivo > ul {
     padding-top: 0;
+  }
 }
 
 .link-estoria {
