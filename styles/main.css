@@ -251,3 +251,18 @@ table.Dhp p {
     transform: rotate(360deg);
   }
 }
+
+/* 404 Page */
+.not-found-404 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.not-found-404 h1 {
+  font-size: 60px;
+  margin: 2rem 0 0;
+}
+
+.not-found-404 h3 {
+  margin: 0;
+}
