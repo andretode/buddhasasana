@@ -1,39 +1,4 @@
-<!-- DEFINE PARAMETROS -->
 
-<!--INCLUI TOPO-->
-<!-- TOPO DE TODAS AS PÁGINAS -->
-<!DOCTYPE html><html lang="pt-bt">
-<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/majjhima_intro.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:52:10 GMT -->
-<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
-vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
-<title>Acesso ao Insight - Budismo Theravada - majjhima_intro</title>
-<link REL="SHORTCUT ICON" href="../img/favicon.ico"><!-- Jquery e Bootstrap --><script src="../bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="../bootstrap/bootstrap-theme-3.3.7.min.css"><script src="../bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="../insightf195.css?v=2.1"><script language="JavaScript" src="../func.js"> </script><script type="text/javascript" src="../expando.js">
-</script>
-<script>
-$(document).ready(function() {
-var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
-});
-
-//var enderecoBase = "http://www.acessoaoinsight.net";
-var enderecoBase = "";
-var enderecos1 = new Array("../dhp/dhp1.1.html","../dhp/dhp1.3.html","../dhp/dhp1.5.html","../dhp/dhp1.6.html","../dhp/dhp1.13.html","../dhp/dhp1.15.html","../dhp/dhp1.17.html","../dhp/dhp1.19.html","../dhp/dhp2.21.html","../dhp/dhp2.25.html","../dhp/dhp2.26.html","../dhp/dhp2.27.html","../dhp/dhp2.28.html","../dhp/dhp2.29.html","../dhp/dhp2.31.html","../dhp/dhp3.33.html","../dhp/dhp3.35.html","../dhp/dhp3.36.html","../dhp/dhp3.37.html","../dhp/dhp3.38.html","../dhp/dhp3.40.html","../dhp/dhp3.42.html","../dhp/dhp3.43.html","../dhp/dhp4.44.html","../dhp/dhp4.46.html","../dhp/dhp4.47.html","../dhp/dhp4.48.html","../dhp/dhp4.50.html","../dhp/dhp4.51.html","../dhp/dhp4.54.html","../dhp/dhp4.58.html","../dhp/dhp5.60.html","../dhp/dhp5.61.html","../dhp/dhp5.62.html","../dhp/dhp5.63.html","../dhp/dhp5.64.html","../dhp/dhp5.66.html","../dhp/dhp5.71.html","../dhp/dhp5.75.html","../dhp/dhp6.76.html","../dhp/dhp6.78.html","../dhp/dhp6.80.html","../dhp/dhp6.81.html","../dhp/dhp6.85.html","../dhp/dhp7.92.html","../dhp/dhp8.102.html","../dhp/dhp8.111.html","../dhp/dhp8.113.html","../dhp/dhp9.118.html","../dhp/dhp9.121.html","../dhp/dhp9.126.html","../dhp/dhp9.127.html","../dhp/dhp10.129.html","../dhp/dhp10.130.html","../dhp/dhp10.145.html","../dhp/dhp11.146.html","../dhp/dhp11.147.html","../dhp/dhp11.151.html","../dhp/dhp11.153.html","../dhp/dhp11.155.html","../dhp/dhp12.1.html","../dhp/dhp12.2.html","../dhp/dhp12.3.html","../dhp/dhp12.4.html","../dhp/dhp12.5.html","../dhp/dhp12.6.html","../dhp/dhp12.7.html","../dhp/dhp12.8.html","../dhp/dhp13.1.html","../dhp/dhp13.2.html","../dhp/dhp13.3.html","../dhp/dhp13.4.html","../dhp/dhp13.5.html","../dhp/dhp13.6.html","../dhp/dhp13.7.html","../dhp/dhp13.8.html","../dhp/dhp13.9.html","../dhp/dhp13.10.html","../dhp/dhp13.11.html","../dhp/dhp14.1.html","../dhp/dhp14.2.html","../dhp/dhp14.3.html","../dhp/dhp14.4.html","../dhp/dhp14.5.html","../dhp/dhp14.6.html","../dhp/dhp14.7.html","../dhp/dhp15.1.html","../dhp/dhp15.2.html","../dhp/dhp15.3.html","../dhp/dhp15.4.html","../dhp/dhp15.5.html","../dhp/dhp15.6.html","../dhp/dhp15.7.html","../dhp/dhp15.8.html","../dhp/dhp15.9.html","../dhp/dhp15.10.html","../dhp/dhp16.1.html","../dhp/dhp16.2.html","../dhp/dhp16.3.html","../dhp/dhp16.4.html","../dhp/dhp16.5.html","../dhp/dhp16.6.html","../dhp/dhp16.7.html","../dhp/dhp17.1.html","../dhp/dhp17.2.html","../dhp/dhp17.3.html","../dhp/dhp17.4.html","../dhp/dhp17.5.html","../dhp/dhp18.1.html","../dhp/dhp18.2.html","../dhp/dhp18.3.html","../dhp/dhp18.4.html","../dhp/dhp18.5.html","../dhp/dhp18.6.html","../dhp/dhp18.7.html","../dhp/dhp18.8.html","../dhp/dhp19.1.html","../dhp/dhp19.2.html","../dhp/dhp20.1.html","../dhp/dhp20.2.html","../dhp/dhp20.3.html","../dhp/dhp20.4.html","../dhp/dhp20.5.html","../dhp/dhp21.1.html","../dhp/dhp21.2.html","../dhp/dhp21.3.html","../dhp/dhp21.4.html","../dhp/dhp21.5.html","../dhp/dhp22.1.html","../dhp/dhp23.1.html","../dhp/dhp23.2.html","../dhp/dhp24.1.html","../dhp/dhp24.2.html","../dhp/dhp24.3.html","../dhp/dhp24.4.html","../dhp/dhp24.5.html","../dhp/dhp24.6.html","../dhp/dhp24.7.html","../dhp/dhp24.8.html","../dhp/dhp25.1.html","../dhp/dhp25.2.html","../dhp/dhp25.3.html","../dhp/dhp25.4.html","../dhp/dhp25.5.html","../dhp/dhp25.6.html","../dhp/dhp25.7.html","../dhp/dhp25.8.html","../dhp/dhp25.9.html","../dhp/dhp26.1.html");
-function dhpAleatorio(){
- aleat = Math.random() * enderecos1.length;
- aleat = Math.floor(aleat);
- window.location.href = enderecoBase + enderecos1[aleat];
-}
-var enderecos = new Array("../sutta/It.1.html","../sutta/It.2.html","../sutta/It.3.html","../sutta/It.4.html","../sutta/It.5.html","../sutta/It.6.html","../sutta/It.7.html","../sutta/It.8.html","../sutta/It.9.html","../sutta/It.10.html","../sutta/It.11.html","../sutta/It.12.html","../sutta/It.13.html","../sutta/It.14.html","../sutta/It.15.html","../sutta/It.16.html","../sutta/It.17.html","../sutta/It.18.html","../sutta/It.19.html","../sutta/It.20.html","../sutta/It.21.html","../sutta/It.22.html","../sutta/It.23.html","../sutta/It.24.html","../sutta/It.25.html","../sutta/It.26.html","../sutta/It.27.html","../sutta/It.28.html","../sutta/It.29.html","../sutta/It.30.html","../sutta/It.31.html","../sutta/It.32.html","../sutta/It.33.html","../sutta/It.34.html","../sutta/It.35.html","../sutta/It.36.html","../sutta/It.37.html","../sutta/It.38.html","../sutta/It.39.html","../sutta/It.40.html","../sutta/It.41.html","../sutta/It.42.html","../sutta/It.43.html","../sutta/It.44.html","../sutta/It.45.html","../sutta/It.46.html","../sutta/It.47.html","../sutta/It.48.html","../sutta/It.49.html","../sutta/It.50.html","../sutta/It.51.html","../sutta/It.52.html","../sutta/It.53.html","../sutta/It.54.html","../sutta/It.55.html","../sutta/It.56.html","../sutta/It.57.html","../sutta/It.58.html","../sutta/It.59.html","../sutta/It.60.html","../sutta/It.61.html","../sutta/It.62.html","../sutta/It.63.html","../sutta/It.64.html","../sutta/It.65.html","../sutta/It.66.html","../sutta/It.67.html","../sutta/It.68.html","../sutta/It.69.html","../sutta/It.70.html","../sutta/It.71.html","../sutta/It.72.html","../sutta/It.73.html","../sutta/It.74.html","../sutta/It.75.html","../sutta/It.76.html","../sutta/It.77.html","../sutta/It.78.html","../sutta/It.79.html","../sutta/It.80.html","../sutta/It.81.html","../sutta/It.82.html","../sutta/It.83.html","../sutta/It.84.html","../sutta/It.85.html","../sutta/It.86.html","../sutta/It.87.html","../sutta/It.88.html","../sutta/It.89.html","../sutta/It.90.html","../sutta/It.91.html","../sutta/It.92.html","../sutta/It.93.html","../sutta/It.94.html","../sutta/It.95.html","../sutta/It.96.html","../sutta/It.97.html","../sutta/It.98.html","../sutta/It.99.html","../sutta/It.100.html","../sutta/It.101.html","../sutta/It.102.html","../sutta/It.103.html","../sutta/It.104.html","../sutta/It.105.html","../sutta/It.106.html","../sutta/It.107.html","../sutta/It.108.html","../sutta/It.109.html","../sutta/It.110.html","../sutta/It.111.html","../sutta/It.112.html");
-function suttaAleatorio(){
- aleat = Math.random() * enderecos.length;
- aleat = Math.floor(aleat);
- window.location= enderecoBase + enderecos[aleat];
-}
-</script>
-</head>
-<body><input id="php-var-pagina" type="hidden" value="majjhima_intro" /><div class="container fullwidth">
-<a name=Top></a>   <div id="principal">
-      <div class="imagem-topo" style="background-image: url('../img/topo/new_2.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="../index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="../sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="../sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="../livros.html">Livros</a></li>									<li><a href="../audiobook.html">Audiobook</a></li>									<li><a href="../podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="../ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
-<!-- INICIO DO TEXTO -->
 
 
 <p class=Tit1 align=center style='text-align:center'>Introdução ao Majjhima Nikaya</p>
@@ -116,21 +81,21 @@ color:blue'><span ='text-decoration:none;text-underline:
 none'></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O </span><a
-href="../sutta/majjhima_nikaya.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Majjhima
+href='javascript:loadContent("../sutta/majjhima_nikaya.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>Majjhima
 Nikaya (MN)</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> é a
 segunda coleção dos discursos do Buda encontrada no </span><a
-href="../sutta_pitaka.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Sutta
+href='javascript:loadContent("../sutta_pitaka.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>Sutta
 Pitaka</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> do Cânone em
 Pali. O seu título significa literalmente a Coleção Média e é assim chamada
 porque os suttas nela contidos são em geral de tamanho médio quando comparados
-com os discursos mais longos do </span><a href="samyutta_intro.html#nikayas"><span
+com os discursos mais longos do </span><a href='javascript:loadContent("samyutta_intro.html#nikayas")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>Digha Nikaya</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'> que antecede o MN, e com os
 discursos mais curtos que compõem as duas coleções que seguem o MN,<span
-style="mso-spacerun: yes">  </span></span><a href="samyutta_intro.html"><span
+style="mso-spacerun: yes">  </span></span><a href='javascript:loadContent("samyutta_intro.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>Samyutta Nikaya</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'> e </span><a
-href="anguttara_intro.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Anguttara
+href='javascript:loadContent("anguttara_intro.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>Anguttara
 Nikaya</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O MN
@@ -192,11 +157,11 @@ Buda que aparece no MN no papel de mestre. Esta coleção também nos apresenta os
 realizados discípulos que ele produziu, que deram continuidade à transmissão
 dos ensinamentos. Dos 152 suttas contidos no MN, nove são discursados pelo
 venerável Sariputta, o General do Dhamma; três desses<span style="mso-spacerun:
-yes">  </span>(</span><a href="../sutta/MN9.html"><span lang=PT-BR
+yes">  </span>(</span><a href='javascript:loadContent("../sutta/MN9.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 9</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN28.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN28.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 28</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN141.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN141.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 141</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) se converteram em textos básicos para o
 estudo da doutrina Budista nas escolas monásticas em todas as partes do mundo
@@ -205,16 +170,16 @@ os seus últimos vinte cinco anos de vida, discursa sete suttas e participa em
 muitos mais. Quatro suttas são discursados pelo venerável Maha Kaccana, que se
 destacava por sua habilidade na análise dos enunciados sumários e enigmáticos
 do Mestre, e dois pelo segundo discípulo principal, o venerável Maha
-Moggallana, um dos quais (</span><a href="../sutta/MN15.html"><span lang=PT-BR
+Moggallana, um dos quais (</span><a href='javascript:loadContent("../sutta/MN15.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 15</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) tem sido recomendado para a reflexão diária
 dos monásticos. Um diálogo entre o venerável Sariputta e o venerável Punna
-Mantaliputta (</span><a href="../sutta/MN24.html"><span lang=PT-BR
+Mantaliputta (</span><a href='javascript:loadContent("../sutta/MN24.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 24</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) explora um esquema de sete estágios de
 purificação que acabou se constituindo no esboço para o grande tratado sobre o
 caminho Budista, o Visuddhimagga, escrito por Acariya Buddhaghosa. Um outro
-diálogo (</span><a href="../sutta/MN44.html"><span lang=PT-BR style='mso-ansi-language:
+diálogo (</span><a href='javascript:loadContent("../sutta/MN44.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 44</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>)
 apresenta a bhikkhuni Dhammadinna, cujas respostas a uma série de questões
 profundas foram tão hábeis que o Buda as marcou para a posteridade com as
@@ -230,23 +195,23 @@ style="mso-spacerun: yes">  </span>imprimindo–a profundamente na mente. Outros
 suttas se desenvolvem sob a forma de diálogos e discussões e em alguns o
 elemento dramático ou narrativo predominam. Talvez o mais conhecido e apreciado
 sutta desse gênero seja o <i>Angulimala Sutta</i> (</span><a
-href="../sutta/MN86.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 86</span></a><span
+href='javascript:loadContent("../sutta/MN86.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 86</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>), que relata como o Buda subjugou o
 conhecido bandido Angulimala e o transformou num santo iluminado. Da mesma
 forma tocante, porém de um modo distinto, é a história de <i>Ratthapala</i> (</span><a
-href="../sutta/MN82.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 82</span></a><span
+href='javascript:loadContent("../sutta/MN82.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 82</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>), o jovem de uma família rica cujo
 insight precoce da universalidade do sofrimento foi tão persuasivo que ele
 estava disposto a morrer ao invés de aceitar a recusa dos pais que não queriam
 que ele deixasse a vida em família e seguisse a vida santa. Vários suttas estão
 centrados num debate e destacam a sagacidade e o delicado senso de ironia do
 Buda bem como as suas habilidades dialéticas. Menção especial deve ser feita,
-ao </span><a href="../sutta/MN35.html"><span lang=PT-BR style='mso-ansi-language:
+ao </span><a href='javascript:loadContent("../sutta/MN35.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 35</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> e </span><a
-href="../sutta/MN56.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 56</span></a><span
+href='javascript:loadContent("../sutta/MN56.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 56</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>, em que o humor sutil suaviza a
 seriedade do conteúdo. Numa categoria à parte está o<span style="mso-spacerun:
-yes">  </span><i>Brahmanimantanika Sutta</i> (</span><a href="../sutta/MN49.html"><span
+yes">  </span><i>Brahmanimantanika Sutta</i> (</span><a href='javascript:loadContent("../sutta/MN49.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 49</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>), onde o Buda visita o mundo de Brahma para
 separar um Brahma deludido das suas ilusões de grandeza e logo acaba se
@@ -273,26 +238,26 @@ mestre plenamente qualificado. Apesar disso, embora o MN subordine a biografia
 a outros objetivos, ele nos proporciona o relato canônico mais completo da vida
 do Buda como um Bodisatva em busca da iluminação. O MN partilha com o Digha
 Nikaya a história miraculosa da concepção e nascimento do Bodisatva (</span><a
-href="../sutta/MN123.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN123.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 123</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>), mas a versão
 da sua grande renúncia foi reduzida ao essencial e narrada nos termos austeros
 do realismo existencial. Na sua juventude, depois de vivenciar as delícias
 sensuais permitidas pelo seu status principesco (</span><a
-href="../sutta/MN75.html#T10"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN75.html#T10")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 75.10</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>), o Bodisatva
 concluiu que era fútil aspirar por coisas que, como ele mesmo, estão sujeitas
 ao envelhecimento e morte e assim, com os seus pais em lágrimas, ele deixou a
 vida em família e saiu em busca do intemporal e imortal, Nibbana (</span><a
-href="../sutta/MN26.html#T13"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN26.html#T13")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 26.13</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). <o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O </span><a
-href="../sutta/MN26.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26</span></a><span
+href='javascript:loadContent("../sutta/MN26.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'> relata o seu aprendizado com dois
 realizados mestres de meditação da época, a sua maestria nos respectivos
-sistemas e a sua subseqüente desilusão. O </span><a href="../sutta/MN12.html"><span
+sistemas e a sua subseqüente desilusão. O </span><a href='javascript:loadContent("../sutta/MN12.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 12</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e o </span><a href="../sutta/MN36.html"><span
+style='mso-ansi-language:PT-BR'> e o </span><a href='javascript:loadContent("../sutta/MN36.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 36</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> descrevem as suas práticas ascéticas ao longo
 dos seis anos de busca intensa, um caminho que ele perseguiu chegando quase a
@@ -308,16 +273,16 @@ razoavelmente satisfatório das suas atividades diárias e da sua rotina anual ao
 longo dos seus quarenta e cinco anos de ensino. Um texto dos comentários
 mostra a rotina diária do Buda dividida em períodos de instrução aos bhikkhus,
 discursos para os leigos e meditação em retiro, durante a qual em geral ele
-“permanecia no vazio” (</span><a href="../sutta/MN121.html#T3"><span lang=PT-BR
+“permanecia no vazio” (</span><a href='javascript:loadContent("../sutta/MN121.html#T3")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 121.3</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN122.html#T6"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN122.html#T6")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 122.6</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>), ou na realização da grande compaixão. A
 única refeição diária era sempre tomada antes do meio dia, quer recebida
 através de um convite ou recebida através da esmola de alimentos, o período de
 sono estava limitado a poucas horas por noite, exceto no verão, quando ele
 descansava por pouco tempo no meio do dia (</span><a
-href="../sutta/MN36.html#T46"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN36.html#T46")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 36.46</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). A rotina
 anual era determinada pelas condições climáticas da Índia, que dividia o ano em
 três estações – uma estação fria de Novembro a Fevereiro, uma estação quente de
@@ -344,11 +309,11 @@ estava acompanhado por uma grande comitiva de bhikkhus, abrangiam o país dos
 Angas, (próximo a Bengala Ocidental na atualidade), até o sopé do Himalaia e o
 país dos Kurus (próximo a Delhi na atualidade). Algumas vezes, quando ele via
 que um caso especial requeria a sua atenção individual, ele deixava a Sangha e
-viajava sozinho (veja o </span><a href="../sutta/MN75.html"><span lang=PT-BR
+viajava sozinho (veja o </span><a href='javascript:loadContent("../sutta/MN75.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 75</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN86.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN86.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 86</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN140.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN140.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 140</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Embora o Cânone seja preciso e confiável ao
 proporcionar esses detalhes, a comunidade Budista original focava o seu
@@ -358,7 +323,7 @@ dentre vários mestres espirituais na época – como o “contemplativo Gotama” –
 para os seus discípulos “ele é visão, ele é conhecimento, ele é o Dhamma, ele é
 o sagrado; ele é o que diz, o que proclama, o que elucida o significado, o que
 provê o imortal, o senhor do Dhamma, o Tathagata” (</span><a
-href="../sutta/MN18.html#T12"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN18.html#T12")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 18.12</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). <a
 name=Tathagata></a>O último termo desta série é o epiteto que o Buda usava mais
 freqüentemente ao referir a si mesmo, que enfatiza a sua importância como a
@@ -368,7 +333,7 @@ e “assim ido”,<span style="mso-spacerun: yes">  </span>(<i>tatha gata</i>),
 isto é, aquele que veio para o nosso meio trazendo a mensagem do imortal, para
 o qual ele “foi” através da sua própria prática do caminho. Como o Tathagata,
 ele possui os dez poderes e os quatro tipos de intrepidez que o capacitam a
-rugir o “rugido do leão” nas assembléias (</span><a href="../sutta/MN12.html#T9"><span
+rugir o “rugido do leão” nas assembléias (</span><a href='javascript:loadContent("../sutta/MN12.html#T9")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 12.9-20</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>). Ele não é apenas um místico sábio
 ou um moralista benevolente, mas o último numa linhagem de Perfeitamente
@@ -378,7 +343,7 @@ estabelece uma Revelação, (<i>sasana</i>), através da qual o caminho para a
 libertação se torna novamente acessível para o mundo. Até aqueles seus
 discípulos, que alcançaram a insuperável visão, prática e libertação, honram e
 veneram o Tathagata como aquele que, iluminado pelo esforço próprio, ensina os
-outros a alcançarem a iluminação (</span><a href="../sutta/MN35.html#T26"><span
+outros a alcançarem a iluminação (</span><a href='javascript:loadContent("../sutta/MN35.html#T26")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 35.26</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Recordando-se dele depois do seu falecimento
 a primeira geração de monges podia dizer: “O Abençoado foi aquele que fez
@@ -386,7 +351,7 @@ surgir o caminho que não havia surgido, o que produziu o caminho que não estava
 produzido, o que declarou o caminho que não estava declarado; ele era o
 conhecedor do caminho, o que encontrou o caminho, aquele com habilidade no
 caminho” que depois foi seguido e realizado pelos seus discípulos (</span><a
-href="../sutta/MN108.html#T5"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN108.html#T5")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 108.5</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
 <p class=Normal><b> <a name=T3></a><span lang=PT-BR ='
@@ -404,7 +369,7 @@ do qual essa verdade é expressa para poder ser comunicada e compreendida. O
 Dhamma não é um corpo de dogmas imutáveis ou um sistema de idéias
 especulativas. Em essência, ele é um meio, uma balsa para atravessar “desta
 margem” da ignorância, desejo e sofrimento para a “outra margem” da paz e
-liberdade transcendental (</span><a href="../sutta/MN22.html#T13"><span
+liberdade transcendental (</span><a href='javascript:loadContent("../sutta/MN22.html#T13")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 22.13</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Como o seu objetivo ao apresentar o seu
 ensinamento – a libertação do sofrimento – é pragmático, o Buda pode deixar de
@@ -412,11 +377,11 @@ lado toda a gama de especulação metafísica como um empreendimento fútil. Ele
 compara aqueles que se dedicam a isso com um homem que, atingido por uma flecha
 venenosa, recusa a ajuda de um cirurgião até que ele saiba todos os detalhes
 sobre quem o assaltou e sobre o armamento empregado (</span><a
-href="../sutta/MN63.html#T5"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN63.html#T5")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 63.5</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Atingida
 pela flecha do desejo, afligida pelo envelhecimento e morte, a humanidade
 necessita urgentemente de ajuda. O remédio que o Buda traz no papel de médico
-do mundo (</span><a href="../sutta/MN105.html#T27"><span lang=PT-BR
+do mundo (</span><a href='javascript:loadContent("../sutta/MN105.html#T27")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 105.27</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) é o Dhamma, que revela tanto a verdade da nossa
 problemática situação existencial como os meios através dos quais podemos curar
@@ -439,30 +404,30 @@ a nobre verdade da cessação do
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>É para
 essas quatro verdades que o Buda despertou na noite da sua iluminação (</span><a
-href="../sutta/MN4.html#T31"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN4.html#T31")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 4.31</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN36.html#T42"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN36.html#T42")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 36.42</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>);
 revelando-as para o mundo quando ele colocou em movimento a inigualável Roda do
-Dhamma em Benares (</span><a href="../sutta/MN141.html#T2"><span lang=PT-BR
+Dhamma em Benares (</span><a href='javascript:loadContent("../sutta/MN141.html#T2")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 141.2</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) e mantendo-as num patamar elevado através dos
 quarenta e cinco anos do seu ministério como “o ensinamento particular dos
-Budas” (</span><a href="../sutta/MN56.html#T18"><span lang=PT-BR
+Budas” (</span><a href='javascript:loadContent("../sutta/MN56.html#T18")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 56.18</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). As Quatro Nobres Verdades são explicadas de
-forma concisa no </span><a href="../sutta/MN9.html#T14"><span lang=PT-BR
+forma concisa no </span><a href='javascript:loadContent("../sutta/MN9.html#T14")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 9.14-18</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> e em detalhe no </span><a
-href="../sutta/MN141.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN141.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 141</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, enquanto no </span><a
-href="../sutta/MN28.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 28</span></a><span
+href='javascript:loadContent("../sutta/MN28.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 28</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'> o venerável Sariputta desenvolve
 uma explicação original das verdades, exclusiva deste sutta. Embora as Quatro
 Nobres Verdades sejam apresentadas de forma explícita só de vez em quando, elas
 estruturam todo o ensinamento do Buda, contendo em si mesmas seus muitos outros
 princípios, da mesma forma como a pegada do elefante contém em si as pegadas de
-todos os outros animais (</span><a href="../sutta/MN28.html#T2"><span
+todos os outros animais (</span><a href='javascript:loadContent("../sutta/MN28.html#T2")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 28.2</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -492,16 +457,16 @@ microscópico. No ponto extremo dessa escala, a visão do Buda revela um universo
 com dimensões imensas evoluindo e se desintegrando em ciclos repetitivos sem um
 princípio que possa ser determinado – “muitos ciclos cósmicos de contração,
 muitos ciclos cósmicos de expansão, muitos ciclos cósmicos de contração e
-expansão” (</span><a href="../sutta/MN4.html#T27"><span lang=PT-BR
+expansão” (</span><a href='javascript:loadContent("../sutta/MN4.html#T27")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 4.27</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). No ponto médio dessa escala, a marca da
 impermanência se manifesta na nossa inescapável mortalidade,<span
 style="mso-spacerun: yes">  </span>essa nossa condição de seres atados ao
-envelhecimento, enfermidade e morte (</span><a href="../sutta/MN26.html#T5"><span
+envelhecimento, enfermidade e morte (</span><a href='javascript:loadContent("../sutta/MN26.html#T5")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26.5</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>), possuidores de um corpo que está sujeito “a
 ser gasto e pulverizado, à dissolução e desintegração” (</span><a
-href="../sutta/MN74.html#T9"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN74.html#T9")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 74.9</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). E no outro
 extremo da escala, o ensinamento do Buda revela a impermanência radical que só
 pode ser observada através da atenção prolongada daquilo que é experimentado no
@@ -509,7 +474,7 @@ momento presente: o fato de que todos os elementos do nosso ser, corporal e
 mental, estão num processo contínuo, surgindo e cessando em rápida sucessão, de
 momento a momento, sem nenhuma substância persistente subjacente. Durante a
 própria observação eles estão sujeitos à “destruição, desaparecimento,
-decadência e cessação” (</span><a href="../sutta/MN74.html#T11"><span
+decadência e cessação” (</span><a href='javascript:loadContent("../sutta/MN74.html#T11")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 74.11</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -536,7 +501,7 @@ consciência de um objeto, indispensável para qualquer cognição. Como mostra o
 venerável Sariputta na sua habilidosa análise da primeira nobre verdade, os
 representantes dos cinco agregados estão presentes em cada ocorrência da
 experiência, surgindo em conexão com cada uma das seis faculdades dos sentidos
-e seus objetos (</span><a href="../sutta/MN28.html#T28"><span lang=PT-BR
+e seus objetos (</span><a href='javascript:loadContent("../sutta/MN28.html#T28")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 28.28</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -556,7 +521,7 @@ e morte. Todos os estados de existência dentro de <i>samsara</i>,<span
 style="mso-spacerun: yes">  </span>sendo obrigatoriamente transitórios e
 sujeitos à mudança, são incapazes de proporcionar segurança duradoura. A vida
 em qualquer mundo é instável, é varrida, não tem refúgio nem protetor, não tem
-nada que lhe pertença (</span><a href="../sutta/MN82.html#T36"><span lang=PT-BR
+nada que lhe pertença (</span><a href='javascript:loadContent("../sutta/MN82.html#T36")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 82.36</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>).&nbsp;<o:p></o:p></span></p>
 
@@ -591,20 +556,20 @@ doutrina de um eu.”<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Em vários
 suttas no MN, o Buda expressa com vigor o seu repúdio às idéias de um eu. No </span><a
-href="../sutta/MN102.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN102.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 102</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, ele empreende
 uma extensa análise das várias proposições apresentadas sobre o eu, declarando
 que todas são “condicionadas e grosseiras.” No </span><a
-href="../sutta/MN2.html#T8"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN2.html#T8")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 2.8</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, seis idéias
 sobre o eu são rotuladas como “um emaranhado de idéias, uma confusão de idéias,
 idéias contorcidas, idéias vacilantes, idéias que agrilhoam.” No </span><a
-href="../sutta/MN11.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 11</span></a><span
+href='javascript:loadContent("../sutta/MN11.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 11</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>, ele compara o seu ensinamento
 ponto por ponto com o ensinamento de outros contemplativos e brâmanes e mostra
 que debaixo das suas aparentes similaridades, eles divergem nesse único ponto
 crucial – a rejeição das idéias de um eu – que subverte os pontos de
-concordância. O </span><a href="../sutta/MN22.html"><span lang=PT-BR
+concordância. O </span><a href='javascript:loadContent("../sutta/MN22.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 22</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>, oferece uma série de argumentos contra a
 idéia de um eu, culminando com a declaração do Buda de que ele não vê nenhuma
@@ -618,23 +583,23 @@ do não-eu é mostrado nos suttas como uma seqüência lógica das duas marcas da
 impermanência e sofrimento. A fórmula padrão afirma que aquilo que é
 impermanente é dor ou sofrimento, e aquilo que é impermanente, sofrimento e
 sujeito à mudança não pode ser considerado como meu ou eu (</span><a
-href="../sutta/MN22.html#T26"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN22.html#T26")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 22.26</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN35.html#T20"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN35.html#T20")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 35.20</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, etc.).
 Outros trechos destacam a relação entre as três características através de
-ângulos distintos. O </span><a href="../sutta/MN28.html"><span lang=PT-BR
+ângulos distintos. O </span><a href='javascript:loadContent("../sutta/MN28.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 28</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> destaca que se até mesmo os elementos materiais
 externos – terra, água, fogo e ar – apesar de tão vastos, são de tempos em
 tempos destruídos em cataclismos cósmicos, não é possível conceber que este
-corpo transitório seja o eu. O </span><a href="../sutta/MN148.html"><span
+corpo transitório seja o eu. O </span><a href='javascript:loadContent("../sutta/MN148.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 148</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> usando a argumentação reductio ad
 absurdum demonstra que a impermanência implica o não-eu: como todos os fatores da
 existência estão claramente sujeitos ao surgimento e desaparecimento,
 identificar entre eles qualquer coisa que seja com o eu significa apoiar-se na
-tese indefensável de que o eu está sujeito ao surgimento e desaparecimento. O </span><a href="../sutta/MN35.html#T19"><span lang=PT-BR style='mso-ansi-language:
+tese indefensável de que o eu está sujeito ao surgimento e desaparecimento. O </span><a href='javascript:loadContent("../sutta/MN35.html#T19")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'> MN 35.19</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>
 conecta a marca do não-eu com <i>dukkha</i> ao argumentar que, como não podemos
 fazer com que os cinco agregados se sujeitem à nossa vontade, eles não podem
@@ -660,16 +625,16 @@ sofrimento que se origina deste cessará sem deixar vestígio.<o:p></o:p></span></
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A
 descoberta feita pelo Buda do vínculo causal entre o desejo e o sofrimento
 explica a aparente característica “pessimista” que emerge de vários suttas no
-MN: no </span><a href="../sutta/MN13.html"><span lang=PT-BR style='mso-ansi-language:
+MN: no </span><a href='javascript:loadContent("../sutta/MN13.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 13</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> com a
 dissertação sobre os perigos dos prazeres sensuais, forma e sensações; no </span><a
-href="../sutta/MN10.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 10</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'> e <a href="../sutta/MN119.html">MN
-119</a> com as meditações dos cemitérios; no </span><a href="../sutta/MN22.html"><span
+href='javascript:loadContent("../sutta/MN10.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 10</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'> e <a href='javascript:loadContent("../sutta/MN119.html")'>MN
+119</a> com as meditações dos cemitérios; no </span><a href='javascript:loadContent("../sutta/MN22.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 22</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN54.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN54.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 54</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e </span><a href="../sutta/MN75.html"><span
+style='mso-ansi-language:PT-BR'> e </span><a href='javascript:loadContent("../sutta/MN75.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 75</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> com os símiles chocantes para os prazeres
 sensuais. Esses ensinamentos fazem parte da abordagem tática do Buda para guiar
@@ -692,32 +657,32 @@ essa versão expandida das duas verdades é apresentada é chamada <i>paticca
 samuppada</i>, origem dependente. Na sua versão mais completa, essa doutrina
 explica a origem e a cessação do sofrimento representada pelos doze fatores
 conectados . Essa formulação, apresentada de modo esquemático, será encontrada
-no </span><a href="../sutta/MN38.html#T17"><span lang=PT-BR style='mso-ansi-language:
+no </span><a href='javascript:loadContent("../sutta/MN38.html#T17")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 38.17</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> na
-sua ordem de origem e no </span><a href="../sutta/MN38.html#T20"><span
+sua ordem de origem e no </span><a href='javascript:loadContent("../sutta/MN38.html#T20")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 38.20</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> na sua ordem de cessação. O </span><a
-href="../sutta/MN115.html#T11"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN115.html#T11")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 115.11</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> inclui ambas
 as seqüências juntas, precedidas por um enunciado do princípio geral da
 condicionalidade que suporta a referida doutrina. Uma versão mais elaborada
 apresentando uma análise de cada termo da seqüência é apresentada no </span><a
-href="../sutta/MN9.html#T21"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN9.html#T21")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 9.21-66</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, e uma
 versão exemplificada tomando o curso de uma vida individual no </span><a
-href="../sutta/MN38.html#T26"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN38.html#T26")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 38.26-40</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>. Versões
 condensadas também podem ser encontradas<span style="mso-spacerun: yes"> 
-</span>especialmente no </span><a href="../sutta/MN1.html#T171"><span
+</span>especialmente no </span><a href='javascript:loadContent("../sutta/MN1.html#T171")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 1.171</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN11.html#T16"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN11.html#T16")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 11.16</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e </span><a href="../sutta/MN75.html#T24"><span
+style='mso-ansi-language:PT-BR'> e </span><a href='javascript:loadContent("../sutta/MN75.html#T24")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 75.24-25</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>. O venerável Sariputta repete as
 palavras do Buda dizendo que aquele que vê a origem dependente vê o Dhamma e
 aquele que vê o Dhamma vê a origem dependente (</span><a
-href="../sutta/MN28.html#T28"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN28.html#T28")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 28.28</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). <o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>De acordo com
@@ -769,7 +734,7 @@ Nibbana, (Nirvana em Sânscrito), e nenhum outro conceito nos ensinamentos do
 Buda provou ser tão refratário à precisão conceitual como este. E de certo modo
 é de se esperar esse caráter elusivo, visto que Nibbana é descrito precisamente
 como “profundo, difícil de ver e difícil de compreender, ... que não pode ser
-alcançado através do mero raciocínio” (</span><a href="../sutta/MN26.html#T19"><span
+alcançado através do mero raciocínio” (</span><a href='javascript:loadContent("../sutta/MN26.html#T19")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26.19</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). No entanto, nesse mesmo trecho o Buda também
 diz que Nibbana é para ser experimentado pelos sábios, e nos suttas ele
@@ -786,26 +751,26 @@ convincente contra essa idéia é o conhecido trecho do Udana que declara sobre
 Nibbana que “o que não nasceu - o que não veio a ser - o que não é feito - o
 que não é fabricado,” cuja existência faz com que seja possível a “emancipação
 do nascido - do que veio a ser - do feito - do fabricado” (</span><a
-href="../sutta/UdVIII3.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>Ud
+href='javascript:loadContent("../sutta/UdVIII3.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>Ud
 8.3</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). O MN
 caracteriza Nibbana de modo semelhante. É o que não nasce, não envelhece, não
 está sujeito à enfermidade, o imortal, não está sujeito à tristeza, não está
 sujeito às impurezas, a suprema segurança contra o cativeiro,” que o Buda
-alcançou na noite da sua iluminação (</span><a href="../sutta/MN26.html#T18"><span
+alcançou na noite da sua iluminação (</span><a href='javascript:loadContent("../sutta/MN26.html#T18")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26.18</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). A sua realidade preeminente é afirmada pelo
 Buda quando ele define Nibbana como o supremo fundamento da verdade, cuja
 natureza não é enganosa e que se classifica como a verdade nobre suprema (</span><a
-href="../sutta/MN140.html#T26"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN140.html#T26")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 140.26</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Nibbana
 não pode ser percebido por aqueles que estão imersos na cobiça e na raiva, mas
 pode ser experimentado com o surgimento da visão espiritual, e através da
 fixação da mente nisso em estado meditativo profundo o discípulo poderá
-alcançar a destruição das impurezas (</span><a href="../sutta/MN26.html#T19"><span
+alcançar a destruição das impurezas (</span><a href='javascript:loadContent("../sutta/MN26.html#T19")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26.19</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN75.html#T24"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN75.html#T24")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 75.24</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN64.html#T9"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN64.html#T9")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 64.9</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -823,7 +788,7 @@ aquilo que não envelhece, imortal e desprovido de tristeza, como a suprema
 segurança contra o cativeiro. Para mostrar o que deve ser feito para alcançar
 Nibbana, para indicar que o objetivo implica uma tarefa específica, ele o
 descreve como o cessar de todas as formações, o abandono de todos os apegos, o
-fim do desejo, desapego, cessação (</span><a href="../sutta/MN26.html#T19"><span
+fim do desejo, desapego, cessação (</span><a href='javascript:loadContent("../sutta/MN26.html#T19")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26.19</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Acima de tudo, Nibbana é a cessação do
 sofrimento, e para aqueles que buscam o fim do sofrimento essa designação é
@@ -864,11 +829,11 @@ Concentração Correta (<i>samma samadhi</i>)</p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Mencionado
 incontáveis vezes ao longo do MN, o Nobre Caminho Óctuplo é explicado em
-detalhe em dois suttas completos. O </span><a href="../sutta/MN141.html"><span
+detalhe em dois suttas completos. O </span><a href='javascript:loadContent("../sutta/MN141.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 141</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> apresenta uma análise fatorial dos oito
 componentes do caminho empregando as definições padrão do Cânone em Pali; o </span><a
-href="../sutta/MN117.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN117.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 117</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> explica o caminho
 sob um ângulo distinto sob a rubrica de “nobre concentração correta com os seus
 suportes e os seus requisitos.” Neste caso, o Buda faz a importante distinção
@@ -876,10 +841,10 @@ entre os estágios mundanos e supramundanos do caminho, define os primeiros
 cinco fatores de ambos os estágios e mostra como os fatores do caminho
 funcionam em harmonia na tarefa comum de proporcionar uma escapatória do
 sofrimento. Outros suttas exploram em mais detalhes os componentes individuais
-do caminho. Assim, o <a href="../sutta/MN9.html">MN 9</a> proporciona uma
-explicação profunda do entendimento correto, o <a href="../sutta/MN10.html">MN
-10</a> da atenção plena correta, o <a href="../sutta/MN19.html">MN 19</a> do
-pensamento correto. O </span><a href="../sutta/MN44.html#T11"><span lang=PT-BR
+do caminho. Assim, o <a href='javascript:loadContent("../sutta/MN9.html")'>MN 9</a> proporciona uma
+explicação profunda do entendimento correto, o <a href='javascript:loadContent("../sutta/MN10.html")'>MN
+10</a> da atenção plena correta, o <a href='javascript:loadContent("../sutta/MN19.html")'>MN 19</a> do
+pensamento correto. O </span><a href='javascript:loadContent("../sutta/MN44.html#T11")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 44.11</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> explica que os oito fatores podem ser
 englobados em três “agregados”. Linguagem Correta, Ação Correta e Modo de Vida
@@ -898,9 +863,9 @@ sete grupos de fatores que se cruzam. Nos textos subseqüentes eles são
 designados como os trinta e sete apoios ou “asas” para a iluminação, (<i>bodhipakkhiya
 dhamma</i>), mas o próprio Buda se referia a eles como “essas coisas que lhes
 ensinei após tê-las conhecido diretamente&quot;, sem dar-lhes um nome coletivo
-(</span><a href="../sutta/MN103.html#T3"><span lang=PT-BR style='mso-ansi-language:
+(</span><a href='javascript:loadContent("../sutta/MN103.html#T3")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 103.3</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN104.html#T5"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN104.html#T5")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 104.5</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Próximo ao
 final da sua vida ele enfatizou para a<span style="mso-spacerun: yes"> 
 </span>Sangha que a longa duração dos seus ensinamentos no mundo dependia da
@@ -928,7 +893,7 @@ constituintes desse conjunto são os seguintes:<o:p></o:p></span></p>
 
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Cada grupo
-é definido completamente no </span><a href="../sutta/MN77.html#T15"><span
+é definido completamente no </span><a href='javascript:loadContent("../sutta/MN77.html#T15")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 77.15-21</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>. O exame irá mostrar que a maioria
 desses grupos são simplesmente subdivisões ou rearranjos dos fatores do caminho
@@ -936,11 +901,11 @@ desses grupos são simplesmente subdivisões ou rearranjos dos fatores do caminho
 exemplo, os quatro fundamentos da atenção plena são uma elaboração da atenção
 plena correta; os quatro tipos de esforço são uma elaboração do esforço
 correto. O desenvolvimento dos grupos é portanto integral e não sequencial. O </span><a
-href="../sutta/MN118.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN118.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 118</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, por exemplo,
 mostra como a prática dos quatro fundamentos da atenção plena realiza o
 desenvolvimento dos sete fatores da iluminação e o </span><a
-href="../sutta/MN149.html#T10"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN149.html#T10")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 149.10</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> afirma que
 aquele que se dedicar à meditação de insight tomando como objeto as bases
 sensuais realizará todos os trinta e sete apoios para a iluminação.<o:p></o:p></span></p>
@@ -980,9 +945,9 @@ princípio, a prática de todo o Nobre Caminho Óctuplo está aberta a pessoas de
 qualquer estilo de vida, monástico ou leigo, o Buda confirma que muitos entre
 os seus discípulos leigos eram realizados no Dhamma e tinham alcançado os três
 primeiros dos quatro estágios supramundanos (</span><a
-href="../sutta/MN68.html#T18"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN68.html#T18")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 68.18-23</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>; </span><a
-href="../sutta/MN73.html#T9"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN73.html#T9")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 73.9-22</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>); a posição
 do Theravada é que um discípulo leigo também pode alcançar o quarto estágio, do
 arahant, mas ao alcançá-lo ele imediatamente segue a vida monástica ou falece.
@@ -997,18 +962,18 @@ seus ensinamentos sem serem desviados pelas preocupações da vida em família. <o:
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O principal
 paradigma para o treinamento gradual encontrado no MN é aquele apresentado no </span><a
-href="../sutta/MN27.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 27</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'> e </span><a href="../sutta/MN51.html"><span
+href='javascript:loadContent("../sutta/MN27.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 27</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'> e </span><a href='javascript:loadContent("../sutta/MN51.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 51</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>; versões alternativas podem ser encontradas no
-</span><a href="../sutta/MN38.html"><span lang=PT-BR style='mso-ansi-language:
+</span><a href='javascript:loadContent("../sutta/MN38.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 38</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN39.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN53.html"><span
+href='javascript:loadContent("../sutta/MN39.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN53.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 53</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN107.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN107.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 107</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e </span><a href="../sutta/MN125.html"><span
+style='mso-ansi-language:PT-BR'> e </span><a href='javascript:loadContent("../sutta/MN125.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 125</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> e algumas das variações mais importantes serão
 comentadas brevemente. A seqüência tem início com o surgimento de um Tathagata
@@ -1019,12 +984,12 @@ Os próximos três passos – satisfação, contenção das faculdades dos sentidos,
 atenção plena e plena consciência – têm a intenção de interiorizar o processo
 de purificação e dessa forma<span style="mso-spacerun: yes">  </span>estabelecer
 a ponte de transição da virtude para a concentração. Versões alternativas (</span><a
-href="../sutta/MN39.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN53.html"><span
+href='javascript:loadContent("../sutta/MN39.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN53.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 53</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN107.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN107.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 107</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN125.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN125.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 125</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) introduzem dois passos adicionais neste
 ponto, a moderação na alimentação e a vigilância. O treinamento na concentração
@@ -1036,7 +1001,7 @@ estado de calma e unificação. Na seqüência do treinamento gradual a superação
 dos obstáculos é tratada apenas de forma esquemática; outras partes do Cânone
 proporcionam instruções mais práticas que são ainda mais ampliadas nos
 comentários. O trecho sobre os obstáculos está adornado no </span><a
-href="../sutta/MN39.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39</span></a><span
+href='javascript:loadContent("../sutta/MN39.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'> com uma série de símiles que
 ilustram o contraste entre o cativeiro imposto pelos obstáculos e a prazerosa
 sensação de liberdade que é conquistada quando estes são abandonados. <o:p></o:p></span></p>
@@ -1048,11 +1013,11 @@ profundos de concentração nos quais a mente se torna totalmente absorta no seu
 objeto. O Buda enumerou quatro jhanas, simplesmente nomeados de acordo com a
 sua posição numérica na série, cada um mais refinado e mais sublime do que o
 anterior. Os jhanas são sempre descritos através das mesmas fórmulas, que em
-vários suttas (</span><a href="../sutta/MN39.html"><span lang=PT-BR
+vários suttas (</span><a href='javascript:loadContent("../sutta/MN39.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 39</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN77.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN77.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 77</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN119.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN119.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 119</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) são incrementadas com belos símiles. Embora na
 tradição Theravada os jhanas não sejam considerados indispensáveis para
@@ -1062,7 +1027,7 @@ name=R1></a>o Buda sempre os inclui no treinamento gradual completo devido à
 sua contribuição para a perfeição intrínseca do caminho e porque a concentração
 profunda proporciona uma base sólida para o cultivo do insight. Apesar de
 mundanos, os jhanas são as “pegadas do Tathagata” (</span><a
-href="../sutta/MN27.html#T19"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN27.html#T19")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 27.19-22</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>) e
 presságios da bem aventurança de Nibbana que se encontra no final do
 treinamento.<o:p></o:p></span></p>
@@ -1071,12 +1036,12 @@ treinamento.<o:p></o:p></span></p>
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A partir do
 quarto jhana, três alternativas de desenvolvimento adicional se tornam
 possíveis. Em várias passagens fora da seqüência do treinamento gradual (</span><a
-href="../sutta/MN8.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 8</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN25.html"><span
+href='javascript:loadContent("../sutta/MN8.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 8</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN25.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 25</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN26.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN26.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN66.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN66.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 66</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>, etc.) o Buda menciona quatro estados
 meditativos que dão continuidade à unificação da mente estabelecida nos jhanas.
@@ -1099,12 +1064,12 @@ terceira linha de desenvolvimento. Mas os outros cinco são todos mundanos,<span
 style="mso-spacerun: yes">  </span>resultado do extraordinário grau de concentração
 mental alcançado no quarto jhana: os poderes supra-humanos, o ouvido divino, a
 habilidade de ler a mente dos outros, a recordação das vidas passadas e o olho
-divino (</span><a href="../sutta/MN6.html"><span lang=PT-BR style='mso-ansi-language:
+divino (</span><a href='javascript:loadContent("../sutta/MN6.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 6</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN73.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 73</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN77.html"><span
+href='javascript:loadContent("../sutta/MN73.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 73</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN77.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 77</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN108.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN108.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 108</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -1126,7 +1091,7 @@ de desenvolvimento é aquela que o Buda persegue na seqüência do treinamento
 gradual, embora ele a preceda com a descrição de dois dos conhecimentos
 diretos, a recordação de vidas passadas e o olho divino. Os três juntos, que
 aparecem de modo destacado na iluminação do próprio Buda (</span><a
-href="../sutta/MN4.html#T27"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN4.html#T27")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 4.27-30</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>), são em
 conjunto denominados os três conhecimentos verdadeiros, (<i>tevijja</i>).
 Embora os dois primeiros dentre os três não sejam essenciais para a realização
@@ -1154,7 +1119,7 @@ freqüentemente encontrado nos suttas indica no entanto o real significado do
 termo, independentemente da sua etimologia, quando descreve os <i>asavas </i>como
 estados “que contaminam, que causam a renovação de ser/existir, que causam problemas,
 que amadurecem no sofrimento e conduzem ao futuro nascimento, envelhecimento e
-morte” (</span><a href="../sutta/MN36.html#T47"><span lang=PT-BR
+morte” (</span><a href='javascript:loadContent("../sutta/MN36.html#T47")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 36.47</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>, etc.). Assim, outros tradutores, deixando de
 lado o sentido literal, utilizam a interpretação de “máculas”, “corrupções” ou
@@ -1188,7 +1153,7 @@ conhecimento dos contemplativos Hindus muito antes do advento do Buda. O
 próprio Buda adquiriu maestria nos dois estágios mais elevados, nesse tipo de
 meditação, sob a orientação dos seus primeiros mestres, mas concluiu que eles
 só conduziam aos planos superiores de renascimento, não à verdadeira iluminação
-(</span><a href="../sutta/MN26.html#T15"><span lang=PT-BR style='mso-ansi-language:
+(</span><a href='javascript:loadContent("../sutta/MN26.html#T15")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 26.15-16</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>).
 Entretanto, como a unificação da mente, induzida pela prática da concentração,
 contribui para o claro entendimento, o Buda incorporou as técnicas da meditação
@@ -1205,24 +1170,24 @@ prescrevem, de modo explícito, objetos de meditação específicos por meio dos
 quais os jhanas podem ser alcançados, mas comentários como o Visuddhimagga nos
 permitem fazer as respectivas conexões. Entre os tópicos de meditação
 enumerados nos suttas, oito das dez kasinas (</span><a
-href="../sutta/MN77.html#T24"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN77.html#T24")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 77.24</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>) são
 reconhecidas como adequadas para alcançar todos os quatro jhanas, sendo que as
 duas últimas são respectivamente suporte para as duas primeiras realizações
 imateriais. As oito bases para a transcendência parecem ser um tratamento
 bastante diferenciado de meditação das kasinas coloridas, bem como as três
-primeiras das oito libertações (</span><a href="../sutta/MN77.html#T22"><span
+primeiras das oito libertações (</span><a href='javascript:loadContent("../sutta/MN77.html#T22")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 77.22-23</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>). A atenção plena na respiração, à
-qual o Buda dedicou um sutta completo (</span><a href="../sutta/MN118.html"><span
+qual o Buda dedicou um sutta completo (</span><a href='javascript:loadContent("../sutta/MN118.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 118</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>), proporciona um objeto de meditação sempre
 acessível que pode ser empregado para todos os quatro jhanas e também para
 desenvolver o insight. Outro método para alcançar os jhanas mencionado nos
 suttas são as quatro moradas divinas, (<i>brahmavihara</i>) – amor bondade,
-compaixão, alegria altruísta e equanimidade (</span><a href="../sutta/MN7.html"><span
+compaixão, alegria altruísta e equanimidade (</span><a href='javascript:loadContent("../sutta/MN7.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 7</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN40.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN40.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 40</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>, etc.). A tradição afirma que as três
 primeiras são capazes de conduzir aos três jhanas iniciais e a última de
@@ -1264,10 +1229,10 @@ desencantar a sua cobiça e apego desaparecem e a sua mente se liberta das impure
 instruções para o desenvolvimento do insight no MN, embora concisas, são muitas
 e variadas. O ensinamento mais importante para a prática que conduz ao insight
 é o <i>Satipatthana Sutta</i>, o Discurso sobre os Fundamentos da Atenção Plena
-(</span><a href="../sutta/MN10.html"><span lang=PT-BR style='mso-ansi-language:
+(</span><a href='javascript:loadContent("../sutta/MN10.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 10</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>;
 constando também no Digha Nikaya com uma seção mais ampla sobre as Quatro
-Nobres Verdades que é encontrada no </span><a href="../sutta/MN141.html"><span
+Nobres Verdades que é encontrada no </span><a href='javascript:loadContent("../sutta/MN141.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 141</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). O sutta detalha um sistema abrangente
 denominado <i>satipatthana</i> projetado para treinar a mente a ver com
@@ -1282,48 +1247,48 @@ o despertar do insight é claramente a intenção do método. <o:p></o:p></span></p>
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Outros suttas
 no MN descrevem abordagens para o desenvolvimento do insight que ou elaboram as
 contemplações de satipatthana, ou chegam até elas a partir de distintos pontos
-de partida. Assim o </span><a href="../sutta/MN118.html"><span lang=PT-BR
+de partida. Assim o </span><a href='javascript:loadContent("../sutta/MN118.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 118</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> mostra como a prática da atenção plena na
 respiração realiza todos os quatro fundamentos da atenção plena, não só o
-primeiro como mostrado no </span><a href="../sutta/MN10.html"><span lang=PT-BR
+primeiro como mostrado no </span><a href='javascript:loadContent("../sutta/MN10.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 10</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>. Vários suttas - </span><a
-href="../sutta/MN28.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 28</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN62.html"><span
+href='javascript:loadContent("../sutta/MN28.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 28</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN62.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 62</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN140.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN140.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 140</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> – apresentam instruções mais detalhadas sobre
-a contemplação dos elementos. Os </span><a href="../sutta/MN37.html"><span
+a contemplação dos elementos. Os </span><a href='javascript:loadContent("../sutta/MN37.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 37</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN74.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN74.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 74</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e </span><a href="../sutta/MN140.html"><span
+style='mso-ansi-language:PT-BR'> e </span><a href='javascript:loadContent("../sutta/MN140.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 140</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> contêm trechos esclarecedores sobre a
 contemplação das sensações. Em alguns dos suttas o Buda emprega os cinco
 agregados como a base para a contemplação de insight (</span><a
-href="../sutta/MN22.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 22</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN109.html"><span
+href='javascript:loadContent("../sutta/MN22.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 22</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN109.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 109</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>); em alguns, as seis bases dos sentidos (</span><a
-href="../sutta/MN137.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN137.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 137</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN148.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN148.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 148</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN149.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN149.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 149</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>); em alguns, a
-combinação de ambos (</span><a href="../sutta/MN147.html"><span lang=PT-BR
+combinação de ambos (</span><a href='javascript:loadContent("../sutta/MN147.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 147</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>). O </span><a href="../sutta/MN112.html"><span
+style='mso-ansi-language:PT-BR'>). O </span><a href='javascript:loadContent("../sutta/MN112.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 112</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'><span style="mso-spacerun: yes"> 
 </span>apresenta trechos que tratam do insight baseado nos cinco agregados, nos
 seis elementos e nas seis bases dos sentidos, como resultado do treinamento
-gradual. O </span><a href="../sutta/MN52.html"><span lang=PT-BR
+gradual. O </span><a href='javascript:loadContent("../sutta/MN52.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 52</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e o </span><a href="../sutta/MN64.html"><span
+style='mso-ansi-language:PT-BR'> e o </span><a href='javascript:loadContent("../sutta/MN64.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 64</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> mostram que o insight também pode ser
 realizado tendo os jhanas, as realizações imateriais e as moradas divinas como
@@ -1342,9 +1307,9 @@ poderes da tranqüilidade e do insight no qual todos os processos mentais são
 suspensos temporariamente. Essa realização só pode ser alcançada por aqueles
 que não retornam e pelos arahants que já obtiveram a maestria dos jhanas e dos
 estados imateriais. Mais detalhes com respeito a esse estado são encontrados no
-</span><a href="../sutta/MN43.html"><span lang=PT-BR style='mso-ansi-language:
+</span><a href='javascript:loadContent("../sutta/MN43.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 43</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'> e </span><a
-href="../sutta/MN44.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 44</span></a><span
+href='javascript:loadContent("../sutta/MN44.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 44</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>.<o:p></o:p></span></p>
 
 <p class=Normal><b> <a name="T9")</a><span lang=PT-BR ='
@@ -1382,7 +1347,7 @@ caminho em particular. A fórmula canônica de homenagem à Sangha se refere
 indiretamente a esses quatro planos de libertação – cada um com a sua fase de
 caminho e fruto –quando exalta a comunidade dos nobres discípulos do Abençoado
 incluindo “os quatro pares de pessoas, os oito tipos de indivíduos” (</span><a
-href="../sutta/MN7.html#T7"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN7.html#T7")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 7.7</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Esses quatro
 pares são obtidos tomando, para cada estágio, aquele que entrou no caminho para
 a realização do fruto e aquele que já realizou o fruto.<o:p></o:p></span></p>
@@ -1392,9 +1357,9 @@ o Buda destaca as características de cada estágio supramundano de duas formas:
 mencionando as contaminações que são abandonadas em cada estágio e as
 conseqüências que essa realização traz ao processo de renascimento, (veja por
 exemplo<span style="mso-spacerun: yes">  </span></span><a
-href="../sutta/MN6.html#T11"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN6.html#T11")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 6.11-13, 19</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>; </span><a
-href="../sutta/MN22.html#T42"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN22.html#T42")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 22.42-45</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, etc.).
 Ele trata da eliminação das contaminações classificando-as num grupo de dez
 chamado os dez grilhões, (<i>samyojana</i>). O discípulo entra no primeiro
@@ -1451,7 +1416,7 @@ Embora essa concepção dos caminhos e frutos seja regularmente empregada pelos
 comentadores como uma ferramenta hermenêutica para a interpretação dos suttas,
 ela não está explicitamente formulada desta maneira nos Nikayas e em algumas
 ocasiões até parece haver uma certa tensão entre os comentários e os suttas
-(por exemplo, no trecho do </span><a href="../sutta/MN142.html#T5"><span
+(por exemplo, no trecho do </span><a href='javascript:loadContent("../sutta/MN142.html#T5")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 142.5</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> que descreve as oito pessoas no caminho como
 recipientes distintos de dádivas).&nbsp;<o:p></o:p></span></p>
@@ -1476,25 +1441,25 @@ adotam uma descrição padrão do arahant que resume as suas realizações: ele é
 “aquele que destruiu as impurezas, que viveu a vida santa, fez o que devia ser
 feito, depôs o fardo, alcançou o verdadeiro objetivo, destruiu os grilhões da
 existência e está completamente libertado através do conhecimento supremo” (</span><a
-href="../sutta/MN1.html#T51"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN1.html#T51")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 1.51</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, etc.).
 Descrições alternativas enfatizam aspectos distintos da realização do arahant.
 Assim, um sutta oferece uma série de epítetos metafóricos que o próprio Buda
 interpreta como a representação do abandono pelo arahant da ignorância, desejo
 e presunção, a sua erradicação dos grilhões e a sua libertação do ciclo de
-renascimentos (</span><a href="../sutta/MN22.html#T30"><span lang=PT-BR
+renascimentos (</span><a href='javascript:loadContent("../sutta/MN22.html#T30")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 22.30-35</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Em outros discursos o Buda atribui uma série
 distinta de epítetos ao arahant – vários usados entre brâmanes – derivando
 esses termos através do uso imaginativo da etimologia de todos os estados
-prejudiciais eliminados pelo arahant (</span><a href="../sutta/MN39.html#T22"><span
+prejudiciais eliminados pelo arahant (</span><a href='javascript:loadContent("../sutta/MN39.html#T22")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 39.22-29</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O MN
 registra diferenças de tipos entre os arahants, que são atribuídas à
-diversidade nas suas faculdades. No </span><a href="../sutta/MN70.html"><span
+diversidade nas suas faculdades. No </span><a href='javascript:loadContent("../sutta/MN70.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 70</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> o Buda apresenta uma distinção básica entre
 aqueles arahants que estão “libertados de ambos os modos” e aqueles que estão
@@ -1503,7 +1468,7 @@ imateriais<span style="mso-spacerun: yes">  </span>e os
 últimos não. Os arahants também são distinguidos entre aqueles que possuem,
 além do conhecimento da destruição das impurezas necessário a todos os
 arahants, todos os três conhecimentos verdadeiros e todos os seis conhecimentos
-diretos. No </span><a href="../sutta/MN108.html"><span lang=PT-BR
+diretos. No </span><a href='javascript:loadContent("../sutta/MN108.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 108</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> o venerável Ananda indica que aqueles arahants
 que possuíssem os seis conhecimentos diretos seria outorgada veneração especial
@@ -1514,24 +1479,24 @@ dessas diferenças incidentais, no entanto, todo os arahants compartem
 igualmente as mesmas realizações essenciais – a destruição de todas as
 contaminações e a libertação de futuros renascimentos. Eles possuem três
 qualidade insuperáveis – visão insuperável, a prática insuperável do caminho e
-a libertação insuperável (</span><a href="../sutta/MN35.html#T26"><span
+a libertação insuperável (</span><a href='javascript:loadContent("../sutta/MN35.html#T26")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 35.26</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Eles estão dotados com os dez fatores
 daquele que está além do treinamento – os oito fatores do Nobre Caminho Óctuplo
 aumentado pelo conhecimento correto e libertação correta<span
-style="mso-spacerun: yes">  </span>(</span><a href="../sutta/MN65.html#T34"><span
+style="mso-spacerun: yes">  </span>(</span><a href='javascript:loadContent("../sutta/MN65.html#T34")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 65.34</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN78.html#T14"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN78.html#T14")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 78.14</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Eles possuem os quatro fundamentos – os
 fundamentos da sabedoria, da verdade, da renúncia e da paz (</span><a
-href="../sutta/MN140.html#T11"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN140.html#T11")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 140.11</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). E com a
 erradicação da cobiça, raiva e delusão, todos os arahants têm acesso a uma
 realização meditativa única denominada a fruição da realização do estado de
 arahant, descrita como a libertação inabalável da mente, a libertação
 imensurável da mente, a libertação no vazio, a libertação da mente no nada e a
-libertação da mente sem sinais (</span><a href="../sutta/MN43.html#T35"><span
+libertação da mente sem sinais (</span><a href='javascript:loadContent("../sutta/MN43.html#T35")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 43.35-37</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -1573,14 +1538,14 @@ delusão – geram kamma benéfico que os conduzirá aos estados de existência
 superiores e que amadurecem no plano humano como prazer e boa fortuna. Como as
 ações que uma pessoa realiza ao longo de uma única vida podem ser extremamente
 variadas, o tipo de renascimento que virá mais adiante pode ser bastante
-imprevisível, como mostra o Buda no </span><a href="../sutta/MN136.html"><span
+imprevisível, como mostra o Buda no </span><a href='javascript:loadContent("../sutta/MN136.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 136</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>. Mas apesar dessa variabilidade empírica, há
 uma lei invariável que governa os resultados produzidos, sendo que as
 correlações básicas são delineadas pelo Buda no </span><a
-href="../sutta/MN57.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 57</span></a><span
+href='javascript:loadContent("../sutta/MN57.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 57</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'> e em mais detalhes no <a
-href="../sutta/MN135.html">MN 135. </a><span class=MsoHyperlink><o:p></o:p></span></span></p>
+href='javascript:loadContent("../sutta/MN135.html")'>MN 135. </a><span class=MsoHyperlink><o:p></o:p></span></span></p>
 
 
 <p class=Normal><a name=cosmo></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>Em vários
@@ -1589,10 +1554,10 @@ ocorrer o renascimento e também dá alguma indicação dos tipos de kamma que
 conduzem a esses planos. Essa tipografia cosmológica não é, sob o ponto de
 vista Budista, um produto da conjectura ou fantasia mas um tema que o Buda
 conhecia diretamente através dos “poderes do conhecimento de um Tathagata” (</span><a
-href="../sutta/MN12.html#T36"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN12.html#T36")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 12.36</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>); até certo
 ponto o processo também pode ser verificado por aqueles que obtêm o olho divino
-(ex: </span><a href="../sutta/MN39.html#T20"><span lang=PT-BR style='mso-ansi-language:
+(ex: </span><a href='javascript:loadContent("../sutta/MN39.html#T20")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>MN 39.20</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>).
 Pode-se dar aqui uma breve visão geral dos planos de renascimento reconhecidos
 na cosmologia Budista e os seus antecedentes cármicos, como apresentado na
@@ -1607,9 +1572,9 @@ O reino da esfera sensual, assim chamado porque nele predomina o desejo
 sensual, consiste de onze planos divididos em dois grupos, as destinações ruins
 e as destinações boas. As destinações ruins ou “estados de privação”, (<i>apaya</i>),
 são quatro em número: os infernos, que são estados de intenso tormento como
-descrito no </span><a href="../sutta/MN129.html"><span lang=PT-BR
+descrito no </span><a href='javascript:loadContent("../sutta/MN129.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 129</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e </span><a href="../sutta/MN130.html"><span
+style='mso-ansi-language:PT-BR'> e </span><a href='javascript:loadContent("../sutta/MN130.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 130</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>; o reino animal; o mundo dos fantasmas, (<i>peta</i>),
 seres afligidos pela sede e fome incessantes; e o mundo dos titãs, (<i>asuras</i>),
@@ -1617,10 +1582,10 @@ seres envolvidos em constante combate (não mencionados como um plano separado
 no MN). Os tipos de kamma que conduzem ao renascimento nesses planos são
 classificados em um conjunto de dez - três com o corpo, quatro com a linguagem
 e três com a mente. Estes estão enumerados resumidamente no<span
-style="mso-spacerun: yes">  </span></span><a href="../sutta/MN9.html#T4"><span
+style="mso-spacerun: yes">  </span></span><a href='javascript:loadContent("../sutta/MN9.html#T4")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 9.4</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'> e explicados no </span><a
-href="../sutta/MN41.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 41</span></a><span
+href='javascript:loadContent("../sutta/MN41.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 41</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>. Graduações na gravidade das
 intenções ruins responsáveis por esses atos explicam as diferenças específicas
 no modo de renascimento que resulta dessas ações. <o:p></o:p></span></p>
@@ -1631,11 +1596,11 @@ destinações boas no reino da esfera sensual são o mundo humano e os planos
 paradisíacos. Estes últimos são seis em número: os devas sob os Quatro Grandes
 Reis; os devas do Trinta e Três, (<i>tavatimsa</i>), que são governados por
 Sakka, uma metamorfose Budista de Indra, retratado como um devoto discípulo do
-Buda, mas dado à negligência (</span><a href="../sutta/MN37.html"><span
+Buda, mas dado à negligência (</span><a href='javascript:loadContent("../sutta/MN37.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 37</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>); os devas de Yama; os devas do paraíso de
 Tusita, a morada do Bodisatva antes do seu último nascimento (</span><a
-href="../sutta/MN123.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN123.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 123</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>); os devas que
 se deliciam com a criação; e os devas que exercem poder sobre a criação dos
 outros. Este último dizem ser a morada de Mara, a Tentação no Budismo, que além
@@ -1643,9 +1608,9 @@ de ser um símbolo para o Desejo e a Morte, é também considerado uma divindade
 poderosa com intenções maldosas que deseja ardentemente evitar que os seres
 escapem da rede do samsara. A causa cármica para o renascimento nas destinações
 boas do reino da esfera sensual é a prática dos dez tipos de ações benéficas,
-definidas no </span><a href="../sutta/MN9.html#T6"><span lang=PT-BR
+definidas no </span><a href='javascript:loadContent("../sutta/MN9.html#T6")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 9.6</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'> e no </span><a href="../sutta/MN41.html"><span
+style='mso-ansi-language:PT-BR'> e no </span><a href='javascript:loadContent("../sutta/MN41.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 41</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>.<o:p></o:p></span></p>
 
@@ -1658,13 +1623,13 @@ dezesseis planos que são a contrapartida objetiva dos quatro jhanas. A
 realização do primeiro jhana conduz ao renascimento como membro do cortejo
 de Brahma, ministro de Brahma ou Maha Brahma, dependendo do grau de
 desenvolvimento desse jhana, se inferior, médio ou superior. O Brahma Baka (</span><a
-href="../sutta/MN49.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 49</span></a><span
+href='javascript:loadContent("../sutta/MN49.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 49</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>) e o Brahma Sahampati (</span><a
-href="../sutta/MN26.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26</span></a><span
-lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN67.html"><span
+href='javascript:loadContent("../sutta/MN26.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 26</span></a><span
+lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN67.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 67</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) parecem ser residentes do terceiro nível. Os
-suttas mencionam especialmente as moradas divinas como o caminho para os mundos de Brahma (</span><a href="../sutta/MN99.html#T24"><span lang=PT-BR
+suttas mencionam especialmente as moradas divinas como o caminho para os mundos de Brahma (</span><a href='javascript:loadContent("../sutta/MN99.html#T24")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 99.24-27</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). A realização do segundo jhana nos mesmos
 três graus conduz respectivamente ao renascimento entre os devas da Radiância
@@ -1703,9 +1668,9 @@ durar. Por essa razão o Buda não localiza o objetivo final dos seus
 ensinamentos em nenhum lugar dentro do mundo condicionado. Ele guia aqueles
 cujas faculdades espirituais ainda são imaturas a aspirar pelo renascimento nos
 paraísos celestiais e ensina os tipos de comportamento que conduzem à
-satisfação das suas aspirações (</span><a href="../sutta/MN41.html"><span
+satisfação das suas aspirações (</span><a href='javascript:loadContent("../sutta/MN41.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 41</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN120.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN120.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 120</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Mas aqueles cujas faculdades espirituais
 estão maduras, capazes de compreender a natureza insatisfatória de tudo que é
@@ -1732,7 +1697,7 @@ antiga. Eles aceitavam a autoridade dos Vedas, que eles estudavam, recitavam em
 rituais inumeráveis, sacrifícios e cerimônias e aos quais recorriam como fonte
 para as suas especulações filosóficas. Por conseguinte, eles são caracterizados
 nos suttas como tradicionalistas, (<i>anussavika</i>), que ensinam as suas
-doutrinas com base na tradição oral (</span><a href="../sutta/MN100.html#T7"><span
+doutrinas com base na tradição oral (</span><a href='javascript:loadContent("../sutta/MN100.html#T7")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 100.7</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). O Cânone em Pali de modo geral os descreve
 vivendo uma vida confortável e equilibrada, casados e com filhos e em alguns
@@ -1748,14 +1713,14 @@ através da renúncia voluntária e não através do nascimento. Os samanas
 perambulavam pelo interior da Índia algumas vezes em grupos, algumas vezes
 solitários, pregando as suas doutrinas para a população, debatendo com outros
 contemplativos, dedicando-se às suas atividades espirituais que com freqüência
-envolviam rigorosas austeridades (veja o </span><a href="../sutta/MN51.html#T8"><span
+envolviam rigorosas austeridades (veja o </span><a href='javascript:loadContent("../sutta/MN51.html#T8")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 51.8</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). Alguns mestres do grupo dos samanas
 ensinavam exclusivamente fundamentados no raciocínio e na especulação, enquanto
 que outros ensinavam com base nas suas próprias experiências na meditação. O
 próprio Buda se encaixava entre estes últimos, como aquele que ensinava o
 Dhamma que ele compreendeu diretamente por si mesmo (</span><a
-href="../sutta/MN100.html#T7"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN100.html#T7")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 100.7</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
 
@@ -1779,9 +1744,9 @@ abençoados de Brahma e que somente eles seriam capazes de se purificarem. A
 preocupação de que essa afirmação dos brâmanes poderia na realidade ser verdadeira
 parece ter se espalhado entre a realeza, que deve ter ficado atemorizada pela
 ameaça que eles representavam ao seu poder. (veja o </span><a
-href="../sutta/MN84.html#T4"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN84.html#T4")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 84.4</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN90.html#T9"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN90.html#T9")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 90.9-10</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Contrário a
@@ -1796,28 +1761,28 @@ confrontados com as reivindicações de superioridade dos brâmanes, eles
 argumentavam vigorosamente contra elas, afirmando que todas essas afirmações
 careciam de fundamento. A purificação, eles sustentavam, é o resultado da
 conduta e não do nascimento e por esse motivo, estava acessível a toda as
-pessoas das quatro castas <a href="../sutta/MN40.html#T13">(MN 40.13-14</a>, </span><a
-href="../sutta/MN84.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 84</span></a><span
+pessoas das quatro castas <a href='javascript:loadContent("../sutta/MN40.html#T13")'>(MN 40.13-14</a>, </span><a
+href='javascript:loadContent("../sutta/MN84.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 84</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN90.html#T12"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN90.html#T12")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 90.12</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN93.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 93</span></a><span
+href='javascript:loadContent("../sutta/MN93.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 93</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>). O Buda até despiu o termo
 “brâmane” da sua conotação hereditária e, resgatando a sua conotação original
 de homem santo, ele definiu o arahant como o verdadeiro brâmane (</span><a
-href="../sutta/MN98.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 98</span></a><span
+href='javascript:loadContent("../sutta/MN98.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 98</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>). Aqueles dentre os brâmanes, que
 ainda não estavam obstaculizados pelo preconceito de classes, respondiam com
 apreço aos ensinamentos do Buda. Alguns dos mais eminentes brâmanes na época,
 nos quais ainda ardia o antigo anseio dos Vedas pela luz, conhecimento e verdade,
 reconheceram no Buda o Perfeitamente Iluminado por quem eles tanto esperaram e
 se declararam seus discípulos (veja em particular o </span><a
-href="../sutta/MN91.html#T34"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN91.html#T34")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 91.34</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Muitos até
 mesmo renunciaram aos seus privilégios de classe e com os seus acompanhantes
-entraram para a Sangha (</span><a href="../sutta/MN7.html#T22"><span lang=PT-BR
+entraram para a Sangha (</span><a href='javascript:loadContent("../sutta/MN7.html#T22")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 7.22</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN92.html#T15"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN92.html#T15")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 92.15-24</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>).<o:p></o:p></span></p>
 
@@ -1828,21 +1793,21 @@ comum, promulgavam uma pletora de doutrinas filosóficas que iam desde o
 diabólico até o super divino. O Cânone em Pali com freqüência menciona seis
 mestres em particular como contemporâneos do Buda, e visto que cada um deles é
 descrito como “líder de uma ordem ... considerado como um santo por muitos” (</span><a
-href="../sutta/MN77.html#T6"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN77.html#T6")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 77.6</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>), eles deviam
 exercer muita influência na época. O MN menciona ambos, o conjunto de seis e,
 separadamente, as suas doutrinas individuais; no entanto, o MN não correlaciona
 os nomes com as doutrinas. As conexões entre os nomes e as doutrinas são feitas
-no </span><a href="../sutta/DN2.html"><span lang=PT-BR style='mso-ansi-language:
+no </span><a href='javascript:loadContent("../sutta/DN2.html")'><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>Samaññaphala Sutta</span></a><span lang=PT-BR style='mso-ansi-language:
 PT-BR'> do Digha Nikaya.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Purana
 Kassapa, que sempre aparece primeiro na lista, ensinava a doutrina da inação, (<i>akiriyavada</i>),
 que negava a validade das distinções morais (</span><a
-href="../sutta/MN60.html#T13"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN60.html#T13")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 60.13</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN76.html#T10"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN76.html#T10")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 76.10</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Makkhali
 Gosala era o líder de uma seita conhecida como Ajivakas, (ou Ajivikas), que sobreviveu
 na Índia até a época medieval. Ele ensinava a doutrina do fatalismo e negava a
@@ -1850,26 +1815,26 @@ condicionalidade, (<i>ahetukavada</i>), e afirmava que todo o processo cósmico
 está controlado de modo rígido por um princípio chamado fatalidade ou destino,
 (<i>niyati</i>); os seres não possuem controle volitivo sobre as suas ações e
 se movem desamparadamente aprisionados pelo destino (</span><a
-href="../sutta/MN60.html#T21"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN60.html#T21")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 60.21</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>, </span><a
-href="../sutta/MN76.html#T13"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN76.html#T13")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 76.13</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Ajita
 Kesakambalin era um niilista moral, (<i>natthikavada</i>) que propunha uma
 filosofia materialista que rejeitava a existência de uma sobrevida e a
-retribuição de kamma (</span><a href="../sutta/MN60.html#T5"><span lang=PT-BR
+retribuição de kamma (</span><a href='javascript:loadContent("../sutta/MN60.html#T5")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 60.5</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN76.html#T7"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN76.html#T7")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 76.7</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>); a sua doutrina é freqüentemente citada pelo
 Buda entre os tipos de ações prejudiciais como o paradigma do entendimento
 incorreto. Pakudha Kaccayana advogava o atomismo e fundamentado nisso ele
 repudiava os princípios básicos de virtude (</span><a
-href="../sutta/MN76.html#T16"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN76.html#T16")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 76.16</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). Sanjaya
 Belatthiputta, um cético, se recusava a assumir uma posição em relação aos
 temas morais e filosóficos cruciais da época, provavelmente afirmando que esse
 conhecimento estava além da nossa capacidade de verificação (</span><a
-href="../sutta/MN76.html#T30"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
+href='javascript:loadContent("../sutta/MN76.html#T30")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN
 76.30</span></a><span lang=PT-BR style='mso-ansi-language:PT-BR'>). O sexto
 mestre, Nigantha Nataputta, é identificado como Mahavira, o histórico
 progenitor do Jainismo. Ele ensinava que há uma pluralidade de almas mônadas
@@ -1881,28 +1846,28 @@ da auto-mortificação.<o:p></o:p></span></p>
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Enquanto os
 suttas em Pali em geral são corteses porém críticos em relação aos brâmanes,
 estes, por sua vez são vigorosos na sua rejeição às doutrinas rivais dos
-samanas. Num sutta (</span><a href="../sutta/MN60.html"><span lang=PT-BR
+samanas. Num sutta (</span><a href='javascript:loadContent("../sutta/MN60.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 60</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) o Buda afirma que a firme adoção de qualquer
 uma das três primeiras doutrinas (e conseqüentemente a quarta) resulta numa
 cadeia de estados prejudiciais gerando kamma ruim forte o suficiente para
 trazer um renascimento nos planos mais inferiores. Do mesmo modo, o venerável
 Ananda descreve essas idéias como as quatro “negações da vida santa” (</span><a
-href="../sutta/MN76.html"><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 76</span></a><span
+href='javascript:loadContent("../sutta/MN76.html")'><span lang=PT-BR style='mso-ansi-language:PT-BR'>MN 76</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>). O ceticismo de Sanjaya, apesar de
 não ser considerado tão pernicioso, é interpretado como um sinal da tolice e
 confusão do seu proponente; ele é descrito como “contorção de enguias”, (<i>amaravikkhepa</i>),
 devido às suas evasivas e classificado entre os tipos de vida santa sem
-consolação (</span><a href="../sutta/MN76.html#T30"><span lang=PT-BR
+consolação (</span><a href='javascript:loadContent("../sutta/MN76.html#T30")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 76.30-31</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). A doutrina Jainista, embora compartindo
 algumas similaridades com os ensinamentos do Buda era considerada
 suficientemente equivocada nas suas premissas básicas para ser refutada, e o
-Buda assim o fez em várias ocasiões (</span><a href="../sutta/MN14.html"><span
+Buda assim o fez em várias ocasiões (</span><a href='javascript:loadContent("../sutta/MN14.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 14</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN56.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN56.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 56</span></a><span lang=PT-BR
-style='mso-ansi-language:PT-BR'>, </span><a href="../sutta/MN101.html"><span
+style='mso-ansi-language:PT-BR'>, </span><a href='javascript:loadContent("../sutta/MN101.html")'><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>MN 101</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>). <o:p></o:p></span></p>
 
@@ -1912,7 +1877,7 @@ essas idéias errôneas era visto, sob a perspectiva Budista, como uma medida
 necessária, não só para soar um claro alerta contra doutrinas que eram
 prejudiciais sob o ponto de vista espiritual, mas também para eliminar os
 obstáculos contra a aceitação do entendimento correto, que como precursor do
-caminho Budista (</span><a href="../sutta/MN117.html#T4"><span lang=PT-BR
+caminho Budista (</span><a href='javascript:loadContent("../sutta/MN117.html#T4")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>MN 117.4</span></a><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>) é um pré-requisito para o progresso no
 caminho para a libertação final.<o:p></o:p></span></p>
@@ -1926,7 +1891,7 @@ caminho para a libertação final.<o:p></o:p></span></p>
 <p class=Normal><a name=N1></a><span lang=PT-BR style='mso-ansi-language:
 PT-BR'>[1] Esta opinião do autor toca num tema controverso dentro do Theravada e
 sobre o qual não há um consenso. Para uma opinião contrária veja o ensaio
-escrito por Thanissaro Bhikkhu – </span><a href="jhanas.html"><span lang=PT-BR
+escrito por Thanissaro Bhikkhu – </span><a href='javascript:loadContent("jhanas.html")'><span lang=PT-BR
 style='mso-ansi-language:PT-BR'>Jhanas, Concentração e Sabedoria</span></a><span
 lang=PT-BR style='mso-ansi-language:PT-BR'>. </a><o:p></o:p></span></p>
 
@@ -1934,57 +1899,5 @@ lang=PT-BR style='mso-ansi-language:PT-BR'>. </a><o:p></o:p></span></p>
 <br>
 
 <!-- Counter/Statistics -->
-<script language="JavaScript"
-src="../../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
-</script>
-<script language="javascript">geovisit();</script>
-<noscript><img src="../../visit.webhosting.yahoo.com/visit07cc.html?time"
-alt="setstats" border="0" width="1" height="1"></noscript>
 
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-42601555-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<!-- FIM DO TEXTO -->
-
-<!-- INCLUI BASE -->
-<!-- BASE DE TODAS AS Pï¿½GINAS -->
-
-     </div>
-
-     <div id="rodape">
-     <span style="float:right;">
-         <p class=Rodape>
-         Revisado: Revisado: 14 Dezembro 2011         </p>
-     </span>
-     </div>
-
-     <div id="institucional">
-         <p class=Institucional>
-         Copyright &copy; 2000 - 2019,
-         <a href="../index.html">Acesso ao Insight</a> -
-         Michael Beisert: editor, Flavio Maia: designer.</p>
-     </div>
-
-     <div id="powered">
-         
-            <br><br>
-         <span>
-     </div>
-  </div>
-</body>
-
-<!-- Mirrored from www.acessoaoinsight.net/arquivo_textos_theravada/majjhima_intro.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:52:10 GMT -->
-</html>
-
-<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

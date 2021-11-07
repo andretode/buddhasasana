@@ -1,45 +1,8 @@
-<!-- DEFINE PARAMETROS -->
 
-<!--INCLUI TOPO-->
-<!-- TOPO DE TODAS AS PÁGINAS -->
-<!DOCTYPE html><html lang="pt-bt">
-<!-- Mirrored from www.acessoaoinsight.net/theravada.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:52:09 GMT -->
-<head><meta http-equiv="X-UA-Compatible" content="IE=edge" charset="ISO-8859-1"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="keywords" content="theravada, hinayana, buddhism, budismo, buddhist, budista, buddha, buda, dhamma, dharma, sangha, pali canon, cânone em pali, sutta, 
-vinaya, jhana, vipassana, tipitaka, meditação, burma, birmânia, mianmar, myanmar, sri lanka, sutta, sutra, tailândia, reencarnação, religião, renascimento, kamma, karma " /><meta name="description" content= "A mais completa biblioteca do Budismo Theravada em português. Mais de 7.000 suttas traduzidos, ensaios e livros de vários autores, guias de estudo e áudios." />
-<title>Acesso ao Insight - Budismo Theravada - theravada</title>
-<link REL="SHORTCUT ICON" href="img/favicon.ico"><!-- Jquery e Bootstrap --><script src="bootstrap/jquery-2.2.4.min.js"></script><link rel="stylesheet" href="bootstrap/bootstrap-3.3.7.min.css"><link rel="stylesheet" href="bootstrap/bootstrap-theme-3.3.7.min.css"><script src="bootstrap/bootstrap-3.3.7.min.js" ></script><link rel="stylesheet" href="insightf195.css?v=2.1"><script language="JavaScript" src="func.js"> </script><script type="text/javascript" src="expando.js">
-</script>
-<script>
-$(document).ready(function() {
-var pagina = $("#php-var-pagina").val();				switch(pagina){			case "sala_estudos":				$("#menu_sala_estudos").addClass("active");				break;			case "sutta_pitaka":				$("#menu_sutta_pitaka").addClass("active");				break;			case "indice_suttas":			case "indice_textos":				$("#menu_indice").addClass("active");				break;			case "livros ":			case "audiobook":			case "podcast":				$("#menu_material").addClass("active");				break;			case "dhp_alestorio":			case "sutta_alestorio":				$("#menu_random").addClass("active");				break;			case "ajuda":				$("#menu_ajuda").addClass("active");				break;		}	
-});
-
-//var enderecoBase = "http://www.acessoaoinsight.net";
-var enderecoBase = "";
-var enderecos1 = new Array("dhp/dhp1.1.html","dhp/dhp1.3.html","dhp/dhp1.5.html","dhp/dhp1.6.html","dhp/dhp1.13.html","dhp/dhp1.15.html","dhp/dhp1.17.html","dhp/dhp1.19.html","dhp/dhp2.21.html","dhp/dhp2.25.html","dhp/dhp2.26.html","dhp/dhp2.27.html","dhp/dhp2.28.html","dhp/dhp2.29.html","dhp/dhp2.31.html","dhp/dhp3.33.html","dhp/dhp3.35.html","dhp/dhp3.36.html","dhp/dhp3.37.html","dhp/dhp3.38.html","dhp/dhp3.40.html","dhp/dhp3.42.html","dhp/dhp3.43.html","dhp/dhp4.44.html","dhp/dhp4.46.html","dhp/dhp4.47.html","dhp/dhp4.48.html","dhp/dhp4.50.html","dhp/dhp4.51.html","dhp/dhp4.54.html","dhp/dhp4.58.html","dhp/dhp5.60.html","dhp/dhp5.61.html","dhp/dhp5.62.html","dhp/dhp5.63.html","dhp/dhp5.64.html","dhp/dhp5.66.html","dhp/dhp5.71.html","dhp/dhp5.75.html","dhp/dhp6.76.html","dhp/dhp6.78.html","dhp/dhp6.80.html","dhp/dhp6.81.html","dhp/dhp6.85.html","dhp/dhp7.92.html","dhp/dhp8.102.html","dhp/dhp8.111.html","dhp/dhp8.113.html","dhp/dhp9.118.html","dhp/dhp9.121.html","dhp/dhp9.126.html","dhp/dhp9.127.html","dhp/dhp10.129.html","dhp/dhp10.130.html","dhp/dhp10.145.html","dhp/dhp11.146.html","dhp/dhp11.147.html","dhp/dhp11.151.html","dhp/dhp11.153.html","dhp/dhp11.155.html","dhp/dhp12.1.html","dhp/dhp12.2.html","dhp/dhp12.3.html","dhp/dhp12.4.html","dhp/dhp12.5.html","dhp/dhp12.6.html","dhp/dhp12.7.html","dhp/dhp12.8.html","dhp/dhp13.1.html","dhp/dhp13.2.html","dhp/dhp13.3.html","dhp/dhp13.4.html","dhp/dhp13.5.html","dhp/dhp13.6.html","dhp/dhp13.7.html","dhp/dhp13.8.html","dhp/dhp13.9.html","dhp/dhp13.10.html","dhp/dhp13.11.html","dhp/dhp14.1.html","dhp/dhp14.2.html","dhp/dhp14.3.html","dhp/dhp14.4.html","dhp/dhp14.5.html","dhp/dhp14.6.html","dhp/dhp14.7.html","dhp/dhp15.1.html","dhp/dhp15.2.html","dhp/dhp15.3.html","dhp/dhp15.4.html","dhp/dhp15.5.html","dhp/dhp15.6.html","dhp/dhp15.7.html","dhp/dhp15.8.html","dhp/dhp15.9.html","dhp/dhp15.10.html","dhp/dhp16.1.html","dhp/dhp16.2.html","dhp/dhp16.3.html","dhp/dhp16.4.html","dhp/dhp16.5.html","dhp/dhp16.6.html","dhp/dhp16.7.html","dhp/dhp17.1.html","dhp/dhp17.2.html","dhp/dhp17.3.html","dhp/dhp17.4.html","dhp/dhp17.5.html","dhp/dhp18.1.html","dhp/dhp18.2.html","dhp/dhp18.3.html","dhp/dhp18.4.html","dhp/dhp18.5.html","dhp/dhp18.6.html","dhp/dhp18.7.html","dhp/dhp18.8.html","dhp/dhp19.1.html","dhp/dhp19.2.html","dhp/dhp20.1.html","dhp/dhp20.2.html","dhp/dhp20.3.html","dhp/dhp20.4.html","dhp/dhp20.5.html","dhp/dhp21.1.html","dhp/dhp21.2.html","dhp/dhp21.3.html","dhp/dhp21.4.html","dhp/dhp21.5.html","dhp/dhp22.1.html","dhp/dhp23.1.html","dhp/dhp23.2.html","dhp/dhp24.1.html","dhp/dhp24.2.html","dhp/dhp24.3.html","dhp/dhp24.4.html","dhp/dhp24.5.html","dhp/dhp24.6.html","dhp/dhp24.7.html","dhp/dhp24.8.html","dhp/dhp25.1.html","dhp/dhp25.2.html","dhp/dhp25.3.html","dhp/dhp25.4.html","dhp/dhp25.5.html","dhp/dhp25.6.html","dhp/dhp25.7.html","dhp/dhp25.8.html","dhp/dhp25.9.html","dhp/dhp26.1.html");
-function dhpAleatorio(){
- aleat = Math.random() * enderecos1.length;
- aleat = Math.floor(aleat);
- window.location.href = enderecoBase + enderecos1[aleat];
-}
-var enderecos = new Array("sutta/It.1.html","sutta/It.2.html","sutta/It.3.html","sutta/It.4.html","sutta/It.5.html","sutta/It.6.html","sutta/It.7.html","sutta/It.8.html","sutta/It.9.html","sutta/It.10.html","sutta/It.11.html","sutta/It.12.html","sutta/It.13.html","sutta/It.14.html","sutta/It.15.html","sutta/It.16.html","sutta/It.17.html","sutta/It.18.html","sutta/It.19.html","sutta/It.20.html","sutta/It.21.html","sutta/It.22.html","sutta/It.23.html","sutta/It.24.html","sutta/It.25.html","sutta/It.26.html","sutta/It.27.html","sutta/It.28.html","sutta/It.29.html","sutta/It.30.html","sutta/It.31.html","sutta/It.32.html","sutta/It.33.html","sutta/It.34.html","sutta/It.35.html","sutta/It.36.html","sutta/It.37.html","sutta/It.38.html","sutta/It.39.html","sutta/It.40.html","sutta/It.41.html","sutta/It.42.html","sutta/It.43.html","sutta/It.44.html","sutta/It.45.html","sutta/It.46.html","sutta/It.47.html","sutta/It.48.html","sutta/It.49.html","sutta/It.50.html","sutta/It.51.html","sutta/It.52.html","sutta/It.53.html","sutta/It.54.html","sutta/It.55.html","sutta/It.56.html","sutta/It.57.html","sutta/It.58.html","sutta/It.59.html","sutta/It.60.html","sutta/It.61.html","sutta/It.62.html","sutta/It.63.html","sutta/It.64.html","sutta/It.65.html","sutta/It.66.html","sutta/It.67.html","sutta/It.68.html","sutta/It.69.html","sutta/It.70.html","sutta/It.71.html","sutta/It.72.html","sutta/It.73.html","sutta/It.74.html","sutta/It.75.html","sutta/It.76.html","sutta/It.77.html","sutta/It.78.html","sutta/It.79.html","sutta/It.80.html","sutta/It.81.html","sutta/It.82.html","sutta/It.83.html","sutta/It.84.html","sutta/It.85.html","sutta/It.86.html","sutta/It.87.html","sutta/It.88.html","sutta/It.89.html","sutta/It.90.html","sutta/It.91.html","sutta/It.92.html","sutta/It.93.html","sutta/It.94.html","sutta/It.95.html","sutta/It.96.html","sutta/It.97.html","sutta/It.98.html","sutta/It.99.html","sutta/It.100.html","sutta/It.101.html","sutta/It.102.html","sutta/It.103.html","sutta/It.104.html","sutta/It.105.html","sutta/It.106.html","sutta/It.107.html","sutta/It.108.html","sutta/It.109.html","sutta/It.110.html","sutta/It.111.html","sutta/It.112.html");
-function suttaAleatorio(){
- aleat = Math.random() * enderecos.length;
- aleat = Math.floor(aleat);
- window.location= enderecoBase + enderecos[aleat];
-}
-</script>
-</head>
-<body><input id="php-var-pagina" type="hidden" value="theravada" /><div class="container fullwidth">
-<a name=Top></a>   <div id="principal">
-      <div class="imagem-topo" style="background-image: url('img/topo/new_27.jpg');"></div>			<nav class="navbar navbar-inverse menu-bootstrap" style="margin-bottom: 0px;">				<div class="container-fluid">					<div class="navbar-header">						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-responsivo" aria-expanded="false">							<span class="sr-only">Toggle navigation</span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>							<span class="icon-bar"></span>						</button>					</div>					<div class="collapse navbar-collapse" id="menu-responsivo">						<ul class="nav navbar-nav">							<li><a href="index-2.html">									<span class="glyphicon glyphicon-home" style="font-size:15px;" title="Home"></span>									<span class="visible-xs-inline"> Home</span>							</a></li>							<li id="menu_sala_estudos"><a href="sala_estudos.html">Sala Estudos</a></li>							<li id="menu_sutta_pitaka"><a href="sutta_pitaka.html">Sutta Pitaka</a></li>							<li id="menu_indice">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Índice								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="sutta/indice_suttas.html">Índice Suttas</a></li>									<li><a href="arquivo_textos_theravada/indice_textos.html">Índice Textos</a></li>								</ul>							</li>							<li id="menu_material">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Materiais								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="livros.html">Livros</a></li>									<li><a href="audiobook.html">Audiobook</a></li>									<li><a href="podcast.html">Podcast</a></li>								</ul>							</li>							<li id="menu_random">								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Random								<span class="caret"></span></a>								<ul class="dropdown-menu">									<li><a href="javascript:dhpAleatorio();">DHP Random</a></li>									<li><a href="javascript:suttaAleatorio();">Sutta Random</a></li>								</ul>							</li>							<li id="menu_ajuda"><a href="ajuda.html">								<span class="glyphicon glyphicon-question-sign" style="font-size:15px;" title="Ajuda"></span>								<span class="visible-xs-inline"> Ajuda</span>							</a></li>						</ul>					</div>				</div>			</nav>			      <div id="central">
-<a name=Top></a>
-
-<!-- INICIO DO TEXTO -->
 
 <p class=Tit1>O que é o Budismo Theravada ?</p>
 
-<p class=Normal>Este texto também está disponível em <a href="audiobook.html#thera"><b>audiobook</b></a></p>
+<p class=Normal>Este texto também está disponível em <a href='javascript:loadContent("audiobook.html#thera")'><b>audiobook</b></a></p>
 
 
 <p class=Normal>O texto que segue é um
@@ -47,7 +10,7 @@ breve resumo sobre o que é o Budismo Theravada. Os links na página podem servir 
 o restante do site.</p>
 
 <p class=Normal>Para conhecer um pouco mais da história do Theravada veja
- <a href="cronologia.html">Budismo Theravada: Uma Cronologia Histórica.</a></p>
+ <a href='javascript:loadContent("cronologia.html")'>Budismo Theravada: Uma Cronologia Histórica.</a></p>
 
 
 <hr size=2 width="100%" align=center>
@@ -94,7 +57,7 @@ href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Theravada ( Pali: <i>thera </i>&quot;anciãos&quot;
 + <i>vada </i>&quot;palavra, doutrina&quot; ), a &quot;Doutrina dos
 Anciãos&quot;, é o nome da escola de Budismo que tem suas escrituras no Cânone
-em Pali ou <a href="tipitaka.html">Tipitaka</a>, que os acadêmicos em geral aceitam
+em Pali ou <a href='javascript:loadContent("tipitaka.html")'>Tipitaka</a>, que os acadêmicos em geral aceitam
 como sendo o registro mais antigo dos ensinamentos do Buda.<br> No livro <i>Essence of the Heart Sutra</i> o Dalai Lama menciona que:
 ‘<i>It is very important to understand that the core teachings of the Theravada tradition embodied in the Pali scriptures 
 are the foundation of the Buddha’s teachings</i>.’ (Em resumo os ensinamentos do Theravada contêm os ensinamentos fundamentais do Buda).<br>
@@ -123,7 +86,7 @@ identificado com &quot;Hinayana&quot; ( o “Veículo Menor/Inferior”), em
 contraste com o &quot;Mahayana&quot; ( o &quot;Veículo Maior/Superior&quot;),
 que em geral é o sinônimo para o Budismo Tibetano, Zen, Ch’an e outras
 expressões do Budismo no Norte da Ásia. O uso do termo pejorativo
-&quot;Hinayana&quot; tem sua origem nos <a href="cronologia.html#cismas_iniciais">primeiros
+&quot;Hinayana&quot; tem sua origem nos <a href='javascript:loadContent("cronologia.html#cismas_iniciais")'>primeiros
 cismas</a> que ocorreram na comunidade monástica e que acabaram resultando no
 surgimento do que mais tarde se converteria no Mahayana. Muitos acadêmicos
 utilizam a denominação Hinayana despojada de qualquer intenção pejorativa.<o:p></o:p></span></p>
@@ -138,14 +101,14 @@ canônicos do Theravada é o Pali, um idioma próximo ao Prakrit, que
 provavelmente era falado na região central da Índia durante o período do Buda.
 A maioria dos discursos proferidos pelo Buda foram memorizados pelo Ven.
 Ananda, o primo do Buda e seu assistente pessoal. Pouco depois da morte do Buda
-( aprox. <a href="cronologia.html#parinibbana">544 EC</a>), um grupo de 500<span
+( aprox. <a href='javascript:loadContent("cronologia.html#parinibbana")'>544 EC</a>), um grupo de 500<span
 style="mso-spacerun: yes">  </span>monges arahant – incluindo Ananda – se
 reuniu para recitar todos os discursos que eles haviam ouvido durante os 45
 anos de ensinamento do Buda. Cada discurso (<i>sutta) </i>que foi registrado
 tem início com a observação <i>evam me suttam</i> - &quot;Assim ouvi&quot;.
 Esses ensinamentos foram transmitidos dentro da comunidade monástica seguindo
 uma tradição oral firmemente estabelecida. Em aproximadamente <a
-href="cronologia.html#tipitaka_escrita">100 EC</a> a <a href="tipitaka.html">Tipitaka</a>
+href='javascript:loadContent("cronologia.html#tipitaka_escrita")'>100 EC</a> a <a href='javascript:loadContent("tipitaka.html")'>Tipitaka</a>
 foi compilada por escrito pela primeira vez no Sri Lanka por monges escribas.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>É claro que jamais será possível
@@ -170,11 +133,11 @@ sumário dos ensinamentos chave do Budismo Theravada. Muito foi deixado de lado,
 porém esse resumo deve ser o suficiente para que você inicie a sua exploração.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><a
-href="cronologia.html#primeiro_discurso">Pouco após a sua Iluminação</a>, o Buda
-( &quot;O Iluminado&quot;) proferiu o seu <a href="sutta/SNLVI.11.html">primeiro
+href='javascript:loadContent("cronologia.html#primeiro_discurso")'>Pouco após a sua Iluminação</a>, o Buda
+( &quot;O Iluminado&quot;) proferiu o seu <a href='javascript:loadContent("sutta/SNLVI.11.html")'>primeiro
 discurso</a> definindo a estrutura básica sobre a qual se baseariam todos os
 seus ensinamentos seguintes. Essa estrutura básica são as <a
-href="caminho_liberdade/quatro_nobres_verdades.html">Quatro Nobres Verdades</a>,
+href='javascript:loadContent("caminho_liberdade/quatro_nobres_verdades.html")'>Quatro Nobres Verdades</a>,
 quatro princípios fundamentais da natureza (Dhamma) que emergiram da avaliação
 honesta e profunda que o Buda fez da condição humana e que servem para definir
 toda a abrangência da prática Budista. Essas verdades não são afirmações de fé.
@@ -186,33 +149,33 @@ forma a criar condições para a Iluminação:<o:p></o:p></span></p>
   <li class=Normal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
       auto;mso-list:l1 level2 lfo6;tab-stops:list 1.0in'><span lang=PT-BR
       style='mso-ansi-language:PT-BR'><a
-      href="caminho_liberdade/dukkha_verdade.html">Dukkha</a><i>: </i>sofrimento,
+      href='javascript:loadContent("caminho_liberdade/dukkha_verdade.html")'>Dukkha</a><i>: </i>sofrimento,
       insatisfação, descontentamento, estresse;<o:p></o:p></span></li>
   <li class=Normal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
       auto;mso-list:l1 level2 lfo6;tab-stops:list 1.0in'><span lang=PT-BR
       style='mso-ansi-language:PT-BR'><a
-      href="caminho_liberdade/dukkha_origem.html">A causa de dukkha</a><i>: </i>a
-      causa dessa insatisfação é o <a href="caminho_liberdade/desejo.html">
+      href='javascript:loadContent("caminho_liberdade/dukkha_origem.html")'>A causa de dukkha</a><i>: </i>a
+      causa dessa insatisfação é o <a href='javascript:loadContent("caminho_liberdade/desejo.html")'>
       desejo</a> (<i>tanha</i>) pela sensualidade, pelo ser/existir e por não
       ser/existir;<o:p></o:p></span></li>
   <li class=Normal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
       auto;mso-list:l1 level2 lfo6;tab-stops:list 1.0in'><span lang=PT-BR
       style='mso-ansi-language:PT-BR'><a
-      href="caminho_liberdade/dukkha_cessacao.html">A cessação de dukkha</a>: o
+      href='javascript:loadContent("caminho_liberdade/dukkha_cessacao.html")'>A cessação de dukkha</a>: o
       abandono desse desejo;<o:p></o:p></span></li>
   <li class=Normal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
       auto;mso-list:l1 level2 lfo6;tab-stops:list 1.0in'><span lang=PT-BR
       style='mso-ansi-language:PT-BR'><a
-      href="caminho_liberdade/dukkha_caminho.html">O caminho que leva à cessação
+      href='javascript:loadContent("caminho_liberdade/dukkha_caminho.html")'>O caminho que leva à cessação
       de dukkha</a>: o Nobre Caminho Óctuplo – <a
-      href="caminho_liberdade/entendimento_correto.html">entendimento correto</a>,
-      <a href="caminho_liberdade/pensamento_correto.html">pensamento correto</a>,
-      <a href="caminho_liberdade/linguagem_correta.html">linguagem correta</a>, <a
-      href="caminho_liberdade/acao_correta.html">ação correta</a>, <a
-      href="caminho_liberdade/modo_vida_correto.html">modo de vida correto</a>, <a
-      href="caminho_liberdade/esforco.html">esforço correto</a>, <a
-      href="caminho_liberdade/atencao_plena_correta.html">atenção plena correta</a>
-      e <a href="caminho_liberdade/concentracao_correta.html">concentração
+      href='javascript:loadContent("caminho_liberdade/entendimento_correto.html")'>entendimento correto</a>,
+      <a href='javascript:loadContent("caminho_liberdade/pensamento_correto.html")'>pensamento correto</a>,
+      <a href='javascript:loadContent("caminho_liberdade/linguagem_correta.html")'>linguagem correta</a>, <a
+      href='javascript:loadContent("caminho_liberdade/acao_correta.html")'>ação correta</a>, <a
+      href='javascript:loadContent("caminho_liberdade/modo_vida_correto.html")'>modo de vida correto</a>, <a
+      href='javascript:loadContent("caminho_liberdade/esforco.html")'>esforço correto</a>, <a
+      href='javascript:loadContent("caminho_liberdade/atencao_plena_correta.html")'>atenção plena correta</a>
+      e <a href='javascript:loadContent("caminho_liberdade/concentracao_correta.html")'>concentração
       correta</a>.<o:p></o:p></span></li>
  </ol>
 </ol>
@@ -222,44 +185,44 @@ Verdades o Buda identificou uma tarefa específica que o praticante deve
 realizar: a primeira Nobre Verdade deve ser <b>compreendida</b>; a segunda deve
 ser <b>abandonada</b>; a terceira deve ser <b>realizada</b>; a quarta deve ser <b>desenvolvida</b>.
 A realização completa da terceira Nobre Verdade abre o caminho para a
-penetração de <i><a href="caminho_liberdade/nibbana.html">Nibbana</a></i> (Sânscrito: Nirvana), a liberdade transcendente que é o objetivo máximo dos
+penetração de <i><a href='javascript:loadContent("caminho_liberdade/nibbana.html")'>Nibbana</a></i> (Sânscrito: Nirvana), a liberdade transcendente que é o objetivo máximo dos
 ensinamentos do Buda.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A última das Nobre Verdades
 – O Nobre Caminho Óctuplo – contém a prescrição de como aliviar nossa
 insatisfação e alcançar a eventual libertação, de uma vez por todas, desse <a
-href="caminho_liberdade/ciclo_de_renascimentos.html">ciclo de vida e morte</a> (<i>samsara</i>)
+href='javascript:loadContent("caminho_liberdade/ciclo_de_renascimentos.html")'>ciclo de vida e morte</a> (<i>samsara</i>)
 doloroso e desgastante ao qual – pela própria <a
-href="caminho_liberdade/ignorancia.html">ignorância</a> (<i>avijja</i>) das
+href='javascript:loadContent("caminho_liberdade/ignorancia.html")'>ignorância</a> (<i>avijja</i>) das
 Quatro Nobres Verdades – estamos presos por tempos incontáveis. O Nobre Caminho
 Óctuplo oferece um guia prático e completo para o desenvolvimento mental de
 qualidades e habilidades benéficas que devem ser cultivadas se o praticante
 desejar alcançar o objetivo final, a liberdade e felicidade supremas, <i><a
-href="caminho_liberdade/nibbana.html">Nibbana</a>.</i> </p>
+href='javascript:loadContent("caminho_liberdade/nibbana.html")'>Nibbana</a>.</i> </p>
 
 <p class=Normal>Na prática o Buda ensinou
 o Nobre Caminho Óctuplo aos seus discípulos de acordo com um sistema de
 <a
-href="caminho_liberdade/dharma.html">treinamento gradual</a>, iniciando com o desenvolvimento de <i><a
-href="caminho_liberdade/virtude.html">sila<span style='font-style:normal'> ou
+href='javascript:loadContent("caminho_liberdade/dharma.html")'>treinamento gradual</a>, iniciando com o desenvolvimento de <i><a
+href='javascript:loadContent("caminho_liberdade/virtude.html")'>sila<span style='font-style:normal'> ou
 virtude</span></a></i><span style="mso-spacerun: yes">  </span>(<a
-href="caminho_liberdade/linguagem_correta.html">linguagem correta</a>, <a
-href="caminho_liberdade/acao_correta.html">ação correta</a> e <a
-href="caminho_liberdade/modo_vida_correto.html">modo de vida correto</a>, que na
-prática estão resumidos nos <a href="caminho_liberdade/cinco_preceitos.html">cinco
+href='javascript:loadContent("caminho_liberdade/linguagem_correta.html")'>linguagem correta</a>, <a
+href='javascript:loadContent("caminho_liberdade/acao_correta.html")'>ação correta</a> e <a
+href='javascript:loadContent("caminho_liberdade/modo_vida_correto.html")'>modo de vida correto</a>, que na
+prática estão resumidos nos <a href='javascript:loadContent("caminho_liberdade/cinco_preceitos.html")'>cinco
 preceitos</a>), seguido pelo desenvolvimento de <i>samadhi </i>ou concentração
-(<a href="caminho_liberdade/esforco.html">esforço correto</a>, <a
-href="caminho_liberdade/atencao_plena_correta.html">atenção plena correta</a> e <a
-href="caminho_liberdade/concentracao_correta.html">concentração correta</a>),
+(<a href='javascript:loadContent("caminho_liberdade/esforco.html")'>esforço correto</a>, <a
+href='javascript:loadContent("caminho_liberdade/atencao_plena_correta.html")'>atenção plena correta</a> e <a
+href='javascript:loadContent("caminho_liberdade/concentracao_correta.html")'>concentração correta</a>),
 culminando com o pleno desenvolvimento de <i>pañña</i> ou sabedoria ( <a
-href="caminho_liberdade/entendimento_correto.html">entendimento correto</a> e <a
-href="caminho_liberdade/pensamento_correto.html">pensamento correto</a>). A
-prática de <a href="caminho_liberdade/dana.html">generosidade <span
+href='javascript:loadContent("caminho_liberdade/entendimento_correto.html")'>entendimento correto</a> e <a
+href='javascript:loadContent("caminho_liberdade/pensamento_correto.html")'>pensamento correto</a>). A
+prática de <a href='javascript:loadContent("caminho_liberdade/dana.html")'>generosidade <span
 style='font-style:normal'></a> (<i>dana</i>)</span> serve como um apoio
 para cada passo ao longo do caminho já que atua como um auxiliar na corrosão da
-tendência habitual ao <a href="caminho_liberdade/desejo.html">desejo</a> e
+tendência habitual ao <a href='javascript:loadContent("caminho_liberdade/desejo.html")'>desejo</a> e
 também porque pode trazer grandes ensinamentos sobre as causas e resultados das
-ações de cada pessoa <a href="caminho_liberdade/acao_intencional.html">(<i>kamma</i>)</a>.<o:p></o:p></span></p>
+ações de cada pessoa <a href='javascript:loadContent("caminho_liberdade/acao_intencional.html")'>(<i>kamma</i>)</a>.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>O progresso ao longo do caminho
 não segue uma trajetória linear simples. Em vez disso, o desenvolvimento de
@@ -270,28 +233,28 @@ maturidade espiritual que culmina na Iluminação.<o:p></o:p></span></p>
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Vendo por um outro ângulo,
 a longa jornada no caminho para a Iluminação tem início a sério com os
 primeiros sinais de alguma movimentação na questão do <a
-href="caminho_liberdade/entendimento_correto.html">entendimento correto</a>, os
+href='javascript:loadContent("caminho_liberdade/entendimento_correto.html")'>entendimento correto</a>, os
 primeiros lampejos de sabedoria através dos quais a pessoa reconhece tanto a
-validade da <a href="caminho_liberdade/dukkha_verdade.html">Primeira Nobre
+validade da <a href='javascript:loadContent("caminho_liberdade/dukkha_verdade.html")'>Primeira Nobre
 Verdade</a> e a inevitabilidade da lei do <i><a
-href="caminho_liberdade/acao_intencional.html">kamma</a> </i>(sânscrito karma),
+href='javascript:loadContent("caminho_liberdade/acao_intencional.html")'>kamma</a> </i>(sânscrito karma),
 a lei universal de causa e efeito. A partir do momento que a pessoa se dá conta
 de que más ações inevitavelmente trazem maus resultados e que boas ações trazem
 bons resultados, o desejo, de viver uma vida moralmente correta e íntegra, de
-adotar seriamente a prática de <i><a href="caminho_liberdade/virtude.html">sila</a>,
+adotar seriamente a prática de <i><a href='javascript:loadContent("caminho_liberdade/virtude.html")'>sila</a>,
 </i>cresce<i>.</i> A confiança criada a partir desse entendimento preliminar
 leva o praticante a ter ainda mais fé nos ensinamentos. O praticante se torna
 um &quot;Budista&quot; a partir do momento em que expressa uma determinação
 interior de &quot;tomar o refúgio&quot; na <a
-href="caminho_liberdade/refugio_triplice.html">Jóia Tríplice</a>: o Buda (tanto
+href='javascript:loadContent("caminho_liberdade/refugio_triplice.html")'>Jóia Tríplice</a>: o Buda (tanto
 o Buda histórico como o potencial de cada um de alcançar a Iluminação), o <a
-href="caminho_liberdade/dharma.html">Dhamma</a> (tanto os ensinamentos do Buda
+href='javascript:loadContent("caminho_liberdade/dharma.html")'>Dhamma</a> (tanto os ensinamentos do Buda
 histórico e a verdade última que eles revelam), e a <a
-href="caminho_liberdade/sangha.html">Sangha</a> (tanto a comunidade monástica
+href='javascript:loadContent("caminho_liberdade/sangha.html")'>Sangha</a> (tanto a comunidade monástica
 que protegeu os ensinamentos e os colocou em prática desde os tempos do Buda
 como todos aqueles que alcançaram algum grau de Iluminação). Tendo fincado
 firmemente os pés no solo através da tomada do refúgio e, com o auxílio de um <a
-href="caminho_liberdade/amizade_admiravel.html">bom amigo</a> (<i>kalyanamitta</i>)
+href='javascript:loadContent("caminho_liberdade/amizade_admiravel.html")'>bom amigo</a> (<i>kalyanamitta</i>)
 para ajudar a indicar o caminho, a pessoa estará pronta para trilhar o caminho,
 confiante de que estará seguindo as pegadas deixadas pelo próprio Buda.<o:p></o:p></span></p>
 
@@ -308,8 +271,8 @@ existe insatisfação e sofrimento no mundo. Ninguém pode contestar esse fato. Se
 os ensinamentos do Buda parassem por aí, os seus ensinamentos poderiam de fato
 ser considerados pessimistas e a vida totalmente sem esperança. Porém, como um
 médico que prescreve o remédio para uma enfermidade, o Buda oferece a esperança
-(a <a href="caminho_liberdade/dukkha_cessacao.html">Terceira Nobre Verdade</a>)
-e a cura (a <a href="caminho_liberdade/dukkha_caminho.html">Quarta</a>). Os
+(a <a href='javascript:loadContent("caminho_liberdade/dukkha_cessacao.html")'>Terceira Nobre Verdade</a>)
+e a cura (a <a href='javascript:loadContent("caminho_liberdade/dukkha_caminho.html")'>Quarta</a>). Os
 ensinamentos do Buda portanto permitem ter um alto grau de otimismo em um mundo
 complexo, confuso e difícil. Um professor contemporâneo resumiu bem:
 &quot;Budismo é a busca da felicidade levada a sério&quot;.<o:p></o:p></span></p>
@@ -325,19 +288,19 @@ href="#Top"><span style='text-decoration:none;text-underline:none'><img border=0
 </p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>Até o <a
-href="cronologia.html#sec_19">final do século 19</a> os ensinamentos do
+href='javascript:loadContent("cronologia.html#sec_19")'>final do século 19</a> os ensinamentos do
 Theravada eram pouco conhecidos fora do Sul e Sudeste da Ásia onde eles
 floresceram durante quase 2.500 anos. No século 20 no entanto o Ocidente
 começou a tomar contato com o singular legado espiritual<span
 style="mso-spacerun: yes">  </span>do Theravada e os ensinamentos da
-Iluminação. Em <a href="cronologia.html#decadas_recentes">décadas mais recentes</a>
+Iluminação. Em <a href='javascript:loadContent("cronologia.html#decadas_recentes")'>décadas mais recentes</a>
 esse interesse aumentou significativamente, tendo a <a
-href="caminho_liberdade/sangha.html">Sangha</a> monástica das diferentes escolas
+href='javascript:loadContent("caminho_liberdade/sangha.html")'>Sangha</a> monástica das diferentes escolas
 dentro do Theravada estabelecido dezenas de monastérios na Europa e na América
 do Norte. Além disso um crescente número de centros de meditação leigos, que
 operam independentemente da Sangha, têm surgido para atender as demandas de
 leigos - Budistas ou não - que buscam aprender sobre aspectos selecionados dos
-ensinamentos do Buda, em particular a <a href="meditacao.html">meditação
+ensinamentos do Buda, em particular a <a href='javascript:loadContent("meditacao.html")'>meditação
 vipassana</a>.<o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>A chegada do século 21 apresenta
@@ -376,7 +339,7 @@ ser um incômodo, não a ser um incômodo: Você deve definitivamente entender, 'Ist
 
 <p  class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'><span
 style='mso-tab-count:9'>                                                                                                            </span><a
-href="sutta/ANVIII.53.html">AN VIII</span>.53</a><o:p></o:p></span></p>
+href='javascript:loadContent("sutta/ANVIII.53.html")'>AN VIII</span>.53</a><o:p></o:p></span></p>
 
 <p class=Normal><span lang=PT-BR style='mso-ansi-language:PT-BR'>É claro que o verdadeiro
 teste desses ensinamentos é se eles produzem no fundo do seu próprio coração,
@@ -385,44 +348,6 @@ individualmente colocar esse desafio à prova.<o:p></o:p></span></p>
 <br>
 
 <!-- Counter/Statistics -->
-<script language="JavaScript"
-src="../us.js2.yimg.com/us.js.yimg.com/lib/smb/js/hosting/cp/js_source/whv2_001.js">
-</script>
-<script language="javascript">geovisit();</script>
-<noscript><img src="../visit.webhosting.yahoo.com/visit07cc.html?time"
-alt="setstats" border="0" width="1" height="1"></noscript> 
+ 
 
 
-<!-- FIM DO TEXTO -->
-
-<!-- INCLUI BASE -->
-<!-- BASE DE TODAS AS Pï¿½GINAS -->
-
-     </div>
-
-     <div id="rodape">
-     <span style="float:right;">
-         <p class=Rodape>
-         Revisado: 11 Junho 2011         </p>
-     </span>
-     </div>
-
-     <div id="institucional">
-         <p class=Institucional>
-         Copyright &copy; 2000 - 2019,
-         <a href="index.html">Acesso ao Insight</a> -
-         Michael Beisert: editor, Flavio Maia: designer.</p>
-     </div>
-
-     <div id="powered">
-         
-            <br><br>
-         <span>
-     </div>
-  </div>
-</body>
-
-<!-- Mirrored from www.acessoaoinsight.net/theravada.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Jan 2019 16:52:10 GMT -->
-</html>
-
-<script type="text/javascript">(function (d, w) {var x = d.getElementsByTagName('SCRIPT')[0];var f = function () {var s = d.createElement('SCRIPT');s.type = 'text/javascript';s.async = true;s.src = "../np.lexity.com/embed/YW/e5b79760121475b9baa0b2a51d295168abff.html?id=97551eb5c0d8";x.parentNode.insertBefore(s, x);};w.attachEvent ? w.attachEvent('onload',f) :w.addEventListener('load',f,false);}(document, window));</script>

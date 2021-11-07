@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------
+Processamento Iniciado em 14/10/2021 11:01:19
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\arquivo_textos_theravada\ÒBrahmavamso.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index16c1.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index2846.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index5272.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index79c2.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index7e6f.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\index864c.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\indexb3a7.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\indexcaa7.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\dhp\player.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\fonts\glyphicons-halflings-regular.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\sutta\Udana-2.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\sutta\Òsamyutta_nikaya-2.html fora do padrão de extração
+Arquivo D:\AOI2\Acesso ao Insight\buddhasasana\sutta\Òsamyutta_nikaya.html fora do padrão de extração
