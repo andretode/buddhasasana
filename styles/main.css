@@ -2,11 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-	
-
-
-#translation-credits{
+#translation-credits {
   text-align: center;
   color: black;
 }
@@ -75,7 +71,6 @@ p {
   border-radius: 0;
   color: white !important;
   box-shadow: 0px 1px 3px 3px #8a5e3d83;
-  
 }
 .navbar-brand {
   display: flex;
@@ -176,7 +171,6 @@ div#menu-responsivo li a:hover {
   }
   #nav-placeholder > nav > div:nth-child(2) {
     box-shadow: 0px 1px 3px 3px #8a5e3d83;
-	
   }
   #body-placeholder {
     margin-top: 90px;
@@ -187,16 +181,22 @@ div#menu-responsivo li a:hover {
   .navbar-header {
     width: 100%;
   }
-    
+
   #nav-placeholder > nav > div:nth-child(2) {
     box-shadow: none;
   }
   #body-placeholder {
     margin-top: 50px;
   }
-  li{
-	  text-align:center;
+  li {
+    text-align: center;
   }
+  #menu-responsivo {
+    margin-top: 4.8rem;
+  }
+  
+  #menu-responsivo > ul {
+    padding-top: 0;
 }
 
 .link-estoria {
@@ -242,6 +242,10 @@ table.Dhp p {
 }
 
 @keyframes loader-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
