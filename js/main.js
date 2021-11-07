@@ -8,7 +8,7 @@ $(function () {
 function carregarSiteCallback() {
     loadContent("layout/nav.html", "#nav-placeholder");
     loadContent("layout/footer.html", "#footer-placeholder");
-    if (!getPageFromUrl()) loadContent("inicial.html");
+    getPageFromUrl();
     insertBeisertCredits();
     handleMenuMobileClose();
 }
@@ -24,7 +24,7 @@ function handleMenuMobileClose() {
 
 function getPageFromUrl() {
     const parametros = window.location.search;
-    if (parametros === null || parametros === "") return false;
+    if (parametros === null || parametros === "" || parametros.includes("?fbclid")) return false;
 
     const partes = parametros.split("=");
     if (partes.length !== 2) return false;
@@ -54,7 +54,7 @@ function getPathFromCache(pageRelativePath) {
     const filename = getFilenameFromPath(pageRelativePath);
     const dir = cache[filename];
     if (dir === undefined) {
-        console.warn(`Arquivo ${filename} nao foi encontrado no cache!`);
+        console.warn(`Arquivo ${filename} não foi encontrado no cache.`);
         return pageRelativePath;
     }
     return dir ? `${dir}/${filename}` : filename;
@@ -65,8 +65,9 @@ function loadContenteHandler(pageRelativePath, target, isBack) {
     $(target).load(pageRelativePath, function (resp, status, xhr) {
         const filename = getFilenameFromPath(pageRelativePath);
         if (status == "error") {
-            var msg = "Não foi possível carregar o arquivo: " + pageRelativePath;
-            alert(msg + " " + xhr.status + " " + xhr.statusText);
+            var msg = "Não foi possível carregar o arquivo " + pageRelativePath;
+            console.error(msg + " (" + xhr.status + " " + xhr.statusText + ")");
+            setTimeout(3000, window.location.replace("./layout/404.html"));
         } else {
             if (!isBack) addFilenameToUrl(filename);
         }
@@ -86,7 +87,7 @@ function addFilenameToUrl(filename) {
     window.history.pushState(state, filename, url);
 }
 
-const isBaseFileToExclude = (filename) =>
+let isBaseFileToExclude = (filename) =>
     filename === "footer.html" || filename === "nav.html";
 
 function getFilenameFromPath(pageRelativePath) {
