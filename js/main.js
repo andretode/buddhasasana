@@ -1,6 +1,6 @@
 var cache = [];
 
-//Ações executadas quando a página estiver pronta
+// Ações executadas quando a página estiver pronta
 $(function () {
     loadCache(carregarSiteCallback);
 });
@@ -13,8 +13,8 @@ function carregarSiteCallback() {
     handleMenuMobileClose();
 }
 
+// Utilizado o setTimeout para aguardar o menu estar totalmente renderizado
 function handleMenuMobileClose() {
-    //Usei setTimeout para aguardar o menu estar totalmente renderizado
     setTimeout(() => {
         $(".navbar-collapse a:not(.dropdown-toggle)").click(function (e) {
             $(".navbar-collapse").collapse("hide");
@@ -24,7 +24,17 @@ function handleMenuMobileClose() {
 
 function getPageFromUrl() {
     const parametros = window.location.search;
-    if (parametros === null || parametros === "" || parametros.includes("?fbclid")) return false;
+
+    // Se os parâmtros forem nulos ou vazios, carrega a página inicial
+    if (parametros === null || parametros === "") {
+        loadContent("inicial.html")
+    }
+
+    // Acessos que chegam do facebook com o token fbclid
+    if (parametros.includes("?fbclid")) {
+        console.log("URL inválida, redirecionando para a página inicial...")
+        window.location.replace("https://buddhasasana.com.br/")
+    }
 
     const partes = parametros.split("=");
     if (partes.length !== 2) return false;
@@ -108,6 +118,7 @@ function loadCache(callbackToFollow) {
     });
 }
 
+// Insere os créditos do Beisert
 function insertBeisertCredits() {
     const translationCreditsElement = document.querySelector(
         "#translation-credits"
