@@ -253,6 +253,7 @@ table.Dhp p {
 }
 
 /* 404 Page */
+
 .not-found-404 {
   margin: 0 auto;
   text-align: center;
@@ -266,3 +267,13 @@ table.Dhp p {
 .not-found-404 h3 {
   margin: 0;
 }
+
+/* 404 Page Final */
+
+/* Livros */
+
+.expando {
+  width: 200px;
+}
+
+/* Livros Final */
